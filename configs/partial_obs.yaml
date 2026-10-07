@@ -1,0 +1,5 @@
+extends: smoke.yaml
+name: partial_obs
+sensor_regime: dropout
+miss_probability: 0.4
+output: outputs/partial_obs

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+outputs/**/data.npz
+outputs/**/checkpoints/
+outputs/**/tensorboard/
+outputs/**/demo_frames/
+.cache/

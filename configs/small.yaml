@@ -1,0 +1,17 @@
+extends: smoke.yaml
+name: small
+episodes: 2048
+vehicles: 20
+connected: 6
+scenarios: [intersection, merge, corridor, grid]
+model_dim: 320
+layers: 4
+epochs: 40
+train_batches: 200
+batch_size: 32
+train_horizon: 10
+candidates: 128
+cem_iterations: 4
+eval_contexts: 50
+planning_steps: 64
+output: outputs/small

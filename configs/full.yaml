@@ -1,0 +1,9 @@
+extends: small.yaml
+name: full
+episodes: 20000
+epochs: 100
+vehicles: 32
+connected: 8
+candidates: 512
+eval_contexts: 200
+output: outputs/full

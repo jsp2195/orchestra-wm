@@ -1,0 +1,5 @@
+extends: smoke.yaml
+name: ood
+vehicles: 16
+scenarios: [corridor, grid]
+output: outputs/ood
