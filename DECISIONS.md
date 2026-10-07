@@ -24,6 +24,8 @@
 4. Large intersection populations initially clamped multiple same-lane starts to position zero. Spacing/jitter now adapt to count; tests verify non-overlapping same-lane starts through 40 agents on the intersection topology. Dense merge layouts remain a stress test, not realistic demand modeling.
 5. The cloud machine has a read-only home directory. Matplotlib/fontconfig and uv caches now use writable temporary/project cache directories; no TLS or package integrity checks were disabled.
 
+6. The independent dynamics baseline initially pooled latent tokens before a nonlinear cost head. Although its state predictions were independent, its costs could express interactions. Final independent costs are an additive average of per-agent heads; an explicit factorial-additivity test enforces the null hypothesis. Action-shuffle permutations are also identical across compared models.
+
 ## Failed or incomplete scientific approaches
 
 Short residual training may rely heavily on constant-velocity priors and may learn action-dependent cost rankings without accurate action-dependent trajectories. Preliminary runs exhibited that pattern. No reward/metric tuning was performed to make those results pass. The final measured direction is recorded in `outputs/EXPERIMENT_SUMMARY.md`; do not substitute preliminary values.

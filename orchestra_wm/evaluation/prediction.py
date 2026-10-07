@@ -34,7 +34,9 @@ def evaluate_prediction(cfg,models,out):
                 result['collision_proxy_error']=float(abs(p['components'][0,h-1,3].cpu()-components[h-1,3])) if model else np.nan
                 rows.append({'seed':seed,'scenario':family,'model':name,'horizon':h,**result})
             shuffled=actions.copy();controlled=np.flatnonzero(frames[-1][0]['control_mask'])
-            values=shuffled[:,controlled].ravel();rng.shuffle(values);shuffled[:,controlled]=values.reshape(horizon,-1)
+            values=shuffled[:,controlled].ravel()
+            np.random.default_rng(seed+1234).shuffle(values)
+            shuffled[:,controlled]=values.reshape(horizon,-1)
             for mode,sequence in [('correct',actions),('shuffled',shuffled),('noop',np.zeros_like(actions)),('opposite',-actions)]:
                 if model:
                     forecast=model.imagine(state,torch.tensor(sequence,device=state.memory.device)[None])['agents'][0].cpu().numpy()

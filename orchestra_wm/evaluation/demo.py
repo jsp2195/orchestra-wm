@@ -50,19 +50,22 @@ def make_demo(cfg,out):
     images=[]
     for t in range(32):
         fig,axes=plt.subplots(2,4,figsize=(12,7),facecolor='#101827')
-        draw_scene(axes[0,0],env.road,initial,np.array(data['connected']),visible,'TRUE SCENE • hidden vehicles in orange')
+        draw_scene(axes[0,0],env.road,initial,np.array(data['connected']),visible,'TRUE SCENE\nOrange = hidden from cameras')
         draw_scene(axes[0,1],env.road,initial_obs,np.array(data['connected']),title='PARTIAL OBSERVATIONS')
         draw_scene(axes[0,2],env.road,belief,np.array(data['connected']),title='ORCHESTRA BELIEF')
         k=min(max(t-15,0),len(executed)-1)
-        draw_scene(axes[0,3],env.road,np.array(executed[k]),np.array(data['connected']),title='TRUE EXECUTION • replan every step')
+        draw_scene(axes[0,3],env.road,np.array(executed[k]),np.array(data['connected']),title='TRUE EXECUTION\nReplan every step')
         for i,ax in enumerate(axes[1]):
             h=min(max(t-3,0),c['plan_horizon']-1)
-            draw_scene(ax,env.road,imagined[i,h],np.array(data['connected']),title=f'{data["labels"][i]}  cost {costs[i]:.2f}'+('  SELECTED' if i==selected else ''),trajectories=imagined[i,:h+1])
+            draw_scene(ax,env.road,imagined[i,h],np.array(data['connected']),title=f'{data["labels"][i]}\nPredicted cost {costs[i]:.2f}'+(' • SELECTED' if i==selected else ''),trajectories=imagined[i,:h+1])
             if i==selected:
                 for sp in ax.spines.values():sp.set_color('#41e2bc');sp.set_linewidth(2)
         fig.suptitle('ORCHESTRA-WM  /  ONE BELIEF → FOUR IMAGINED FUTURES → JOINT ACTION',color='white',fontsize=13)
         fig.text(.5,.025,'Synthetic research only • learned scores choose the action • simulator futures used only for evaluation',ha='center',color='#93a7bf',fontsize=9)
-        fig.tight_layout(rect=[0,.05,1,.95]);fig.canvas.draw()
+        for ax in axes.flat:
+            ax.set_xticks([]);ax.set_yticks([]);ax.title.set_fontsize(9)
+        fig.subplots_adjust(left=.025,right=.985,bottom=.08,top=.86,hspace=.32,wspace=.10)
+        fig.canvas.draw()
         images.append(Image.fromarray(np.asarray(fig.canvas.buffer_rgba())[:,:,:3].copy()).convert('P',palette=Image.Palette.ADAPTIVE,colors=128));plt.close(fig)
     images[0].save(out/'demo.gif',save_all=True,append_images=images[1:],duration=500,loop=0,optimize=True)
     return {'selected_plan':data['labels'][selected],'predicted_costs':costs.tolist(),'true_counterfactual_costs':true_cost}

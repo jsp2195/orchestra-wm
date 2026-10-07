@@ -92,3 +92,11 @@ def test_independent_dynamics_do_not_mix_entities_and_no_action_is_invariant():
             s.memory[:,1:]+=20
             other=m.imagine(s,torch.ones(1,3,3))['agents']
             torch.testing.assert_close(first[:,:,0],other[:,:,0])
+
+def test_independent_costs_are_additive_under_joint_interventions():
+    torch.manual_seed(9);m=WorldModel(32,1,variant='independent').eval()
+    s=m.initial_state(1,2,2);s.control[:]=1;s.agents[:,:,5]=1
+    costs=[]
+    for a,b in [(1,1),(1,-1),(-1,1),(-1,-1)]:
+        costs.append(m.imagine(s,torch.tensor([[[a,b],[a,b]]]))['components'])
+    torch.testing.assert_close(costs[0]-costs[1]-costs[2]+costs[3],torch.zeros_like(costs[0]),atol=1e-6,rtol=0)

@@ -86,7 +86,12 @@ class WorldModel(nn.Module):
         next_state=WorldState(memory,predicted,lanes,state.control,state.valid)
         weights=((prior[:,:,5:6]>.1)&state.valid[...,None]).to(memory.dtype)
         pooled=(memory*weights).sum(1)/weights.sum(1).clamp_min(1)
-        components=torch.nn.functional.softplus(self.cost_head(pooled))
+        if self.variant=='independent':
+            # Additive per-agent costs preserve the independence null hypothesis.
+            per_agent=torch.nn.functional.softplus(self.cost_head(memory))
+            components=(per_agent*state.valid[...,None]).sum(1)/state.valid.sum(1,keepdim=True).clamp_min(1)
+        else:
+            components=torch.nn.functional.softplus(self.cost_head(pooled))
         return next_state,{'agents':predicted,'lanes':torch.nn.functional.softplus(self.lane_head(lanes)),
                            'components':components}
 

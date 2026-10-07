@@ -51,6 +51,13 @@ def report(cfg,out,runtime):
     summaries={}
     for name,frame,groups,value in [('prediction',pred,['model','horizon'],'position_error'),('planning',planning,['controller','scenario'],'objective'),('ranking',rank,['model'],'spearman'),('memory',memory[memory.reappearance],['model'],'position_error'),('generalization',general,['condition'],'position_error')]:
         ag=aggregate_by_seed(frame,groups,value);ag.to_csv(out/f'{name}_seed_summary.csv',index=False);summaries[name]=ag.to_dict('records')
+    detailed=[]
+    for analysis,frame,groups in [('prediction',pred,['model','scenario','horizon']),('action_shuffle',shuffle,['model','scenario','condition','horizon']),('rank',rank,['model','scenario']),('planning',planning,['controller','scenario']),('memory',memory,['model','occlusion_steps']),('interactions',inter,['model','plan']),('interaction_contrast',contrast,['model']),('generalization',general,['condition'])]:
+        numeric=[c for c in frame.select_dtypes(include='number').columns if c not in groups+['seed']]
+        for metric in numeric:
+            aggregated=aggregate_by_seed(frame,groups,metric)
+            for row in aggregated.to_dict('records'): detailed.append({'analysis':analysis,'metric':metric,**row})
+    pd.DataFrame(detailed).to_csv(out/'all_seed_statistics.csv',index=False)
     # The per-scenario action gaps remain available instead of being hidden in a mean.
     gaps=shuffle.pivot_table(index=['model','scenario','seed','horizon'],columns='condition',values='position_error').reset_index()
     gaps['action_gap']=gaps.shuffled-gaps.correct;gaps['relative_degradation']=gaps.action_gap/gaps.correct

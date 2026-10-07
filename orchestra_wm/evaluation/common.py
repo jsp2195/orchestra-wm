@@ -55,9 +55,11 @@ def infer(model,frames):
 
 def paired_cases(cfg):
     # Evaluation seeds never overlap the training episodes; three independent scenario seeds.
-    for seed in cfg['seeds']:
-        for family in cfg['scenarios']:
-            yield seed,family,context(cfg,family,10000+seed)
+    combinations=[(seed,family) for seed in cfg['seeds'] for family in cfg['scenarios']]
+    for index in range(max(len(combinations),cfg.get('eval_contexts',len(combinations)))):
+        seed,family=combinations[index % len(combinations)]
+        # Additional contexts retain a seed-group identity for paired SE estimates.
+        yield seed,family,context(cfg,family,10000+seed+100000*(index//len(combinations)))
 
 
 def errors(pred,truth):
