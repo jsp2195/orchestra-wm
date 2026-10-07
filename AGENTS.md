@@ -31,7 +31,7 @@ uv run python scripts/evaluate_planning.py --config configs/smoke.yaml
 uv run python scripts/make_demo.py --config configs/smoke.yaml
 ```
 
-The evaluation_prediction entry point currently runs the full evaluation bundle so all baselines share contexts. Individual evaluation functions are available in their named modules. `small` requires a real CUDA/MPS device. Never automatically launch full. CPU smoke is the default. Linux uv resolves a CPU PyTorch wheel for practical cloud installation; a CUDA host must install its matching official PyTorch CUDA wheel into the environment before GPU training. Device selection itself supports CUDA, MPS and CPU.
+The evaluation_prediction entry point currently runs the full evaluation bundle so all baselines share contexts. Individual evaluation functions are available in their named modules. `small` requires a real CUDA/MPS device. Never automatically launch full. CPU smoke is the default. Linux uv resolves a CPU PyTorch wheel for practical cloud installation; a CUDA host must install its matching official PyTorch CUDA wheel into the environment before GPU training. Device selection itself supports CUDA, MPS and CPU. On a CUDA host, install with `uv pip install --torch-backend=auto --reinstall torch`, then use `uv run --no-sync` so the CPU lock does not replace the CUDA build. That installation path was not executed on this CPU-only machine.
 
 ## Simulation and extensions
 

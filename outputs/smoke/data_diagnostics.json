@@ -1,0 +1,36 @@
+{
+  "episodes": 64,
+  "transitions": 3072,
+  "scenario_counts": {
+    "intersection": 32,
+    "merge": 32
+  },
+  "action_fraction": {
+    "-1": 0.46651617757712566,
+    "0": 0.13038804686660216,
+    "1": 0.4030957755562722
+  },
+  "connected_count_mean": 3.0283203125,
+  "missing_detection_fraction": 0.394515306122449,
+  "conflict_step_fraction": 0.5406901041666666,
+  "collision_step_fraction": 0.1357421875,
+  "interaction_definition": "at least one pair closer than 7 synthetic metres",
+  "seed_range": [
+    17,
+    80
+  ],
+  "policy_scenario_counts": {
+    "intersection/aggressive": 5,
+    "intersection/conservative": 5,
+    "intersection/correlated": 6,
+    "intersection/heuristic": 5,
+    "intersection/independent": 5,
+    "intersection/random": 6,
+    "merge/aggressive": 5,
+    "merge/conservative": 5,
+    "merge/correlated": 6,
+    "merge/heuristic": 5,
+    "merge/independent": 5,
+    "merge/random": 6
+  }
+}

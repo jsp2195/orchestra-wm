@@ -15,3 +15,5 @@ Smoke is an integration-scale test, not a statistically conclusive experiment. O
 - Scaling: 4, 8, 16, 24 and 32 agents; forecast error, single-call inference and planner wall latency, selected-plan true cost. Timings include Python overhead and are hardware-specific.
 
 Acceptance status uses transparent descriptive comparisons: lower mean errors/costs and positive correlations support only a PARTIAL scientific claim at smoke scale. A failed direction is NOT SUPPORTED. Architecture-only properties (autonomous API) require passing tests; they do not establish prediction quality. Active sensing and uncertainty are deferred until deterministic planning is useful.
+
+Plot error bars summarize variation across the displayed scenario-seed contexts. Primary seed-summary CSVs first average paired scenarios within each seed, then compute mean, SD and SE across the three seed groups. Use those tables for seed-level comparisons.

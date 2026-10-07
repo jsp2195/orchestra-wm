@@ -1,0 +1,47 @@
+{
+  "independent": {
+    "parameters": 1012878,
+    "steps": 192,
+    "seconds": 12.322990904998733,
+    "final_train_loss": 0.26981397345662117,
+    "final_validation_loss": 0.35962313413619995,
+    "training_seed": 17,
+    "device": "cpu"
+  },
+  "no_actions": {
+    "parameters": 1012878,
+    "steps": 192,
+    "seconds": 36.885036726998806,
+    "final_train_loss": 0.2525177001953125,
+    "final_validation_loss": 0.32655341550707817,
+    "training_seed": 17,
+    "device": "cpu"
+  },
+  "privileged": {
+    "parameters": 1012878,
+    "steps": 192,
+    "seconds": 35.883362186999875,
+    "final_train_loss": 0.09419931191951036,
+    "final_validation_loss": 0.08087019994854927,
+    "training_seed": 17,
+    "device": "cpu"
+  },
+  "memoryless": {
+    "parameters": 1012878,
+    "steps": 192,
+    "seconds": 27.360186308000266,
+    "final_train_loss": 0.4079954819753766,
+    "final_validation_loss": 0.44544050842523575,
+    "training_seed": 17,
+    "device": "cpu"
+  },
+  "orchestra": {
+    "parameters": 1012878,
+    "steps": 192,
+    "seconds": 36.26235935400109,
+    "final_train_loss": 0.2436276776716113,
+    "final_validation_loss": 0.31947236880660057,
+    "training_seed": 17,
+    "device": "cpu"
+  }
+}

@@ -18,3 +18,7 @@ This records the state inspected before completing the MVP, not the final status
 | 39–42 full tests, clean smoke, small, commit | MISSING | 12 initial tests passed; CPU-only machine, small unavailable |
 
 The existing simulator and model were retained. Later integration fixes and final evidence are recorded in DECISIONS.md and outputs/EXPERIMENT_SUMMARY.md.
+
+## Final validation
+
+The completed implementation passed 23 tests and a clean one-command CPU smoke run in 294.3 seconds. A second invocation reused all six completed stages successfully. All core empirical stages executed; 24 figures and HTML/GIF demos were generated. Scientific failures and deferred capabilities are recorded separately in `outputs/EXPERIMENT_SUMMARY.md` and `docs/CLAIM_LEDGER.md`. Small/full, uncertainty, active sensing and anonymous track association remain unexecuted or deferred as documented.
