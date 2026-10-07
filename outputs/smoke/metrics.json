@@ -1,0 +1,1043 @@
+{
+  "config": {
+    "name": "smoke",
+    "seed": 17,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "device": "auto",
+    "threads": 2,
+    "scenarios": [
+      "intersection",
+      "merge"
+    ],
+    "vehicles": 10,
+    "connected": 4,
+    "episodes": 64,
+    "episode_steps": 48,
+    "dt": 0.5,
+    "model_dim": 128,
+    "layers": 2,
+    "epochs": 6,
+    "batch_size": 24,
+    "train_batches": 32,
+    "context": 4,
+    "train_horizon": 5,
+    "learning_rate": 0.0007,
+    "horizons": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      40
+    ],
+    "eval_contexts": 6,
+    "planning_steps": 16,
+    "plan_horizon": 6,
+    "candidates": 16,
+    "cem_iterations": 2,
+    "detection_noise": 0.6,
+    "miss_probability": 0.18,
+    "sensor_regime": "mixed",
+    "objective_weights": [
+      1.0,
+      0.5,
+      -0.8,
+      12.0,
+      2.0,
+      0.04
+    ],
+    "output": "outputs/smoke"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "cpu_count": 5,
+    "threads": 2,
+    "cuda": false,
+    "mps": false,
+    "clean_output_run": true,
+    "source_fingerprint": "887851b004aa711cdcc923ae266b878c925fb215087f08d51c2d8e22b086ff77",
+    "test_result": "23 passed in 6.45s",
+    "elapsed_seconds": 294.2923679380001,
+    "stage_timings": {
+      "audit": {
+        "seconds": 1.8687616790011816,
+        "artifacts": [
+          "action_signal_audit.csv"
+        ]
+      },
+      "data": {
+        "seconds": 7.43255316000068,
+        "artifacts": [
+          "data.npz",
+          "data_diagnostics.json"
+        ]
+      },
+      "train": {
+        "seconds": 148.7380865410014,
+        "artifacts": [
+          "training.csv",
+          "training_metadata.json",
+          "checkpoints/independent.pt",
+          "checkpoints/no_actions.pt",
+          "checkpoints/privileged.pt",
+          "checkpoints/memoryless.pt",
+          "checkpoints/orchestra.pt"
+        ]
+      },
+      "evaluate": {
+        "seconds": 104.10230979599874,
+        "artifacts": [
+          "prediction.csv",
+          "action_shuffle.csv",
+          "rank_fidelity.csv",
+          "planning.csv",
+          "generalization.csv",
+          "scaling.csv",
+          "memory.csv",
+          "interactions.csv"
+        ]
+      },
+      "figures": {
+        "seconds": 5.188508237999486,
+        "artifacts": [
+          "figures/performance_summary.png"
+        ]
+      },
+      "demo": {
+        "seconds": 18.475616255000205,
+        "artifacts": [
+          "demo.html",
+          "demo.gif",
+          "demo_data.json"
+        ]
+      }
+    },
+    "resume_seconds": 8.730700982003327
+  },
+  "training": {
+    "independent": {
+      "parameters": 1012878,
+      "steps": 192,
+      "seconds": 12.322990904998733,
+      "final_train_loss": 0.26981397345662117,
+      "final_validation_loss": 0.35962313413619995,
+      "training_seed": 17,
+      "device": "cpu"
+    },
+    "no_actions": {
+      "parameters": 1012878,
+      "steps": 192,
+      "seconds": 36.885036726998806,
+      "final_train_loss": 0.2525177001953125,
+      "final_validation_loss": 0.32655341550707817,
+      "training_seed": 17,
+      "device": "cpu"
+    },
+    "privileged": {
+      "parameters": 1012878,
+      "steps": 192,
+      "seconds": 35.883362186999875,
+      "final_train_loss": 0.09419931191951036,
+      "final_validation_loss": 0.08087019994854927,
+      "training_seed": 17,
+      "device": "cpu"
+    },
+    "memoryless": {
+      "parameters": 1012878,
+      "steps": 192,
+      "seconds": 27.360186308000266,
+      "final_train_loss": 0.4079954819753766,
+      "final_validation_loss": 0.44544050842523575,
+      "training_seed": 17,
+      "device": "cpu"
+    },
+    "orchestra": {
+      "parameters": 1012878,
+      "steps": 192,
+      "seconds": 36.26235935400109,
+      "final_train_loss": 0.2436276776716113,
+      "final_validation_loss": 0.31947236880660057,
+      "training_seed": 17,
+      "device": "cpu"
+    }
+  },
+  "data": {
+    "episodes": 64,
+    "transitions": 3072,
+    "scenario_counts": {
+      "intersection": 32,
+      "merge": 32
+    },
+    "action_fraction": {
+      "-1": 0.46651617757712566,
+      "0": 0.13038804686660216,
+      "1": 0.4030957755562722
+    },
+    "connected_count_mean": 3.0283203125,
+    "missing_detection_fraction": 0.394515306122449,
+    "conflict_step_fraction": 0.5406901041666666,
+    "collision_step_fraction": 0.1357421875,
+    "interaction_definition": "at least one pair closer than 7 synthetic metres",
+    "seed_range": [
+      17,
+      80
+    ],
+    "policy_scenario_counts": {
+      "intersection/aggressive": 5,
+      "intersection/conservative": 5,
+      "intersection/correlated": 6,
+      "intersection/heuristic": 5,
+      "intersection/independent": 5,
+      "intersection/random": 6,
+      "merge/aggressive": 5,
+      "merge/conservative": 5,
+      "merge/correlated": 6,
+      "merge/heuristic": 5,
+      "merge/independent": 5,
+      "merge/random": 6
+    }
+  },
+  "statuses": {
+    "SIMULATOR": {
+      "status": "PASS",
+      "metrics": {
+        "tests": "23 passed in 6.45s",
+        "families": 4
+      },
+      "interpretation": "Deterministic synthetic dynamics, sensing, action masks and collision checks pass."
+    },
+    "DATA / ACTION-EXCITATION": {
+      "status": "PASS",
+      "metrics": {
+        "position_divergence_m_at_10": 5.67802365620931,
+        "transitions": 3072,
+        "maintain_fraction": 0.13038804686660216
+      },
+      "interpretation": "Paired simulator branches respond materially to joint actions."
+    },
+    "WORLD MODEL": {
+      "status": "PASS",
+      "metrics": {
+        "orchestra_position_error_m_h10": 7.168714125951131,
+        "constant_velocity_m": 8.947917381922403,
+        "independent_m": 7.354815244674683
+      },
+      "interpretation": "Ten-step errors are compared against the same held-out simulator trajectories; training is short and convergence incomplete."
+    },
+    "AUTONOMOUS IMAGINATION": {
+      "status": "PASS",
+      "metrics": {
+        "max_horizon": 40,
+        "parameters": 1012878
+      },
+      "interpretation": "Autonomous rollouts and tests excluding future observations completed."
+    },
+    "ACTION SENSITIVITY": {
+      "status": "PASS",
+      "metrics": {
+        "shuffled_minus_correct_m_h10": 1.2443589369455976,
+        "relative_degradation": 0.1735818886180649
+      },
+      "interpretation": "Correct actions improve forecasts at the primary horizon."
+    },
+    "MULTI-AGENT INTERACTION": {
+      "status": "FAIL",
+      "metrics": {
+        "orchestra_position_error_m": 10.886176546414694,
+        "independent_position_error_m": 9.06163239479065,
+        "orchestra_joint_contrast_error": 1.5663599594434103,
+        "independent_joint_contrast_error": 1.518763653933999
+      },
+      "interpretation": "Both trajectory error and the nonlinear joint-cost contrast are measured; a contrast improvement alone does not establish joint-model superiority."
+    },
+    "MEMORY": {
+      "status": "PASS",
+      "metrics": {
+        "intact_reappearance_m": 8.428774197896322,
+        "reset_reappearance_m": 13.135957400004068,
+        "memoryless_reappearance_m": 11.263243993123373
+      },
+      "interpretation": "Forecasts are scored before a forcibly hidden background vehicle reappears."
+    },
+    "COUNTERFACTUAL": {
+      "status": "PASS",
+      "metrics": {
+        "pairwise_outcome_pearson": 0.6154813266236977,
+        "pairwise_outcome_spearman": 0.6172241664687907
+      },
+      "interpretation": "Pairwise geometry of predicted joint outcomes is compared with simulator branches."
+    },
+    "DECISION-FIDELITY": {
+      "status": "PASS",
+      "metrics": {
+        "plan_spearman": 0.5960446560020847,
+        "plan_pearson": 0.5348565070622769,
+        "top_5_overlap": 0.5,
+        "top_10_overlap": 0.5833333333333334,
+        "regret": 0.9113166485975187,
+        "selected_true_rank": 6.166666666666667
+      },
+      "interpretation": "Cost ranking is distinct from trajectory accuracy; positive correlation does not ensure low regret."
+    },
+    "ORACLE PLANNING": {
+      "status": "PASS",
+      "metrics": {
+        "oracle_objective": 4.443240500067671,
+        "random_objective": 10.330542604799072,
+        "noop_objective": 10.944152315979203,
+        "independent_objective": 6.238364614049594
+      },
+      "interpretation": "The finite-budget oracle tests task feasibility with the same CEM budget; it is not a globally optimal ceiling."
+    },
+    "LEARNED ORCHESTRATION": {
+      "status": "PASS",
+      "metrics": {
+        "orchestra_objective": 4.875889221404989,
+        "random_objective": 10.330542604799072,
+        "noop_objective": 10.944152315979203,
+        "proceed_fraction": 1.0
+      },
+      "interpretation": "All reported outcomes come from executing first actions and replanning in the true simulator."
+    },
+    "CENTRALIZED VS INDEPENDENT": {
+      "status": "PARTIAL",
+      "metrics": {
+        "orchestra_objective": 4.875889221404989,
+        "local_reactive_objective": 6.238364614049594,
+        "independent_learned_mpc_objective": 4.875889221404989
+      },
+      "interpretation": "Local-reactive gains do not isolate the benefit of shared interaction modeling; the independently learned MPC baseline must also be considered."
+    },
+    "GENERALIZATION": {
+      "status": "PASS",
+      "metrics": {
+        "ID_position_m": 4.420005877812703,
+        "density_position_m": 4.997404257456462,
+        "behavior_position_m": 4.999167998631795,
+        "topology_position_m": 3.419279098510742,
+        "controlled_regimes_with_positive_rank_and_planning_gain": 1
+      },
+      "interpretation": "ID, density, behavior and topology shifts are reported separately; the single training seed limits robustness claims."
+    }
+  },
+  "seed_summaries": {
+    "prediction": [
+      {
+        "model": "constant_velocity",
+        "horizon": 1,
+        "mean": 4.294245382150014,
+        "std": 4.020792891179315,
+        "count": 3,
+        "sem": 2.3214058580781116
+      },
+      {
+        "model": "constant_velocity",
+        "horizon": 2,
+        "mean": 4.32995934287707,
+        "std": 3.835712451774266,
+        "count": 3,
+        "sem": 2.214549616565872
+      },
+      {
+        "model": "constant_velocity",
+        "horizon": 5,
+        "mean": 5.426651954650879,
+        "std": 2.852708174642508,
+        "count": 3,
+        "sem": 1.647011832549298
+      },
+      {
+        "model": "constant_velocity",
+        "horizon": 10,
+        "mean": 8.947917381922403,
+        "std": 2.4630362931761733,
+        "count": 3,
+        "sem": 1.4220346668890818
+      },
+      {
+        "model": "constant_velocity",
+        "horizon": 20,
+        "mean": 15.36916414896647,
+        "std": 3.5479512515682834,
+        "count": 3,
+        "sem": 2.048410610164618
+      },
+      {
+        "model": "constant_velocity",
+        "horizon": 40,
+        "mean": 31.24827766418457,
+        "std": 3.9822249006864543,
+        "count": 3,
+        "sem": 2.2991386183849554
+      },
+      {
+        "model": "independent",
+        "horizon": 1,
+        "mean": 0.4850962559382121,
+        "std": 0.1557037617749393,
+        "count": 3,
+        "sem": 0.08989560877459857
+      },
+      {
+        "model": "independent",
+        "horizon": 2,
+        "mean": 0.8015524248282114,
+        "std": 0.21316964282188353,
+        "count": 3,
+        "sem": 0.12307355066627083
+      },
+      {
+        "model": "independent",
+        "horizon": 5,
+        "mean": 2.90559192498525,
+        "std": 0.03679910031951821,
+        "count": 3,
+        "sem": 0.021245970475409885
+      },
+      {
+        "model": "independent",
+        "horizon": 10,
+        "mean": 7.354815244674683,
+        "std": 1.4965125365124115,
+        "count": 3,
+        "sem": 0.8640119158010905
+      },
+      {
+        "model": "independent",
+        "horizon": 20,
+        "mean": 13.97905190785726,
+        "std": 2.811215693515812,
+        "count": 3,
+        "sem": 1.6230561374014547
+      },
+      {
+        "model": "independent",
+        "horizon": 40,
+        "mean": 26.653756141662598,
+        "std": 4.350227673607159,
+        "count": 3,
+        "sem": 2.511605118393253
+      },
+      {
+        "model": "memoryless",
+        "horizon": 1,
+        "mean": 3.8122288088003793,
+        "std": 3.422987456012363,
+        "count": 3,
+        "sem": 1.97626272916145
+      },
+      {
+        "model": "memoryless",
+        "horizon": 2,
+        "mean": 3.646078258752823,
+        "std": 3.1525163661595887,
+        "count": 3,
+        "sem": 1.8201061726269394
+      },
+      {
+        "model": "memoryless",
+        "horizon": 5,
+        "mean": 5.372889479001363,
+        "std": 2.5732481455196132,
+        "count": 3,
+        "sem": 1.485665509507454
+      },
+      {
+        "model": "memoryless",
+        "horizon": 10,
+        "mean": 10.042128721872965,
+        "std": 3.210058344171339,
+        "count": 3,
+        "sem": 1.853328049121727
+      },
+      {
+        "model": "memoryless",
+        "horizon": 20,
+        "mean": 22.81391366322835,
+        "std": 4.052084219725096,
+        "count": 3,
+        "sem": 2.339471915037319
+      },
+      {
+        "model": "memoryless",
+        "horizon": 40,
+        "mean": 57.43033218383789,
+        "std": 6.819962787966469,
+        "count": 3,
+        "sem": 3.9375073514956718
+      },
+      {
+        "model": "no_actions",
+        "horizon": 1,
+        "mean": 0.4945451666911443,
+        "std": 0.1518535704027025,
+        "count": 3,
+        "sem": 0.08767269974940609
+      },
+      {
+        "model": "no_actions",
+        "horizon": 2,
+        "mean": 0.8079468111197153,
+        "std": 0.21227619185604144,
+        "count": 3,
+        "sem": 0.12255771651063417
+      },
+      {
+        "model": "no_actions",
+        "horizon": 5,
+        "mean": 2.8848702112833657,
+        "std": 0.13473228745399518,
+        "count": 3,
+        "sem": 0.07778772243009816
+      },
+      {
+        "model": "no_actions",
+        "horizon": 10,
+        "mean": 7.3780601024627686,
+        "std": 1.4771767664583182,
+        "count": 3,
+        "sem": 0.852848403755371
+      },
+      {
+        "model": "no_actions",
+        "horizon": 20,
+        "mean": 16.68678156534831,
+        "std": 4.550679060126805,
+        "count": 3,
+        "sem": 2.627335780359804
+      },
+      {
+        "model": "no_actions",
+        "horizon": 40,
+        "mean": 50.59025192260742,
+        "std": 8.113728209104531,
+        "count": 3,
+        "sem": 4.684463165657961
+      },
+      {
+        "model": "orchestra",
+        "horizon": 1,
+        "mean": 0.5207704106966654,
+        "std": 0.1239608218783239,
+        "count": 3,
+        "sem": 0.07156881388041755
+      },
+      {
+        "model": "orchestra",
+        "horizon": 2,
+        "mean": 0.8663187523682913,
+        "std": 0.20223284155891985,
+        "count": 3,
+        "sem": 0.11675918551302532
+      },
+      {
+        "model": "orchestra",
+        "horizon": 5,
+        "mean": 2.8156030575434365,
+        "std": 0.3904665095277538,
+        "count": 3,
+        "sem": 0.22543594438538225
+      },
+      {
+        "model": "orchestra",
+        "horizon": 10,
+        "mean": 7.168714125951131,
+        "std": 2.5508302695205765,
+        "count": 3,
+        "sem": 1.4727225427647506
+      },
+      {
+        "model": "orchestra",
+        "horizon": 20,
+        "mean": 16.22439972559611,
+        "std": 3.5716491980263827,
+        "count": 3,
+        "sem": 2.062092625931443
+      },
+      {
+        "model": "orchestra",
+        "horizon": 40,
+        "mean": 35.57864538828532,
+        "std": 2.5995674398382707,
+        "count": 3,
+        "sem": 1.500860961167212
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "mean": 5.50904393196106,
+        "std": 3.818983268427726,
+        "count": 3,
+        "sem": 2.2048910180574244
+      },
+      {
+        "model": "persistence",
+        "horizon": 2,
+        "mean": 6.707343022028605,
+        "std": 3.4488241590417137,
+        "count": 3,
+        "sem": 1.9911795566104182
+      },
+      {
+        "model": "persistence",
+        "horizon": 5,
+        "mean": 10.527360757191977,
+        "std": 2.1040854346561297,
+        "count": 3,
+        "sem": 1.2147942920966872
+      },
+      {
+        "model": "persistence",
+        "horizon": 10,
+        "mean": 17.61377016703288,
+        "std": 3.814888142046683,
+        "count": 3,
+        "sem": 2.202526695738964
+      },
+      {
+        "model": "persistence",
+        "horizon": 20,
+        "mean": 27.233139991760254,
+        "std": 5.393943857467911,
+        "count": 3,
+        "sem": 3.114194938102827
+      },
+      {
+        "model": "persistence",
+        "horizon": 40,
+        "mean": 42.37308120727539,
+        "std": 6.861283034553912,
+        "count": 3,
+        "sem": 3.9613636069859135
+      },
+      {
+        "model": "privileged",
+        "horizon": 1,
+        "mean": 0.1447021973629792,
+        "std": 0.022601832022418153,
+        "count": 3,
+        "sem": 0.013049173802321824
+      },
+      {
+        "model": "privileged",
+        "horizon": 2,
+        "mean": 0.5941274066766103,
+        "std": 0.09534673872403147,
+        "count": 3,
+        "sem": 0.05504846526867249
+      },
+      {
+        "model": "privileged",
+        "horizon": 5,
+        "mean": 3.230725963910421,
+        "std": 0.7666439554204014,
+        "count": 3,
+        "sem": 0.44262209403456826
+      },
+      {
+        "model": "privileged",
+        "horizon": 10,
+        "mean": 8.578092892964682,
+        "std": 1.0790842009698447,
+        "count": 3,
+        "sem": 0.6230095539082121
+      },
+      {
+        "model": "privileged",
+        "horizon": 20,
+        "mean": 19.169739087422688,
+        "std": 3.934875512486516,
+        "count": 3,
+        "sem": 2.2718014363617565
+      },
+      {
+        "model": "privileged",
+        "horizon": 40,
+        "mean": 43.512063344319664,
+        "std": 15.23450693718748,
+        "count": 3,
+        "sem": 8.795646681156413
+      }
+    ],
+    "planning": [
+      {
+        "controller": "constant_velocity",
+        "scenario": "intersection",
+        "mean": 11.831492670004565,
+        "std": 1.610764621541044,
+        "count": 3,
+        "sem": 0.9299753878478475
+      },
+      {
+        "controller": "constant_velocity",
+        "scenario": "merge",
+        "mean": 10.056811961953839,
+        "std": 9.006181691351037,
+        "count": 3,
+        "sem": 5.199721423872201
+      },
+      {
+        "controller": "heuristic",
+        "scenario": "intersection",
+        "mean": 13.420329552044471,
+        "std": 1.2245497867715776,
+        "count": 3,
+        "sem": 0.7069941490286692
+      },
+      {
+        "controller": "heuristic",
+        "scenario": "merge",
+        "mean": 12.74912732700507,
+        "std": 2.826748226366249,
+        "count": 3,
+        "sem": 1.6320238494238513
+      },
+      {
+        "controller": "independent",
+        "scenario": "intersection",
+        "mean": 6.63247662231326,
+        "std": 1.9182031909606436,
+        "count": 3,
+        "sem": 1.1074751286615268
+      },
+      {
+        "controller": "independent",
+        "scenario": "merge",
+        "mean": 5.844252605785925,
+        "std": 1.4870453714414364,
+        "count": 3,
+        "sem": 0.8585460454989005
+      },
+      {
+        "controller": "independent_model",
+        "scenario": "intersection",
+        "mean": 6.63247662231326,
+        "std": 1.9182031909606436,
+        "count": 3,
+        "sem": 1.1074751286615268
+      },
+      {
+        "controller": "independent_model",
+        "scenario": "merge",
+        "mean": 3.1193018204967173,
+        "std": 1.6856428827339782,
+        "count": 3,
+        "sem": 0.9732063721040392
+      },
+      {
+        "controller": "no_actions",
+        "scenario": "intersection",
+        "mean": 11.831492670004565,
+        "std": 1.610764621541044,
+        "count": 3,
+        "sem": 0.9299753878478475
+      },
+      {
+        "controller": "no_actions",
+        "scenario": "merge",
+        "mean": 10.056811961953839,
+        "std": 9.006181691351037,
+        "count": 3,
+        "sem": 5.199721423872201
+      },
+      {
+        "controller": "noop",
+        "scenario": "intersection",
+        "mean": 11.831492670004565,
+        "std": 1.610764621541044,
+        "count": 3,
+        "sem": 0.9299753878478475
+      },
+      {
+        "controller": "noop",
+        "scenario": "merge",
+        "mean": 10.056811961953839,
+        "std": 9.006181691351037,
+        "count": 3,
+        "sem": 5.199721423872201
+      },
+      {
+        "controller": "oracle",
+        "scenario": "intersection",
+        "mean": 6.524787640819947,
+        "std": 0.9845709880247103,
+        "count": 3,
+        "sem": 0.5684423249723624
+      },
+      {
+        "controller": "oracle",
+        "scenario": "merge",
+        "mean": 2.361693359315395,
+        "std": 0.9979918396124344,
+        "count": 3,
+        "sem": 0.5761908572492889
+      },
+      {
+        "controller": "orchestra",
+        "scenario": "intersection",
+        "mean": 6.63247662231326,
+        "std": 1.9182031909606436,
+        "count": 3,
+        "sem": 1.1074751286615268
+      },
+      {
+        "controller": "orchestra",
+        "scenario": "merge",
+        "mean": 3.1193018204967173,
+        "std": 1.6856428827339782,
+        "count": 3,
+        "sem": 0.9732063721040392
+      },
+      {
+        "controller": "persistence",
+        "scenario": "intersection",
+        "mean": 11.831492670004565,
+        "std": 1.610764621541044,
+        "count": 3,
+        "sem": 0.9299753878478475
+      },
+      {
+        "controller": "persistence",
+        "scenario": "merge",
+        "mean": 10.056811961953839,
+        "std": 9.006181691351037,
+        "count": 3,
+        "sem": 5.199721423872201
+      },
+      {
+        "controller": "privileged",
+        "scenario": "intersection",
+        "mean": 6.63247662231326,
+        "std": 1.9182031909606436,
+        "count": 3,
+        "sem": 1.1074751286615268
+      },
+      {
+        "controller": "privileged",
+        "scenario": "merge",
+        "mean": 3.1193018204967173,
+        "std": 1.6856428827339782,
+        "count": 3,
+        "sem": 0.9732063721040392
+      },
+      {
+        "controller": "random",
+        "scenario": "intersection",
+        "mean": 10.874352331062155,
+        "std": 1.4936575951139066,
+        "count": 3,
+        "sem": 0.8623636146161431
+      },
+      {
+        "controller": "random",
+        "scenario": "merge",
+        "mean": 9.786732878535986,
+        "std": 1.404317295676057,
+        "count": 3,
+        "sem": 0.8107829686862188
+      }
+    ],
+    "ranking": [
+      {
+        "model": "constant_velocity",
+        "mean": null,
+        "std": null,
+        "count": 0,
+        "sem": null
+      },
+      {
+        "model": "independent",
+        "mean": 0.5938391348844747,
+        "std": 0.3654623502511174,
+        "count": 3,
+        "sem": 0.21099978629615593
+      },
+      {
+        "model": "memoryless",
+        "mean": 0.6058435202760754,
+        "std": 0.41786028237274625,
+        "count": 3,
+        "sem": 0.2412517465115581
+      },
+      {
+        "model": "no_actions",
+        "mean": null,
+        "std": null,
+        "count": 0,
+        "sem": null
+      },
+      {
+        "model": "oracle",
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 3,
+        "sem": 0.0
+      },
+      {
+        "model": "orchestra",
+        "mean": 0.5960446560020847,
+        "std": 0.3944356584831468,
+        "count": 3,
+        "sem": 0.2277275336032321
+      },
+      {
+        "model": "persistence",
+        "mean": null,
+        "std": null,
+        "count": 0,
+        "sem": null
+      },
+      {
+        "model": "privileged",
+        "mean": 0.585990940334936,
+        "std": 0.3501330293552621,
+        "count": 3,
+        "sem": 0.20214939875043972
+      }
+    ],
+    "memory": [
+      {
+        "model": "current_observation",
+        "mean": 13.458545843760172,
+        "std": 9.189468478742935,
+        "count": 3,
+        "sem": 5.305542099911815
+      },
+      {
+        "model": "memoryless",
+        "mean": 11.263243993123373,
+        "std": 9.251018963840327,
+        "count": 3,
+        "sem": 5.341078289051546
+      },
+      {
+        "model": "orchestra",
+        "mean": 8.428774197896322,
+        "std": 3.2901321921060163,
+        "count": 3,
+        "sem": 1.899558706781862
+      },
+      {
+        "model": "reset",
+        "mean": 13.135957400004068,
+        "std": 9.201411746208963,
+        "count": 3,
+        "sem": 5.3124375485983295
+      }
+    ],
+    "generalization": [
+      {
+        "condition": "ID",
+        "mean": 4.420005877812703,
+        "std": 1.2819427657530116,
+        "count": 3,
+        "sem": 0.7401300008931947
+      },
+      {
+        "condition": "behavior_OOD",
+        "mean": 4.999167998631795,
+        "std": 1.259311994087044,
+        "count": 3,
+        "sem": 0.7270641187798793
+      },
+      {
+        "condition": "blocked_lane",
+        "mean": 3.264803489049276,
+        "std": 1.0157483635847597,
+        "count": 3,
+        "sem": 0.586442591144583
+      },
+      {
+        "condition": "combined_OOD",
+        "mean": 3.629096825917562,
+        "std": 0.4806008311009432,
+        "count": 3,
+        "sem": 0.27747501920888745
+      },
+      {
+        "condition": "density_OOD",
+        "mean": 4.997404257456462,
+        "std": 0.48398952720533495,
+        "count": 3,
+        "sem": 0.27943148381695987
+      },
+      {
+        "condition": "full_sensing",
+        "mean": 2.470693667729696,
+        "std": 0.2275048489137094,
+        "count": 3,
+        "sem": 0.13134998576227527
+      },
+      {
+        "condition": "geometry_OOD",
+        "mean": 4.945700804392497,
+        "std": 1.755599298805989,
+        "count": 3,
+        "sem": 1.013595727754756
+      },
+      {
+        "condition": "grid_OOD",
+        "mean": 4.774686415990193,
+        "std": 0.6983511898629381,
+        "count": 3,
+        "sem": 0.4031932474562628
+      },
+      {
+        "condition": "probe_only",
+        "mean": 13.208806673685709,
+        "std": 1.2248966012415259,
+        "count": 3,
+        "sem": 0.7071943824562527
+      },
+      {
+        "condition": "sparse_sensing",
+        "mean": 6.732312043507894,
+        "std": 1.431109065913069,
+        "count": 3,
+        "sem": 0.8262512044446243
+      },
+      {
+        "condition": "stopped_vehicle",
+        "mean": 4.020058552424113,
+        "std": 1.190424629643391,
+        "count": 3,
+        "sem": 0.6872919803745723
+      },
+      {
+        "condition": "temporary_outage",
+        "mean": 4.704835653305054,
+        "std": 1.041626138593215,
+        "count": 3,
+        "sem": 0.6013831315117432
+      },
+      {
+        "condition": "topology_OOD",
+        "mean": 3.419279098510742,
+        "std": 0.9081078776077819,
+        "count": 3,
+        "sem": 0.5242963275900726
+      },
+      {
+        "condition": "without_lane_sensors",
+        "mean": 4.51009464263916,
+        "std": 1.2828039957289652,
+        "count": 3,
+        "sem": 0.7406272322516456
+      }
+    ]
+  },
+  "limitations": [
+    "One training initialization; three evaluation seeds do not quantify training uncertainty.",
+    "Smoke horizons and candidate budgets are small.",
+    "No uncertainty calibration or active sensing implemented.",
+    "Stable slots support temporary detection loss, not anonymous track association.",
+    "Trivial forecast baselines use the current observation, not recurrent state.",
+    "Signals, turning and lane changes are not implemented."
+  ]
+}

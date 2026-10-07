@@ -1,0 +1,47 @@
+name: smoke
+seed: 17
+seeds:
+- 17
+- 29
+- 43
+device: auto
+threads: 2
+scenarios:
+- intersection
+- merge
+vehicles: 10
+connected: 4
+episodes: 64
+episode_steps: 48
+dt: 0.5
+model_dim: 128
+layers: 2
+epochs: 6
+batch_size: 24
+train_batches: 32
+context: 4
+train_horizon: 5
+learning_rate: 0.0007
+horizons:
+- 1
+- 2
+- 5
+- 10
+- 20
+- 40
+eval_contexts: 6
+planning_steps: 16
+plan_horizon: 6
+candidates: 16
+cem_iterations: 2
+detection_noise: 0.6
+miss_probability: 0.18
+sensor_regime: mixed
+objective_weights:
+- 1.0
+- 0.5
+- -0.8
+- 12.0
+- 2.0
+- 0.04
+output: outputs/smoke

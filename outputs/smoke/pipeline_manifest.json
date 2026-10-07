@@ -1,0 +1,129 @@
+{
+  "fingerprint": "887851b004aa711cdcc923ae266b878c925fb215087f08d51c2d8e22b086ff77",
+  "stages": {
+    "audit": {
+      "seconds": 1.8687616790011816,
+      "artifacts": [
+        "action_signal_audit.csv"
+      ]
+    },
+    "data": {
+      "seconds": 7.43255316000068,
+      "artifacts": [
+        "data.npz",
+        "data_diagnostics.json"
+      ]
+    },
+    "train": {
+      "seconds": 148.7380865410014,
+      "artifacts": [
+        "training.csv",
+        "training_metadata.json",
+        "checkpoints/independent.pt",
+        "checkpoints/no_actions.pt",
+        "checkpoints/privileged.pt",
+        "checkpoints/memoryless.pt",
+        "checkpoints/orchestra.pt"
+      ]
+    },
+    "evaluate": {
+      "seconds": 104.10230979599874,
+      "artifacts": [
+        "prediction.csv",
+        "action_shuffle.csv",
+        "rank_fidelity.csv",
+        "planning.csv",
+        "generalization.csv",
+        "scaling.csv",
+        "memory.csv",
+        "interactions.csv"
+      ]
+    },
+    "figures": {
+      "seconds": 5.188508237999486,
+      "artifacts": [
+        "figures/performance_summary.png"
+      ]
+    },
+    "demo": {
+      "seconds": 18.475616255000205,
+      "artifacts": [
+        "demo.html",
+        "demo.gif",
+        "demo_data.json"
+      ]
+    }
+  },
+  "validation": {
+    "artifacts_checked": 17,
+    "figures": 24
+  },
+  "completed_runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "hardware": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "cpu_count": 5,
+    "threads": 2,
+    "cuda": false,
+    "mps": false,
+    "clean_output_run": true,
+    "source_fingerprint": "887851b004aa711cdcc923ae266b878c925fb215087f08d51c2d8e22b086ff77",
+    "test_result": "23 passed in 6.45s",
+    "elapsed_seconds": 294.2923679380001,
+    "stage_timings": {
+      "audit": {
+        "seconds": 1.8687616790011816,
+        "artifacts": [
+          "action_signal_audit.csv"
+        ]
+      },
+      "data": {
+        "seconds": 7.43255316000068,
+        "artifacts": [
+          "data.npz",
+          "data_diagnostics.json"
+        ]
+      },
+      "train": {
+        "seconds": 148.7380865410014,
+        "artifacts": [
+          "training.csv",
+          "training_metadata.json",
+          "checkpoints/independent.pt",
+          "checkpoints/no_actions.pt",
+          "checkpoints/privileged.pt",
+          "checkpoints/memoryless.pt",
+          "checkpoints/orchestra.pt"
+        ]
+      },
+      "evaluate": {
+        "seconds": 104.10230979599874,
+        "artifacts": [
+          "prediction.csv",
+          "action_shuffle.csv",
+          "rank_fidelity.csv",
+          "planning.csv",
+          "generalization.csv",
+          "scaling.csv",
+          "memory.csv",
+          "interactions.csv"
+        ]
+      },
+      "figures": {
+        "seconds": 5.188508237999486,
+        "artifacts": [
+          "figures/performance_summary.png"
+        ]
+      },
+      "demo": {
+        "seconds": 18.475616255000205,
+        "artifacts": [
+          "demo.html",
+          "demo.gif",
+          "demo_data.json"
+        ]
+      }
+    },
+    "resume_seconds": 8.730700982003327
+  }
+}

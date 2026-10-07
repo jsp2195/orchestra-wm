@@ -1,0 +1,59 @@
+Previous outputs preserved at /tmp/orchestra-previous-perydixr/smoke
+.......................                                                  [100%]
+23 passed in 6.17s
+
+Stage: audit
+Stage: data
+Stage: train
+independent: epoch 1/6 train=0.54016 validation=0.39752
+independent: epoch 2/6 train=0.29842 validation=0.37278
+independent: epoch 3/6 train=0.29771 validation=0.36493
+independent: epoch 4/6 train=0.26894 validation=0.35450
+independent: epoch 5/6 train=0.28352 validation=0.35487
+independent: epoch 6/6 train=0.26981 validation=0.35962
+no_actions: epoch 1/6 train=0.41861 validation=0.39820
+no_actions: epoch 2/6 train=0.30930 validation=0.38999
+no_actions: epoch 3/6 train=0.31101 validation=0.37955
+no_actions: epoch 4/6 train=0.27284 validation=0.34288
+no_actions: epoch 5/6 train=0.27589 validation=0.33682
+no_actions: epoch 6/6 train=0.25252 validation=0.32655
+privileged: epoch 1/6 train=0.24039 validation=0.13157
+privileged: epoch 2/6 train=0.13730 validation=0.12236
+privileged: epoch 3/6 train=0.12063 validation=0.10166
+privileged: epoch 4/6 train=0.11160 validation=0.09265
+privileged: epoch 5/6 train=0.10442 validation=0.09501
+privileged: epoch 6/6 train=0.09420 validation=0.08087
+memoryless: epoch 1/6 train=0.62601 validation=0.56035
+memoryless: epoch 2/6 train=0.51546 validation=0.54150
+memoryless: epoch 3/6 train=0.49478 validation=0.51191
+memoryless: epoch 4/6 train=0.43182 validation=0.47526
+memoryless: epoch 5/6 train=0.45635 validation=0.44333
+memoryless: epoch 6/6 train=0.40800 validation=0.44544
+orchestra: epoch 1/6 train=0.41949 validation=0.40687
+orchestra: epoch 2/6 train=0.31043 validation=0.38543
+orchestra: epoch 3/6 train=0.30885 validation=0.37244
+orchestra: epoch 4/6 train=0.26334 validation=0.33431
+orchestra: epoch 5/6 train=0.26755 validation=0.32500
+orchestra: epoch 6/6 train=0.24363 validation=0.31947
+Stage: evaluate
+Evaluating prediction
+Evaluating interactions
+Evaluating memory
+Evaluating counterfactuals
+Evaluating planning
+Planning evaluated: oracle
+Planning evaluated: random
+Planning evaluated: noop
+Planning evaluated: independent
+Planning evaluated: heuristic
+Planning evaluated: orchestra
+Planning evaluated: privileged
+Planning evaluated: independent_model
+Planning evaluated: no_actions
+Planning evaluated: persistence
+Planning evaluated: constant_velocity
+Evaluating OOD and sensing
+Evaluating scaling
+Stage: figures
+Stage: demo
+Complete: outputs/smoke/EXPERIMENT_SUMMARY.md

@@ -1,0 +1,10 @@
+.......................                                                  [100%]
+23 passed in 6.45s
+
+Reuse completed stage: audit
+Reuse completed stage: data
+Reuse completed stage: train
+Reuse completed stage: evaluate
+Reuse completed stage: figures
+Reuse completed stage: demo
+Complete: outputs/smoke/EXPERIMENT_SUMMARY.md
