@@ -1,0 +1,13 @@
+seed,memory,scenario,objective,conflicts,collisions
+101,intact,intersection,4.600140828490257,7.0,0.5
+101,intact,merge,4.927673372328281,2.5,0.0
+101,reset,intersection,4.600140828490257,7.0,0.5
+101,reset,merge,4.927673372328281,2.5,0.0
+202,intact,intersection,4.699021515324711,7.0,0.5
+202,intact,merge,4.927673372328281,2.5,0.0
+202,reset,intersection,4.787306802421807,7.0,0.0
+202,reset,merge,9.230733061358332,7.0,2.0
+303,intact,intersection,4.600140828490257,7.0,0.5
+303,intact,merge,4.927673372328281,2.5,0.0
+303,reset,intersection,5.112582060173153,7.5,0.5
+303,reset,merge,9.976383321285248,10.0,2.5

@@ -31,3 +31,12 @@
 Short residual training may rely heavily on constant-velocity priors and may learn action-dependent cost rankings without accurate action-dependent trajectories. Preliminary runs exhibited that pattern. No reward/metric tuning was performed to make those results pass. The final measured direction is recorded in `outputs/EXPERIMENT_SUMMARY.md`; do not substitute preliminary values.
 
 Current-observation trivial baselines and the reset-memory ablation are deliberately limited. The stronger separately trained memoryless model and independent learned MPC baseline are also reported. Improvement over local reactive control alone cannot isolate the value of centralized interaction modeling. Short planning episodes limit throughput evidence. These are Phase-1 research limitations, not production readiness claims.
+
+## Phase 2 continuation
+
+- Preserve the preregistered plan/config and original Phase-1 artifact hashes. Repair the reproduction comparator by semantic row keys; all numerical differences were exactly zero.
+- Add the pre-authorized D channel only because the frozen Phase-1 spatial-specificity audit failed its pre-training directional test. Treat the small sensitivity difference cautiously, and retain C as primary.
+- Use a balanced initial CEM pool with all nine factorial choices and nine distinct temporal plans. Replace the duplicate all-maintain temporal plan with a staggered exchange. Apply the same candidates, objective, random proposals and budgets to oracle and learned controllers; do not reward command diversity.
+- Preserve all three final checkpoints per model and the fixed 240-update budget. Resumption checks source/config signatures; final results never select a best seed or checkpoint.
+- The independent learned baseline retains the original additive per-agent objective predictor. Its shared CEM machinery optimizes an additive score without a cross-agent predictive pathway. This matches the committed Phase-2 plan rather than silently substituting a different local optimizer.
+- Treat trajectory error, factorial structure, and closed-loop coordination separately. A shuffle intervention can hurt even an independent predictor, so it cannot alone establish joint reasoning. Report negative primary findings without moving thresholds.

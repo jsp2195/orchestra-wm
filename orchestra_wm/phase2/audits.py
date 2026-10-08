@@ -1,5 +1,6 @@
 from pathlib import Path
 import hashlib
+import json
 import itertools
 import numpy as np
 import pandas as pd
@@ -13,22 +14,43 @@ from orchestra_wm.evaluation.common import observe,infer,write_json
 from orchestra_wm.envs.traffic_env import TrafficEnv
 from orchestra_wm.planning.orchestrator import Orchestrator
 from orchestra_wm.planning.oracle import true_rollout,oracle_plan
+from orchestra_wm.phase2.planning import balanced_cem
 from orchestra_wm.phase2.scenarios import make_case,factorial_plans,interaction_residual,pair_relevant,LABELS
 
 def preserve_manifest(out):
+    if (out/'phase1_preservation.json').exists():
+        verify_preservation(out)
+        return
     files=list(Path('outputs/smoke').rglob('*'))+[Path('README.md'),Path('docs/CLAIM_LEDGER.md')]
     write_json(out/'phase1_preservation.json',{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files if p.is_file()})
+
+def verify_preservation(out,allow_appended_docs=True):
+    manifest=json.loads((out/'phase1_preservation.json').read_text())
+    for name,expected in manifest.items():
+        data=Path(name).read_bytes()
+        if allow_appended_docs and name in ['README.md','docs/CLAIM_LEDGER.md']:
+            data=data.split(b'\n<!-- PHASE2_RESULTS -->')[0]
+        assert hashlib.sha256(data).hexdigest()==expected, f'Phase 1 changed: {name}'
+    return len(manifest)
+
+def compare_reproduction(original,new,keys):
+    original=original.sort_values(keys).reset_index(drop=True)
+    new=new.sort_values(keys).reset_index(drop=True)
+    assert original[keys].equals(new[keys])
+    cols=[c for c in original.select_dtypes(include='number') if c!='latency_ms']
+    return float(np.nanmax(np.abs(original[cols].to_numpy()-new[cols].to_numpy())))
 
 def reproduce(out):
     cfg=load_config('configs/smoke.yaml');seed_everything(cfg['seed'],cfg['threads'])
     target=out/'phase1_reproduction';target.mkdir(exist_ok=True)
     models={k:load_model(Path('outputs/smoke/checkpoints')/f'{k}.pt') for k in ['orchestra','independent','privileged','no_actions','memoryless']}
-    evaluate_interactions(cfg,models,target);evaluate_planning(cfg,models,target)
+    if not all((target/f'{name}.csv').exists() for name in ['interactions','interaction_contrasts','planning']):
+        evaluate_interactions(cfg,models,target);evaluate_planning(cfg,models,target)
     comparisons={}
     for name in ['interactions','interaction_contrasts','planning']:
         original=pd.read_csv(f'outputs/smoke/{name}.csv');new=pd.read_csv(target/f'{name}.csv')
-        cols=[c for c in original.select_dtypes(include='number') if c!='latency_ms']
-        error=float(np.nanmax(np.abs(original[cols].to_numpy()-new[cols].to_numpy())))
+        keys={'interactions':['seed','model','plan'],'interaction_contrasts':['seed','model'],'planning':['seed','scenario','controller']}[name]
+        error=compare_reproduction(original,new,keys)
         assert error<1e-5,(name,error)
         comparisons[name]={'maximum_absolute_difference':error,'rows':len(new)}
     write_json(out/'phase1_reproduction.json',comparisons)
@@ -49,12 +71,12 @@ def action_choices(models,out):
                     distance=float(np.linalg.norm(s[i,:2]*100-node))
                     occupancy=sum(not v.connected and v.active and np.linalg.norm(s[k,:2]*100-node)<25 for k,v in enumerate(e.vehicles))
                     rows.append({'seed':seed,'scenario':family,'step':t,'agent':i,'action':int(action[i]),
-                      'conflict_present':bool(relevant),'distance':distance,'distance_bin':'0-10' if distance<10 else '10-20' if distance<20 else '20-30' if distance<30 else '30+',
+                      'pair':f'{min(i,relevant[0])}-{max(i,relevant[0])}' if relevant else 'none','conflict_present':bool(relevant),'distance':distance,'distance_bin':'0-10' if distance<10 else '10-20' if distance<20 else '20-30' if distance<30 else '30+',
                       'opposing_action':int(action[relevant[0]]) if relevant else 9,'background_occupancy':occupancy})
                 obs,*_=e.step(action);prev=action
     frame=pd.DataFrame(rows);frame.to_csv(out/'phase1_action_choices_raw.csv',index=False)
     stats=[]
-    for dimension in ['agent','conflict_present','distance_bin','opposing_action','background_occupancy']:
+    for dimension in ['agent','pair','conflict_present','distance_bin','opposing_action','background_occupancy']:
         for (family,value),g in frame.groupby(['scenario',dimension]):
             stats.append({'scenario':family,'stratum':dimension,'value':value,'count':len(g),**{f'P_{name}':float((g.action==a).mean()) for a,name in [(-1,'yield'),(0,'maintain'),(1,'proceed')]}})
     pd.DataFrame(stats).to_csv(out/'phase1_action_choice_distribution.csv',index=False)
@@ -99,8 +121,11 @@ def factorial_audit(cfg,models,out):
                 sensitivity.append({'family_id':index,'scenario':env.family,'model':name,'relation':relation,'cross_effect_m_per_action':float(effect)})
         if index<8:
             old=load_config('configs/smoke.yaml')
-            for label,cfgp in [('phase1_horizon',old),('longer_horizon',cfg)]:
-                plan,cost,_=oracle_plan(env,cfgp,np.random.default_rng(100+index));states,c=true_rollout(env,plan)
+            for label,cfgp in [('phase1_horizon',old),('longer_horizon',cfg),('balanced_longer_horizon',cfg)]:
+                if label=='balanced_longer_horizon':
+                    score=lambda plans:np.array([(true_rollout(env,p)[1]@cfgp['objective_weights']).sum() for p in plans])
+                    plan,cost,_=balanced_cem(score,cfgp['plan_horizon'],env.n,cfgp['cem_iterations'],np.random.default_rng(100+index),frames[-1][0]['control_mask'])
+                else:plan,cost,_=oracle_plan(env,cfgp,np.random.default_rng(100+index))
                 oracle.append({'family_id':index,'scenario':env.family,'planner':label,'a':int(plan[0,0]),'b':int(plan[0,1]),'objective':cost})
     pd.DataFrame(rows).to_csv(out/'simulator_factorial_interactions.csv',index=False)
     st=pd.DataFrame(strength);st.to_csv(out/'simulator_interaction_strength.csv',index=False)

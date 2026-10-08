@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 101,
+    "model": "A_original",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.1116588809964,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.1952840430213089
+  },
+  {
+    "seed": 101,
+    "model": "B_factorial",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.53175853700668,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.13455555745441428
+  },
+  {
+    "seed": 101,
+    "model": "C_difference",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 54.552993995996076,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.10515782722140365
+  },
+  {
+    "seed": 101,
+    "model": "independent",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 19.803669971006457,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.16859076187789465
+  },
+  {
+    "seed": 101,
+    "model": "privileged",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.04698716200073,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.12108190023830172
+  },
+  {
+    "seed": 101,
+    "model": "D_pairwise",
+    "parameters": 1013519,
+    "training_steps": 240,
+    "seconds": 61.065065992006566,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.12484452610579055
+  },
+  {
+    "seed": 202,
+    "model": "A_original",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 54.492190831995686,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.1860241182986905
+  },
+  {
+    "seed": 202,
+    "model": "B_factorial",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 54.808716393992654,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.13767098744188563
+  },
+  {
+    "seed": 202,
+    "model": "C_difference",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 54.90888767999422,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.12076194894936386
+  },
+  {
+    "seed": 202,
+    "model": "independent",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 20.015224392991513,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.1696367853424189
+  },
+  {
+    "seed": 202,
+    "model": "privileged",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.047838832004345,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.09857448821790034
+  },
+  {
+    "seed": 202,
+    "model": "D_pairwise",
+    "parameters": 1013519,
+    "training_steps": 240,
+    "seconds": 60.69398936801008,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.10900147819968449
+  },
+  {
+    "seed": 303,
+    "model": "A_original",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.436567887998535,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.3264600185019906
+  },
+  {
+    "seed": 303,
+    "model": "B_factorial",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.00488259999838,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.13711994749820264
+  },
+  {
+    "seed": 303,
+    "model": "C_difference",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.47710257300059,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.10028138217564303
+  },
+  {
+    "seed": 303,
+    "model": "independent",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 20.014256686001318,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.13462280480008845
+  },
+  {
+    "seed": 303,
+    "model": "privileged",
+    "parameters": 1012878,
+    "training_steps": 240,
+    "seconds": 55.65514753598836,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.1165920766369256
+  },
+  {
+    "seed": 303,
+    "model": "D_pairwise",
+    "parameters": 1013519,
+    "training_steps": 240,
+    "seconds": 61.27339117700467,
+    "device": "cpu",
+    "final_factorial_validation_loss": 0.12518401768449697
+  }
+]

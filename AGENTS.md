@@ -52,3 +52,7 @@ The learned planner holds a model and config, never a TrafficEnv. It scores pred
 Outputs default to `outputs/smoke/`. CSVs are individual paired measurements; seed-summary CSVs contain mean, SD, SE and count. `metrics.json`, `EXPERIMENT_SUMMARY.md`, and `docs/CLAIM_LEDGER.md` derive from actual CSVs. `demo.html` is self-contained; `demo.gif` is portable. Checkpoints/data/TensorBoard logs are retained locally but git-ignored; reproduce them with the pipeline. Source/config fingerprints invalidate stale stages. `--clean` archives old outputs under the OS temporary directory instead of discarding them.
 
 Three evaluation simulator seeds do not mean three independently trained models. Label smoke claims accordingly. See `docs/EVALUATION_PROTOCOL.md` before modifying an experiment, and `DECISIONS.md` for tradeoffs and failed approaches.
+
+## Phase 2
+
+`uv run python scripts/run_phase2.py --config configs/phase2.yaml` executes the frozen campaign, reusing matching completed stages. Read `docs/PHASE2_PLAN.md` and `docs/PHASE2_EXECUTION_NOTES.md` before changing Phase-2 code. C is primary; D is diagnostic. Never change gates based on outcomes. Three independently trained seeds (101/202/303), family-disjoint siblings, and seed-level confidence intervals are mandatory. Phase-1 hashes and documentation prefixes are verified before/after reporting. Phase-2 arrays and checkpoints remain ignored; CSVs, manifests, figures, metadata and reports are versioned. Cached evaluation semantics are fingerprinted and mismatches fail closed. OOD is forbidden when INT-H fails.

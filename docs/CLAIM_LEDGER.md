@@ -18,3 +18,21 @@ Generated from executed results. Scientific PASS at smoke scale maps to PARTIALL
 | learned planning beats heuristic | reference minus learned objective = 8.2088 | smoke | [17, 29, 43] | PARTIALLY SUPPORTED |
 | learned planning approaches oracle | reference minus learned objective = -0.4326 | smoke | [17, 29, 43] | PARTIALLY SUPPORTED |
 | model generalizes to unseen layouts | topology OOD rank=0.7422 | smoke | [17, 29, 43] | PARTIALLY SUPPORTED |
+
+<!-- PHASE2_RESULTS -->
+# Phase 2 — measured claims
+
+Phase-1 entries above are preserved. C is primary. Counterfactual correlation and pairing degradation can occur without non-additive reasoning; passing those directional gates supports narrower claims only.
+
+| Claim | Metric/gate | Actual result | Config/seeds | Status |
+|---|---|---|---|---|
+| joint interactions learned | INT-C | {"ci_high": 14.069780035204575, "ci_low": -6.801566742689738, "mean": 3.6341066462574187, "n_seeds": 3, "pass": false, "sd": 4.200923861662304, "se": 2.4254045223758536} | phase2.yaml / 101,202,303 | NOT SUPPORTED |
+| factorial counterfactuals learned | INT-D | {"objective_pearson": 0.573818161385601, "outcome_distance_pearson": 0.9894158588023917, "pass": true} | phase2.yaml / 101,202,303 | PARTIALLY SUPPORTED |
+| joint pairing matters | INT-E | {"ci_high": 1.2835438915224346, "ci_low": 1.087524938967835, "mean": 1.1855344152451348, "n_seeds": 3, "pass": true, "sd": 0.03945412358328637, "se": 0.02277884887145115} | phase2.yaml / 101,202,303 | PARTIALLY SUPPORTED |
+| plan ranking works in interaction-heavy states | INT-F | {"pass": false, "regret": 1.4804249196965251, "selected_percentile": 18.01470588235294, "spearman": 0.4821551427588579, "top10_overlap": 0.625} | phase2.yaml / 101,202,303 | NOT SUPPORTED |
+| planner avoids policy collapse | INT-G | {"command_frequencies": {"-1": 0.0, "0": 0.006944444444444444, "1": 0.9930555555555556}, "joint_strategies": 4, "pass": false} | phase2.yaml / 101,202,303 | NOT SUPPORTED |
+| centralized coordination beats independent learned MPC | INT-H | {"bootstrap_high": 0.0, "bootstrap_low": -0.5276421015057714, "bootstrap_replicates": 5000, "ci_high": 0.4363647136906334, "ci_low": -0.7006157563509592, "mean": -0.13212552133016292, "model": "C_difference", "n_seeds": 3, "pass": false, "sd": 0.22884811592036763, "se": 0.13212552133016295, "task": "all"} | phase2.yaml / 101,202,303 | NOT SUPPORTED |
+
+ORCHESTRA remains a functioning multi-agent world model, but the experiment did not establish a measurable centralized coordination advantage over an independent learned-controller baseline.
+
+Generalization: UNTESTED unless INT-H passes. See [Phase-2 experiment report](../outputs/phase2/EXPERIMENT_SUMMARY.md) for all measurements.

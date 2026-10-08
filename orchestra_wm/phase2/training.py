@@ -1,5 +1,6 @@
 from pathlib import Path
 import time
+import hashlib
 import numpy as np
 import pandas as pd
 import torch
@@ -43,13 +44,14 @@ def counterfactual_loss(pred,cost,b,cfg):
 def train_phase2(cfg,out,explicit=False):
     natural=TrajectoryDataset('outputs/smoke/data.npz');siblings=SiblingDataset(out/'dataset_v2_factorial/data.npz')
     names=['A_original','B_factorial','C_difference','independent','privileged']+(['D_pairwise'] if explicit else [])
+    signature=hashlib.sha256(b''.join(Path(p).read_bytes() for p in ['orchestra_wm/phase2/training.py','orchestra_wm/phase2/model.py','orchestra_wm/models/world_model.py'])+(out/'dataset_v2_factorial/manifest.json').read_bytes()).hexdigest()
     rows=[];metadata=[];device=device_for(cfg['device']);checkpoint_dir=out/'checkpoints';checkpoint_dir.mkdir(exist_ok=True)
     for seed in cfg['training_seeds']:
         for name in names:
             checkpoint=checkpoint_dir/f'{name}_{seed}.pt'
             if checkpoint.exists():
                 stored=torch.load(checkpoint,map_location='cpu',weights_only=False)
-                if stored['config']!=cfg:raise RuntimeError('Checkpoint config differs; use a new Phase-2 output directory')
+                if stored['config']!=cfg or stored.get('training_source_sha256')!=signature:raise RuntimeError('Checkpoint config differs; use a new Phase-2 output directory')
                 rows.extend(stored['training_rows']);metadata.append(stored['metadata']);print('Reuse trained',name,seed,flush=True);continue
             seed_everything(seed,cfg['threads']);started=time.perf_counter();rng=np.random.default_rng(seed)
             model=create_model(cfg,name).to(device);optimizer=torch.optim.AdamW(model.parameters(),lr=cfg['learning_rate'],weight_decay=1e-4)
@@ -76,7 +78,7 @@ def train_phase2(cfg,out,explicit=False):
             meta={'seed':seed,'model':name,'parameters':sum(p.numel() for p in model.parameters()),'training_steps':cfg['training_steps'],
                   'seconds':time.perf_counter()-started,'device':str(device),'final_factorial_validation_loss':row['factorial_validation_loss']}
             metadata.append(meta)
-            torch.save({'model':model.cpu().state_dict(),'config':cfg,'name':name,'seed':seed,'training_rows':modelrows,'metadata':meta},checkpoint)
+            torch.save({'model':model.cpu().state_dict(),'training_source_sha256':signature,'config':cfg,'name':name,'seed':seed,'training_rows':modelrows,'metadata':meta},checkpoint)
             pd.DataFrame(rows).to_csv(out/'training.csv',index=False);write_json(out/'training_metadata.json',metadata)
     pd.DataFrame(rows).to_csv(out/'training.csv',index=False);write_json(out/'training_metadata.json',metadata)
     return names

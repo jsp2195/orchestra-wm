@@ -8,3 +8,4 @@ outputs/**/tensorboard/
 outputs/**/demo_frames/
 .cache/
 outputs/phase2/dataset_v2_factorial/data.npz
+outputs/phase2/evaluation_truth.npz

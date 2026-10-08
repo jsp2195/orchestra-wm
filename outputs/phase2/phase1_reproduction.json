@@ -1,0 +1,14 @@
+{
+  "interactions": {
+    "maximum_absolute_difference": 0.0,
+    "rows": 24
+  },
+  "interaction_contrasts": {
+    "maximum_absolute_difference": 0.0,
+    "rows": 6
+  },
+  "planning": {
+    "maximum_absolute_difference": 0.0,
+    "rows": 66
+  }
+}
