@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/ct135/i24-msd",
+  "commit": "0ec02f13890577603cb73d8891c4416d28849888",
+  "path": "index.html",
+  "sha256": "dea3e495d58d309bfdfc4effcd904bff10be9b6ee4ff20b7e74ac0fdba38214d",
+  "verified_dataset_doi": "10.7910/DVN/DQOWQI",
+  "published_description": {
+    "duration_seconds": 9,
+    "max_agents": 32
+  },
+  "schema_published_in_this_source": false,
+  "trajectory_files_in_this_repository": 0,
+  "license_source": "index.html section Data License Agreement",
+  "citation": "Jayawardana, Tang, Ji, Philion, Peng and Wu (2025). Noise-Aware Generative Microscopic Traffic Simulation. arXiv:2508.07453",
+  "original_citation": "Gloudemans et al. (2023). I-24 MOTION: An instrument for freeway traffic science. TRC 155, 104311."
+}

@@ -1,0 +1,27 @@
+name: i24_msd_pilot
+output: outputs/i24_msd
+source_kind: REAL_I24_MSD_REQUIRED
+max_download_bytes: 1500000000
+max_disk_bytes: 2147483648
+threads: 2
+workers: 0
+device: cpu
+max_wall_seconds: 1800
+max_scenes: 96
+max_agents: 32
+training_seeds: [101]
+training_steps: 500
+model_dim: 48
+latent_dim: 6
+learning_rate: 0.001
+variants: [independent, deterministic, full]
+samples: 16
+# These are prospective bounds, not a verified native sample rate or cutoff.
+timing_status: AWAITING_REAL_RECORD_INSPECTION
+context_fallback_seconds: 2
+candidate_horizons_seconds: [1, 2, 4, 6]
+primary_horizon_seconds: 4
+dt: null
+train_horizon_steps: null
+schema_status: UNVERIFIED
+research_gate_required: false

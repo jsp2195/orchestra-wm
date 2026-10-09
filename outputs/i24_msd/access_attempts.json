@@ -1,0 +1,50 @@
+[
+  {
+    "name": "doi",
+    "url": "https://doi.org/10.7910/DVN/DQOWQI",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "type": "URLError"
+  },
+  {
+    "name": "authors",
+    "url": "https://ct135.github.io/i24-msd/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "type": "URLError"
+  },
+  {
+    "name": "metadata",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi%3A10.7910%2FDVN%2FDQOWQI",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "type": "URLError"
+  },
+  {
+    "name": "page",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FDQOWQI",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "type": "URLError"
+  },
+  {
+    "name": "search",
+    "url": "https://dataverse.harvard.edu/api/search?q=doi%3A10.7910%2FDVN%2FDQOWQI&type=dataset",
+    "time_utc": "2026-10-09T12:49:42.945658+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "version",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/versions/:latest?persistentId=doi%3A10.7910%2FDVN%2FDQOWQI",
+    "time_utc": "2026-10-09T12:49:42.960872+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "author_source",
+    "url": "https://raw.githubusercontent.com/ct135/ct135.github.io/master/i24-msd/index.html",
+    "time_utc": "2026-10-09T12:49:42.964366+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "author_source_main",
+    "url": "https://raw.githubusercontent.com/ct135/ct135.github.io/main/i24-msd/index.html",
+    "time_utc": "2026-10-09T12:49:43.544057+00:00",
+    "error": "HTTP Error 404: Not Found"
+  }
+]
