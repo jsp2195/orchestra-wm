@@ -51,3 +51,16 @@ Current-observation trivial baselines and the reset-memory ablation are delibera
 - Six matched-update fixture variants, proper energy/CRPS scores, memory/graph/sensing controls, and exact demo/evaluation-array checks provide engineering evidence. Fixture results do not satisfy real-data, wave, information-value or Cavnue gates. Small fixed-budget training is not convergence.
 - Preregister the 10-second micro-information macro proper-score experiment before held-out comparisons. Distinguish information advantage from model architecture advantage and count independent sessions, not vehicles/windows.
 - Stream bounded Parquet conversion with source/acquisition/partition hashes; fail on mismatch. Resumption must not silently mix stale partitions with changed data. Split windows are session-grouped or chronologically buffered.
+
+<!-- I24_MSD -->
+
+## Real I24-MSD pilot decisions
+
+- Resume from Phase-3 commit 1635c9b on the requested `phase3-i24-msd` branch; preserve all prior science. Acquisition/protocol milestone is 3f3e9a3.
+- Harvard access initially failed at the proxy. Supported environment domain additions enabled metadata and the official public S3 redirect. Downloaded one smallest ZIP (1,369,499,074 bytes), verified Harvard MD5, and extracted only three of 325 members (26,768,195 bytes), within the bounded disk budget. No authentication bypass or substitute source.
+- Actual payloads decode as official Scenario protos, not tf.train.Example. Pin/vendor the Apache-2.0 schema subset and generated Python modules; avoid TensorFlow. Native 91-step 10 Hz records supply a 1 s cutoff; use causal 5 Hz decimation and 1/2/4/6 s forecasts.
+- Retain RoadsideScene and the original stochastic graph/GRU architecture. Disable population macro feedback/losses for curated cohorts. Preserve original polylines; use lane medians for neighbor relations and score finite-source-edge violations only where supported. Do not invent lane population counts, confidence probabilities or source splits.
+- Group shared supplied identities before deterministic split selection; one date and missing absolute origin times limit leakage/generalization claims. Preserve immutable manifests. Primary comparison and thresholds were written before held-out scoring; no favorable seed or checkpoint selection.
+- The first optimizer attempt exposed empty emulated conditioning and stopped after one update. Its checkpoint remains archived locally. Dense fallback for an empty training observation was implemented before completing all fixed-budget models. A later missing-demo-module integration error was resolved by completing reporting; trained checkpoints were reused, not retrained.
+- Training completed at 500 updates/model. Full validation optimization loss fell 0.0698→0.0130, but convergence is not established. Four-second ORCHESTRA FDE is slightly worse than CV/independent; the primary energy advantage has an interval crossing zero. Report negative/uncertain results and inadequate 90% calibration plainly.
+- Real browser/GIF output must use saved evaluated generated arrays, with truth kept separate. No fabricated macro fields, road geometry or scientific claims. Cavnue remains an interface pending authorized live schema/calibration/coverage data.

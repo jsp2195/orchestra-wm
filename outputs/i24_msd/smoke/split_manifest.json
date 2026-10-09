@@ -1,0 +1,126 @@
+{
+  "test": [
+    {
+      "group": "9e3b9d33bf1bdd91",
+      "scenario": "309630",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00000-of-00325",
+      "source_hash": "effc9b76ff335271f89ce21bcc877e5396ac35933fd51fcf9a547717901eed2e",
+      "track_ids": [
+        "-147347214",
+        "-919826896"
+      ]
+    },
+    {
+      "group": "1297cdf3635fbcd4",
+      "scenario": "304040",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "6135fc7df17d1affc2d2b9c40e8364ea117d395791d085f1f6edc7929bc91708",
+      "track_ids": [
+        "-623547216",
+        "148932515"
+      ]
+    }
+  ],
+  "train": [
+    {
+      "group": "80d487186c9b033f",
+      "scenario": "310439",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "47c4f96d8cfb1d8cf053e1deace8eb5e0e8818b4b3492e23989c5614703922ac",
+      "track_ids": [
+        "517542935",
+        "-146917797",
+        "795517289"
+      ]
+    },
+    {
+      "group": "8b7ff45245b91fe1",
+      "scenario": "323238",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "44c85c698494e24a5db663e51c3a7720de4f1a5a94853dc7561e6104fde834f5",
+      "track_ids": [
+        "-21577088",
+        "-222254086"
+      ]
+    },
+    {
+      "group": "8b7ff45245b91fe1",
+      "scenario": "324839",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "53ff2719426914f042852925c5c4c5c4246e0d1fb70793ade51e9ddb5c96642e",
+      "track_ids": [
+        "-21577087",
+        "380270201",
+        "580947201",
+        "-794056771",
+        "-222254086"
+      ]
+    },
+    {
+      "group": "8b7ff45245b91fe1",
+      "scenario": "326439",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "3ba73b5c00f12b89565917bf742fe29d32bce2423742294e5d1aa089f24b62c0",
+      "track_ids": [
+        "-21577088",
+        "580947198"
+      ]
+    },
+    {
+      "group": "8b7ff45245b91fe1",
+      "scenario": "326440",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "bf0fec2e4e0709d5d8a436b03d68fb538c06fcd2f544d170f5200f451de160ea",
+      "track_ids": [
+        "-284190565",
+        "-886714849",
+        "-624101330"
+      ]
+    },
+    {
+      "group": "8b7ff45245b91fe1",
+      "scenario": "323239",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "39871a391186f9048e2cefd3cb58e9bc72614c2e4dca67b03f543e303c7c2d6f",
+      "track_ids": [
+        "580947201",
+        "-794056771",
+        "-624101330"
+      ]
+    },
+    {
+      "group": "8df7384fbbca1d10",
+      "scenario": "330403",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00000-of-00325",
+      "source_hash": "4db8f6286654ba416bac5aacb68a7bd2ce1ff614132159fa7fd8a378e50180ab",
+      "track_ids": [
+        "646032365",
+        "-898927004"
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "group": "41df3734a8beedbb",
+      "scenario": "313638",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "058dc7faa5b3bfa15cb725bb616b935c9e885c97b701e3bf9492952b5638c090",
+      "track_ids": [
+        "-72857758",
+        "962235367"
+      ]
+    },
+    {
+      "group": "41df3734a8beedbb",
+      "scenario": "316838",
+      "source_file": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325",
+      "source_hash": "eedc421b4b964944e0ef1ca31c4cf6a4b580d2c89e90d62b141b1aec23e92824",
+      "track_ids": [
+        "-690742919",
+        "622324565",
+        "-690742918",
+        "1031240149"
+      ]
+    }
+  ]
+}

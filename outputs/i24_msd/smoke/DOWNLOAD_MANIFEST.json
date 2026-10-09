@@ -1,0 +1,563 @@
+{
+  "budget": {
+    "max_disk_bytes": 2147483648,
+    "max_download_bytes": 1500000000
+  },
+  "citation_metadata": {
+    "displayName": "Citation Metadata",
+    "fields": [
+      {
+        "multiple": false,
+        "typeClass": "primitive",
+        "typeName": "title",
+        "value": "I-24 MOTION Scenario Dataset"
+      },
+      {
+        "multiple": true,
+        "typeClass": "compound",
+        "typeName": "author",
+        "value": [
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Massachusetts Institute of Technology"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/042nb2s44"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Tang, Catherine"
+            }
+          },
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Massachusetts Institute of Technology"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/042nb2s44"
+            },
+            "authorIdentifier": {
+              "expandedvalue": {
+                "@id": "https://orcid.org/0000-0002-2377-3757",
+                "@type": "https://schema.org/Person",
+                "personName": "Jayawardana, Vindula",
+                "scheme": "ORCID"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorIdentifier",
+              "value": "https://orcid.org/0000-0002-2377-3757"
+            },
+            "authorIdentifierScheme": {
+              "multiple": false,
+              "typeClass": "controlledVocabulary",
+              "typeName": "authorIdentifierScheme",
+              "value": "ORCID"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Jayawardana, Vindula"
+            }
+          },
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Vanderbilt University"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/02vm5rt34"
+            },
+            "authorIdentifier": {
+              "expandedvalue": {
+                "@id": "https://orcid.org/0000-0003-1085-1573",
+                "@type": "https://schema.org/Person",
+                "personName": "Ji, Junyi",
+                "scheme": "ORCID"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorIdentifier",
+              "value": "https://orcid.org/0000-0003-1085-1573"
+            },
+            "authorIdentifierScheme": {
+              "multiple": false,
+              "typeClass": "controlledVocabulary",
+              "typeName": "authorIdentifierScheme",
+              "value": "ORCID"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Ji, Junyi"
+            }
+          },
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Nvidia (United States)"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/03jdj4y14"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Jonah Philion"
+            }
+          },
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Nvidia (United States)"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/03jdj4y14"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Xue Bing Peng"
+            }
+          },
+          {
+            "authorAffiliation": {
+              "expandedvalue": {
+                "@type": "https://schema.org/Organization",
+                "scheme": "http://www.grid.ac/ontology/",
+                "termName": "Massachusetts Institute of Technology"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorAffiliation",
+              "value": "https://ror.org/042nb2s44"
+            },
+            "authorIdentifier": {
+              "expandedvalue": {
+                "@id": "https://orcid.org/0000-0001-8594-303X",
+                "@type": "https://schema.org/Person",
+                "personName": "Wu, Cathy",
+                "scheme": "ORCID"
+              },
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorIdentifier",
+              "value": "https://orcid.org/0000-0001-8594-303X"
+            },
+            "authorIdentifierScheme": {
+              "multiple": false,
+              "typeClass": "controlledVocabulary",
+              "typeName": "authorIdentifierScheme",
+              "value": "ORCID"
+            },
+            "authorName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "authorName",
+              "value": "Wu, Cathy"
+            }
+          }
+        ]
+      },
+      {
+        "multiple": true,
+        "typeClass": "compound",
+        "typeName": "datasetContact",
+        "value": [
+          {
+            "datasetContactAffiliation": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "datasetContactAffiliation",
+              "value": "MIT"
+            },
+            "datasetContactEmail": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "datasetContactEmail",
+              "value": "cattang2025@gmail.com"
+            },
+            "datasetContactName": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "datasetContactName",
+              "value": "Tang, Catherine"
+            }
+          }
+        ]
+      },
+      {
+        "multiple": true,
+        "typeClass": "compound",
+        "typeName": "dsDescription",
+        "value": [
+          {
+            "dsDescriptionDate": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "dsDescriptionDate",
+              "value": "2025-07-19"
+            },
+            "dsDescriptionValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "dsDescriptionValue",
+              "value": "The I-24 Motion Dataset (I24-MSD) is a standardized dataset based on Interstate 24 in Nashville, Tennessee, and designed to advance generative microscopic traffic simulation. It contains over 3.29 million vehicle trajectories with a total duration of 40 hours of driving across 6.5 km of interstate, presented as 9-second-long traffic scenarios, each with up to 32 vehicles. All data is given in Google Protocol Buffers format."
+            }
+          }
+        ]
+      },
+      {
+        "multiple": true,
+        "typeClass": "controlledVocabulary",
+        "typeName": "subject",
+        "value": [
+          "Computer and Information Science",
+          "Engineering"
+        ]
+      },
+      {
+        "multiple": true,
+        "typeClass": "compound",
+        "typeName": "keyword",
+        "value": [
+          {
+            "keywordValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "keywordValue",
+              "value": "Traffic simulations"
+            }
+          },
+          {
+            "keywordValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "keywordValue",
+              "value": "Sim-agent"
+            }
+          },
+          {
+            "keywordValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "keywordValue",
+              "value": "Intelligent transportation systems"
+            }
+          },
+          {
+            "keywordValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "keywordValue",
+              "value": "Driving"
+            }
+          },
+          {
+            "keywordValue": {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "keywordValue",
+              "value": "Traffic modeling"
+            }
+          }
+        ]
+      },
+      {
+        "multiple": false,
+        "typeClass": "primitive",
+        "typeName": "depositor",
+        "value": "Tang, Catherine"
+      },
+      {
+        "multiple": false,
+        "typeClass": "primitive",
+        "typeName": "dateOfDeposit",
+        "value": "2025-07-11"
+      }
+    ],
+    "name": "citation"
+  },
+  "dataset_id": 11720287,
+  "dataset_page": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DQOWQI",
+  "doi": "10.7910/DVN/DQOWQI",
+  "files": [
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "dc8f30612c2536b3676b6423c63e99f7"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2298988400,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835868,
+      "name": "data_2022_11_21.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835868"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "86d4121dc6bdd3137adbc218e6eebde7"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2320936369,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835271,
+      "name": "data_2022_11_22.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835271"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "1dde19a6649463e22ef78417ef388cc4"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2139679386,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835284,
+      "name": "data_2022_11_23.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835284"
+    },
+    {
+      "accessibility": "BYTES_VERIFIED_NOT_PARSED",
+      "acquisition": "verified_local_cache",
+      "checksum": {
+        "type": "MD5",
+        "value": "224ed625f7454776cceca807fbb916cb"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 1369499074,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 1369499074,
+      "hashes": {
+        "MD5": "224ed625f7454776cceca807fbb916cb",
+        "SHA-256": "42604d863de9d30a86c0fdd4c00b48d276fae914d82a2bcc1e3d8cfc0b29964f"
+      },
+      "id": 11835291,
+      "local_path": "data/i24_msd/raw/11835291-data_2022_11_24.zip",
+      "name": "data_2022_11_24.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835291"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "73098eb617fbfdcf8a28908fb2f5520f"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 1430094202,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835303,
+      "name": "data_2022_11_25_pt1.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835303"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "a054f510da24a987d0c9ef4c42b3869c"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 1685283469,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835332,
+      "name": "data_2022_11_25_pt2.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835332"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "f552ea8e831525e0ff30b15129ce32d9"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2080848540,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835344,
+      "name": "data_2022_11_25_pt3.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835344"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "653dd7c63f0c78f2d0f9ca7e75404e1c"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2292641717,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835354,
+      "name": "data_2022_11_28.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835354"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "ede17a9330e2e2258232ddf48d9b9ffd"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2311517361,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835366,
+      "name": "data_2022_11_29.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835366"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "008b410b40c92bee8b7cc9e044724207"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2230324660,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835376,
+      "name": "data_2022_11_30.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835376"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "1434883088dc3f538b946ce835fbf445"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2293386729,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835384,
+      "name": "data_2022_12_01.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835384"
+    },
+    {
+      "accessibility": "PUBLIC_METADATA_ONLY",
+      "checksum": {
+        "type": "MD5",
+        "value": "513703300c03dbb41cc88250dc91b1fc"
+      },
+      "content_type": "application/zip",
+      "declared_bytes": 2196951452,
+      "description": null,
+      "directory_label": null,
+      "downloaded_bytes": 0,
+      "id": 11835395,
+      "name": "data_2022_12_02.zip",
+      "restricted": false,
+      "split": null,
+      "split_note": "Unverified; not inferred from a filename",
+      "storage_format": "application/zip",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11835395"
+    }
+  ],
+  "license": null,
+  "metadata_origin": "user_supplied_authorized_export",
+  "metadata_sha256": "ca7912517624ece525a1942e55e31890d256369c577a69b754cefe3f768efea2",
+  "metadata_url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi%3A10.7910%2FDVN%2FDQOWQI",
+  "real_scenarios_parsed": 182,
+  "status": "REAL_ACCESSED",
+  "terms_of_use": "1. You are free to use the data in academic and commercial work.",
+  "total_downloaded_bytes": 1369499074,
+  "version": {
+    "id": 499823,
+    "releaseTime": "2025-08-08T21:21:13Z",
+    "versionMinorNumber": 1,
+    "versionNumber": 1,
+    "versionState": "RELEASED"
+  }
+}

@@ -211,3 +211,23 @@ uv run python scripts/run_i24_pipeline.py --config configs/i24_pilot.yaml --data
 ```
 
 [Fixture demo](outputs/i24/demo/index.html) · [Measured report](outputs/i24/EXPERIMENT_SUMMARY.md) · [Data acquisition](docs/I24_DATA_ACQUISITION.md) · [Evaluation protocol](docs/I24_EVALUATION_PROTOCOL.md) · [Model card](docs/I24_MODEL_CARD.md) · [Claim ledger](docs/I24_CLAIM_LEDGER.md). The research config is gated and never launched automatically. The demo must be downloaded/opened in a browser; GitHub does not execute HTML previews.
+
+<!-- I24_MSD -->
+
+## ORCHESTRA-I24-MSD — real short-horizon traffic pilot
+
+**Real Harvard I24-MSD data has now been acquired and used for training.** This is separate from the continuous-I24 adapter and its synthetic fixture. One checksum-verified 1,369,499,074-byte ZIP supplied 349 inspected records, including 182 eligible multivehicle scenes; the pilot uses 57/19/19 grouped train/validation/test scenes. Source-defined context is 1 second with 8 seconds of recorded future. We evaluate 1/2/4/6-second autonomous forecasts.
+
+Three compact models (84,514 parameters each) trained for 500 CPU updates, seed 101. Four-second FDE: ORCHESTRA **2.272 m**, constant velocity **2.219 m**, independent learned **2.246 m**. The primary joint energy-score reduction versus independent is **0.0095 m**, provisional 95% interval **[−0.1111, 0.0813]**. This pilot **does not establish an interaction-model advantage**. Nominal 90% position coverage is only **54.6%**. One source date and one training seed do not establish generalization or convergence.
+
+[Real interactive demo](outputs/i24_msd/demo/index.html) · [Measured report](outputs/i24_msd/EXPERIMENT_SUMMARY.md) · [Data card](docs/I24_MSD_DATA_CARD.md) · [Protocol](docs/I24_MSD_EVALUATION_PROTOCOL.md) · [Claim ledger](docs/I24_MSD_CLAIM_LEDGER.md) · [Run/resume details](docs/I24_MSD_IMPLEMENTATION.md).
+
+```sh
+uv sync --frozen
+uv run python scripts/run_i24_msd_pipeline.py --config configs/i24_msd_pilot.yaml --data-root data/i24_msd/raw
+uv run pytest -q
+```
+
+The command reuses verified raw files, extracted shards and matching checkpoints. Raw data/checkpoints/full inference caches stay ignored; the standalone demo embeds exact checkpoint-generated evaluation arrays and hashes. It shows recorded truth separately. Download the HTML and open it in a modern browser; GitHub does not execute HTML previews.
+
+I24-MSD uses Scenario protocol buffers, not continuous I24 JSON. The original stochastic recurrent interaction architecture is reused, with population macro feedback disabled because curated vehicle subsets are not traffic censuses. No long-horizon waves, learned inflow/outflow, causal AV intervention or Cavnue hardware validation is claimed. Prior Phase-2 negative coordination results and continuous-I24 fixture claims remain unchanged.

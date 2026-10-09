@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "browser": "Chromium headless",
+  "html_sha256": "84a7db6712e2507629e27e5f52d61249f40820a1fab4e92a598a5a0cd2a6e4ed",
+  "payload_sha256": "baa6f13dc6ce6d937604ca3e0d615d1153c1f5453ac27729fc5fb37455256f08",
+  "scenario_options": 3,
+  "sample_options": 16,
+  "javascript_errors": [],
+  "controls_exercised": [
+    "scene",
+    "regime",
+    "sample",
+    "timeline",
+    "truth",
+    "play"
+  ],
+  "gif": "demo.gif",
+  "gif_frames": 30,
+  "gif_source": "saved checkpoint arrays rendered by the same verified HTML; no regenerated trajectories"
+}

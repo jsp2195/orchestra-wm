@@ -1,0 +1,24 @@
+{
+  "archive_MD5": "224ed625f7454776cceca807fbb916cb",
+  "archive_bytes": 1369499074,
+  "checkpoint_regeneration_test": true,
+  "defined_metrics_finite": true,
+  "demo_entries_exactly_match_evaluated_arrays": 15,
+  "pass": true,
+  "pilot_command_completed": true,
+  "preserved_earlier_files": 381,
+  "smoke_command_completed": true,
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "passed": 69,
+    "seconds": 19.18,
+    "skipped": 0,
+    "tests": 69
+  },
+  "trained_checkpoint_hashes": [
+    "120448c7b1924b0f9115f0223ea3aea685bd3055a50d4033d906fa261ed32e03",
+    "6a8da6349a5ab76f9d8132e4fbff3d26ef9eb8023d090d8ae52330a982d22f37",
+    "e10d4c02e2816af335d799eaeecf15250de1d7bfb7c215908b2c030a2fd25d07"
+  ]
+}

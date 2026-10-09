@@ -1,0 +1,18 @@
+[
+  {
+    "checkpoints_at_start": 3,
+    "completed": true,
+    "config": "configs/i24_msd_pilot.yaml",
+    "elapsed_seconds": 33.897726156021236,
+    "real_bytes_reused": 1369499074,
+    "source_kind": "REAL_I24_MSD"
+  },
+  {
+    "checkpoints_at_start": 3,
+    "completed": true,
+    "config": "configs/i24_msd_pilot.yaml",
+    "elapsed_seconds": 34.87417635699967,
+    "real_bytes_reused": 1369499074,
+    "source_kind": "REAL_I24_MSD"
+  }
+]

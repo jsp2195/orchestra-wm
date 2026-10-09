@@ -1,0 +1,662 @@
+{
+  "data": {
+    "authority": "10.7910",
+    "datasetFileUploadsAvailable": 988,
+    "datasetType": "dataset",
+    "effectiveDatasetFileCountLimit": 1000,
+    "id": 11720287,
+    "identifier": "DVN/DQOWQI",
+    "latestVersion": {
+      "citationDate": "2025-08-04",
+      "citationRequirements": "3. When you use I-24 MOTION Scenario Dataset (I24-MSD) in published academic work, you are required to include the following citation contents. This allows us to aggregate statistics on the data use in publications:\nV. Jayawardana, C. Tang, J. Ji, J. Philion, X. Peng, C. Wu, Noise-Aware Generative Microscopic Traffic Simulation, 2025",
+      "conditions": "4. Attribution to Original Work: This dataset was made using I-24 MOTION data under the I-24 MOTION license agreement, available at https://github.com/I24-MOTION/I24M_documentation?tab=readme-ov-file#data-use-agreement, and your access and use of such work are governed by the terms and conditions therein. \n@article{gloudemans202324,\n  title={I-24 MOTION: An instrument for freeway traffic science},\n  author={Gloudemans, Derek and Wang, Yanbing and Ji, Junyi and Zachar, Gergely and Barbour, William and Hall, Eric and Cebelak, Meredith and Smith, Lee and Work, Daniel B},\n  journal={Transportation Research Part C: Emerging Technologies},\n  volume={155},\n  pages={104311},\n  year={2023},\n  publisher={Elsevier}\n} ",
+      "createTime": "2025-08-05T00:45:00Z",
+      "datasetFileUploadsAvailable": 988,
+      "datasetId": 11720287,
+      "datasetPersistentId": "doi:10.7910/DVN/DQOWQI",
+      "datasetType": "dataset",
+      "disclaimer": "5. The data is provided \u201cAs is.\u201d We make no other warranties, express or implied, and hereby disclaim all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.",
+      "effectiveDatasetFileCountLimit": 1000,
+      "fileAccessRequest": true,
+      "files": [
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "dc8f30612c2536b3676b6423c63e99f7"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_21.zip",
+            "filesize": 2298988400,
+            "friendlyType": "ZIP Archive",
+            "id": 11835868,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "dc8f30612c2536b3676b6423c63e99f7",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985d81ad28-9865d84ff5ac",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_21.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "86d4121dc6bdd3137adbc218e6eebde7"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_22.zip",
+            "filesize": 2320936369,
+            "friendlyType": "ZIP Archive",
+            "id": 11835271,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "86d4121dc6bdd3137adbc218e6eebde7",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c049fa4-333e73861fd3",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_22.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "1dde19a6649463e22ef78417ef388cc4"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_23.zip",
+            "filesize": 2139679386,
+            "friendlyType": "ZIP Archive",
+            "id": 11835284,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "1dde19a6649463e22ef78417ef388cc4",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c073492-5aa4726673ee",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_23.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "224ed625f7454776cceca807fbb916cb"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_24.zip",
+            "filesize": 1369499074,
+            "friendlyType": "ZIP Archive",
+            "id": 11835291,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "224ed625f7454776cceca807fbb916cb",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c0921b4-943c0366e064",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_24.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "73098eb617fbfdcf8a28908fb2f5520f"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_25_pt1.zip",
+            "filesize": 1430094202,
+            "friendlyType": "ZIP Archive",
+            "id": 11835303,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "73098eb617fbfdcf8a28908fb2f5520f",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c0b9ab5-6ba03e2fcd1a",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_25_pt1.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "a054f510da24a987d0c9ef4c42b3869c"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_25_pt2.zip",
+            "filesize": 1685283469,
+            "friendlyType": "ZIP Archive",
+            "id": 11835332,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "a054f510da24a987d0c9ef4c42b3869c",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c1199f5-432c47c5477c",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_25_pt2.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "f552ea8e831525e0ff30b15129ce32d9"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_25_pt3.zip",
+            "filesize": 2080848540,
+            "friendlyType": "ZIP Archive",
+            "id": 11835344,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "f552ea8e831525e0ff30b15129ce32d9",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c13c607-5d1a65370181",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_25_pt3.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "653dd7c63f0c78f2d0f9ca7e75404e1c"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_28.zip",
+            "filesize": 2292641717,
+            "friendlyType": "ZIP Archive",
+            "id": 11835354,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "653dd7c63f0c78f2d0f9ca7e75404e1c",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c167cd6-903d2686bcb0",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_28.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "ede17a9330e2e2258232ddf48d9b9ffd"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_29.zip",
+            "filesize": 2311517361,
+            "friendlyType": "ZIP Archive",
+            "id": 11835366,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "ede17a9330e2e2258232ddf48d9b9ffd",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c18e5ae-f2af3c9079e6",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_29.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "008b410b40c92bee8b7cc9e044724207"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_11_30.zip",
+            "filesize": 2230324660,
+            "friendlyType": "ZIP Archive",
+            "id": 11835376,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "008b410b40c92bee8b7cc9e044724207",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c1b53bc-1d6ed947c489",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_11_30.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "1434883088dc3f538b946ce835fbf445"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_12_01.zip",
+            "filesize": 2293386729,
+            "friendlyType": "ZIP Archive",
+            "id": 11835384,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "1434883088dc3f538b946ce835fbf445",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c1d7161-80d100630a93",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_12_01.zip",
+          "restricted": false,
+          "version": 2
+        },
+        {
+          "dataFile": {
+            "checksum": {
+              "type": "MD5",
+              "value": "513703300c03dbb41cc88250dc91b1fc"
+            },
+            "contentType": "application/zip",
+            "creationDate": "2025-07-30",
+            "fileAccessRequest": true,
+            "filename": "data_2022_12_02.zip",
+            "filesize": 2196951452,
+            "friendlyType": "ZIP Archive",
+            "id": 11835395,
+            "lastUpdateTime": "2025-08-08T21:21:13Z",
+            "md5": "513703300c03dbb41cc88250dc91b1fc",
+            "persistentId": "",
+            "publicationDate": "2025-08-04",
+            "rootDataFileId": -1,
+            "storageIdentifier": "s3://dvn-cloud:1985c1f67e5-b9a7e5116329",
+            "tabularData": false
+          },
+          "datasetVersionId": 499823,
+          "label": "data_2022_12_02.zip",
+          "restricted": false,
+          "version": 2
+        }
+      ],
+      "id": 499823,
+      "internalVersionNumber": 16,
+      "lastUpdateTime": "2025-08-08T21:21:13Z",
+      "latestVersionPublishingState": "RELEASED",
+      "metadataBlocks": {
+        "citation": {
+          "displayName": "Citation Metadata",
+          "fields": [
+            {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "title",
+              "value": "I-24 MOTION Scenario Dataset"
+            },
+            {
+              "multiple": true,
+              "typeClass": "compound",
+              "typeName": "author",
+              "value": [
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Massachusetts Institute of Technology"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/042nb2s44"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Tang, Catherine"
+                  }
+                },
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Massachusetts Institute of Technology"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/042nb2s44"
+                  },
+                  "authorIdentifier": {
+                    "expandedvalue": {
+                      "@id": "https://orcid.org/0000-0002-2377-3757",
+                      "@type": "https://schema.org/Person",
+                      "personName": "Jayawardana, Vindula",
+                      "scheme": "ORCID"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorIdentifier",
+                    "value": "https://orcid.org/0000-0002-2377-3757"
+                  },
+                  "authorIdentifierScheme": {
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "typeName": "authorIdentifierScheme",
+                    "value": "ORCID"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Jayawardana, Vindula"
+                  }
+                },
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Vanderbilt University"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/02vm5rt34"
+                  },
+                  "authorIdentifier": {
+                    "expandedvalue": {
+                      "@id": "https://orcid.org/0000-0003-1085-1573",
+                      "@type": "https://schema.org/Person",
+                      "personName": "Ji, Junyi",
+                      "scheme": "ORCID"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorIdentifier",
+                    "value": "https://orcid.org/0000-0003-1085-1573"
+                  },
+                  "authorIdentifierScheme": {
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "typeName": "authorIdentifierScheme",
+                    "value": "ORCID"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Ji, Junyi"
+                  }
+                },
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Nvidia (United States)"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/03jdj4y14"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Jonah Philion"
+                  }
+                },
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Nvidia (United States)"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/03jdj4y14"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Xue Bing Peng"
+                  }
+                },
+                {
+                  "authorAffiliation": {
+                    "expandedvalue": {
+                      "@type": "https://schema.org/Organization",
+                      "scheme": "http://www.grid.ac/ontology/",
+                      "termName": "Massachusetts Institute of Technology"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorAffiliation",
+                    "value": "https://ror.org/042nb2s44"
+                  },
+                  "authorIdentifier": {
+                    "expandedvalue": {
+                      "@id": "https://orcid.org/0000-0001-8594-303X",
+                      "@type": "https://schema.org/Person",
+                      "personName": "Wu, Cathy",
+                      "scheme": "ORCID"
+                    },
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorIdentifier",
+                    "value": "https://orcid.org/0000-0001-8594-303X"
+                  },
+                  "authorIdentifierScheme": {
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "typeName": "authorIdentifierScheme",
+                    "value": "ORCID"
+                  },
+                  "authorName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "authorName",
+                    "value": "Wu, Cathy"
+                  }
+                }
+              ]
+            },
+            {
+              "multiple": true,
+              "typeClass": "compound",
+              "typeName": "datasetContact",
+              "value": [
+                {
+                  "datasetContactAffiliation": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "datasetContactAffiliation",
+                    "value": "MIT"
+                  },
+                  "datasetContactEmail": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "datasetContactEmail",
+                    "value": "cattang2025@gmail.com"
+                  },
+                  "datasetContactName": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "datasetContactName",
+                    "value": "Tang, Catherine"
+                  }
+                }
+              ]
+            },
+            {
+              "multiple": true,
+              "typeClass": "compound",
+              "typeName": "dsDescription",
+              "value": [
+                {
+                  "dsDescriptionDate": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "dsDescriptionDate",
+                    "value": "2025-07-19"
+                  },
+                  "dsDescriptionValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "dsDescriptionValue",
+                    "value": "The I-24 Motion Dataset (I24-MSD) is a standardized dataset based on Interstate 24 in Nashville, Tennessee, and designed to advance generative microscopic traffic simulation. It contains over 3.29 million vehicle trajectories with a total duration of 40 hours of driving across 6.5 km of interstate, presented as 9-second-long traffic scenarios, each with up to 32 vehicles. All data is given in Google Protocol Buffers format."
+                  }
+                }
+              ]
+            },
+            {
+              "multiple": true,
+              "typeClass": "controlledVocabulary",
+              "typeName": "subject",
+              "value": [
+                "Computer and Information Science",
+                "Engineering"
+              ]
+            },
+            {
+              "multiple": true,
+              "typeClass": "compound",
+              "typeName": "keyword",
+              "value": [
+                {
+                  "keywordValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "keywordValue",
+                    "value": "Traffic simulations"
+                  }
+                },
+                {
+                  "keywordValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "keywordValue",
+                    "value": "Sim-agent"
+                  }
+                },
+                {
+                  "keywordValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "keywordValue",
+                    "value": "Intelligent transportation systems"
+                  }
+                },
+                {
+                  "keywordValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "keywordValue",
+                    "value": "Driving"
+                  }
+                },
+                {
+                  "keywordValue": {
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "typeName": "keywordValue",
+                    "value": "Traffic modeling"
+                  }
+                }
+              ]
+            },
+            {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "depositor",
+              "value": "Tang, Catherine"
+            },
+            {
+              "multiple": false,
+              "typeClass": "primitive",
+              "typeName": "dateOfDeposit",
+              "value": "2025-07-11"
+            }
+          ],
+          "name": "citation"
+        }
+      },
+      "publicationDate": "2025-08-04",
+      "releaseTime": "2025-08-08T21:21:13Z",
+      "restrictions": "2. The dataset contains anonymous trajectories. Any activities to re-identify individuals in the dataset or activities that may cause harm to individuals in the dataset are prohibited. You may not use the Dataset in any manner that violates applicable privacy laws.",
+      "storageIdentifier": "s3://10.7910/DVN/DQOWQI",
+      "termsOfUse": "1. You are free to use the data in academic and commercial work.",
+      "versionMinorNumber": 1,
+      "versionNumber": 1,
+      "versionState": "RELEASED"
+    },
+    "locks": [],
+    "persistentUrl": "https://doi.org/10.7910/DVN/DQOWQI",
+    "protocol": "doi",
+    "publicationDate": "2025-08-04",
+    "publisher": "Harvard Dataverse",
+    "separator": "/",
+    "storageIdentifier": "s3://10.7910/DVN/DQOWQI"
+  },
+  "status": "OK"
+}

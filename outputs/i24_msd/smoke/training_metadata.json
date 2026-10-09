@@ -1,0 +1,11 @@
+[
+  {
+    "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+    "parameters": 22202,
+    "seconds": 1.5000483359908685,
+    "seed": 101,
+    "updates": 20,
+    "validation_loss": 0.046235911548137665,
+    "variant": "full"
+  }
+]

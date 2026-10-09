@@ -1,0 +1,14 @@
+[
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "309630",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "304040",
+    "variant": "full"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "42604d863de9d30a86c0fdd4c00b48d276fae914d82a2bcc1e3d8cfc0b29964f",
+  "files": [
+    {
+      "bytes": 8251617,
+      "hashes": {
+        "MD5": "80ed070913e1dc216eb2104140e4dde8",
+        "SHA-256": "2a089d4a3affcc5cc767a1c5f27f5f85e552332c73e9681d722386e012149710"
+      },
+      "path": "postprocessed_scenario_novirt_4/data.tfrecord-00000-of-00325"
+    },
+    {
+      "bytes": 13718990,
+      "hashes": {
+        "MD5": "2aed658702e48b4f1816ea46f7387fa8",
+        "SHA-256": "b232e6fdab3ef68ccee2aa32f36f8151b9d63298d5da4f01b65864545e8d3c88"
+      },
+      "path": "postprocessed_scenario_novirt_4/data.tfrecord-00162-of-00325"
+    },
+    {
+      "bytes": 4797588,
+      "hashes": {
+        "MD5": "759b4f11432c7f784b4fd6ac42bd26d1",
+        "SHA-256": "ffdc65a83850e5b13dd988e421b5d6532e41cdb93da58e6bd5f83a8feb95ca35"
+      },
+      "path": "postprocessed_scenario_novirt_4/data.tfrecord-00324-of-00325"
+    }
+  ]
+}

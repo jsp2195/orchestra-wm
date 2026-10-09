@@ -1,0 +1,26 @@
+{
+  "active_jobs": [
+    "    PID COMMAND         %CPU %MEM",
+    " 185608 python           129  0.7",
+    " 185603 uv               0.8  0.0",
+    "    473 codex            0.1  0.1",
+    " 185455 chromium         0.0  0.0",
+    " 185456 chromium         0.0  0.0",
+    "    252 containerd       0.0  0.0",
+    "  85292 python           0.0  0.0",
+    "    202 dockerd          0.0  0.1",
+    " 184713 chromium         0.0  0.0",
+    " 184714 chromium         0.0  0.0",
+    "      1 tail             0.0  0.0",
+    "  84826 chromium         0.0  0.0"
+  ],
+  "cpu": "AMD EPYC 7763 64-Core Processor",
+  "cuda_available": false,
+  "disk_free_bytes": 28771930112,
+  "memory": [
+    "MemTotal:       34906040 kB",
+    "MemAvailable:   33677436 kB"
+  ],
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu"
+}

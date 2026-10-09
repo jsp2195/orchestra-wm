@@ -17,3 +17,12 @@ outputs/i24/converted/
 outputs/i24/**/rollouts/
 outputs/i24/rollouts/
 outputs/i24/raw/
+
+# I24_MSD
+# Authentic Harvard source bytes, extracted data and disposable derived arrays.
+data/i24_msd/
+outputs/i24_msd/**/canonical/
+outputs/i24_msd/canonical/
+outputs/i24_msd/**/rollouts/
+outputs/i24_msd/rollouts/
+outputs/i24_msd/**/*.part

@@ -1,0 +1,73 @@
+{
+  "archive_sha256": "42604d863de9d30a86c0fdd4c00b48d276fae914d82a2bcc1e3d8cfc0b29964f",
+  "config": {
+    "candidate_horizons_seconds": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "context_fallback_seconds": 2,
+    "device": "cpu",
+    "dt": 0.2,
+    "latent_dim": 4,
+    "max_agents": 32,
+    "max_disk_bytes": 2147483648,
+    "max_download_bytes": 1500000000,
+    "max_scenes": 12,
+    "max_wall_seconds": 300,
+    "model_dim": 24,
+    "name": "i24_msd_smoke",
+    "output": "outputs/i24_msd/smoke",
+    "primary_horizon_seconds": 4,
+    "research_gate_required": false,
+    "samples": 4,
+    "schema_status": "VERIFIED_SCENARIO_PROTO",
+    "source_file_ids": [
+      11835291
+    ],
+    "source_kind": "REAL_I24_MSD_REQUIRED",
+    "threads": 2,
+    "timing_status": "VERIFIED_SCENARIO_91_STEPS_10HZ_CUTOFF_10",
+    "train_horizon_steps": 10,
+    "training_seeds": [
+      101
+    ],
+    "training_steps": 20,
+    "variants": [
+      "full"
+    ],
+    "workers": 0
+  },
+  "cutoff_seconds": 1.0,
+  "evaluation_source_hashes": {
+    "orchestra_wm/i24_msd/__init__.py": "46fc35ab9c5f81540ac531df2af646a6f2b0946144370bfd31e9b4180bc9aa54",
+    "orchestra_wm/i24_msd/acquisition.py": "788ecb62bf06b8460fb498b06c2e8e60b24fcdd8843e79c916f7ff871460d22d",
+    "orchestra_wm/i24_msd/adapter.py": "f2c66e81956324ad9c51aef126bdd6b317f51d0efec2b1478de265ee80f7b5b6",
+    "orchestra_wm/i24_msd/campaign.py": "c5defff8eb5145a382d75ef642f47e89b3bb88fd2ab57d4970358b0edfcc2a32",
+    "orchestra_wm/i24_msd/evaluation.py": "b5d0f01d1ef3801d8d4246e1741be5fb568fc7a1c0d8660bdb334d3bbc1df7f7",
+    "orchestra_wm/i24_msd/experiment.py": "87e7dcddcc20613f3e1b07f9b83310844e0ac313231a229fee7518296a774b22",
+    "orchestra_wm/i24_msd/pipeline.py": "3a46d212837ba279307fea9688fbb49c3f8aa57fc84516f465df6de77ac8a900",
+    "orchestra_wm/i24_msd/reporting.py": "77d82899c83838162ab23a16f43eb46b0cc9129d0879c9c09793b364731fb2fe",
+    "orchestra_wm/i24_msd/showcase.py": "f0c15ff0d21003f93cd23e4721e9dc3df37eb569725c5daaf30537ba0c4b6c00"
+  },
+  "fingerprint": "69ae033c72ec943237644d5d914cfe3b9d474fdab62deaece95a15ced0520f10",
+  "model_macro_feedback": false,
+  "resource_budget": {
+    "cpu_threads": 2,
+    "disk_bytes": 2147483648,
+    "download_bytes": 1500000000,
+    "wall_seconds": 300,
+    "workers": 0
+  },
+  "source_hashes": {
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3",
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c",
+    "orchestra_wm/i24_msd/adapter.py": "f2c66e81956324ad9c51aef126bdd6b317f51d0efec2b1478de265ee80f7b5b6",
+    "orchestra_wm/i24_msd/experiment.py": "87e7dcddcc20613f3e1b07f9b83310844e0ac313231a229fee7518296a774b22"
+  },
+  "source_kind": "REAL_I24_MSD",
+  "split_sha256": "9a95f60a77cb565f470fbd76f58b035528e3c7c4af1eab34b42dfcc072c13c46",
+  "torch": "2.14.1+cpu"
+}

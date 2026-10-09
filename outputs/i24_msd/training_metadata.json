@@ -1,0 +1,29 @@
+[
+  {
+    "checkpoint_sha256": "120448c7b1924b0f9115f0223ea3aea685bd3055a50d4033d906fa261ed32e03",
+    "parameters": 84514,
+    "seconds": 31.457148073997814,
+    "seed": 101,
+    "updates": 500,
+    "validation_loss": 0.016956455578717094,
+    "variant": "independent"
+  },
+  {
+    "checkpoint_sha256": "6a8da6349a5ab76f9d8132e4fbff3d26ef9eb8023d090d8ae52330a982d22f37",
+    "parameters": 84514,
+    "seconds": 20.036002435022965,
+    "seed": 101,
+    "updates": 500,
+    "validation_loss": 0.005358619227384527,
+    "variant": "deterministic"
+  },
+  {
+    "checkpoint_sha256": "e10d4c02e2816af335d799eaeecf15250de1d7bfb7c215908b2c030a2fd25d07",
+    "parameters": 84514,
+    "seconds": 39.97193684100057,
+    "seed": 101,
+    "updates": 500,
+    "validation_loss": 0.013014067119608322,
+    "variant": "full"
+  }
+]

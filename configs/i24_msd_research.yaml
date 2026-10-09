@@ -1,0 +1,12 @@
+name: i24_msd_research
+output: outputs/i24_msd/research
+source_kind: REAL_I24_MSD_REQUIRED
+max_download_bytes: 1073741824
+max_disk_bytes: 2147483648
+threads: 2
+workers: 0
+device: cpu
+training_seeds: [101, 202, 303]
+research_gate_required: true
+schema_status: UNVERIFIED
+# No larger budget is authorized automatically; an executed pilot must justify it.
