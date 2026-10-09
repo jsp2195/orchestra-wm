@@ -1,0 +1,20 @@
+{
+  "commit": "99a4cb3ff07e2fe06c2ce73da001f850f628e45a",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/waymo-research/waymo-open-dataset/99a4cb3ff07e2fe06c2ce73da001f850f628e45a/src/waymo_open_dataset/protos/scenario.proto",
+      "sha256": "10fc630afdea2cbf487da4cdff8ef010a0b12b782cffbbca88abb4c9fe5dbc11",
+      "vendored_path": "orchestra_wm/i24_msd/protos/scenario.proto",
+      "vendored_sha256": "2c19bc837d73d9a829738a9b975ae7aae54b05a5ff9fa1b1ef4a49ea85b0f848"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/waymo-research/waymo-open-dataset/99a4cb3ff07e2fe06c2ce73da001f850f628e45a/src/waymo_open_dataset/protos/map.proto",
+      "sha256": "880174ad592d67ba2af0c38534d059b45618570da63bb422b896bbabe7db34db",
+      "vendored_path": "orchestra_wm/i24_msd/protos/map.proto",
+      "vendored_sha256": "880174ad592d67ba2af0c38534d059b45618570da63bb422b896bbabe7db34db"
+    }
+  ],
+  "compiler": "grpcio-tools==1.78.0",
+  "runtime": "protobuf==7.36.2 (uv.lock)",
+  "modifications": "Scenario camera/lidar fields 12/13 reserved and import path changed. No observed Harvard fields dropped (verified per record)."
+}

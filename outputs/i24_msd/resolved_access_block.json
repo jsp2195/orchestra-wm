@@ -1,0 +1,12 @@
+{
+  "checkpoint": null,
+  "demo": null,
+  "elapsed_seconds": 14.607987945026252,
+  "gradient_steps": 0,
+  "preserved_files": 381,
+  "real_scenarios": 0,
+  "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+  "resume": "uv run python scripts/run_i24_msd_pipeline.py --config configs/i24_msd_pilot.yaml --data-root data/i24_msd/raw",
+  "stage": "pilot",
+  "status": "BLOCKED"
+}

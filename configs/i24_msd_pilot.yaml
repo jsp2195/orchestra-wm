@@ -17,11 +17,12 @@ learning_rate: 0.001
 variants: [independent, deterministic, full]
 samples: 16
 # These are prospective bounds, not a verified native sample rate or cutoff.
-timing_status: AWAITING_REAL_RECORD_INSPECTION
+timing_status: VERIFIED_SCENARIO_91_STEPS_10HZ_CUTOFF_10
 context_fallback_seconds: 2
 candidate_horizons_seconds: [1, 2, 4, 6]
 primary_horizon_seconds: 4
-dt: null
-train_horizon_steps: null
-schema_status: UNVERIFIED
+dt: 0.2
+train_horizon_steps: 10
+schema_status: VERIFIED_SCENARIO_PROTO
 research_gate_required: false
+source_file_ids: [11835291]

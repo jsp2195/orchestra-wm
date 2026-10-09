@@ -1,0 +1,67 @@
+{
+  "downloaded_bytes": 1369499074,
+  "examples": [
+    {
+      "agents": 2,
+      "missing_fraction": 0.6304347826086957,
+      "observed_context_agents": 2,
+      "position_velocity_discrepancy_mps": 0.044040705840192804,
+      "relative_end_seconds": 8.999991416931152,
+      "relative_start_seconds": 0.0,
+      "scenario": "333606",
+      "speed_mean_mps": 29.768831253051758,
+      "static_map_features": 11,
+      "valid_states": 34
+    },
+    {
+      "agents": 2,
+      "missing_fraction": 0.40217391304347827,
+      "observed_context_agents": 2,
+      "position_velocity_discrepancy_mps": 0.054288737101893664,
+      "relative_end_seconds": 8.999991416931152,
+      "relative_start_seconds": 0.0,
+      "scenario": "330403",
+      "speed_mean_mps": 29.964506149291992,
+      "static_map_features": 11,
+      "valid_states": 55
+    },
+    {
+      "agents": 2,
+      "missing_fraction": 0.6956521739130435,
+      "observed_context_agents": 2,
+      "position_velocity_discrepancy_mps": 0.019245539617460405,
+      "relative_end_seconds": 8.999991416931152,
+      "relative_start_seconds": 0.0,
+      "scenario": "332009",
+      "speed_mean_mps": 36.24238967895508,
+      "static_map_features": 11,
+      "valid_states": 28
+    }
+  ],
+  "horizons_seconds": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "independent_recording_generalization": false,
+  "macro_status": "N/A: curated cohort and unknown population coverage; no measured lane density/flow claim",
+  "model_context_steps": 6,
+  "model_dt_seconds": 0.2,
+  "multiagent_context_scenes": 182,
+  "native_dt_seconds": 0.09999990463256836,
+  "native_records_inspected": 349,
+  "native_samples": 91,
+  "physical_boundary_status": "N/A outside actual supplied finite polylines; numerical model bounds are not road edges",
+  "selected_split_counts": {
+    "test": 19,
+    "train": 57,
+    "validation": 19
+  },
+  "source_context_end_seconds": 0.9999990463256836,
+  "source_cutoff_index": 10,
+  "source_future_seconds": 7.999992370605469,
+  "source_recording_date_groups": 1,
+  "split_caveat": "Related supplied track IDs grouped across all inspected eligible clips; unknown aliases/absolute recording timestamps prevent exhaustive overlap certification.",
+  "status": "REAL_ACCESSED"
+}

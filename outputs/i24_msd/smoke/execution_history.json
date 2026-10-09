@@ -1,0 +1,10 @@
+[
+  {
+    "checkpoints_at_start": 1,
+    "completed": true,
+    "config": "configs/i24_msd_smoke.yaml",
+    "elapsed_seconds": 15.368121534993406,
+    "real_bytes_reused": 1369499074,
+    "source_kind": "REAL_I24_MSD"
+  }
+]

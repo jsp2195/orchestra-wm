@@ -197,7 +197,7 @@ def test_acquisition_pipeline_and_pilot_gate(tmp_path, monkeypatch):
     local = tmp_path/'manual'; local.mkdir(); (local/'unit-test-only.bin').write_bytes(content)
     m = p.run(cfg, stage='acquire', metadata_json=meta, import_dir=local, file_ids=[123])
     assert m['status'] == 'BYTES_VERIFIED_NOT_PARSED'
-    with pytest.raises(a.AcquisitionError, match='semantic schema remains unverified'):
+    with pytest.raises(a.AcquisitionError, match='verified pilot uses'):
         p.run(cfg, stage='pilot', metadata_json=meta)
     blocked = json.loads(Path('outputs/i24_msd/test/BLOCKED.json').read_text())
     assert blocked['gradient_steps'] == 0 and blocked['checkpoint'] is None and blocked['demo'] is None
@@ -205,3 +205,16 @@ def test_acquisition_pipeline_and_pilot_gate(tmp_path, monkeypatch):
     cfg.write_text(yaml.safe_dump({'output': 'outputs/i24_msd/research', 'max_download_bytes': 1000, 'max_disk_bytes': 2000, 'research_gate_required': True}))
     with pytest.raises(a.AcquisitionError, match='Research remains gated'):
         p.run(cfg)
+
+
+def test_boundary_metric_uses_only_real_polyline_support():
+    import numpy as np
+    from orchestra_wm.i24_msd.evaluation import boundary_metrics
+    p=np.zeros((1,1,2,8));p[0,0,:,0]=[5,50];p[0,0,:,1]=[0,20];p[:,:,:,6:]=[4,2]
+    source={'travel_sign':1,'x_origin_m':0,'source_map':[
+        {'type':'road_edge','polyline_xyz_m':[[0,-2,0],[10,-2,0]]},
+        {'type':'road_edge','polyline_xyz_m':[[0,2,0],[10,2,0]]}]}
+    result=boundary_metrics(p,np.ones((1,2),bool),source)
+    assert result['road_boundary_coverage']==.5 and result['road_boundary_violation']==0
+    p[0,0,0,1]=2
+    assert boundary_metrics(p,np.ones((1,2),bool),source)['road_boundary_violation']==1

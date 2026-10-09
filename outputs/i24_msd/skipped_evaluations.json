@@ -1,0 +1,80 @@
+[
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "309630",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "304040",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "305641",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "305642",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "332020",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "314432",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "350437",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "302437",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "304038",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "304039",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "305639",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "307240",
+    "variant": "full"
+  },
+  {
+    "reason": "No historical visible tracks; cannot initialize a fixed cohort",
+    "regime": "sparse50",
+    "scene": "341597",
+    "variant": "full"
+  }
+]

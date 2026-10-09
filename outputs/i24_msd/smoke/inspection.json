@@ -1,0 +1,216 @@
+[
+  {
+    "bytes": 1369499074,
+    "container": "ZIP",
+    "cutoff": null,
+    "member_count": 325,
+    "members": [
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00000-of-00325",
+        "uncompressed_bytes": 8251617
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00001-of-00325",
+        "uncompressed_bytes": 9953022
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00002-of-00325",
+        "uncompressed_bytes": 10247012
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00003-of-00325",
+        "uncompressed_bytes": 10237013
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00004-of-00325",
+        "uncompressed_bytes": 12121912
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00005-of-00325",
+        "uncompressed_bytes": 11371885
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00006-of-00325",
+        "uncompressed_bytes": 12889456
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00007-of-00325",
+        "uncompressed_bytes": 12774449
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00008-of-00325",
+        "uncompressed_bytes": 13688444
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00009-of-00325",
+        "uncompressed_bytes": 13150962
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00010-of-00325",
+        "uncompressed_bytes": 13375442
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00011-of-00325",
+        "uncompressed_bytes": 12488025
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00012-of-00325",
+        "uncompressed_bytes": 12663735
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00013-of-00325",
+        "uncompressed_bytes": 13422126
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00014-of-00325",
+        "uncompressed_bytes": 12556892
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00015-of-00325",
+        "uncompressed_bytes": 13913477
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00016-of-00325",
+        "uncompressed_bytes": 13797770
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00017-of-00325",
+        "uncompressed_bytes": 13317043
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00018-of-00325",
+        "uncompressed_bytes": 14097068
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00019-of-00325",
+        "uncompressed_bytes": 14218722
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00020-of-00325",
+        "uncompressed_bytes": 13711341
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00021-of-00325",
+        "uncompressed_bytes": 14133541
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00022-of-00325",
+        "uncompressed_bytes": 13394317
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00023-of-00325",
+        "uncompressed_bytes": 13364234
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00024-of-00325",
+        "uncompressed_bytes": 13400143
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00025-of-00325",
+        "uncompressed_bytes": 14113089
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00026-of-00325",
+        "uncompressed_bytes": 13415033
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00027-of-00325",
+        "uncompressed_bytes": 13375462
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00028-of-00325",
+        "uncompressed_bytes": 14451892
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00029-of-00325",
+        "uncompressed_bytes": 13180846
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00030-of-00325",
+        "uncompressed_bytes": 14490375
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00031-of-00325",
+        "uncompressed_bytes": 13042423
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00032-of-00325",
+        "uncompressed_bytes": 13983324
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00033-of-00325",
+        "uncompressed_bytes": 14116298
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00034-of-00325",
+        "uncompressed_bytes": 14027552
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00035-of-00325",
+        "uncompressed_bytes": 13222060
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00036-of-00325",
+        "uncompressed_bytes": 13922043
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00037-of-00325",
+        "uncompressed_bytes": 13791837
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00038-of-00325",
+        "uncompressed_bytes": 13160998
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00039-of-00325",
+        "uncompressed_bytes": 13314985
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00040-of-00325",
+        "uncompressed_bytes": 12892785
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00041-of-00325",
+        "uncompressed_bytes": 13954096
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00042-of-00325",
+        "uncompressed_bytes": 12837695
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00043-of-00325",
+        "uncompressed_bytes": 13902739
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00044-of-00325",
+        "uncompressed_bytes": 13363393
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00045-of-00325",
+        "uncompressed_bytes": 13873519
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00046-of-00325",
+        "uncompressed_bytes": 13017029
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00047-of-00325",
+        "uncompressed_bytes": 13129207
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00048-of-00325",
+        "uncompressed_bytes": 14041239
+      },
+      {
+        "name": "postprocessed_scenario_novirt_4/data.tfrecord-00049-of-00325",
+        "uncompressed_bytes": 12809433
+      }
+    ],
+    "native_dt_seconds": null,
+    "path": "data/i24_msd/raw/11835291-data_2022_11_24.zip",
+    "real_scenarios_parsed": 0,
+    "semantic_schema": "UNVERIFIED",
+    "sha256": "42604d863de9d30a86c0fdd4c00b48d276fae914d82a2bcc1e3d8cfc0b29964f",
+    "units": null
+  }
+]

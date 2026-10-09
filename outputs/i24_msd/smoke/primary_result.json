@@ -1,0 +1,9 @@
+{
+  "ci95_provisional": null,
+  "confirmatory_support": "UNTESTED: fewer than five independently identified recording groups",
+  "eligible_test_scenarios": 0,
+  "independent_recording_groups": 1,
+  "interval_unit": "supplied-track connected components; not recording-day uncertainty",
+  "paired_energy_reduction_m": null,
+  "track_disjoint_groups": 0
+}

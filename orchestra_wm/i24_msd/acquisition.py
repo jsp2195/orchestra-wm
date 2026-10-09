@@ -249,7 +249,7 @@ def acquire(manifest, raw_root, ids, max_download_bytes, max_disk_bytes, import_
     return manifest
 
 
-def safe_extract(archive, destination, max_disk_bytes, max_members=10000):
+def safe_extract(archive, destination, max_disk_bytes, max_members=10000, selected_names=None):
     """Atomic archive extraction; refuse traversal, links, special files and bombs."""
     archive, destination = Path(archive), Path(destination)
     if destination.exists():
@@ -278,6 +278,10 @@ def safe_extract(archive, destination, max_disk_bytes, max_members=10000):
             if str(path) in names or not path.parts or size < 0:
                 raise AcquisitionError("Duplicate/invalid archive member")
             names.add(str(path))
+        if selected_names is not None:
+            if not selected_names or not set(selected_names).issubset(names):
+                raise AcquisitionError("Extraction selection contains missing archive members")
+            entries = [e for e in entries if e[0] in selected_names]
         total = sum(e[1] for e in entries)
         check_budget(archive.parent, total, max_disk_bytes)
         stage.mkdir(parents=True)

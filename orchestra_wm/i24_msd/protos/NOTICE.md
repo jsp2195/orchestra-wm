@@ -1,0 +1,1 @@
+Waymo Open Dataset proto definitions, Copyright 2021 The Waymo Open Dataset Authors, Apache-2.0. Scenario subset modifications are identified in source and UPSTREAM.json. These schemas do not supply Waymo data or validate an autonomous ego vehicle in I24-MSD.

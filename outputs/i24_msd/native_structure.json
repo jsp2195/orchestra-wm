@@ -1,0 +1,425 @@
+{
+  "bytes": 8251617,
+  "container": "TFRECORD",
+  "cutoff": null,
+  "inspection_stage": "Initial wire-only probe, preserved for audit; see final_schema_validation.json for verified semantics",
+  "messages": [
+    {
+      "payload_bytes": 46675,
+      "wire": {
+        "complete": false,
+        "fields": [
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 1,
+            "wire_type": 1
+          },
+          {
+            "field_number": 2,
+            "wire_type": 2
+          },
+          {
+            "field_number": 5,
+            "wire_type": 2
+          },
+          {
+            "field_number": 6,
+            "wire_type": 0
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          },
+          {
+            "field_number": 7,
+            "wire_type": 2
+          }
+        ],
+        "message_type": "UNKNOWN"
+      }
+    }
+  ],
+  "native_dt_seconds": null,
+  "note": "CRC framing does not identify tf.train.Example versus Scenario or another proto",
+  "path": "data/i24_msd/raw/pilot_members/postprocessed_scenario_novirt_4/data.tfrecord-00000-of-00325",
+  "real_scenarios_parsed": 0,
+  "records_crc_verified": 1,
+  "semantic_schema": "UNVERIFIED",
+  "sha256": "2a089d4a3affcc5cc767a1c5f27f5f85e552332c73e9681d722386e012149710",
+  "units": null
+}

@@ -1,0 +1,17 @@
+{
+  "container": "TFRecord",
+  "context_end_seconds": 0.9999990463256836,
+  "current_time_index": 10,
+  "decoded_records": 349,
+  "eligible_multivehicle_scenes": 182,
+  "future_seconds": 7.999992370605469,
+  "message": "waymo.open_dataset.Scenario",
+  "native_dt_seconds": 0.09999990463256836,
+  "native_samples": 91,
+  "source_partition_available": false,
+  "status": "VERIFIED_ON_REAL_RECORDS",
+  "test_evidence": "test_results.xml; test_real_multivehicle_schema_timing_geometry_and_units",
+  "tf_train_Example": false,
+  "units_evidence": "official pinned proto + actual state/dimension/lane-spacing and position-velocity checks",
+  "unknown_payload_field_bytes": 0
+}

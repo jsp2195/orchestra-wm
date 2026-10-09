@@ -1,0 +1,65 @@
+{
+  "entries": [
+    {
+      "array_sha256": "c54237ddce966aeca52dd9b63f6dd086591ab25cc09d3a2099393301a203f40c",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "dense",
+      "scene": "309630",
+      "source_hash": "effc9b76ff335271f89ce21bcc877e5396ac35933fd51fcf9a547717901eed2e"
+    },
+    {
+      "array_sha256": "0b371f8eecc845d54bc0a46550c9a0417b25bde89995e0f754afbde3e2a33d1b",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "dense",
+      "scene": "304040",
+      "source_hash": "6135fc7df17d1affc2d2b9c40e8364ea117d395791d085f1f6edc7929bc91708"
+    },
+    {
+      "array_sha256": "338f793781a4176d024b294fdbc81013c4097fa0c4ee3cdc371434fa91fdd85e",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "outage",
+      "scene": "309630",
+      "source_hash": "effc9b76ff335271f89ce21bcc877e5396ac35933fd51fcf9a547717901eed2e"
+    },
+    {
+      "array_sha256": "dde4226437eb39bd909a9fb00139de89b989a5933afc600f3962f09352b194f7",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "outage",
+      "scene": "304040",
+      "source_hash": "6135fc7df17d1affc2d2b9c40e8364ea117d395791d085f1f6edc7929bc91708"
+    },
+    {
+      "array_sha256": "7cf7992d920a5ea58dd9c0af05c2a60b4cc826a62e85e2177c99702acb043c2f",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "graph_off",
+      "scene": "309630",
+      "source_hash": "effc9b76ff335271f89ce21bcc877e5396ac35933fd51fcf9a547717901eed2e"
+    },
+    {
+      "array_sha256": "3bdedf227570eb876c8af90b8974b5985811f23ff9f6cdd160273a689842ad32",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "graph_off",
+      "scene": "304040",
+      "source_hash": "6135fc7df17d1affc2d2b9c40e8364ea117d395791d085f1f6edc7929bc91708"
+    },
+    {
+      "array_sha256": "5b7f4d1a8bffafa5b2a5ac2bf36fe17896d1ba193b230ae5d8b4b9e28a4652a8",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "reset_memory",
+      "scene": "309630",
+      "source_hash": "effc9b76ff335271f89ce21bcc877e5396ac35933fd51fcf9a547717901eed2e"
+    },
+    {
+      "array_sha256": "3f5fbd105f944868e0f815f0755ac50576cdada447ba5cd0bfcabf08a09ab011",
+      "checkpoint_sha256": "750dea9f2fc557a3fd2d9b63389c00d5d35a1f56786b8dd3c5ceef1b6350016f",
+      "regime": "reset_memory",
+      "scene": "304040",
+      "source_hash": "6135fc7df17d1affc2d2b9c40e8364ea117d395791d085f1f6edc7929bc91708"
+    }
+  ],
+  "macro_population_fields": "N/A, unknown cohort sampling coverage",
+  "payload_sha256": "0cf920b2bbd83b9ef91cf60a2c75480469b2f237e948592ad23cabb2b41669bd",
+  "replay": false,
+  "selected_by": "largest historical observed cohort, then scenario ID",
+  "source_kind": "REAL_I24_MSD"
+}

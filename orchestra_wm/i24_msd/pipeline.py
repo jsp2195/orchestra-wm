@@ -14,7 +14,7 @@ import yaml
 
 from . import DOI, DATASET_PAGE
 from .acquisition import (AcquisitionError, atomic_json, fetch_metadata, metadata_manifest,
-                          acquire, safe_extract, hashes, METADATA_URL)
+                          acquire, safe_extract, hashes, verify_file, METADATA_URL)
 from .adapter import I24MSDAdapter
 
 
@@ -35,7 +35,7 @@ def resources(root):
     mem = Path("/proc/meminfo").read_text().splitlines() if Path("/proc/meminfo").exists() else []
     jobs = subprocess.run(["ps", "-eo", "pid,comm,pcpu,pmem", "--sort=-pcpu"], text=True, capture_output=True, check=True).stdout.splitlines()[:13]
     return {"python": platform.python_version(), "torch": torch.__version__, "cuda_available": torch.cuda.is_available(),
-            "cpu": platform.processor(), "disk_free_bytes": free.free,
+            "cpu": next((line.split(":",1)[1].strip() for line in Path("/proc/cpuinfo").read_text().splitlines() if line.startswith("model name")), platform.machine()), "disk_free_bytes": free.free,
             "memory": [line for line in mem if line.startswith(("MemTotal:", "MemAvailable:"))], "active_jobs": jobs}
 
 
@@ -66,6 +66,8 @@ def run(config, data_root=None, stage="pilot", metadata_json=None, file_ids=(), 
         else:
             manifest = fetch_metadata(metadata_path)
         manifest["metadata_sha256"] = hashes(metadata_path)["SHA-256"]
+        if metadata_json and metadata_path.resolve() != (out / "dataverse_metadata.json").resolve():
+            (out / "dataverse_metadata.json").write_bytes(metadata_path.read_bytes())
         manifest["metadata_origin"] = "user_supplied_authorized_export" if metadata_json else "public_api"
         manifest["budget"] = {"max_download_bytes": max_download_bytes, "max_disk_bytes": max_disk_bytes}
         if manifest_path.exists():
@@ -82,6 +84,20 @@ def run(config, data_root=None, stage="pilot", metadata_json=None, file_ids=(), 
         atomic_json(manifest_path, manifest)
         if stage == "discover":
             return manifest
+        # A smoke/pilot namespace may share the exact already verified raw ZIP.
+        # Rehash it locally; never redownload because an output directory changed.
+        for item in manifest["files"]:
+            path = raw / f'{item["id"]}-{item["name"]}'
+            if not item.get("downloaded_bytes") and path.is_file():
+                measured = verify_file(path, item)
+                item.update(local_path=str(path), hashes=measured, downloaded_bytes=path.stat().st_size,
+                            accessibility="BYTES_VERIFIED_NOT_PARSED", acquisition="verified_local_cache")
+        manifest["total_downloaded_bytes"] = sum(f["downloaded_bytes"] for f in manifest["files"])
+        if manifest["total_downloaded_bytes"]:
+            manifest["status"] = "BYTES_VERIFIED_NOT_PARSED"
+            atomic_json(manifest_path, manifest)
+        if not file_ids and not manifest["total_downloaded_bytes"]:
+            file_ids = cfg.get("source_file_ids", [])
         if file_ids:
             acquire(manifest, raw, list(file_ids), max_download_bytes, max_disk_bytes, import_dir,
                     on_progress=lambda value: atomic_json(manifest_path, value))
@@ -106,8 +122,16 @@ def run(config, data_root=None, stage="pilot", metadata_json=None, file_ids=(), 
                         safe_extract(archive, dest, max_disk_bytes)
         if stage in ("acquire", "inspect"):
             return manifest
-        adapter.scenes()  # No training/demo is possible until this semantic gate passes.
-        raise AcquisitionError("Real training integration not implemented until native schema is verified")
+        from .campaign import run_pilot
+        checkpoints_before = len(list((out / "checkpoints").glob("*.pt")))
+        result = run_pilot(cfg, manifest, raw, out)
+        history_path = out / "execution_history.json"
+        history = json.loads(history_path.read_text()) if history_path.exists() else []
+        history.append({"completed": True, "elapsed_seconds": time.perf_counter()-started,
+                        "checkpoints_at_start": checkpoints_before, "source_kind": "REAL_I24_MSD",
+                        "config": str(config), "real_bytes_reused": result["total_downloaded_bytes"]})
+        atomic_json(history_path, history)
+        return result
     except (AcquisitionError, OSError, ValueError, KeyError) as error:
         # Never relabel verified bytes as fully parsed real scenarios.
         manifest["last_error"] = str(error)
@@ -135,6 +159,6 @@ def main():
     args = parser.parse_args()
     try:
         result = run(**vars(args))
-        print(json.dumps({"status": result["status"], "bytes": result["total_downloaded_bytes"], "files": len(result["files"])}))
+        print(json.dumps({"status": result["status"], "bytes": result["total_downloaded_bytes"], "downloaded_files": sum(bool(f.get("downloaded_bytes")) for f in result["files"]), "metadata_files": len(result["files"])}))
     except AcquisitionError as error:
         parser.exit(2, f"BLOCKED: {error}\nNo real model or real-data demo was produced. See DOWNLOAD_MANIFEST.json and BLOCKED.json.\n")

@@ -1,8 +1,8 @@
 name: i24_msd_smoke
 output: outputs/i24_msd/smoke
 source_kind: REAL_I24_MSD_REQUIRED
-max_download_bytes: 268435456
-max_disk_bytes: 536870912
+max_download_bytes: 1500000000
+max_disk_bytes: 2147483648
 threads: 2
 workers: 0
 device: cpu
@@ -15,12 +15,13 @@ model_dim: 24
 latent_dim: 4
 variants: [full]
 samples: 4
-timing_status: AWAITING_REAL_RECORD_INSPECTION
+timing_status: VERIFIED_SCENARIO_91_STEPS_10HZ_CUTOFF_10
 context_fallback_seconds: 2
 candidate_horizons_seconds: [1, 2, 4, 6]
 primary_horizon_seconds: 4
-dt: null
-train_horizon_steps: null
-schema_status: UNVERIFIED
+dt: 0.2
+train_horizon_steps: 10
+schema_status: VERIFIED_SCENARIO_PROTO
 research_gate_required: false
 # Acquisition infrastructure uses labeled unit fixtures in pytest, never a fake real pilot.
+source_file_ids: [11835291]

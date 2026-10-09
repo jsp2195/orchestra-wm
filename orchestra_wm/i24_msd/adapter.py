@@ -162,11 +162,11 @@ def inspect_file(path, max_records=8):
 
 
 class I24MSDAdapter:
-    """Separate acquisition/inspection boundary for the genuine scenario release.
+    """Harvard release Scenario-proto adapter, verified on CRC-checked records.
 
-    This is an explicitly INCOMPLETE semantic adapter, not a fallback parser.
-    `scenes()` must stay blocked until authentic records, units, timing and maps
-    are verified and an evidence-pinned conversion is implemented and tested.
+    Native 91 x 0.1 s records supply a current_time_index=10 cutoff. The wire
+    schema is the vendored Waymo Scenario subset, NOT tf.train.Example. No Waymo
+    data, autonomous ego controls, or continuous-I24 units are implied.
     """
 
     def __init__(self, manifest):
@@ -189,10 +189,109 @@ class I24MSDAdapter:
             raise AcquisitionError("No checksum-verified I24-MSD file bytes available")
         return reports
 
-    def scenes(self):
-        self.inspect()
-        raise SchemaUnverified(
-            "I24-MSD semantic schema remains unverified. Inspect actual records plus release codebook, "
-            "then implement/test the evidence-pinned RoadsideScene mapping. Training is blocked; "
-            "a .tfrecord suffix or successful download is not a verified multi-agent scene."
-        )
+    def scenes(self, native_files=None):
+        if not native_files:
+            self.inspect()
+            raise SchemaUnverified("I24-MSD semantic schema remains unverified for these inputs; supply verified extracted Scenario TFRecords")
+        scenes = []
+        for path in native_files:
+            for raw in tfrecords(path, max_records=10000):
+                scene = self.record(raw, str(path))
+                if scene is not None:
+                    scenes.append(scene)
+        return scenes
+
+    def record(self, raw, source_file, kind="REAL_I24"):
+        import hashlib
+        import numpy as np
+        from orchestra_wm.i24.schema import RoadsideScene, RoadMap
+        from .protos.scenario_pb2 import Scenario
+        proto = Scenario.FromString(raw)
+        original = len(proto.SerializeToString())
+        proto.DiscardUnknownFields()
+        if original != len(proto.SerializeToString()):
+            raise SchemaUnverified("Unknown protobuf fields: inspect the release schema before conversion")
+        time = np.array(proto.timestamps_seconds, dtype=np.float64)
+        if len(time) != 91 or not np.allclose(np.diff(time), .1, atol=1e-5):
+            raise SchemaUnverified("Unexpected native timing; do not silently reuse the 91-step protocol")
+        if not proto.HasField("current_time_index") or proto.current_time_index != 10:
+            raise SchemaUnverified("Unexpected source cutoff")
+        if not proto.scenario_id or not 1 <= len(proto.tracks) <= 32:
+            raise SchemaUnverified("Missing scenario ID or unexpected vehicle count")
+        ids = tuple(str(t.id) for t in proto.tracks)
+        if len(set(ids)) != len(ids):
+            raise SchemaUnverified("Duplicate track identity")
+        n = len(ids)
+        xy = np.zeros((91, n, 2), dtype=np.float64)
+        velocity = np.zeros_like(xy)
+        size = np.zeros_like(xy)
+        heading = np.zeros((91, n), dtype=np.float32)
+        valid = np.zeros((91, n), dtype=bool)
+        required = ("center_x", "center_y", "velocity_x", "velocity_y", "length", "width", "heading", "valid")
+        for j, track in enumerate(proto.tracks):
+            if len(track.states) != 91 or not track.HasField("id"):
+                raise SchemaUnverified("State/time or identity contract mismatch")
+            for i, state in enumerate(track.states):
+                if not state.valid:
+                    continue
+                if not all(state.HasField(k) for k in required):
+                    raise SchemaUnverified("Missing required native kinematics/dimensions; no fabricated fields")
+                xy[i, j] = state.center_x, state.center_y
+                velocity[i, j] = state.velocity_x, state.velocity_y
+                size[i, j] = state.length, state.width
+                heading[i, j] = state.heading
+                valid[i, j] = True
+        if not np.isfinite(xy).all() or not np.isfinite(velocity).all() or np.any(size[valid] <= 0):
+            raise SchemaUnverified("Nonfinite kinematics or invalid dimensions")
+        history_valid = valid[:11]
+        if history_valid.any() is False or not history_valid.any():
+            return None
+        # Eligibility depends ONLY on the observed history, never forecast labels.
+        if history_valid.any(0).sum() < 2:
+            return None
+        sign = -1. if np.median(velocity[:11, :, 0][history_valid]) < 0 else 1.
+        origin = float(np.median(xy[:11, :, 0][history_valid]))
+        lane_centers, source_map = [], []
+        for feature in proto.map_features:
+            typ = feature.WhichOneof("feature_data")
+            value = getattr(feature, typ) if typ else None
+            if value is not None and hasattr(value, "polyline"):
+                points = [[p.x, p.y, p.z] for p in value.polyline]
+                source_map.append({"id": str(feature.id), "type": typ, "polyline_xyz_m": points})
+                if typ == "lane" and len(points) > 1:
+                    lane_centers.append(float(np.median(np.array(points)[:, 1])))
+        lane_centers = sorted(set(round(v, 4) for v in lane_centers))
+        if len(lane_centers) < 2:
+            raise SchemaUnverified("Insufficient native static lane geometry")
+        gaps = np.diff(lane_centers)
+        width = float(np.median(gaps[gaps > 1]))
+        if not 2 < width < 6:
+            raise SchemaUnverified("Lane geometry does not support the metres interpretation")
+        # Numerical field extent only; never label these bounds physical road edges.
+        road = RoadMap(-1000., 1000., tuple(lane_centers), width, bins=8, confidence=0.,
+                       coordinate_frame="s=travel_sign*(native center_x-origin), d=native center_y; metres")
+        values = np.zeros((91, n, 8), dtype=np.float32)
+        values[:, :, 0] = sign * (xy[:, :, 0] - origin)
+        values[:, :, 1] = xy[:, :, 1]
+        values[:, :, 2] = sign * velocity[:, :, 0]
+        values[:, :, 3] = velocity[:, :, 1]
+        values[:, :, 6:] = size
+        for i in range(1, 91):
+            usable = valid[i] & valid[i-1]
+            values[i, usable, 4:6] = (values[i, usable, 2:4] - values[i-1, usable, 2:4]) / (time[i] - time[i-1])
+        values[~valid] = 0
+        selected = np.arange(0, 91, 2)  # causal decimation; no interpolation across cutoff
+        provenance = {"kind": kind, "dataset": "I24-MSD", "doi": self.manifest["doi"],
+                      "source_hash": hashlib.sha256(raw).hexdigest(), "source_file": source_file,
+                      "kinematics": "source SI center positions/velocity; backward finite-difference acceleration",
+                      "native_dt_seconds": float(np.median(np.diff(time))), "native_steps": 91,
+                      "source_cutoff_index": 10, "context_steps": 6, "target_dt_seconds": .2,
+                      "x_origin_m": origin, "travel_sign": sign, "source_heading_rad": heading[selected].tolist(),
+                      "source_map": source_map, "source_date": "2022-11-24",
+                      "confidence_available": False, "macro_census_valid": False,
+                      "physical_boundary_known": False, "source_split": None,
+                      "mask_semantics": "source valid = existence/usable track, EMULATED observation masks separate; confidence zero means unavailable"}
+        return RoadsideScene(proto.scenario_id, "I24-MSD/2022-11-24", provenance, time[selected], ids,
+                             values[selected], valid[selected], valid[selected].copy(),
+                             np.zeros_like(valid[selected], dtype=np.float32), road,
+                             np.array([t.object_type for t in proto.tracks]), ids).validate()

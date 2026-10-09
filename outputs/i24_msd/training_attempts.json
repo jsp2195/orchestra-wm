@@ -1,0 +1,1 @@
+{"initial_attempt":{"updates":1,"status":"FAILED_IMPLEMENTATION","reason":"Emulated sparse/outage mask could leave no observed track; fixed with dense fallback for empty training conditioning. Checkpoint preserved under ignored failed_mask_attempt."}}
