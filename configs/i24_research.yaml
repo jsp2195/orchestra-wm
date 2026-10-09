@@ -1,0 +1,10 @@
+extends: i24_pilot.yaml
+name: i24_research
+output: outputs/i24/research
+research_gate_required: true
+training_seeds: [101, 202, 303]
+training_steps: 3000
+train_horizon_steps: 100
+max_scenes: 240
+max_source_rows: 2000000
+max_wall_seconds: 10800

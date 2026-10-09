@@ -1,0 +1,65 @@
+{
+  "INT-A": {
+    "pass": true,
+    "interaction_rms": 1.2609545525031485,
+    "fraction_above_005": 0.9166666666666666
+  },
+  "INT-B": {
+    "pass": true,
+    "training_families": 24,
+    "training_siblings": 216
+  },
+  "INT-C": {
+    "pass": false,
+    "mean": 3.6341066462574187,
+    "sd": 4.200923861662304,
+    "se": 2.4254045223758536,
+    "ci_low": -6.801566742689738,
+    "ci_high": 14.069780035204575,
+    "n_seeds": 3
+  },
+  "INT-D": {
+    "pass": true,
+    "objective_pearson": 0.573818161385601,
+    "outcome_distance_pearson": 0.9894158588023917
+  },
+  "INT-E": {
+    "pass": true,
+    "mean": 1.1855344152451348,
+    "sd": 0.03945412358328637,
+    "se": 0.02277884887145115,
+    "ci_low": 1.087524938967835,
+    "ci_high": 1.2835438915224346,
+    "n_seeds": 3
+  },
+  "INT-F": {
+    "pass": false,
+    "spearman": 0.4821551427588579,
+    "top10_overlap": 0.625,
+    "regret": 1.4804249196965251,
+    "selected_percentile": 18.01470588235294
+  },
+  "INT-G": {
+    "pass": false,
+    "command_frequencies": {
+      "-1": 0.0,
+      "0": 0.006944444444444444,
+      "1": 0.9930555555555556
+    },
+    "joint_strategies": 4
+  },
+  "INT-H": {
+    "pass": false,
+    "model": "C_difference",
+    "task": "all",
+    "mean": -0.13212552133016292,
+    "sd": 0.22884811592036763,
+    "se": 0.13212552133016295,
+    "ci_low": -0.7006157563509592,
+    "ci_high": 0.4363647136906334,
+    "n_seeds": 3,
+    "bootstrap_low": -0.5276421015057714,
+    "bootstrap_high": 0.0,
+    "bootstrap_replicates": 5000
+  }
+}

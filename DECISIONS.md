@@ -31,3 +31,23 @@
 Short residual training may rely heavily on constant-velocity priors and may learn action-dependent cost rankings without accurate action-dependent trajectories. Preliminary runs exhibited that pattern. No reward/metric tuning was performed to make those results pass. The final measured direction is recorded in `outputs/EXPERIMENT_SUMMARY.md`; do not substitute preliminary values.
 
 Current-observation trivial baselines and the reset-memory ablation are deliberately limited. The stronger separately trained memoryless model and independent learned MPC baseline are also reported. Improvement over local reactive control alone cannot isolate the value of centralized interaction modeling. Short planning episodes limit throughput evidence. These are Phase-1 research limitations, not production readiness claims.
+
+## Phase 2 continuation
+
+- Preserve the preregistered plan/config and original Phase-1 artifact hashes. Repair the reproduction comparator by semantic row keys; all numerical differences were exactly zero.
+- Add the pre-authorized D channel only because the frozen Phase-1 spatial-specificity audit failed its pre-training directional test. Treat the small sensitivity difference cautiously, and retain C as primary.
+- Use a balanced initial CEM pool with all nine factorial choices and nine distinct temporal plans. Replace the duplicate all-maintain temporal plan with a staggered exchange. Apply the same candidates, objective, random proposals and budgets to oracle and learned controllers; do not reward command diversity.
+- Preserve all three final checkpoints per model and the fixed 240-update budget. Resumption checks source/config signatures; final results never select a best seed or checkpoint.
+- The independent learned baseline retains the original additive per-agent objective predictor. Its shared CEM machinery optimizes an additive score without a cross-agent predictive pathway. This matches the committed Phase-2 plan rather than silently substituting a different local optimizer.
+- Treat trajectory error, factorial structure, and closed-loop coordination separately. A shuffle intervention can hurt even an independent predictor, so it cannot alone establish joint reasoning. Report negative primary findings without moving thresholds.
+
+## Phase 3 — ORCHESTRA-I24
+
+- Create a separate branch and passive research namespace from completed Phase 2. Preserve the negative coordination result and original ledger byte-for-byte; Phase-3 claims have their own ledger.
+- Official multivehicle data is inaccessible here: no mounted files, data-site network 403, tutorial requires account credentials. Only official documentation/code were retrieved. Do not count accessible documentation or I24-3D validation samples as data access.
+- Implement the inspected v1.0 westbound JSON-array contract, not an invented universal I-24 schema. Use official PDF roadway coordinates/approximate lane bounds; reject unsupported versions/directions. Keep global-geographic calibration unavailable rather than fabricate it.
+- Start with a compact graph variational recurrent state-space model and learned macro decoder. Shared latent prior innovations generate coupled futures; the training-only posterior never becomes an imagination input. No action conditioning on passive data.
+- Fixed-cohort identity roster comes from history only. Visible-track fields are inputs; full reconstructed fields are targets. Empty observed bins do not certify empty road. Open-road Poisson entry from historical appearances is explicitly an unvalidated inflow assumption.
+- Six matched-update fixture variants, proper energy/CRPS scores, memory/graph/sensing controls, and exact demo/evaluation-array checks provide engineering evidence. Fixture results do not satisfy real-data, wave, information-value or Cavnue gates. Small fixed-budget training is not convergence.
+- Preregister the 10-second micro-information macro proper-score experiment before held-out comparisons. Distinguish information advantage from model architecture advantage and count independent sessions, not vehicles/windows.
+- Stream bounded Parquet conversion with source/acquisition/partition hashes; fail on mismatch. Resumption must not silently mix stale partitions with changed data. Split windows are session-grouped or chronologically buffered.

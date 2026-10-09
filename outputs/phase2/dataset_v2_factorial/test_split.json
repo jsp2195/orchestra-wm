@@ -1,0 +1,114 @@
+[
+  {
+    "family_id": "test_0",
+    "scenario": "intersection",
+    "seed": 410000,
+    "initial_state_sha256": "b437d278b0cbe1bc73acf1e0c1091c244374d8d3e22f96ecfc9455dfebf3b04e",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_1",
+    "scenario": "merge",
+    "seed": 410001,
+    "initial_state_sha256": "8d36e22b7880c40eced08ff64ce8ae09eaa0f0c3c0264fbf6b5874ac7648e5ea",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_2",
+    "scenario": "intersection",
+    "seed": 410002,
+    "initial_state_sha256": "66e0d2dcff7258f0328d06bdd2e69fe84012cb7f65b698635622f72899c1e05a",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_3",
+    "scenario": "merge",
+    "seed": 410003,
+    "initial_state_sha256": "9d6253668cadd25dabbaf8b58f6c9266de02c73c5e317651dd0597882b8de631",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_4",
+    "scenario": "intersection",
+    "seed": 410004,
+    "initial_state_sha256": "a114b5317e97595c1ce3e3a1810a89692573d7263231353d8ef78fdc33c2f1c8",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_5",
+    "scenario": "merge",
+    "seed": 410005,
+    "initial_state_sha256": "382694ae0e5d55cd83444e5ff388efafd3eea5d05a144ca7bf84e2ef3ea34a85",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_6",
+    "scenario": "intersection",
+    "seed": 410006,
+    "initial_state_sha256": "74a76e60f6e5f1568eeb175cc14ce8dfa2977a5a8818755dccc51f82940806e4",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_7",
+    "scenario": "merge",
+    "seed": 410007,
+    "initial_state_sha256": "a36addef606e1f9fefd0c22482899e9bd811e546036f2a8415a38ffea0f9bc38",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_8",
+    "scenario": "intersection",
+    "seed": 410008,
+    "initial_state_sha256": "c34ab702349038e28b343ee9a86c09bb1fb552a58c24f6ff8b9c23e69eac9837",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_9",
+    "scenario": "merge",
+    "seed": 410009,
+    "initial_state_sha256": "afe2b34d0320b2ea44291c8a907b98c75fc1424e58c6f969104d863eb7873f02",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_10",
+    "scenario": "intersection",
+    "seed": 410010,
+    "initial_state_sha256": "306b3cb1d5b137f3411276e01cf7421a70890c08028a744f32344c20741ee01e",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_11",
+    "scenario": "merge",
+    "seed": 410011,
+    "initial_state_sha256": "78cf3debffa3bb5ca14228449e0aef5042928a1e631bff859eb78076fad34a04",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_12",
+    "scenario": "intersection",
+    "seed": 410012,
+    "initial_state_sha256": "1a512459540495767edcf50373b01d5d6e64dc2608eb9b87731f7859ab4e5d10",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_13",
+    "scenario": "merge",
+    "seed": 410013,
+    "initial_state_sha256": "3edcb76f8fbcc1b2ba9a6e926b31d0601e225d16521a6b7268b83a93db0c041a",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_14",
+    "scenario": "intersection",
+    "seed": 410014,
+    "initial_state_sha256": "86fa5bac9593e963f324075d2b126bd9cbe68d2205cadc19e71693d1238984f6",
+    "interaction_relevant": true
+  },
+  {
+    "family_id": "test_15",
+    "scenario": "merge",
+    "seed": 410015,
+    "initial_state_sha256": "217fd5d9c5bd7e1e081ce0d79e4d7ca1667bfe4522badbc1b1eaaf02d699358a",
+    "interaction_relevant": true
+  }
+]

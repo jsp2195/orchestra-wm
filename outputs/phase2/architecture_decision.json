@@ -1,0 +1,6 @@
+{
+  "explicit_variant_eligible": true,
+  "interacting_mean": 0.7181449222067992,
+  "distant_mean": 0.7242323892811934,
+  "decision_basis": "Mean interacting cross-action effect must exceed distant effect; assessed before retraining."
+}

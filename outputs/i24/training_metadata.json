@@ -1,0 +1,68 @@
+[
+  {
+    "variant": "independent",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 12.36818143299024,
+    "checkpoint_sha256": "aab872d1208ece2429b84b64292b6043111ddf3e3cf8026538f899e946a4f0a7",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.00442049209959805
+  },
+  {
+    "variant": "deterministic",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 11.25931922601012,
+    "checkpoint_sha256": "16931e636b8dddb572621e77368e6fbdfbf574838a7cf2e49b10c8d570512e50",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.004868487517038981
+  },
+  {
+    "variant": "macro_only",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 9.52565456899174,
+    "checkpoint_sha256": "7e4c5363761f5e90a807a320823d59dc8945129f0631407c3111a0eea2adc416",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.005846873080978791
+  },
+  {
+    "variant": "micro_only",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 14.00505407100718,
+    "checkpoint_sha256": "a11e3349cb924351b90519b122e04f15ea33c732b7a152aed832c8eb2504a78c",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.003634182969108224
+  },
+  {
+    "variant": "no_crossscale",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 13.526381685005617,
+    "checkpoint_sha256": "7a538f8e7feac02e91ab9e5ea75993ab7ead51a50c722cb57fc42aae916c5a10",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.007933923974633217
+  },
+  {
+    "variant": "full",
+    "seed": 101,
+    "parameters": 84514,
+    "updates": 100,
+    "sampled_scene_passes": 10.0,
+    "seconds": 13.783639925008174,
+    "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "final_validation_loss": 0.02669118158519268
+  }
+]

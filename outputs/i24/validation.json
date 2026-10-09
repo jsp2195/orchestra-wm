@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "preserved_files": 268,
+  "demo_entries_exactly_match_evaluation": 10,
+  "defined_metrics_finite": true,
+  "split_counts": {
+    "train": 10,
+    "validation": 4,
+    "test": 4
+  },
+  "history_matched_pairs": 6,
+  "real_data_gate": "BLOCKED"
+}

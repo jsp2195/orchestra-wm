@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "reason": "Authorized official multivehicle files and acquisition.json required",
+  "resume": "uv run python scripts/run_i24_pipeline.py --config configs/i24_pilot.yaml --data-root /path/to/I24MOTION_PUBLIC"
+}

@@ -1,0 +1,96 @@
+{
+  "source_config_sha256": "8ff9df7b6b7c5bd70053c687927465153cf408432e82504040bc8d5dace6f1f2",
+  "checkpoint_sha256": {
+    "A_original_101.pt": "898210cb1619c5fa75a9dc62034f2d3a6dcc3d4542007171a6a60cc083c6beb5",
+    "A_original_202.pt": "c7f699b98c5cc2886df369a39d705b9059f3f1f21f4843e788c8f3b09645ff7c",
+    "A_original_303.pt": "1ddf77308906d0bfdfef7cb563dea24c8391a2c53a0fea870e4063d2da06fa98",
+    "B_factorial_101.pt": "7330e9276e45a143a3f25e869652587c3e5bbb5ce37f7c16cd666d19a7b21b0b",
+    "B_factorial_202.pt": "95b8fbdb0647a4fe2cb7f25b267ace1c5f2d74e0a2aeeb4852e1c4a774a4d9a7",
+    "B_factorial_303.pt": "00aac3bb68f367f4b707713cf11dadd67095dac121109d96cb7acf799ee397a1",
+    "C_difference_101.pt": "41c18ad8a4285a0ef79d7023033adbec92b5a9a44d6271f5d7ded073076643d5",
+    "C_difference_202.pt": "12deea7fddd44f3f01ef777d83f545b5998eb157502dd886ca3187bdd42c97ff",
+    "C_difference_303.pt": "2dd9b5db697b5c01f518d77ea754b2cd2fe47568bf85bbd746b6c954e703f1ea",
+    "D_pairwise_101.pt": "960b01a69b167721c1c1bebbb93f687e95d9e811ae758a4fe509e54507850518",
+    "D_pairwise_202.pt": "9d9e53bdde7de3ee43ed2edf788e8fd7be86d831ab02931a95c5cdc73f498b7a",
+    "D_pairwise_303.pt": "e0dade20e08dfe739fa9e74e7a12bb43432e506cbbfd88fa1f0dc4eb976b8475",
+    "independent_101.pt": "6a460c468befcf5d2bf54aee7c91bb19a655c5d9c1b04aaa9bbe9462448f5e8e",
+    "independent_202.pt": "98dd81fcc1bafbdabd0b7237977e44f95d0e622900c32fcdf7cf7e21c4d9daa7",
+    "independent_303.pt": "fce08e6bc00257eaf2769c79ab1c937c8a4bd7546742c1ba7c9c8a8bbd1baf9f",
+    "privileged_101.pt": "8085ad036e0b207cc465eb4bc20bcc932348380eca576aa5f21672100e3978e0",
+    "privileged_202.pt": "391721c46059c3fbb964e232d0b699a37dba1f9de87c261bc637e00e07f75090",
+    "privileged_303.pt": "cb137ece22559c35ee911abe4eb740f3b914f92c9c2a2a26fec19c93ceff132f"
+  },
+  "config": {
+    "name": "phase2",
+    "seed": 17,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "device": "auto",
+    "threads": 2,
+    "scenarios": [
+      "intersection",
+      "merge"
+    ],
+    "vehicles": 10,
+    "connected": 2,
+    "episodes": 64,
+    "episode_steps": 48,
+    "dt": 0.5,
+    "model_dim": 128,
+    "layers": 2,
+    "epochs": 6,
+    "batch_size": 18,
+    "train_batches": 32,
+    "context": 4,
+    "train_horizon": 10,
+    "learning_rate": 0.0007,
+    "horizons": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      40
+    ],
+    "eval_contexts": 6,
+    "planning_steps": 12,
+    "plan_horizon": 10,
+    "candidates": 18,
+    "cem_iterations": 2,
+    "detection_noise": 0.6,
+    "miss_probability": 0.18,
+    "sensor_regime": "mixed",
+    "objective_weights": [
+      1.0,
+      0.5,
+      -0.8,
+      12.0,
+      2.0,
+      0.04
+    ],
+    "output": "outputs/phase2",
+    "training_seeds": [
+      101,
+      202,
+      303
+    ],
+    "train_families": 24,
+    "validation_families": 6,
+    "evaluation_families": 16,
+    "sibling_horizon": 12,
+    "training_steps": 240,
+    "validation_interval": 40,
+    "cf_weight": 1.0,
+    "natural_fraction": 0.25,
+    "interaction_distance": 30,
+    "coordination_min_effect": 0.1
+  },
+  "seeds": [
+    101,
+    202,
+    303
+  ]
+}

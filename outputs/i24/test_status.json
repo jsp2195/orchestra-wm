@@ -1,0 +1,9 @@
+{
+  "full_suite": "PASS",
+  "passed": 50,
+  "failed": 0,
+  "skipped": 0,
+  "protected_files": 268,
+  "source_fingerprints_match": true,
+  "official_real_data": "BLOCKED"
+}

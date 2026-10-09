@@ -1,0 +1,57 @@
+{
+  "kind": "SYNTHETIC_FIXTURE",
+  "data_sha256": "b56dbaef1c264c7f8b5c6902fc323ca03ebe892c92c965845656c6835a332c88",
+  "evaluation_links": [
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-0-dense.npz",
+      "rollout_sha256": "53f27e4b9f9f0aff610224e3e9c385c1358fbd8521d93549606a15ac9d3744a2",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-0-sparse50.npz",
+      "rollout_sha256": "3f0f371eb0b78b1ad85913401d02a2f689664e534a58edbf17926857ad1b1ab1",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-0-sparse20.npz",
+      "rollout_sha256": "0b50cd31a684ec301340e64cfbb00c4e73e6bb9b1ce782e5fe964a109c1d0b3b",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-0-blind.npz",
+      "rollout_sha256": "0efe145d9dc9c447b82672ceeee5543945d0606e0d9e97e4acd2ec93af3426fb",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-0-outage.npz",
+      "rollout_sha256": "cf0229177fed8d60b630838dcafc1fea1a820b2659fc84b0311fa20f6d2f7a84",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-1-dense.npz",
+      "rollout_sha256": "5c8bfd00c8a3ef03ccaeb98857b0f29cc3f794109e315ff3ffd64edf2ae287c3",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-1-sparse50.npz",
+      "rollout_sha256": "b74e14bed150c709a093b9d068c5e6207e95a2974e0251c6866159192311c837",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-1-sparse20.npz",
+      "rollout_sha256": "206e755e540c32ab06f41d27ffdc3ddaa3740e87b81fc4833103bbf1bcb4e1b5",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-1-blind.npz",
+      "rollout_sha256": "0143390cf09ca4afd177bcfe98f7404d7916a201dfce669cb61d7be478eeb74b",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    },
+    {
+      "evaluation_array_path": "outputs/i24/rollouts/full-101-1-outage.npz",
+      "rollout_sha256": "c4bdd238d6c723f516135f31f92c3961b29d3b86c7d45f37b8f92469c7f1229c",
+      "checkpoint_sha256": "4c1e43a06e62acfa012fed14c4b38c15dc05c933ff83285d5a0b8dd8def0c8e7"
+    }
+  ],
+  "rule": "Arrays are copied without resimulation or interpolation from saved evaluation rollouts."
+}

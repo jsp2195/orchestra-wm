@@ -1,0 +1,67 @@
+{
+  "status": "BLOCKED",
+  "authentic_multivehicle_data_available": false,
+  "dataset": "I-24 MOTION",
+  "requested_release": "I24MOTION_PUBLIC_v1.0 / INCEPTION",
+  "actual_release": null,
+  "files": [],
+  "file_count": 0,
+  "total_bytes": 0,
+  "local_search_roots": [
+    "/workspace/attachments",
+    "/workspace/shared",
+    "/workspace/library-files",
+    "/workspace/scratch",
+    "/mnt"
+  ],
+  "local_search_depth": 3,
+  "website": "https://i24motion.org/data",
+  "website_result": "HTTP tunnel 403 Forbidden; no authenticated access",
+  "official_tutorial_requirement": "Download using account credentials; I24MOTION_PUBLIC_v1.0/trajectory_data_by_date/11-22-2022/data_demo",
+  "agreement": "Official data use agreement updated 19 September 2023: academic/commercial use allowed; no re-identification or harm; citation required; redistribution must retain terms; as-is. Not a blanket software license.",
+  "citation": "Gloudemans et al. (2023), I-24 MOTION: An instrument for freeway traffic science, Transportation Research Part C 155, 104311.",
+  "evidence": [
+    {
+      "document": "waves",
+      "sha256": "f8727faa4cc5eb128ff3f4af558ecc7125940c5e7906ccd0d8dbf746fa5fe77f",
+      "source": "https://raw.githubusercontent.com/I24-MOTION/wave-analysis/main/README.md"
+    },
+    {
+      "document": "tools",
+      "sha256": "b847dfb5fce0817eae3b5a20d11a5ffa686855668cdbebff40f338726d79f28d",
+      "source": "https://raw.githubusercontent.com/I24-MOTION/VT_tools/main/README.md"
+    },
+    {
+      "document": "postprocessing",
+      "sha256": "c1d04187b41e38050719e047c310f02a38db82a43c641fa63dd562c096819f14",
+      "source": "https://raw.githubusercontent.com/I24-MOTION/I24-postprocessing-lite/main/README.md"
+    },
+    {
+      "document": "tutorial",
+      "sha256": "b13adf07456386731b73d6dc0b9f067c27876a339f9208e664356ce26e5fbced",
+      "source": "https://raw.githubusercontent.com/I24-MOTION/data_tutorial/main/README.md"
+    },
+    {
+      "document": "documentation",
+      "sha256": "7586e8316d2dee34bded318e59fc958827a045e17be72e7634b241dd7b99ea6b",
+      "source": "https://raw.githubusercontent.com/I24-MOTION/I24M_documentation/main/README.md"
+    },
+    {
+      "source": "https://github.com/I24-MOTION/I24M_documentation/blob/9f8a9158ba0bcbfdd525f4be771f8d45ad1bd4df/v1.x_I-24MOTION_data_documentation.pdf",
+      "git_commit": "9f8a9158ba0bcbfdd525f4be771f8d45ad1bd4df",
+      "sha256": "a79731c89bef5a0d085f7f3ccb9504cc9c63199887f49a2835ba98b4e4dffff9"
+    },
+    {
+      "source": "https://github.com/I24-MOTION/data_tutorial/blob/c035225caaff52c02994c36002d61e6f18061eb4/intro_trajectory_data.ipynb",
+      "git_commit": "c035225caaff52c02994c36002d61e6f18061eb4",
+      "sha256": "bbcf14db271b23982fa8ba365fb1208a5d3a892855de3a3816f59a70d4a51370"
+    }
+  ],
+  "excluded_substitutes": [
+    "one-vehicle CAN/GPS",
+    "I24-3D annotations",
+    "postprocessing SIM/GT validation samples",
+    "synthetic fixture"
+  ],
+  "verified_schema": "Official I24M_documentation v1.x PDF; tutorial JSON array parsed with ijson.items(..., item)"
+}
