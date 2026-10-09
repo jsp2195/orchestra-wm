@@ -1,0 +1,25 @@
+name: i24_smoke
+source_kind: SYNTHETIC_FIXTURE
+output: outputs/i24
+seed: 7301
+training_seeds: [101]
+threads: 2
+workers: 0
+device: cpu
+dt: 0.2
+context_seconds: 5
+horizons_seconds: [5, 10, 20]
+fixture_scenes: 18
+fixture_duration: 30
+max_scenes: 64
+max_agents: 64
+max_source_rows: 2000000
+bins: 8
+model_dim: 48
+latent_dim: 6
+training_steps: 100
+train_horizon_steps: 10
+learning_rate: 0.001
+samples: 8
+max_wall_seconds: 900
+variants: [independent, deterministic, macro_only, micro_only, no_crossscale, full]

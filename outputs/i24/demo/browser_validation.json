@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "browser": "Chromium via Playwright",
+  "page_errors": [],
+  "scene_options": 2,
+  "sample_switch_changes_canvas": true,
+  "sensing_switch_works": true,
+  "freeze_at_cutoff_works": true,
+  "visible_label": "SYNTHETIC FIXTURE \u2014 NOT AN I-24-TRAINED MODEL",
+  "html_sha256": "66722b799618b2b8e3248fbd8e82579307e37d4f2aa70536d8b9920463757897",
+  "evaluation_arrays_checked": "validation.json: 10 exact matches",
+  "method": "Loaded generated self-contained HTML with page.set_content; no external website or source data accessed."
+}

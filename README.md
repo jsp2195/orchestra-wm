@@ -198,3 +198,16 @@ A fresh clone needs the original ignored Phase-1 dataset/checkpoints and TensorB
 - [16_training_curves](outputs/phase2/figures/16_training_curves.png)
 
 NEXT EXPERIMENT: Keep the same factorial families, architecture, and update budget; replace the centered sibling loss with a loss on the double-centered interaction residual J, and test whether reduced objective-residual error improves plan ranking and the preregistered coordination gain.
+
+<!-- PHASE3_I24 -->
+
+## Phase 3 — ORCHESTRA-I24
+
+A separately namespaced passive, stochastic highway world-model extension. Official I-24 MOTION data access is currently **BLOCKED**; only a conspicuously labeled synthetic fixture has been trained and evaluated. Phase 2 remains a negative centralized-coordination result. No causal AV action, real safety, real wave skill or Cavnue compatibility claim is made.
+
+```sh
+uv run python scripts/run_i24_pipeline.py --config configs/i24_smoke.yaml
+uv run python scripts/run_i24_pipeline.py --config configs/i24_pilot.yaml --data-root /path/to/I24MOTION_PUBLIC
+```
+
+[Fixture demo](outputs/i24/demo/index.html) · [Measured report](outputs/i24/EXPERIMENT_SUMMARY.md) · [Data acquisition](docs/I24_DATA_ACQUISITION.md) · [Evaluation protocol](docs/I24_EVALUATION_PROTOCOL.md) · [Model card](docs/I24_MODEL_CARD.md) · [Claim ledger](docs/I24_CLAIM_LEDGER.md). The research config is gated and never launched automatically. The demo must be downloaded/opened in a browser; GitHub does not execute HTML previews.

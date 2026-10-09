@@ -1,0 +1,72 @@
+{
+  "fingerprint": "c5e32a74ba7abf2e1c06677f3928cc2d1969e2a931a0dae249a9bfda1e306092",
+  "source_hashes": {
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c",
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3",
+    "orchestra_wm/i24/training.py": "2683265a29ba94581dafb365b2f9ccfa7292caeb193feda28007a30c15cdbf51"
+  },
+  "evaluation_source_hashes": {
+    "orchestra_wm/i24/demo_template.html": "eb28f54ed42ef580f02200b9a494c154731c621ff06494244f2288874355159f",
+    "orchestra_wm/i24/__init__.py": "0c34ab7b283003ca9e56b630fc4d31a8d6fcf51f28581b9297e86032ab86fa22",
+    "orchestra_wm/i24/training.py": "2683265a29ba94581dafb365b2f9ccfa7292caeb193feda28007a30c15cdbf51",
+    "orchestra_wm/i24/open_road.py": "6bb6aa8c25d0e83eb3ca389af0b1fb6228a58f9a22b9101036057e959b3db5f0",
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c",
+    "orchestra_wm/i24/baselines.py": "2d2af1bff9933bf6e55ca44bc96312ccff1c1c234ea30b15fee5e2aea644b2b7",
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/evaluation.py": "d73bf19e422257b172814c07bf3b0e609eb9044908f713c46de72c1ed6ce371b",
+    "orchestra_wm/i24/pipeline.py": "06f5c1f35c10086d5088e290df213899277063aa0bfc5b57862fdda6a2d5ebe1",
+    "orchestra_wm/i24/reporting.py": "f71b65ba369ae05b51e6d93e8af87add6e109bf72dec365c014578b2585a1f62",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3"
+  },
+  "split_sha256": "fcf656355c33f9932c1a25fcfb5576184508666be74e4b8d18173e9dab11e018",
+  "source_kind": "SYNTHETIC_FIXTURE",
+  "config": {
+    "name": "i24_smoke",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "output": "outputs/i24",
+    "seed": 7301,
+    "training_seeds": [
+      101
+    ],
+    "threads": 2,
+    "workers": 0,
+    "device": "cpu",
+    "dt": 0.2,
+    "context_seconds": 5,
+    "horizons_seconds": [
+      5,
+      10,
+      20
+    ],
+    "fixture_scenes": 18,
+    "fixture_duration": 30,
+    "max_scenes": 64,
+    "max_agents": 64,
+    "max_source_rows": 2000000,
+    "bins": 8,
+    "model_dim": 48,
+    "latent_dim": 6,
+    "training_steps": 100,
+    "train_horizon_steps": 10,
+    "learning_rate": 0.001,
+    "samples": 8,
+    "max_wall_seconds": 900,
+    "variants": [
+      "independent",
+      "deterministic",
+      "macro_only",
+      "micro_only",
+      "no_crossscale",
+      "full"
+    ]
+  },
+  "epochs": "scene-sampling updates, not full epochs",
+  "resources": {
+    "device": "cpu",
+    "threads": 2,
+    "workers": 0,
+    "scratch_cap_bytes": 2147483648,
+    "max_wall_seconds": 900
+  }
+}

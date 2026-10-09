@@ -1,0 +1,134 @@
+{
+  "train": [
+    {
+      "scene": "fixture-0",
+      "session": "fixture-session-0",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "0c6d8121e20040d5708b64e177704ec818a803ddb07a8273c17ed7bc9ab56ea9"
+    },
+    {
+      "scene": "fixture-1",
+      "session": "fixture-session-1",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "ad7e75706d130d7cd5259ab81e0fe939afe1466cc2c938d490d3a1810719b986"
+    },
+    {
+      "scene": "fixture-2",
+      "session": "fixture-session-2",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "7ccb9821926a2ad141516d26d63ab36385ed5c62a7b3728f40076b07382ee223"
+    },
+    {
+      "scene": "fixture-3",
+      "session": "fixture-session-3",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "24a81cb757583b77ea395b6223425224d9e5d407610b3efccfda109216d595f1"
+    },
+    {
+      "scene": "fixture-4",
+      "session": "fixture-session-4",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "d144358982f1c455fa3417728e1eef1f07e8d492cc11e3dbfb8cb769e5e1d5f0"
+    },
+    {
+      "scene": "fixture-5",
+      "session": "fixture-session-5",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "756aad29c2bb44d6f9437e2e7c8469a0e8aedfcb064cc753375e0d06714a951c"
+    },
+    {
+      "scene": "fixture-6",
+      "session": "fixture-session-6",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "29645b9230293a9e0aba18edb22299ebd747e2931a743bee6be206e73d072c69"
+    },
+    {
+      "scene": "fixture-7",
+      "session": "fixture-session-7",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "c2fa0b8508c01655392c7738c47ccf8626344e25a9fdd2f1117a85eef1eb82e9"
+    },
+    {
+      "scene": "fixture-8",
+      "session": "fixture-session-8",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "f2beed2d45c7f7958aa7b47289c959b98fadd60ff037eb9668187f64f150ccc7"
+    },
+    {
+      "scene": "fixture-9",
+      "session": "fixture-session-9",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "5efaaf92e4eeb688552ffdbbc05ff274bb21cec7b976c4060f8f11026f6cd6ff"
+    }
+  ],
+  "validation": [
+    {
+      "scene": "fixture-10",
+      "session": "fixture-session-10",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "4958649d72e9e91c07965b103b6c5ee22271e9710bc406b8425d85965b639e87"
+    },
+    {
+      "scene": "fixture-11",
+      "session": "fixture-session-11",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "efb5bb00ab7745bc53f94e43562febe92faec67f0fed28c3cf23ff41d6e61c16"
+    },
+    {
+      "scene": "fixture-12",
+      "session": "fixture-session-12",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "da7e9efb84269f544f6fae04df942a70d2bd56a8a69cfa9e07c9a5192c6d234e"
+    },
+    {
+      "scene": "fixture-13",
+      "session": "fixture-session-13",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "459bd51b0447d086c6a52439093fee7f591e350e003928d1b2560352287ab970"
+    }
+  ],
+  "test": [
+    {
+      "scene": "fixture-14",
+      "session": "fixture-session-14",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "155e9fccbb911edf9a096c8df446ddbe45f7802d76087fa91194b564841f6ca9"
+    },
+    {
+      "scene": "fixture-15",
+      "session": "fixture-session-15",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "83cd13c5d1a29c89189f0944c5af0c5a6b458c06a7f8bf41d0dae38abcf9a71d"
+    },
+    {
+      "scene": "fixture-16",
+      "session": "fixture-session-16",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "66c2a2905baaf53f06bd9a1cfe305cba12b1137819307af8ba878efe0e32d731"
+    },
+    {
+      "scene": "fixture-17",
+      "session": "fixture-session-17",
+      "start": 0.0,
+      "end": 30.0,
+      "source_hash": "4873d047c70515916ae8a66b68725afc410fabc76e3dc5edb3abe1aab8a569be"
+    }
+  ]
+}

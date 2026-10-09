@@ -1,0 +1,28 @@
+{
+  "evaluation_array_path": "outputs/i24/rollouts/full-101-0-dense.npz",
+  "rollout_sha256": "53f27e4b9f9f0aff610224e3e9c385c1358fbd8521d93549606a15ac9d3744a2",
+  "sample": 0,
+  "time_indices": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95
+  ],
+  "no_interpolation": true
+}

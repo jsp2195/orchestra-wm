@@ -9,3 +9,11 @@ outputs/**/demo_frames/
 .cache/
 outputs/phase2/dataset_v2_factorial/data.npz
 outputs/phase2/evaluation_truth.npz
+# Phase 3: source/canonical arrays and inference caches are reproducible, not published raw data.
+outputs/i24/**/canonical/
+outputs/i24/canonical/
+outputs/i24/**/converted/
+outputs/i24/converted/
+outputs/i24/**/rollouts/
+outputs/i24/rollouts/
+outputs/i24/raw/

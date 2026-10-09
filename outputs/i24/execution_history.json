@@ -1,0 +1,27 @@
+[
+  {
+    "runtime_seconds": 100.19924094599264,
+    "existing_checkpoints_at_start": 0,
+    "model_count": 6,
+    "training_seconds_in_checkpoints": 74.46823090901307,
+    "fingerprint": "c5e32a74ba7abf2e1c06677f3928cc2d1969e2a931a0dae249a9bfda1e306092",
+    "source_kind": "SYNTHETIC_FIXTURE",
+    "evidence": "Completed clean checkpoint run recorded in metrics.json before subsequent restart validation"
+  },
+  {
+    "runtime_seconds": 26.560235690005356,
+    "existing_checkpoints_at_start": 6,
+    "model_count": 6,
+    "training_seconds_in_checkpoints": 74.46823090901307,
+    "fingerprint": "c5e32a74ba7abf2e1c06677f3928cc2d1969e2a931a0dae249a9bfda1e306092",
+    "source_kind": "SYNTHETIC_FIXTURE"
+  },
+  {
+    "runtime_seconds": 26.709061087996815,
+    "existing_checkpoints_at_start": 6,
+    "model_count": 6,
+    "training_seconds_in_checkpoints": 74.46823090901307,
+    "fingerprint": "c5e32a74ba7abf2e1c06677f3928cc2d1969e2a931a0dae249a9bfda1e306092",
+    "source_kind": "SYNTHETIC_FIXTURE"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "mean": 0.011855585361089216,
+  "ci_low": -0.007345774476586433,
+  "ci_high": 0.024534865379762263,
+  "clusters": 4,
+  "status": "PRELIMINARY",
+  "scientific_status": "BLOCKED",
+  "source_kind": "SYNTHETIC_FIXTURE",
+  "training_seeds": [
+    101
+  ],
+  "metric": "10-second normalized macro energy-score reduction",
+  "note": "Fixture clusters are synthetic generation seeds, not independent real days. Fewer than five real clusters cannot support the primary scientific claim."
+}

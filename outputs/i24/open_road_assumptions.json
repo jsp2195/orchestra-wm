@@ -1,0 +1,9 @@
+{
+  "mode": "open_road",
+  "inflow": "past-observed appearance rate Poisson assumption; appearance can be occlusion reacquisition",
+  "rate_per_second": 0.0,
+  "generated_births": 0,
+  "max_births": 32,
+  "future_truth_used": false,
+  "validated_real_inflow": false
+}
