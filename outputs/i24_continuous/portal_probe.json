@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://i24motion.org/access_data",
+    "authenticated": false,
+    "error": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+    "url": "https://i24motion.org/data",
+    "authenticated": false,
+    "error": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+    "url": "https://i24motion.org/access_data",
+    "authenticated": false,
+    "phase": "after_allowlist_addition",
+    "error": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+    "url": "https://i24motion.org/data",
+    "authenticated": false,
+    "phase": "after_allowlist_addition",
+    "error": "Tunnel connection failed: 403 Forbidden"
+  },
+  {
+    "url": "https://i24motion.org/access_data",
+    "authenticated": false,
+    "phase": "resumed_session",
+    "checked_utc": "2026-10-10T04:12:57.342979+00:00",
+    "error": "HTTPError"
+  },
+  {
+    "url": "https://i24motion.org/data",
+    "authenticated": false,
+    "phase": "resumed_session",
+    "checked_utc": "2026-10-10T04:12:58.393561+00:00",
+    "error": "HTTPError"
+  },
+  {
+    "url": "https://i24motion.org/access_data",
+    "phase": "classify_http_failure",
+    "status": 503,
+    "reason": "Service Unavailable",
+    "authenticated": false
+  },
+  {
+    "url": "https://i24motion.org/data",
+    "phase": "classify_http_failure",
+    "status": 503,
+    "reason": "Service Unavailable",
+    "authenticated": false
+  }
+]

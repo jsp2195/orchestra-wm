@@ -1,0 +1,6 @@
+{
+  "source": "ORIGINAL_I24_MOTION",
+  "status": "BLOCKED",
+  "reason": "Missing authorized source files and acquisition.json; see docs/I24_CONTINUOUS_ACQUISITION.md",
+  "training": "NOT_RUN"
+}

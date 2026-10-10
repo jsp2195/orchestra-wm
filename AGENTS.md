@@ -66,3 +66,9 @@ Keep all new code under `orchestra_wm/i24`, configs `i24_*`, tests `tests/i24`, 
 ## Harvard I24-MSD campaign
 
 Work on `phase3-i24-msd`; retain the existing verified ZIP and three extracted shards under ignored `data/i24_msd/raw`. New code/results are under `orchestra_wm/i24_msd` and `outputs/i24_msd`. Read docs/I24_MSD_DATA_CARD.md, I24_MSD_EVALUATION_PROTOCOL.md and I24_MSD_IMPLEMENTATION.md. The source cutoff is 1 s in 9 s records; never reuse continuous-I24 10/20 s evaluation. The existing pilot is REAL, 57/19/19 supplied-track-grouped scenes, three 500-update seed-101 models; uncertainty/generalization remain limited. Use the exact run/resume command in README; cached bytes and fingerprints are verified, never silently replaced. Do not reinterpret the uncertain energy-score result as interaction superiority. `preserve()` protects 381 earlier tracked files, allowing only appended notes in README/AGENTS/DECISIONS/.gitignore. Full tests include actual records when present and explicitly skip real-data tests on an unmounted checkout. The research config remains gated. Do not automatically run larger or unrelated campaigns, and do not publish raw data, temporary transfers, full checkpoints or signed download URLs.
+
+<!-- I24_CONTINUOUS -->
+
+## Phase 4 access gate
+
+Use existing `phase4-i24-continuous` checkout. Read docs/I24_CONTINUOUS_ACQUISITION.md and I24_CONTINUOUS_EVALUATION_PROTOCOL.md. No authentic continuous data is available. New CLI is import/QC only, exits 2 until downstream source review/implementation. Never train old fixtures or Harvard data as continuous evidence. Keep all previous scientific files byte-identical; only append notes after this marker. No password/cookie/signed URL handling in repository. Preserve verified Harvard archive/shards and previous checkpoints. No automatic research run.
