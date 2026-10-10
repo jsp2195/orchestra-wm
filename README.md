@@ -237,3 +237,5 @@ I24-MSD uses Scenario protocol buffers, not continuous I24 JSON. The original st
 ## Phase 4 — original continuous I24 (access blocked)
 
 Branch `phase4-i24-continuous` preserves all previous results. The official portal returned HTTP503 after earlier proxy403; no original continuous trajectories, real continuous checkpoint or visual results exist. [Secure import/resume instructions](docs/I24_CONTINUOUS_ACQUISITION.md), [unchanged-criteria addendum](docs/I24_CONTINUOUS_EVALUATION_PROTOCOL.md), and [execution status](outputs/i24_continuous/EXPERIMENT_SUMMARY.md). The new CLI currently implements access/QC only and exits 2 at the scientific gate. Harvard short clips never substitute for continuous recordings.
+
+Private Google Drive source archives are now identified by the user, but cloud authorization remains missing. [Drive transfer instructions](docs/I24_CONTINUOUS_DRIVE_TRANSFER.md) document the secure token binding, bounded resumable downloader and archive-inspection gate. No original continuous training has yet run.

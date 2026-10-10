@@ -15,9 +15,9 @@
   "physical_violations": null,
   "wave_prediction": null,
   "tests": {
-    "passed": 81,
+    "passed": 92,
     "failed": 0,
     "skipped": 0,
-    "seconds": 19.8
+    "seconds": 20.28
   }
 }

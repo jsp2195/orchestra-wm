@@ -1,0 +1,42 @@
+{
+  "status": "BLOCKED_MISSING_SECURE_DRIVE_AUTHORIZATION",
+  "source_claim": "ORIGINAL_I24_MOTION_USER_SUPPLIED_NOT_YET_VERIFIED",
+  "files": [
+    {
+      "id": "1fbWITAB78jWrm0mQr_O4TX52aRxDMpLB",
+      "name": "11-21-2022.zip",
+      "declared_bytes": 6248968002
+    },
+    {
+      "id": "16zYgDwdljmgyXrYsjPIkL-vw2_K9PsTn",
+      "name": "auxiliary_information.zip",
+      "declared_bytes": 4917485
+    }
+  ],
+  "downloaded_bytes": 0,
+  "archive_sha256": null,
+  "plugin_install": {
+    "user_confirmed": true,
+    "completed": false,
+    "tools_callable": false
+  },
+  "unauthenticated_metadata_probe_http": 403,
+  "credential_values_logged": false,
+  "rclone_configured": false,
+  "secure_requirement": "GOOGLE_DRIVE_ACCESS_TOKEN",
+  "allowed_destination": "www.googleapis.com",
+  "draft_saved": true,
+  "requires_publish": true,
+  "free_disk_bytes_at_audit": 28761337856,
+  "max_transfer_bytes": 6300000000,
+  "minimum_free_bytes": 10000000000,
+  "post_archives_extraction_headroom_bytes": 12507452369,
+  "training": "BLOCKED",
+  "visualizations": "BLOCKED",
+  "tests": {
+    "passed": 92,
+    "failed": 0,
+    "skipped": 0,
+    "wall_seconds": 20.28
+  }
+}
