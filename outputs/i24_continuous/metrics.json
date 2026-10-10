@@ -1,0 +1,23 @@
+{
+  "status": "BLOCKED",
+  "continuous_files": 0,
+  "continuous_minutes": 0,
+  "verified_vehicles": 0,
+  "usable_windows": 0,
+  "training_steps": 0,
+  "independent_sessions": 0,
+  "micro_5s": null,
+  "micro_10s": null,
+  "micro_20s": null,
+  "macro_10s_energy_gain": null,
+  "macro_95_ci": null,
+  "calibration": null,
+  "physical_violations": null,
+  "wave_prediction": null,
+  "tests": {
+    "passed": 81,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 19.8
+  }
+}

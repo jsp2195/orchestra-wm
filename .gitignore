@@ -26,3 +26,9 @@ outputs/i24_msd/canonical/
 outputs/i24_msd/**/rollouts/
 outputs/i24_msd/rollouts/
 outputs/i24_msd/**/*.part
+
+# I24_CONTINUOUS
+data/i24_continuous/
+outputs/i24_continuous/**/canonical/
+outputs/i24_continuous/**/converted/
+outputs/i24_continuous/**/rollouts/

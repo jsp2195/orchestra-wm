@@ -231,3 +231,9 @@ uv run pytest -q
 The command reuses verified raw files, extracted shards and matching checkpoints. Raw data/checkpoints/full inference caches stay ignored; the standalone demo embeds exact checkpoint-generated evaluation arrays and hashes. It shows recorded truth separately. Download the HTML and open it in a modern browser; GitHub does not execute HTML previews.
 
 I24-MSD uses Scenario protocol buffers, not continuous I24 JSON. The original stochastic recurrent interaction architecture is reused, with population macro feedback disabled because curated vehicle subsets are not traffic censuses. No long-horizon waves, learned inflow/outflow, causal AV intervention or Cavnue hardware validation is claimed. Prior Phase-2 negative coordination results and continuous-I24 fixture claims remain unchanged.
+
+<!-- I24_CONTINUOUS -->
+
+## Phase 4 — original continuous I24 (access blocked)
+
+Branch `phase4-i24-continuous` preserves all previous results. The official portal returned HTTP503 after earlier proxy403; no original continuous trajectories, real continuous checkpoint or visual results exist. [Secure import/resume instructions](docs/I24_CONTINUOUS_ACQUISITION.md), [unchanged-criteria addendum](docs/I24_CONTINUOUS_EVALUATION_PROTOCOL.md), and [execution status](outputs/i24_continuous/EXPERIMENT_SUMMARY.md). The new CLI currently implements access/QC only and exits 2 at the scientific gate. Harvard short clips never substitute for continuous recordings.
