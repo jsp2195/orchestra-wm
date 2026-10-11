@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED_HTTP_401_AFTER_EARLIER_SUCCESS",
+  "failed_at_utc": "2026-10-11T19:21:46.728220+00:00",
+  "http_status": 401,
+  "operation": "Authenticated range read of the known original November21 archive",
+  "attempts_after_this_failure": 0,
+  "reason_code": "Not captured; response establishes HTTP401 only",
+  "cause": "Undetermined; expiration/revocation/other invalidation not distinguished",
+  "earlier_checks": "Metadata HTTP200; exact1KiB HTTP206; subsequent streamed source records; private upload and SHA256 readback succeeded",
+  "next_action": "Refresh secure GOOGLE_DRIVE_ACCESS_TOKEN and publish; do not paste credentials into chat. Test metadata and bounded range once after confirmed change."
+}

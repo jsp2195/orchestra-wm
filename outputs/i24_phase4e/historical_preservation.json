@@ -1,0 +1,10 @@
+{
+  "baseline": "bcdfeb3f3f8c5c508c4fe8a44d0cd92aeb145d56",
+  "historical_tracked_files": 799,
+  "changed_historical_scientific_files": [],
+  "append_only_files": [
+    ".gitignore"
+  ],
+  "status": "PASS",
+  "private_checkpoint_recovery": "See recovery_status.json; four primary files verified"
+}

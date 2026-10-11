@@ -1,0 +1,16 @@
+{
+  "status": "ALL_PARTIAL_SHARDS_BACKED_UP_AND_SHA256_READBACK_VERIFIED",
+  "parts": 27,
+  "native_shards": 228,
+  "native_bytes": 672405646,
+  "archive_bytes": 665410723,
+  "archive_sha256": "cd317cb28ef6fb191eac9ef0dc6e26f4ef87589f4cd314b1bc490ba450e5d85e",
+  "manifest_name": "ORCHESTRA_PHASE4E_INCOMPLETE_RECOVERY_MANIFEST.json",
+  "manifest_sha256": "f0fcefa1659a59ae982c3d01b2d8f4582523cfc7548a7d24269b3b9ac45d76f0",
+  "manifest_bytes": 63234,
+  "owner_only": true,
+  "scope": "Interrupted/unaccepted November21 native shards; no complete dataset, no training, no predictions",
+  "training": "BLOCKED",
+  "independent_testing": "BLOCKED",
+  "source_token_retried_after_user_stop": false
+}

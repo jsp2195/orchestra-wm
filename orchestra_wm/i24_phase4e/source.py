@@ -65,6 +65,17 @@ def nested_records(handle, session, audit):
 
 def remote_records(metadata, date, audit):
     session=SESSIONS[date]
+    local=Path('data/i24_continuous/raw')/(session+'.zip')
+    if date=='2022-11-21' and local.exists():
+        with local.open('rb') as handle:
+            yield from nested_records(handle,session,audit)
+        if audit['nested_zip_sha256']!='dbabe7b3e665a7d48b27d89d9f55fa0190e2cbcd7f9953beae59a8663b6ec3b7':
+            raise SourceBlocked('Restored November21 archive disagrees with historical SHA256')
+        audit.update(local_restored_archive=str(local),range_requests=0,transferred_bytes=0,
+                     outer_selected_member_crc_verified=False,historical_nested_sha256_verified=True,
+                     full_outer_archive_md5_verified=False,
+                     integrity_scope='Local complete nested ZIP matched historical SHA256; inner JSON CRC and SHA256 verified')
+        return
     remote=DriveRanges(metadata['id'],metadata['size'],block_bytes=64*1024*1024)
     with zipfile.ZipFile(remote) as archive:
         readmes=[x for x in archive.infolist() if 'README' in x.filename]

@@ -1,0 +1,25 @@
+{
+  "status": "INCOMPLETE_NOT_ACCEPTED_FOR_TRAINING",
+  "attempts": [
+    {
+      "namespace": "data_v1",
+      "native_shards": 119,
+      "native_rows_written": 5990819,
+      "native_bytes": 350770503,
+      "completed_data_manifest": false,
+      "accepted_for_training": false
+    },
+    {
+      "namespace": "data_v2",
+      "native_shards": 109,
+      "native_rows_written": 5488974,
+      "native_bytes": 321635143,
+      "completed_data_manifest": false,
+      "accepted_for_training": false
+    }
+  ],
+  "not_independent_populations": "Both attempts read the same November21 source; do not sum as unique vehicles or independent recordings",
+  "first_attempt": "ZIP data-descriptor size handling rejected after stream consumption; implementation corrected and regression-tested",
+  "second_attempt": "Process absent before completion; no application error or completion receipt; termination cause undetermined",
+  "third_attempt": "Local archive restoration blocked by HTTP401 before archive bytes were written"
+}
