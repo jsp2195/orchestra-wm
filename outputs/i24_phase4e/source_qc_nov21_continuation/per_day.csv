@@ -1,0 +1,2 @@
+date,split,windows,slots,mean_speed_m_s,mean_density_veh_km_lane,mean_flow_veh_h_lane,support_fraction,congested_bin_fraction,intermediate_bin_fraction,free_bin_fraction,maximum_window_tracks
+2022-11-21,train,92,4,14.394651314486628,26.083975843761277,910.301477846892,0.9179390959282263,0.46182675025733627,0.2675053508352095,0.27066789890745424,456

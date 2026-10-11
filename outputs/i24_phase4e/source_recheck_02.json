@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-11T19:43:49.445083+00:00",
+  "metadata_executed": true,
+  "range_executed": true,
+  "secret_variable_present": true,
+  "metadata_http_status": 200,
+  "range_http_status": 206,
+  "read_bytes": 1024,
+  "content_range": "bytes 0-1023/6248968002",
+  "zip_header": true,
+  "range_verified": true
+}

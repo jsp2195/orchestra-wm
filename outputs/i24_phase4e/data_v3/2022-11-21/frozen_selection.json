@@ -1,0 +1,44 @@
+{
+  "source_date": "2022-11-21",
+  "source_metadata": {
+    "name": "11-21-2022.zip",
+    "size": "6248968002",
+    "md5Checksum": "9796ce188045d5876579ee85e436f03a",
+    "version": "1"
+  },
+  "archive_sha256": "151ac1473df1b2b17131126692ee27c765e765b1b2822ad8ddc93d2696699d57",
+  "source_fingerprint_kind": "SHA256 of remote name/size/MD5/version; actual nested ZIP SHA256 recorded after complete stream",
+  "session": "637b023440527bf2daa5932f__post1",
+  "x_min_ft": 316800,
+  "x_max_ft": 320080,
+  "max_agents": 2048,
+  "min_free_bytes": 10000000000,
+  "blocks": [
+    {
+      "name": "2022-11-21_0615",
+      "split": "train",
+      "start": 1669032900.0,
+      "seconds": 600
+    },
+    {
+      "name": "2022-11-21_0715",
+      "split": "train",
+      "start": 1669036500.0,
+      "seconds": 600
+    },
+    {
+      "name": "2022-11-21_0815",
+      "split": "train",
+      "start": 1669040100.0,
+      "seconds": 600
+    },
+    {
+      "name": "2022-11-21_0915",
+      "split": "train",
+      "start": 1669043700.0,
+      "seconds": 600
+    }
+  ],
+  "recording_timezone": "America/Chicago",
+  "selection": "Frozen Phase4D clocks; source-only QC; no replacement slots"
+}

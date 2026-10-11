@@ -1,0 +1,10 @@
+{
+  "baseline": "bcdfeb3f3f8c5c508c4fe8a44d0cd92aeb145d56",
+  "historical_tracked_files": 799,
+  "changed_historical_scientific_files": [],
+  "append_only_files": [
+    ".gitignore"
+  ],
+  "status": "PASS",
+  "continuation_starting_commit": "ad49250fe73aebb13a45a95b3961233a6deaf7be"
+}

@@ -6,6 +6,8 @@ p = argparse.ArgumentParser()
 p.add_argument('--manifest', required=True)
 p.add_argument('--parts', required=True)
 p.add_argument('--output', required=True)
+p.add_argument('--part-prefix', default='ORCHESTRA_PHASE4E_incomplete_ingestion',
+               help='Local ordered part filename prefix; hashes remain authoritative')
 a = p.parse_args()
 m = json.loads(Path(a.manifest).read_text())
 assert m['status'] == 'COMPLETE_AUTHENTICATED_READBACK_RECONSTRUCTION_SHA256_VERIFIED'
@@ -18,7 +20,7 @@ combined = hashlib.sha256()
 with archive.open('xb') as dst:
     for i, receipt in enumerate(m['parts']):
         assert receipt['index'] == i
-        src = Path(a.parts) / f'ORCHESTRA_PHASE4E_incomplete_ingestion.part{i:03}'
+        src = Path(a.parts) / f'{a.part_prefix}.part{i:03}'
         assert src.stat().st_size == receipt['remote_bytes']
         with src.open('rb') as handle:
             assert hashlib.file_digest(handle, 'sha256').hexdigest() == receipt['sha256']
@@ -44,5 +46,5 @@ with tarfile.open(archive, 'r:gz') as tar:
             shutil.copyfileobj(source, dest)
         with target.open('rb') as handle:
             assert hashlib.file_digest(handle, 'sha256').hexdigest() == expected['sha256']
-print('Verified and restored incomplete artifacts to', staging)
-print('These partial shards must not be used for training.')
+print('Verified and restored artifacts to', staging)
+print('Restoration alone does not establish training eligibility; verify source/QC manifests.')

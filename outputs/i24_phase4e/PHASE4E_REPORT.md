@@ -1,3 +1,14 @@
+# Current continuation status
+
+**COMPLETED:** Nov21 ingestion and source QC, 92 training windows, verified private
+backups of data/QC/metadata and all recoverable partial work. **BLOCKED:** remaining
+multi-date ingestion after HTTP401. **NOT EXECUTED:** Phase4E training, validation,
+and independent forecasts. The user requested preservation and a new-task handoff.
+
+See **Continuation: one complete source date** below for this task's results and
+`continuation_backup_status.json` for public verification evidence. The original
+handoff is retained below as historical context.
+
 # Phase 4E — preservation and blocked research handoff
 
 **Multi-date training: BLOCKED. Independent testing: BLOCKED.**
@@ -131,3 +142,128 @@ Earlier pushed implementation commits are `59c7164` (preregistration/streaming)
 and `656663e` (ZIP64 fix/preserved attempts). The final handoff commit includes
 this report, recovery instructions, ingestion helpers, restore helper and public
 status manifests; its exact SHA is supplied in chat after remote push verification.
+
+---
+
+# Continuation: one complete source date; multi-date experiment still BLOCKED
+
+The preceding text is the preserved prior-task handoff. This continuation supersedes
+its statement that no complete Phase4E dataset exists. It does **not** supersede
+any historical scientific finding.
+
+## COMPLETED
+
+- Fetched `phase4-i24-continuous` and started from preservation commit
+  `ad49250`, not the Phase4D starting commit. Restored all 27 prior Phase4E parts,
+  checked their recorded SHA256 hashes, reconstructed the 665,410,723-byte archive,
+  and verified every extracted member. All 228 prior native shards remain staged
+  as incomplete artifacts; none was relabeled as an accepted training dataset.
+- Verified the separate eight-part Phase4D archive and restored the four primary
+  seed101/202 best/last checkpoints against their historical hashes. Historical
+  prediction arrays were not opened.
+- The refreshed source credential returned metadata HTTP200 and exact HTTP206
+  bytes 0–1023 on Nov21. Its identity, size, MD5 and version matched the recovered
+  metadata. Downloaded only the 5,958,100,914-byte Nov21 nested ZIP; its SHA256
+  matched `dbabe7b3e665a7d48b27d89d9f55fa0190e2cbcd7f9953beae59a8663b6ec3b7`.
+- Completed Nov21 in `outputs/i24_phase4e/data_v4/2022-11-21`: 830,366 source
+  records, 280,265,948 source samples, complete inner CRC/SHA verification,
+  historical nested-ZIP SHA verification, and unchanged remote metadata after
+  ingestion. Whole outer archive MD5 verification is not claimed.
+- Produced 92 canonical training windows, 23 in each frozen 06:15/07:15/08:15/09:15
+  America/Chicago slot. Source-only QC passed: geometry, finite usable samples,
+  0.2-second canonical timing, >=2 concurrent tracks, capacity without truncation,
+  field identity, and frozen role checks. Maximum window population was 456.
+  There were no excluded candidate windows, source duplicate IDs, shared slot IDs,
+  or recorded native gaps over 0.5 seconds. Native median sampling interval was
+  checked against 0.04 seconds. Track-boundary and invalid-sample exclusions remain
+  explicitly recorded in native/QC manifests.
+- Mean per-window supported-bin fraction was 0.917939. Scene-equal supported-field
+  means were speed 14.394651 m/s, density 26.083976 veh/km/lane, and flow
+  910.301478 veh/hour/lane. Mean fractions of supported bins were 0.461827 congested,
+  0.267505 intermediate, and 0.270668 free-flow. These describe the reconstructed
+  retained population, not unbiased roadway census or forecasting performance.
+
+## Authentication and interrupted attempt
+
+The token supported both source reads and a small private recovery-receipt upload
+with authenticated readback. After completed Nov21 ingestion and a successful
+source metadata check at 19:56:22 UTC on 2026-10-11, the first completed-data backup
+upload returned HTTP401. No token-based request was retried. Expiration versus
+revocation is undetermined. The environment exposes only GOOGLE_DRIVE_ACCESS_TOKEN;
+no securely configured automatic refresh mechanism was available. The independent
+connected Drive workflow was used for preservation after that failure.
+
+A detached data_v3 job disappeared without an exit receipt, leaving 24 native
+shards and a frozen selection (25 files total). The cgroup reported zero OOM kills;
+the termination cause is unknown. This attempt is preserved separately and is not
+accepted. Running data_v4 in a tool-managed foreground session completed the stream.
+Use that execution pattern in continuation. No historic files were deleted for
+space. The old v1/v2 shards were verified and retained, but lack completion/integrity
+receipts and cannot replace a fully verified stream. The completed v4 dataset must
+be reused; Nov21 does not need another archive download or ingestion pass.
+
+## BLOCKED / NOT EXECUTED
+
+| Stage | Status | Exact remaining work |
+|---|---|---|
+| Training/validation ingestion | BLOCKED | Nov22, Nov23, Nov25 not started in this continuation |
+| Multi-date source QC and feature cache | BLOCKED | Require all three remaining assigned dates |
+| Actual Phase4E training | NOT EXECUTED | Zero optimizer updates; pilot and seeds101/202 unrun |
+| Fitted stochastic persistence | NOT EXECUTED | Train-only fit requires complete training cache |
+| Nov25 validation and promotion | NOT EXECUTED | No forecasts, metrics, or model-selection decisions |
+| Nov28/29 source ingestion | NOT EXECUTED | Both dates still need source-only processing |
+| Independent forecast evaluation | NOT EXECUTED, UNOPENED | Requires frozen validation promotion and test protocol |
+
+No energy scores, speed/density/flow MAEs, CRPS, forecast coverage/calibration,
+forecast diversity, forecast physical-validity scores, missingness robustness,
+or microscopic-information effects were produced in this continuation. Source
+field identity is not a forecast physical-validity result. Falling losses cannot
+be cited because no training ran. Cross-date generalization remains unanswered.
+The primary information difference remains aggregate-only minus full energy;
+there is no new evidence for microscopic benefit. Even eventual Nov28/29 success
+would provide only two independent dates, below the preserved five-group gate.
+
+## Continuation requirements
+
+Refresh the source credential through secure environment settings and republish;
+never paste credentials into chat. Restore the new completed-Nov21 private backup
+and verify all hashes before reuse. Keep the earlier incomplete backup and Phase4D
+checkpoint archive. Use `data_v4` consistently for remaining preparation,
+verification, QC and cache commands. Process Nov22, Nov23 and Nov25 sequentially,
+backing up each completed date. Then build and privately preserve the complete
+train/validation cache before pilot and substantive paired training. Keep original
+protocols, horizons, seeds, QC, slots, model capacity and promotion gate unchanged.
+See the appended continuation commands in `docs/I24_PHASE4E_RECOVERY.md`.
+
+The final pushed report commit SHA is supplied in the handoff and downloadable
+report; within Git, identify the report-bearing commit using
+`git log -1 --format=%H -- outputs/i24_phase4e/PHASE4E_REPORT.md`.
+
+## Verified continuation backups
+
+All 21 new backup parts passed authenticated SHA256 readback and owner-only checks.
+The completed Nov21 bundle contains 403 files (native/canonical data and integrity
+manifests); its 17-part archive is 414,119,241 bytes, SHA256
+`e949bd3ed5f1b1bf1a98c5466591096b5625b5da9a408047bbd17c37a525e96a`.
+The separate 14-file audit bundle preserves QC CSVs/audit, original private source
+metadata/listing, access/recovery receipts and execution logs. The 25-file
+interrupted v3 attempt is preserved in three parts. All three archive restorations
+passed inventory and per-file SHA256 verification.
+
+The consolidated private recovery index is
+`ORCHESTRA_PHASE4E_CONTINUATION_RECOVERY_INDEX.json`, SHA256
+`e4313e94b89beec0c8aa2fd6f1a06a2bf891e44b90a69be58587fc1cf52dd804`. Each manifest and the index also passed authenticated
+readback and owner-only checks. Public hashes/counts are in
+`continuation_backup_status.json`; private IDs/links remain outside Git.
+Earlier 228 partial shards and four primary Phase4D checkpoints remain recoverable
+through the reverified original manifests referenced by the private index.
+No files were deleted and no completed Nov21 ingestion needs repeating.
+
+All 799 historical tracked files passed preservation checks, with only previously
+allowed append-only `.gitignore` additions. The user explicitly requested final
+preservation and handoff; refreshed authorization will be supplied in a new task.
+
+Final regression suite: **126 passed, 8 skipped** in 8.58 seconds with
+`uv run --no-sync pytest -q --import-mode=importlib`. The generalized recovery helper
+was also exercised by successful full restoration drills for the completed data,
+audit supplement, and interrupted-attempt bundles.

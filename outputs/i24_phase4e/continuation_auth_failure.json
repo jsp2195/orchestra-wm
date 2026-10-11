@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-10-11T19:57:01.681970+00:00",
+  "operation": "First completed Nov21 backup part upload",
+  "http_status": 401,
+  "authentication_retried": false,
+  "last_successful_source_metadata_check_utc": "2026-10-11T19:56:22.740239+00:00",
+  "source_range_check_passed": true,
+  "automatic_refresh_available": false,
+  "expiration_vs_revocation": "undetermined",
+  "completed_date": "2022-11-21",
+  "completed_windows": 92
+}

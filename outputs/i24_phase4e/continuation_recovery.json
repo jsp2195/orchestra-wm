@@ -1,0 +1,37 @@
+{
+  "status": "RECOVERED_AND_SHA256_VERIFIED",
+  "starting_commit": "ad49250fe73aebb13a45a95b3961233a6deaf7be",
+  "phase4e_manifest_sha256": "f0fcefa1659a59ae982c3d01b2d8f4582523cfc7548a7d24269b3b9ac45d76f0",
+  "phase4e_archive_sha256": "cd317cb28ef6fb191eac9ef0dc6e26f4ef87589f4cd314b1bc490ba450e5d85e",
+  "verified_phase4e_parts": 27,
+  "restored_native_shards": 228,
+  "partial_shards_accepted_for_training": false,
+  "phase4d_verified_parts": 8,
+  "phase4d_primary_checkpoints": [
+    {
+      "path": "outputs/i24_phase4d/residual_seed101/checkpoints/best.pt",
+      "bytes": 654746,
+      "sha256": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1"
+    },
+    {
+      "path": "outputs/i24_phase4d/residual_seed101/checkpoints/last.pt",
+      "bytes": 694746,
+      "sha256": "3953754158f9899d0bc709e501448bcf2f90b8aca9101637e606a754e9c3967f"
+    },
+    {
+      "path": "outputs/i24_phase4d/residual_seed202/checkpoints/best.pt",
+      "bytes": 718746,
+      "sha256": "47d3a6ec9c8b78a0b6ed86908f83125b7ab4955ee8e4ba38e28f29632e1e3640"
+    },
+    {
+      "path": "outputs/i24_phase4d/residual_seed202/checkpoints/last.pt",
+      "bytes": 726746,
+      "sha256": "91c894a8abbfdcd37bb495d3d3842fdb969b169abb1a258655990fa9792f253a"
+    }
+  ],
+  "source_metadata_matches_preserved_identity_version": true,
+  "automatic_refresh_available": false,
+  "credential_setup": "Only GOOGLE_DRIVE_ACCESS_TOKEN binding was configured; no refresh mechanism exposed",
+  "historical_prediction_arrays_opened": false,
+  "independent_prediction_outcomes_opened": false
+}

@@ -153,3 +153,165 @@ and regimes, not IID window confidence. Two independent dates cannot satisfy the
 five-independent-group confirmation gate. Preserve and readback-verify all new
 checkpoints, optimizer/RNG states, predictions and manifests before ending the next
 task. Update the report and push only safe code and public summaries.
+
+---
+
+# Continuation after ad49250: reuse completed Nov21
+
+The preceding instructions describe the original all-incomplete handoff. A later
+continuation completed and source-QC-verified Nov21 in `data_v4`: 92 windows across
+all four frozen slots. **Do not rerun Nov21 ingestion.** The source token returned
+HTTP401 during its first completed-data backup upload, after a successful source
+metadata comparison. No token retry occurred. Nov22/23/25 and Nov28/29 remain
+unprocessed. Multi-date training and all Phase4E forecasts remain unexecuted.
+
+The new private recovery manifest is named
+`ORCHESTRA_PHASE4E_COMPLETED_NOV21_RECOVERY_MANIFEST.json`. Its exact SHA256,
+archive hash, byte counts and verification status are in
+`outputs/i24_phase4e/continuation_backup_status.json`; its private link is supplied
+in the handoff. The manifest includes the private source listing/metadata and
+references to the earlier recovery manifests. It contains no credentials. The
+prior 228 incomplete shards remain in their original verified backup, and the
+additional interrupted v3 attempt has its own verified private backup.
+
+1. Download the new manifest through the connected Drive app and compare its SHA256
+   with the public status. Download its 17 ordered parts using the recorded private
+   IDs/URLs; compare each hash. Retain names
+   `ORCHESTRA_PHASE4E_COMPLETED_NOV21.part000` through `part016`.
+2. Restore into a fresh staging directory:
+
+```bash
+python scripts/restore_i24_phase4e_backup.py \
+  --manifest work/phase4e/received/ORCHESTRA_PHASE4E_COMPLETED_NOV21_RECOVERY_MANIFEST.json \
+  --parts work/phase4e/received \
+  --part-prefix ORCHESTRA_PHASE4E_COMPLETED_NOV21 \
+  --output work/phase4e/completed_nov21_recovered
+```
+
+3. Copy the verified staged `outputs/i24_phase4e/data_v4/2022-11-21` files into the
+   matching checkout path. Existing files must match recorded hashes; never
+   overwrite differing bytes. Restore `source_listing_private.json` and
+   `source_metadata_private.json` under ignored `work/phase4e/` from the manifest's
+   `source_listing` and `source_metadata` JSON objects. Restore historical Phase4D
+   checkpoints and earlier partial artifacts as required using their original
+   manifests; do not open historical forecast arrays.
+4. The nested Nov21 archive remains verified in this worker but is not duplicated
+   in the new private compact backup; its existing private original source remains.
+   No archive download is needed to reuse the completed native/canonical dataset.
+5. Refresh authorization through secure environment settings and republish. Only
+   after confirmed refreshed authorization, use the existing probe with a **new**
+   output receipt name. Stop at the first401, with no retries. No automatic refresh
+   mechanism was configured in this continuation.
+6. Use tool-managed foreground sessions with captured log/exit status. A detached
+   job disappeared without an exit receipt; the cause is unknown. Do not rely on
+   `nohup` alone for this environment's job lifetime.
+
+```bash
+uv sync --frozen
+uv pip install -r configs/i24_phase4e_requirements.txt
+uv run --no-sync python scripts/probe_i24_phase4e_source.py \
+  --metadata work/phase4e/source_metadata_private.json \
+  --output outputs/i24_phase4e/source_recheck_03.json
+
+# Execute one assigned date at a time; keep 10GB free and back up before the next.
+# Repeat with 2022-11-23 and 2022-11-25 only after the prior date is verified.
+uv run --no-sync python scripts/prepare_i24_phase4e.py \
+  --listing work/phase4e/source_listing_private.json --dates 2022-11-22 \
+  --output outputs/i24_phase4e/data_v4
+uv run --no-sync python scripts/verify_i24_phase4e_sources.py \
+  --listing work/phase4e/source_listing_private.json --dates 2022-11-22 \
+  --data outputs/i24_phase4e/data_v4
+uv run --no-sync python scripts/preserve_i24_phase4e.py \
+  --roots outputs/i24_phase4e/data_v4/2022-11-22 \
+  --receipt work/phase4e/nov22_backup_private.json --label completed_nov22
+
+# Only once all four assigned train/validation dates exist and pass source checks:
+uv run --no-sync python scripts/qc_i24_phase4e.py \
+  --data outputs/i24_phase4e/data_v4 \
+  --dates 2022-11-21 2022-11-22 2022-11-23 2022-11-25 \
+  --output outputs/i24_phase4e/source_qc_train_validation
+uv run --no-sync python scripts/cache_i24_phase4e.py \
+  --data outputs/i24_phase4e/data_v4 --output outputs/i24_phase4e/cache_v1
+uv run --no-sync python scripts/preserve_i24_phase4e.py \
+  --roots outputs/i24_phase4e/data_v4/2022-11-21 outputs/i24_phase4e/data_v4/2022-11-22 \
+  outputs/i24_phase4e/data_v4/2022-11-23 outputs/i24_phase4e/data_v4/2022-11-25 \
+  outputs/i24_phase4e/cache_v1 --receipt work/phase4e/data_backup_private.json \
+  --label train_validation --cache outputs/i24_phase4e/cache_v1
+```
+
+Then run the original bounded numerical pilot, seed101/202 paired training,
+train-only diffusion fit, Nov25 validation and 64-particle diagnostics from above.
+The new one-date backup is **not** the complete-cache training receipt. Preserve
+all checkpoints, optimizer/RNG and forecasts with authenticated remote readback.
+Only after validation promotion and frozen decisions may independent forecasts run.
+The prospective freeze script currently names `data_v3` for test-cache preparation;
+parameterize its source path to verified `data_v4` **before** freezing or opening
+any test outcomes. Do not change metrics, roles, slots, budgets or scientific gates.
+If a new date is interrupted, preserve its partial namespace; reuse all completed
+dates and avoid treating incomplete native shards as accepted data.
+
+## Restore the QC/metadata supplement too
+
+Start from the private `ORCHESTRA_PHASE4E_CONTINUATION_RECOVERY_INDEX.json` linked
+in the handoff. Verify its SHA against `continuation_backup_status.json`. It links
+the completed-Nov21 manifest, interrupted-v3 manifest, audit manifest, and original
+Phase4E/Phase4D recovery manifests. Download the audit manifest and its single part:
+
+```bash
+python scripts/restore_i24_phase4e_backup.py \
+  --manifest work/phase4e/received/ORCHESTRA_PHASE4E_NOV21_AUDIT_RECOVERY_MANIFEST.json \
+  --parts work/phase4e/received --part-prefix ORCHESTRA_PHASE4E_NOV21_AUDIT \
+  --output work/phase4e/nov21_audit_recovered
+```
+
+This restores the QC CSVs, audit JSON, original private source metadata/listing,
+continuation integrity/access receipts and logs into isolated staging. Copy only
+absent or byte-identical files to their recorded relative paths. The public
+`source_qc_nov21_continuation` files are also versioned in Git. If desired, rerun
+**QC only** in a fresh output namespace after restoring data; do not rerun ingestion.
+The interrupted-v3 bundle uses prefix `ORCHESTRA_PHASE4E_INTERRUPTED_V3` and must
+remain staged as incomplete, alongside the old incomplete v1/v2 artifacts.
+
+## Exact staged installation and remaining-date loop
+
+After the two Nov21 restore commands above pass, install only missing or identical
+verified files; abort on any differing existing file:
+
+```bash
+python - <<'PY_RESTORE'
+from pathlib import Path
+import hashlib, shutil
+for staging in [Path('work/phase4e/completed_nov21_recovered/restored'),
+                Path('work/phase4e/nov21_audit_recovered/restored')]:
+    assert staging.is_dir()
+    for source in staging.rglob('*'):
+        if not source.is_file():
+            continue
+        target = Path(source.relative_to(staging))
+        if target.exists():
+            with source.open('rb') as a, target.open('rb') as b:
+                assert hashlib.file_digest(a, 'sha256').digest() == hashlib.file_digest(b, 'sha256').digest(), target
+        else:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+PY_RESTORE
+
+# Only after the refreshed-authorization probe passes:
+set -e
+for source_date in 2022-11-22 2022-11-23 2022-11-25; do
+  uv run --no-sync python scripts/prepare_i24_phase4e.py \
+    --listing work/phase4e/source_listing_private.json --dates "$source_date" \
+    --output outputs/i24_phase4e/data_v4
+  uv run --no-sync python scripts/verify_i24_phase4e_sources.py \
+    --listing work/phase4e/source_listing_private.json --dates "$source_date" \
+    --data outputs/i24_phase4e/data_v4
+  uv run --no-sync python scripts/preserve_i24_phase4e.py \
+    --roots "outputs/i24_phase4e/data_v4/$source_date" \
+    --receipt "work/phase4e/completed_${source_date}_backup_private.json" \
+    --label "completed_${source_date}"
+done
+```
+
+Stop on the first source or backup error. Completed dates and their receipts stay
+valid; do not repeat their ingestion. Continue with the all-four-date QC/cache
+commands above only when the three remaining assigned dates are complete.

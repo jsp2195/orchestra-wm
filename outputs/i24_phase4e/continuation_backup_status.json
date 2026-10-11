@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETE_AUTHENTICATED_READBACK_SHA256_VERIFIED",
+  "index_name": "ORCHESTRA_PHASE4E_CONTINUATION_RECOVERY_INDEX.json",
+  "index_bytes": 4428,
+  "index_sha256": "e4313e94b89beec0c8aa2fd6f1a06a2bf891e44b90a69be58587fc1cf52dd804",
+  "index_owner_only": true,
+  "index_readback_verified": true,
+  "new_backups": [
+    {
+      "scope": "COMPLETED_NOV21",
+      "manifest_name": "ORCHESTRA_PHASE4E_COMPLETED_NOV21_RECOVERY_MANIFEST.json",
+      "manifest_bytes": 99498,
+      "manifest_sha256": "7370299e46ec2c9362e4741301b10b9dcf665521d8d0a4dc5ef5a18dc1ac5c75",
+      "archive_bytes": 414119241,
+      "archive_sha256": "e949bd3ed5f1b1bf1a98c5466591096b5625b5da9a408047bbd17c37a525e96a",
+      "verified_parts": 17,
+      "verified_files": 403,
+      "owner_only": true,
+      "authenticated_readback_verified": true,
+      "restoration_drill": "PASS"
+    },
+    {
+      "scope": "INTERRUPTED_V3",
+      "manifest_name": "ORCHESTRA_PHASE4E_INTERRUPTED_V3_RECOVERY_MANIFEST.json",
+      "manifest_bytes": 7229,
+      "manifest_sha256": "9cba7f76de4d07eb92956be1f387503d490108f5940d1f4d1abac8d94a69c72a",
+      "archive_bytes": 70129818,
+      "archive_sha256": "64ad1116ba614bc813dd8bacb84ba470b65838fd77eaa4c7312430d73ba5b642",
+      "verified_parts": 3,
+      "verified_files": 25,
+      "owner_only": true,
+      "authenticated_readback_verified": true,
+      "restoration_drill": "PASS"
+    },
+    {
+      "scope": "NOV21_AUDIT",
+      "manifest_name": "ORCHESTRA_PHASE4E_NOV21_AUDIT_RECOVERY_MANIFEST.json",
+      "manifest_bytes": 3382,
+      "manifest_sha256": "6fd9b8de4470afc7670dbb4cda117b99bb3a226ebd8aacc1e7fb57d57e9ce3ad",
+      "archive_bytes": 12198,
+      "archive_sha256": "b34070ffd1978096c8159ba9117eb07a548fe527fb7fae9d86ccacbac2e603cc",
+      "verified_parts": 1,
+      "verified_files": 14,
+      "owner_only": true,
+      "authenticated_readback_verified": true,
+      "restoration_drill": "PASS"
+    }
+  ],
+  "prior_phase4e_partial_shards_preserved": 228,
+  "prior_phase4d_primary_checkpoints_reverified": 4,
+  "restricted_data_or_weights_published_to_git": false,
+  "full_nov21_nested_archive": "Verified locally; original source remains private; compact completed data backup removes need to redownload/reingest Nov21"
+}
