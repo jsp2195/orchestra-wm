@@ -1,15 +1,17 @@
 """Exact saved-array comparison and browser control exercise for the private viewer."""
-import asyncio,base64,gzip,json,re
+import argparse,asyncio,base64,gzip,json,re
 from pathlib import Path
 import numpy as np
 from playwright.async_api import async_playwright
 from orchestra_wm.i24.data import sha
 
 async def main():
-    root=Path('outputs/i24_phase4c/gallery');html=(root/'private/demo.html').read_text()
+    parser=argparse.ArgumentParser();parser.add_argument('--output',default='outputs/i24_phase4c/gallery')
+    parser.add_argument('--evaluation-output',default='outputs/i24_phase4c/matched_macro_seed101_u300/development_test');args=parser.parse_args()
+    root=Path(args.output);html=(root/'private/demo.html').read_text()
     encoded=re.search("atob\\('([^']+)'\\)",html).group(1)
     payload=json.loads(gzip.decompress(base64.b64decode(encoded)))
-    evaluation=Path('outputs/i24_phase4c/matched_macro_seed101_u300/development_test')
+    evaluation=Path(args.evaluation_output)
     for e in payload['entries']:
         path=evaluation/e['source_path'];assert sha(path)==e['rollout_sha256']
         with np.load(path) as a:
@@ -24,7 +26,7 @@ async def main():
         await page.wait_for_function('window.ORCHESTRA_READY===true',timeout=30000)
         for scene in range(3):
             await page.locator('#scenario').select_option(str(scene))
-            for variant in ('full','macro_only'):
+            for variant in sorted(set(e['variant'] for e in payload['entries'])):
                 await page.locator('#variant').select_option(variant)
                 for regime in ('dense','outage'):
                     await page.locator('#regime').select_option(regime)
@@ -40,7 +42,7 @@ async def main():
         assert int(await page.locator('#time').input_value())>49
         await page.screenshot(path=str(root/'browser_preview.png'),full_page=True)
         assert not errors,errors
-        result=dict(passed=True,exact_array_entries=len(payload['entries']),stochastic_samples_each=8,scenarios=3,regimes=2,variants=2,
+        result=dict(passed=True,exact_array_entries=len(payload['entries']),stochastic_samples_each=8,scenarios=3,regimes=2,variants=len(set(e['variant'] for e in payload['entries'])),
                     javascript_errors=errors,private_html_sha256=sha(root/'private/demo.html'),controls=['scenario','variant','regime','sample','truth','time','play'])
         (root/'browser_validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result));await browser.close()
 

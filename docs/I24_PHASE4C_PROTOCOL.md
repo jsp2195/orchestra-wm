@@ -71,10 +71,16 @@ claim follows from these passive recordings.
 ## Bounded joint follow-on, frozen before new test evaluation
 
 After the control completes, a separate seed-101 trial may use 30 additional
-updates per model: full and graph-disabled. Both start from the identical final
-full macro-control weights; both reset AdamW for the new objective. This is a
-warm-started interaction-graph ablation, **not independent vehicle dynamics**.
-Both retain aggregate feedback and the same total-population field decoder.
+updates per model: full, independent microscopic dynamics, and graph-disabled.
+All start from the identical final full macro-control weights and reset AdamW
+for the new objective. Graph-disabled retains aggregate feedback, whereas the
+independent vehicle pathway removes graph messages, shared microscopic innovations
+and macro feedback. Its separate aggregate decoder still predicts total fields,
+so it is not scored against total fields using a cohort-only aggregation head.
+An inference regression verifies that changing neighbors and macro state cannot
+change a fixed independent vehicle's rollout. This is a common warm-start trial;
+the shared full-model warm start can favor the intact model and is not a substitute
+for independently converged from-scratch controls.
 It does not replace the preregistered macro-information comparison.
 
 The new objective averages proper micro and macro scores with weights 0.5/0.5.
@@ -94,3 +100,13 @@ accounting, not a complete open-population microscopic generator: individual
 arrivals and a nonnegative residual-population decoder remain future work.
 This short trial tests whether direct trajectory supervision can improve joint
 behavior; it cannot establish convergence or a general interaction advantage.
+
+The joint trial also corrects an independent physical defect of the old total-
+field decoder: independent Gaussian speed/density/flow heads can emit negative
+fields and violate the defining exposure identity q=3.6kv. The graph/GRU layers
+and checkpoint tensor shapes stay intact, but the new total-field head samples
+positive lognormal speed and density and derives flow. Two old flow-decoder rows
+are inactive. This constraint concerns one total-population field target; it is
+not a conservation equality between total fields and the historical cohort.
+Microscopic motion remains unclipped. This change belongs only to the separate
+joint trial and never alters the matched macro-control models or their metrics.

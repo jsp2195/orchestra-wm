@@ -11,7 +11,7 @@ from orchestra_wm.i24.training import atomic_checkpoint
 from orchestra_wm.i24_continuous.source import write_immutable
 from orchestra_wm.i24_phase4b.model import AuditedWorldModel
 from orchestra_wm.i24_phase4b.training import verify_preservation
-from .joint import joint_objective, MICRO_SCALES
+from .joint import joint_objective, JointWorldModel, MICRO_SCALES
 
 
 def train_joint(data_root,initial_root,output,receipt,updates=30,seed=101,wall_seconds=900):
@@ -25,13 +25,15 @@ def train_joint(data_root,initial_root,output,receipt,updates=30,seed=101,wall_s
     assert manifest['source']=='REAL_I24' and manifest['shared_source_track_ids']==0
     for p,h in manifest['artifacts'].items():assert sha(root/p)==h
     prior_run=json.loads((initial/'run_manifest.json').read_text())
+    assert hashlib.sha256(json.dumps(dict(config=prior_run['config'],sources=prior_run['sources']),sort_keys=True).encode()).hexdigest()==prior_run['fingerprint']
     complete=json.loads((initial/'completed.json').read_text())
     init_row=next(r for r in complete if r['variant']=='full')
     init_path=initial/init_row['checkpoint'];assert sha(init_path)==init_row['sha256']
     saved=torch.load(init_path,map_location='cpu',weights_only=False)
     assert saved['step']==prior_run['config']['updates'] and saved['fingerprint']==prior_run['fingerprint']
     for p,h in prior_run['sources'].items():assert sha(Path(p))==h
-    cfg=dict(seed=seed,updates=updates,variants=['full','graph_off'],dim=32,latent=4,dt=.2,context_steps=25,horizon_steps=100,
+    cfg=dict(seed=seed,updates=updates,variants=['full','independent','graph_off'],dim=32,latent=4,dt=.2,context_steps=25,horizon_steps=100,
+             model_class='JointWorldModel',total_field_head='Positive lognormal speed/density; flow=3.6*speed*density; no cohort-total equality',
              lr=.001,threads=2,workers=0,train_samples=2,validation_every=10,
              data_manifest_sha256=sha(root/'data_manifest.json'),initial_checkpoint_sha256=sha(init_path),
              initial_updates=saved['step'],micro_scales=MICRO_SCALES,macro_scales=[30,100,3000],loss_weights=[.5,.5],
@@ -55,7 +57,7 @@ def train_joint(data_root,initial_root,output,receipt,updates=30,seed=101,wall_s
     validation=[load(i) for i in items['validation']]
     for variant in cfg['variants']:
         torch.manual_seed(seed);rng=np.random.default_rng(seed)
-        model=AuditedWorldModel(32,4,variant,.2);model.load_state_dict(saved['model'])
+        model=JointWorldModel(32,4,variant,.2);model.load_state_dict(saved['model'])
         optimizer=torch.optim.AdamW(model.parameters(),lr=cfg['lr'])
         path=output/'checkpoints'/f'{variant}-{seed}.pt';path.parent.mkdir(exist_ok=True)
         step0=0;rows=[];prior_seconds=0.

@@ -1,0 +1,35 @@
+{
+  "config": {
+    "seed": 101,
+    "updates": 300,
+    "variants": [
+      "full",
+      "macro_only"
+    ],
+    "dim": 32,
+    "latent": 4,
+    "dt": 0.2,
+    "context_steps": 25,
+    "horizon_steps": 100,
+    "train_samples": 2,
+    "lr": 0.001,
+    "threads": 2,
+    "workers": 0,
+    "validation_every": 10,
+    "activation_checkpointing": "per-transition; deterministically reseeded explicit generator",
+    "objective": "Identical prior-only proper joint macro energy; no posterior/micro/consistency penalty",
+    "scope": "Matched macro information control; does not establish trained microscopic fidelity",
+    "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480"
+  },
+  "sources": {
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4b/training.py": "aeb0a9a94efa48b2e237ab7809a881cf5294006d448dad10a40bf762ce74177b",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4b/model.py": "b932ea4d85f879364985f94f8dcc6eebda86008e334e914832a9b5264bd95c31",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3",
+    "orchestra_wm/i24_continuous/model.py": "bc73d21b11aab69c2501cf53ccfac62dc69e7858c49993d98b1901b23f59953f",
+    "orchestra_wm/i24_continuous/data.py": "fde9ef44127d97a8ec9d96a7ac3a5b5a778557f7ac2bb93908303625171a1ca1",
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c"
+  },
+  "fingerprint": "495d9ec061917f76469929341cf17dddbb44301fd4c614025aae3c126e3c7b3d",
+  "receipt_sha256": null
+}

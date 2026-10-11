@@ -4,6 +4,7 @@ Validation must finish and its decision be frozen before developmental test open
 The selected checkpoint is always the preregistered final update, never test-selected.
 """
 import json
+import hashlib
 from pathlib import Path
 
 import numpy as np
@@ -17,6 +18,7 @@ from orchestra_wm.i24_continuous.evaluation import energy_score
 from orchestra_wm.i24_continuous.source import write_immutable
 from orchestra_wm.i24_phase4b.metrics import marginal_crps, sample_diversity, boundary_rates
 from orchestra_wm.i24_phase4b.model import AuditedWorldModel
+from .joint import JointWorldModel
 
 SCALES = np.array([30., 100., 3000.])
 
@@ -77,6 +79,12 @@ def score_arrays(a, road, variant):
                 if len(pairs[0]):
                     overlap = (abs(endpoint[:,:,None]-endpoint[:,None,:]) < (dimensions[:,:,None]+dimensions[:,None,:])/2).all(-1)
                     row['endpoint_overlap_pair_fraction'] = float(overlap[:,pairs[0],pairs[1]].mean())
+                    diagonal = np.arange(endpoint.shape[1]);overlap[:,diagonal,diagonal] = False
+                    row['endpoint_vehicle_overlap_fraction'] = float(overlap.any(-1).mean())
+                    observed = truth[step-1,last]
+                    observed_overlap = (abs(observed[:,None,:2]-observed[None,:,:2]) < (observed[:,None,6:8]+observed[None,:,6:8])/2).all(-1)
+                    observed_overlap[diagonal,diagonal] = False
+                    row['observed_endpoint_vehicle_overlap_fraction'] = float(observed_overlap.any(-1).mean())
             row.update(boundary_rates(agents[:, :step], mask, road))
             broad = np.broadcast_to(mask, agents[:, :step, :, 0].shape)
             row['acceleration_over_8m_s2_rate'] = float((np.linalg.norm(agents[:, :step, :, 4:6],axis=-1)[broad] > 8).mean()) if broad.any() else None
@@ -116,6 +124,9 @@ def evaluate(data_root, training_root, output, split='validation', samples=8):
     run = json.loads((training/'run_manifest.json').read_text())
     completed = json.loads((training/'completed.json').read_text())
     cfg = run['config']
+    expected_fingerprint = hashlib.sha256(json.dumps(dict(config=cfg,sources=run['sources']),sort_keys=True).encode()).hexdigest()
+    if expected_fingerprint != run['fingerprint']:
+        raise ValueError('Training manifest configuration/source fingerprint is inconsistent')
     checkpoints = {r['variant']: r['sha256'] for r in completed}
     manifest = json.loads((root/'data_manifest.json').read_text())
     assert sha(root/'data_manifest.json') == cfg['data_manifest_sha256']
@@ -129,7 +140,8 @@ def evaluate(data_root, training_root, output, split='validation', samples=8):
     protocol = dict(training_fingerprint=run['fingerprint'], checkpoints=checkpoints,
                     split=split, samples=samples, regimes=['dense','outage'], sources=source_hashes,
                     selection=f'Final {cfg["updates"]}-update checkpoint; no developmental-test selection',
-                    primary='10-second macro_only minus full joint energy; [30,100,3000]',
+                    primary=('10-second macro_only minus full joint energy; [30,100,3000]' if 'macro_only' in cfg['variants']
+                             else 'Exploratory graph-off control; not a macro-information comparison'),
                     uncertainty='Single recording day; no independent-session confidence interval')
     output.mkdir(parents=True, exist_ok=True)
     if split != 'validation':
@@ -151,7 +163,11 @@ def evaluate(data_root, training_root, output, split='validation', samples=8):
         assert sha(path) == checkpoints[variant]
         saved = torch.load(path, map_location='cpu', weights_only=False)
         assert saved['step'] == cfg['updates'] and saved['fingerprint'] == run['fingerprint']
-        model = AuditedWorldModel(cfg['dim'], cfg['latent'], variant, cfg['dt'])
+        model_name = cfg.get('model_class','AuditedWorldModel')
+        if model_name not in ('AuditedWorldModel','JointWorldModel'):
+            raise ValueError('Unsupported checkpoint model class')
+        model_type = JointWorldModel if model_name == 'JointWorldModel' else AuditedWorldModel
+        model = model_type(cfg['dim'], cfg['latent'], variant, cfg['dt'])
         model.load_state_dict(saved['model']); model.eval(); models[variant] = model
     directory = output/'rollouts'; directory.mkdir(exist_ok=True)
     rows, entries = [], []
@@ -216,6 +232,8 @@ def evaluate(data_root, training_root, output, split='validation', samples=8):
                   calibration='Empirical 5th/95th ensemble quantiles from eight samples; finite-ensemble intervals are coarse')
     if 'graph_off' in dense:
         report['exploratory_graph_off_minus_full_macro_energy'] = float((dense.graph_off-dense.full).mean())
+    if 'independent' in dense:
+        report['exploratory_independent_minus_full_macro_energy'] = float((dense.independent-dense.full).mean())
     write_immutable(output/'arrays_manifest.json', entries)
     write_immutable(output/'summary.json', report)
     return report

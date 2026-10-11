@@ -1,0 +1,33 @@
+{
+  "scope": "Previously examined historical pilot source records; timestamps clipped to the old regional extraction",
+  "source_sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768",
+  "records": 6078,
+  "duration_quantiles_seconds": [
+    0.07999992370605469,
+    3.679999828338623,
+    8.139999985694885,
+    16.549999952316284,
+    48.46399986743921,
+    191.96000003814697
+  ],
+  "fraction_at_least_20_seconds": 0.19611714379730175,
+  "fragment_count_quantiles": [
+    1.0,
+    1.0,
+    1.0,
+    2.0
+  ],
+  "merged_count_quantiles": [
+    1.0,
+    1.0,
+    1.0,
+    2.0
+  ],
+  "repeated_fragment_ids": 0,
+  "flags": {
+    "Overlap": 5873,
+    "Lost": 1438,
+    "Anomalous state": 51
+  },
+  "limitation": "Record duration is not physical vehicle residence time. Source linkage metadata is retained in original JSON; physical identity correspondence is not independently verified."
+}

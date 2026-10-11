@@ -4,6 +4,7 @@ Use only a secure environment binding. Never print capability URLs or responses
 containing credentials. State and receipts must be under ignored work/.
 """
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -49,7 +50,14 @@ def upload(path,state_path,receipt_path):
         try:return opener.open(urllib.request.Request(url,data=data,method=method,headers=headers or {}),timeout=120)
         except urllib.error.HTTPError as e:
             if partial and e.code==308:return e
-            status=e.code;e.close();raise SystemExit(f'HTTP {status} during {method}; stopped, local bytes and resumable state preserved') from None
+            status=e.code;reasons=[]
+            try:
+                error=json.loads(e.read(16384)).get('error',{})
+                reasons=[r.get('reason','') for r in error.get('errors',[])]
+                reasons=[r for r in reasons if re.fullmatch(r'[A-Za-z0-9_]+',r)]
+            except (ValueError,AttributeError,TypeError):pass
+            e.close();reason=','.join(reasons) or 'no structured reason'
+            raise SystemExit(f'HTTP {status} during {method} ({reason}); stopped, local bytes and resumable state preserved') from None
         except urllib.error.URLError:
             raise SystemExit('Network request failed; local bytes and resumable state preserved; no URL logged') from None
     if receipt_path.exists():
@@ -110,6 +118,7 @@ def upload(path,state_path,receipt_path):
         for b in iter(lambda:response.read(CHUNK),b''):h.update(b);count+=len(b)
     if count!=size or h.hexdigest()!=expected or digest(path)!=expected:raise ValueError('Full readback integrity check failed')
     receipt=dict(private=True,file_id=ident,bytes=size,sha256=expected,readback_sha256=h.hexdigest(),
+                 verified_at_utc=datetime.now(timezone.utc).isoformat(),
                  webViewLink=metadata.get('webViewLink') or f'https://drive.google.com/file/d/{ident}/view',
                  verification='Authenticated full readback; exact size and SHA256; owner-only permissions')
     private_json(receipt_path,receipt);print(json.dumps(receipt,indent=2));return receipt

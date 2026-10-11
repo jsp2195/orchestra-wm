@@ -8,13 +8,41 @@ This formulation does not yet generate individual arrivals.
 """
 import numpy as np
 import torch
+from dataclasses import replace
+from torch.nn import functional as F
 from torch.utils.checkpoint import checkpoint
 
 from orchestra_wm.i24.model import observe_history
 from orchestra_wm.i24_continuous.data import observations, exposure_fields
-from orchestra_wm.i24_phase4b.model import matched_macro_energy
+from orchestra_wm.i24_phase4b.model import AuditedWorldModel, matched_macro_energy
 
 MICRO_SCALES = (100., 3.6576, 30., 5.) # longitudinal/lateral position and velocity
+
+
+class JointWorldModel(AuditedWorldModel):
+    """Same graph/GRU layers, with a physically constrained *total-field* head.
+
+    Positive speed/density samples imply q=3.6kv in the existing physical units.
+    This constitutive identity is valid within one population/exposure target;
+    it does not equate the observed cohort and the total population. Microscopic
+    trajectories remain unclipped and their violations must still be measured.
+    Two old decoder rows (independent flow mean/std) are intentionally inactive.
+    """
+    def _transition(self,state,generator=None,posterior_target=None):
+        if self.variant not in ('full','independent','graph_off'):
+            raise ValueError('Joint trial supports full, independent and graph-off')
+        result,prediction=super()._transition(state,generator,posterior_target)
+        raw=self.field_decoder(result.field_memory)
+        means=F.softplus(raw[...,:2])*self.field_scale[:2]*.25
+        sigma=F.softplus(raw[...,3:5])*.10+.02
+        noise=torch.randn(means.shape,device=means.device,generator=generator)
+        sampled=means*torch.exp(sigma*noise-.5*sigma.square())
+        fields=torch.cat([sampled,3.6*sampled[...,:1]*sampled[...,1:2]],-1)
+        field_mean=torch.cat([means,3.6*means[...,:1]*means[...,1:2]],-1)
+        prediction['fields']=fields;prediction['field_mean']=field_mean
+        prediction['field_std']=torch.cat([means*torch.sqrt(torch.expm1(sigma.square())),
+                                          field_mean[...,2:3]*torch.sqrt(torch.expm1(sigma.square().sum(-1,keepdim=True)))],-1)
+        return replace(result,fields=fields),prediction
 
 
 def population_targets(scene, cohort):
