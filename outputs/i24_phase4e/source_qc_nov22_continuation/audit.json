@@ -1,0 +1,76 @@
+{
+  "status": "SOURCE_ONLY_QC_PASSED",
+  "dates": [
+    "2022-11-22"
+  ],
+  "sources": {
+    "2022-11-22": {
+      "data_manifest_sha256": "66687aca74edc9ad0da45f1e2159d21eb3e682f09aafbbbe2c4fdd5ae071e08c",
+      "source_verification_sha256": "26b26131c5d4d5a4f8fa1d0a986fbddd48ea977ae00dab1f00cc174cfdaf06b3",
+      "nested_zip_sha256": "3f81287f188f7781622a8d362f9d87f2e6d381a0034e6be1299e1416e7d99748",
+      "source_records": 771946,
+      "source_samples": 247719604,
+      "source_start_unix_s": 1669118399.9,
+      "source_end_unix_s": 1669132790.38,
+      "native_dt_median_s": 0.039999961853027344,
+      "role": "train",
+      "counts": {
+        "source_records_scanned": 771946,
+        "source_samples": 247719604,
+        "source_gaps_over_0_5s": 0,
+        "direction_1_records": 252281,
+        "direction_-1_records": 519665,
+        "2022-11-22_0615_boundary_tracks_omitted": 141,
+        "2022-11-22_0615_boundary_samples_omitted": 29470,
+        "2022-11-22_0615_tracks": 3367,
+        "2022-11-22_0615_samples": 989870,
+        "2022-11-22_0615_rejected_samples": 51660,
+        "2022-11-22_0615_gaps": 0,
+        "2022-11-22_0615_lane_jumps": 0,
+        "2022-11-22_0615_short_tracks": 9,
+        "2022-11-22_0715_boundary_tracks_omitted": 206,
+        "2022-11-22_0715_boundary_samples_omitted": 79702,
+        "2022-11-22_0715_tracks": 4467,
+        "2022-11-22_0715_samples": 1550944,
+        "2022-11-22_0715_rejected_samples": 62482,
+        "2022-11-22_0715_gaps": 0,
+        "2022-11-22_0715_lane_jumps": 0,
+        "2022-11-22_0715_invalid_tracks": 1,
+        "2022-11-22_0715_invalid_dimensions_track": 1,
+        "2022-11-22_0715_short_tracks": 4,
+        "2022-11-22_0815_boundary_tracks_omitted": 189,
+        "2022-11-22_0815_boundary_samples_omitted": 58846,
+        "2022-11-22_0815_tracks": 4103,
+        "2022-11-22_0815_samples": 1229731,
+        "2022-11-22_0815_rejected_samples": 61255,
+        "2022-11-22_0815_gaps": 0,
+        "2022-11-22_0815_lane_jumps": 0,
+        "2022-11-22_0815_short_tracks": 7,
+        "2022-11-22_0915_boundary_tracks_omitted": 87,
+        "2022-11-22_0915_boundary_samples_omitted": 22656,
+        "2022-11-22_0915_tracks": 2258,
+        "2022-11-22_0915_samples": 613351,
+        "2022-11-22_0915_rejected_samples": 29125,
+        "2022-11-22_0915_gaps": 0,
+        "2022-11-22_0915_lane_jumps": 0,
+        "2022-11-22_0915_short_tracks": 1
+      },
+      "excluded_windows": []
+    }
+  },
+  "cross_day_shared_source_ids": {},
+  "geometry": [
+    0,
+    999.744,
+    [
+      5.486400000000001,
+      9.144,
+      12.8016,
+      16.4592
+    ],
+    3.6576000000000004,
+    8
+  ],
+  "windows_csv_sha256": "29bd249f0985e93a8db99c1666f150a8d60458fe7c9feb5a087545b8495ce40f",
+  "interpretation": "Correlated reconstructed retained-population windows; not a complete vehicle census; no forecasts evaluated"
+}

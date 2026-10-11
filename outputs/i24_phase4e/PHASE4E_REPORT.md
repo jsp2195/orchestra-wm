@@ -267,3 +267,35 @@ Final regression suite: **126 passed, 8 skipped** in 8.58 seconds with
 `uv run --no-sync pytest -q --import-mode=importlib`. The generalized recovery helper
 was also exercised by successful full restoration drills for the completed data,
 audit supplement, and interrupted-attempt bundles.
+
+---
+
+# Continuation on 2026-10-11: Nov21 restored, Nov22 completed locally
+
+## COMPLETED
+
+- Checked out the required starting commit `9fd6f20754d36cdfae30d4567b06c0dfab081a9d` on `phase4-i24-continuous`. No November 21 ingestion was rerun.
+- Downloaded the completed-Nov21 recovery index, 17-part data archive, and one-part audit supplement from private Drive. The index and both manifests matched the public SHA256 values in `continuation_backup_status.json`. All parts, combined archives, and 403 data files plus 14 audit files passed the restoration helper's size and SHA256 checks. Installed only absent or byte-identical files in `data_v4`; restored the original private source listing and metadata into ignored `work/phase4e/`.
+- A new source probe (`source_recheck_03.json`) passed metadata comparison and exact HTTP 206, 1 KiB byte-range access for the Nov21 archive. The managed environment exposes an access-token secret and no configured outbound identity or renewable OAuth capability. No credential was printed or stored in Git.
+- Ingested November 22 only, using the frozen four slots and `data_v4`. Preparation produced 92 train windows and nested-ZIP SHA256 `3f81287f188f7781622a8d362f9d87f2e6d381a0034e6be1299e1416e7d99748`. `verify_i24_phase4e_sources.py` accepted stable source metadata and selected-stream integrity. Whole outer archive MD5 is not claimed verified.
+- Offline Nov22 source QC passed: 92 windows, 771,946 source records scanned, median native interval approximately 0.04 s, zero recorded source gaps over 0.5 s, zero excluded windows, and zero source-ID duplication. See `source_qc_nov22_continuation/audit.json` for field, geometry, population and selection details. No forecasting conclusions follow from source QC.
+- The preservation script created a local Nov22 archive at ignored `work/phase4e/nov22_backup_private.tar.gz` (SHA256 `d9be9a7cf0b77532c702f8a69fd493777e76f751005c4c093444ff9a1ff5741a`) and inventory. These are local recovery aids only, not verified private remote backups.
+
+## BLOCKED / NOT EXECUTED
+
+| Stage | Status | Reason or remaining action |
+|---|---|---|
+| Nov22 private backup | BLOCKED | First upload returned HTTP 401; no retry, completion receipt, or remote SHA256 readback. Refresh the secure authorization and preserve `data_v4/2022-11-22` plus its QC and manifests before another date. |
+| Nov23 and Nov25 ingestion | NOT EXECUTED | Stop-on-authentication-failure rule. |
+| Combined four-date QC/cache and preservation | BLOCKED | Nov23/25 missing and Nov22 remote backup unverified. |
+| Phase4E pilot and paired seed-101/202 training | NOT EXECUTED | Complete-data preservation gate not met; zero new optimizer updates. |
+| Nov25 validation, promotion and freeze | NOT EXECUTED | No model results or promotion decision. |
+| Nov28/29 ingestion and independent forecasts | NOT EXECUTED, UNOPENED | Validation gate not reached. |
+
+No new macro energy, MAE, CRPS, calibration, physical-validity, robustness, or microscopic-information result exists. The primary aggregate-only minus full-model energy comparison remains unevaluated. No convergence or cross-date generalization claim is made.
+
+## Exact continuation
+
+Keep this checkout and the existing verified Nov21/Nov22 `data_v4` directories. Preserve the ignored local Nov22 archive and inventory until a private upload passes authenticated SHA256 readback. Refresh `GOOGLE_DRIVE_ACCESS_TOKEN` through secure environment configuration; probe with a new receipt filename. If the probe passes, rerun `scripts/preserve_i24_phase4e.py` for the **completed Nov22** directory and include its QC/metadata in a verified private backup. Do not reingest Nov21 or Nov22. Then run the documented per-date prepare, verify, QC and private-preserve steps for Nov23 and Nov25, stopping at the first authorization error. Only after combined QC, cache creation, and full dataset readback should the frozen training and validation protocol resume. The original Phase4D checkpoints and historical incomplete shards remain recoverable through their existing private manifests; they were not restored because they are not required for this data-stage continuation.
+
+Regression suite after restoration and Nov22 QC: **126 passed, 8 skipped** with `uv run --no-sync pytest -q --import-mode=importlib`. This report and the public source-only QC/probe receipts are the only new files intended for Git; canonical data and local preservation archives stay private.
