@@ -64,7 +64,8 @@ def upload(path,state_path,receipt_path):
         receipt=json.loads(receipt_path.read_text())
         assert receipt['sha256']==expected and receipt['readback_sha256']==expected and receipt['bytes']==size
         print('Existing verified receipt matches the unchanged local artifact');return receipt
-    state=json.loads(state_path.read_text()) if state_path.exists() else None
+    resuming=state_path.exists()
+    state=json.loads(state_path.read_text()) if resuming else None
     if state:
         if state['sha256']!=expected or state['bytes']!=size:raise ValueError('Local artifact changed; existing remote session preserved')
     else:
@@ -78,7 +79,7 @@ def upload(path,state_path,receipt_path):
     if parsed.scheme!='https' or parsed.hostname!='www.googleapis.com' or parsed.username or parsed.port not in (None,443):
         raise ValueError('Unapproved session host; capability not disclosed')
     info=state.get('completed_file')
-    if info is None:
+    if info is None and resuming:
         # A zero-length status PUT determines the actual acknowledged offset.
         # Session URL is the capability: intentionally no Authorization header.
         with request(state['session'],b'','PUT',{'Content-Length':'0','Content-Range':f'bytes */{size}'},True) as response:

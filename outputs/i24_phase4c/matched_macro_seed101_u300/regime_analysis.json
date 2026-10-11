@@ -1,0 +1,7 @@
+{
+  "source_sha256": "fb07dbdc0bd19c1ea262c62587ca676c483822024b2355722fa1d4355df9d65d",
+  "history_table_sha256": "9842c069c76def616ee7568b3e919baa5c8ac0f2826eeacaf21a2ae4c9d9560c",
+  "score_table_sha256": "bda1421314683cec2846c1016c8fbbde2fdf277e3d85544f2219a9bfb19a074e",
+  "scope": "Exploratory post-hoc stratification by dense historical supported-bin means. No outcome-based model selection or change to primary all-window comparison.",
+  "limitations": "Supported-bin reconstructed density is not complete roadway density. Same-day windows are not independent recording groups."
+}

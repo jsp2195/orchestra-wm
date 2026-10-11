@@ -1,0 +1,1658 @@
+[
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/0-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "8487a16e706c7a97bdfb17bf76f91fd6d6e1fbf4860c5f4fb38af755ffc26541"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/0-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "59249b68e516c8d6cfd708e28a08b71d9c3d1f33f25aee72823d244b49a311cb"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/0-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "b2251e6076bde162fb3abdaf2e4fe504b163a08fc4de5cf5f28607dac1b2291d"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/0-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "1d7de9499d96a2e121a2467e8241c04bd7b324a586eb7eeb19d0a4bd2c366e87"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/0-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "f53936d361480973fc44d972630d03ddd65924b66bb3d383904f66c17fd5c986"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/0-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "9252610a9b52e43b9e66dde7b272033958ea34bca3d976ac66001b3e973563bc"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/0-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "60914cff53cfb437d4de9f1f769f81fe48477a29e5cab6eff9c0aac17e833038"
+  },
+  {
+    "scene": "0915_development_test:1669043701",
+    "scene_number": 0,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/0-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "99600d21cbaf48e53fda8253a0924bb3debfe9bf89a7602a542121d11bf4d8f8"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/1-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "cf5dccac31241c95538ed5f813575d8f04f3fa3bf1ea747a8b4d4f160b2272db"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/1-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "241ef727527e21ec850f601ad9dc071c703f96be95ad6157f4312cc8163fff34"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/1-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "98aa77f21002b47efd8faf87eed30c8dc1235d171549fdbd85c841330fcef463"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/1-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "13a2b53b74dc6f823cec5a12b11765503a5fdd76a5aa81cb2e6f20e9016a5c69"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/1-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "f43491fd865426e18e507fcb2db66a53483435df7ecfb16435764abe8b94df73"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/1-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "2e002aa0ce85d5c08b4759071872c35644e146353c19f0c9e82ae39f2672f091"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/1-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "656decb125d1ca69bbc6e88f12661515556a25fb793f165366a247756e9cbfc2"
+  },
+  {
+    "scene": "0915_development_test:1669043726",
+    "scene_number": 1,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/1-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "56df1e7135ef117727bccb682065d088291f1fe3740a331278427ef56e54942a"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/2-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "c30da0000ac3c515f6085212a408be6ce3f9c0238d180844bc44a2312a6012d0"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/2-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "6ad4744944374886fc60f9072a85f34ccdf6230f0dd43b41841841613b21fab4"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/2-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "adaffa725cd80a1641532972565c9bf1b702edd839d7212979505411f4a8260e"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/2-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "9d26097dce91dfaac3f3f8378c79dcae3d6a443636cec777af782b35f04523b8"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/2-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "868080e61a2a673bbe6ec15a3953aa964a35f96effda3c22cede65b5cb493452"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/2-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "c030c1ad3535aa5277d00607e2008556797cce46b32e57be54f1756e990b1600"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/2-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "6583a477d9ca4ba5d7a8419adfb487bb986ad27679f32178a1759aa9381fa26d"
+  },
+  {
+    "scene": "0915_development_test:1669043751",
+    "scene_number": 2,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/2-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "e4286e6a66f12d7442e923f2add2304c21f3435042c7391477eb77bba3d5a481"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/3-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "cb927dd301fd90a9ab49e5ee2e2ab5289741f2679a18cd010257ce04481271a0"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/3-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d838b96f047d74885aabb37292368726f027c2006777a9cb1f42115bbf7578b3"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/3-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "8f630f79511c43222520b371e8cc2e830d6e8aaaf652333f49d06cab83d890d2"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/3-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "48637ba4736c7f7d15ff82e9320c9887d1f5cd691dd09ff9beef66c581f7e4a6"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/3-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "90c5f4bedc2a51424412f0f09ccb551192184de62730bb7562b8b21895c38ac7"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/3-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "4bfe39fbc48f2b9fe758db0d2ef99e4cdcf1289c90719e76ee2cdd64a372487d"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/3-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "bf67b5f614064e545e75ef5870948a23df5ebac1b756a891ade91fb71faf9a43"
+  },
+  {
+    "scene": "0915_development_test:1669043776",
+    "scene_number": 3,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/3-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "499b970879be272e622a7f4cc8125afc15af38d547d0f577793d91e52285650d"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/4-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "2cefbbf4c55fef2115780f23fdb12999f08edd41c93c27915a17769ec8a874bb"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/4-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "484d0ff503afd19caf5345f08538b2510b00bbe453b0b74a63756ae828abcafc"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/4-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "fc1288c45f4f746dda75ae0d0b285de61907fd99c5792b442215d68b9e210f3b"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/4-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "59a82b4b72c1a84771a87e2a837abffe1de2abca6938b377aa0cac77ee266d35"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/4-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "20c0894d6cfceb4728e24fb5a069c0517e203868059485562fc0575952dde5e2"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/4-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "64c5473bb32d8274aca2fe2bd2a07191e5744c2b7e38ecce6b386158679640a3"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/4-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "3873a5cced44d27fed3a0deac95517cda18c1eeb1f9b2484d42dc50130c2934e"
+  },
+  {
+    "scene": "0915_development_test:1669043801",
+    "scene_number": 4,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/4-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "6e46ef881bc4f0e38b3bc915416658bcffe420d086f6354a1747942802a8941c"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/5-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "7c60df5af0ee36105198dbee8764942a0891bda719d795ad70daeea76ee61dc0"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/5-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "772966499df13cfab3616cdaf1b08d4926049f204a9bcd31e72871a9dadce0ee"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/5-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "7278207ff630636b08a8e616d7c8f4aeeb7a21816f5c45e9d5ab0fac2a984f08"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/5-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "6b3bd6f79b9d6a80e3bca95047e3a246b7d47a6183eb2a8a1269a73904b80907"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/5-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "78efe062f9019458b1a0fdfec9fd685639973807e4bf6a9207a4b73a4e5f1916"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/5-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "8ad2ddc5bf4ba53425672dc9543efd520fbfdc46b4879662327e885905258e30"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/5-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "162d7860473e3ed67583aa01411059a4b3d1b843ccafe6385873f206767bb516"
+  },
+  {
+    "scene": "0915_development_test:1669043826",
+    "scene_number": 5,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/5-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "8b1112ea9436a866af34f99446453d9bf4c2bdafae592360d917a01a86ed39b3"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/6-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "642ce63b4f82e2aad9212c9f601e425eff8169f5308c3a47884b02002a80954c"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/6-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "4d3dfb8e7f91a45c8ebffaa30a3e67875768549a648023c690d806ebb7c43782"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/6-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "a642e26c22723dab494e1e65c4c64d7f05ba4964d3c19a977cc5f4abd9b925b1"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/6-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "251e02584b5e251f32ccbb013a673c2686bead9e8206e1ebdcf1f727c813ab88"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/6-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "53f770992a739b150da35589a0272b02e0cd2f2d9bceebd2f92bf85900506974"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/6-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "db1fbe3d34795df809068d0f389a4f20b7b97621b484a4936a93a3e34af6c8ee"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/6-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "94484d03e28ec3644ea6c36e3929486d5e9e499ec9cd7a0b142a5ac5ed24a53d"
+  },
+  {
+    "scene": "0915_development_test:1669043851",
+    "scene_number": 6,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/6-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "fbfbab6b690aaa72b8bd01b8fdeb9adb01c7fedb3cd72788a56b8b2f1d8062a1"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/7-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "c718766a0349d2117befd8b91c650cc46aee661076955eea6901dd6d443d36ae"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/7-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "56574f40b8f42f84f6b1a9429fe1d8d346cfd1e3ec63c8c5c4d678318b0c6bf6"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/7-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "6afdc31ee400e1babefcb8f4b4ab5d22cba255b65b68f56a29b6311c8c634d45"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/7-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "ab16dce219bfc4f97d14789bf40045e9e2d16a7049173d97bae9a72c52726deb"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/7-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "225e048e0ae3bf078f3b93e76cbbd06d900f14cb1afde32577a0aa8e0a28d3ad"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/7-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "50e3ba7806dc6de6caef8a80b8fb2c80e12e3f36b4136692df0f573aed67c7ee"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/7-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "43d87a964aa72ea65aaa3fccbdfa3d7c24c5afb2e76f330dba533e02558a74ee"
+  },
+  {
+    "scene": "0915_development_test:1669043876",
+    "scene_number": 7,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/7-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "55d3bb09886c6f72888060f37561a1ec2b552ade3c0badd639cb8588cc818e7d"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/8-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "6c8b1bc31fa20056c930bb6ced8d3244aa7506e7ccd3d6634e9b869f7486572f"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/8-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "2be9c1d8a4d0409e46662a23dea3581646eb3964b02741483f9ae44b3a7e7cc0"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/8-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "6feeed07aa665df506f2860e17bebfb7486d52f583ba304eaacef21b835a5144"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/8-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "02aae7b0914cdb4f9a0e6f6455861713e5e5ab35f727df86aa4e1410dfcdf910"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/8-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "45c7a75ef3b8c5c4eb2e4325daada586c3f2e404fd540efa59ba3c2fcca1d030"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/8-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "42d114bcf5730cbfaa408ec6f3a7c16f388a63e00bca2d7e702c9ee946622bde"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/8-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "791c917f63e526e90a416bb38abf8c55786ed111c8c7424d98bdd1450c4ce8b3"
+  },
+  {
+    "scene": "0915_development_test:1669043901",
+    "scene_number": 8,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/8-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "273c37f9caa45cde7e7d5b91bbac9bdb7e9100c0e6d420f6e26af7a4f13d59d0"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/9-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "08efdf6933722f4c02271d61253c5c60d5c7bf632b0d11d7adeb840d97657127"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/9-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "feefa9839ed5310e2491a6c2f41746706817fdd21d2ed805a71b6f189b4bc519"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/9-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "6b90473208e90dd8a235853ea21387b9e30da28124337142e7564c2c38a1f67a"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/9-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "1cd0522db91c2a71f2bcb780360f0fab9455ce3ce47279f19edd669d79b038c6"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/9-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "8bf115d276825899360f5b28d1bd30d3d5dc6bf366b39656badf80da0223ae0c"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/9-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "c2216b61468397060ff7119720b7084781fa69dcbc87bb631df2b886fdc5da18"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/9-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "d4fb7f06159587cab3517ff9b729c2541b99a72a55faeace08cf7051231fc968"
+  },
+  {
+    "scene": "0915_development_test:1669043926",
+    "scene_number": 9,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/9-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "d87231054326ca922bfeebbcfa1a9415d48c84fc7178f8df87fc791607439703"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/10-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "157ecf43ee66d12e6410769d75b0795376baadebdd41c28c9498518adf36cd6f"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/10-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "10066fa59ae8bbd4609ea0d37b889eb0eb1dee7629b1bbed7ca616a6a10407e1"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/10-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "01326aa7523edc4589206a2b1a857053f4644301a989ab9a964e6dda6c7ee260"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/10-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "8372fa9da64566f4f6ccb8f5641c65bc226b5ffa7f42ba65b127413d448d8ba1"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/10-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "54e843876eb09e8365fd56ce773ae8f70b1fba868cbc8cb587903fdb107bb265"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/10-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "208d57ec5b607910299204a135c6696e433c9cf05f4631bf6734b49660a5d06d"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/10-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "0ca5e54f84cad0882608a39e83ab49aa45928ff4d76ea73ce56144f4f42b98c1"
+  },
+  {
+    "scene": "0915_development_test:1669043951",
+    "scene_number": 10,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/10-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "ef50de30af3d601c00aa7272c2423a746630af2b1c7f09e4278c8f6f258ac273"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/11-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "4b5c441aca554bdf445c7f7b76fca91b7ba0cca2f4dedeff41931a2548ba0df2"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/11-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "b6735b6574c8e22bfaebd0a2386b5ab10ed13b90f53f80963bb7623c705de71c"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/11-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "d98db28cbe797321dde9819f7780823281a8399424e511a6edd43418e9930622"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/11-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "5b9cd0d554008474c22c872a9047cf346a4adec346e4fbb46316a3d333064516"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/11-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d5ae6ed46e47c5c34b87707ded26a365095839c8d785311c55cc139fc016c1c4"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/11-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "1341f2c50616592e2237390eae41c7817b19461683b6de2a7926b98859330dac"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/11-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "01159478a19acc8fa8dd1a3244f1a327c163d2ea0e3dcdfb378a7a72d3bb598c"
+  },
+  {
+    "scene": "0915_development_test:1669043976",
+    "scene_number": 11,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/11-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "32846308500748e23f72728a0ddbf709e943cdd38ddea7487beb19da85478110"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/12-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "a383c507320f9484947b9ff2e3ca4003f78a66cf60a64925ac470af287b682d7"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/12-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "168b57ddc9ee6d8391c3158f771cb9f2a01b9d1224dd78c71cacdc76f1a2731e"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/12-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "9d4d86f48decc0f9a8829b78e73693bf39142aa0ac03de663f858518ca3b095a"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/12-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "99a3769eabcaad1945f6db37d6734bb0475027c982e6eb87f465b93fcb70abcf"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/12-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "0d842dde9f3353506a2a682ffbaff214058f11d0d9f245a6acc89ee64ff72ffc"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/12-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "68ffbdd3a6dfd12275882e59b3a6e0fbcb386d969e3d60ad2d69d9d7dffbd6cc"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/12-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "18b2578bbe41eb5e75143ec4317d1f9399c1169d3041c1c34d3cb545826efee3"
+  },
+  {
+    "scene": "0915_development_test:1669044001",
+    "scene_number": 12,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/12-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "a1de14e5638353bf35184963d5315ea8e172330a972514212d9f8eac74b8bf5c"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/13-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "4ab299947f3335b1088105cc5163a24a7d036e4dade8931559de6d3fbfc830b0"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/13-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "3be7c72b47882e7d7ddf698510079bda6c605d954298603c17b4d6343817f77e"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/13-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "1aff0d3ca12b4164fdfc12eb260df3a31e1f73eacfd1202c2536350f06fad371"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/13-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "eec45a9ce600b09a4a626f0ecca8faa5b9c1945e576f1e2713ad0b04f1f50c44"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/13-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "aa11a29bcdc738e2be39bf6b96767bc6b69458abca81a1b080314be8a8b934d5"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/13-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "30090abd320dd44da4411db2fdb250b6c1e9defd1d6dc0dcbe4a8d81e0ccdc3e"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/13-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "80455712679166d73138f06aed226373c50f209f27080709f0070e9640a6d97b"
+  },
+  {
+    "scene": "0915_development_test:1669044026",
+    "scene_number": 13,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/13-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "1f870f7aa7b80ade53c23f8ed6ca1fd66f2a9874e67b132be1f1d7138e3dfe68"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/14-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "3d988406cddba8d8eb68b3102bd1f158e47e09615154aa5cf06aac2d0134a443"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/14-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "bd1ff618eb60625b7981ccb91f3ed0fa80c0402d7955cade2fe157242e9f0d40"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/14-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "9644eda76d15b50836223fec27b283d36921414d2c0c82b779e5d1a60c85e7be"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/14-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "e32d287fb256e3195ecbad4aa7c8b18a2a3bf2f7bc2867c5e620ac805d887451"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/14-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "348aecdd6ace75b6b7a1df34329581ecf059561e7cd2eda36d8eccc39de17704"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/14-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "56d147e57c9b3d9616dfac3f846ede941cfd058758ac4081f9947ff9353c2888"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/14-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "2448e14c5ef44716c7cc7348a7352023bc3bae08bf745a8d64355dd4f2d1068d"
+  },
+  {
+    "scene": "0915_development_test:1669044051",
+    "scene_number": 14,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/14-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "17490a3acd3c81582b8b4d300c5597ea9379377f7e80dd5d4638e289a5234f44"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/15-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "7edc9bc9facb76289c748486a2b2862f70f1b4e609e3ffcbe256b3e074e59708"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/15-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "a778d8f1e7bd28ebe91698ed6bded4ffc2282d279056fa1eb4b9ca420ae06174"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/15-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "4fa0fa13c3f01f5a8ae52b22ac08bcb0021566f85d704ee3a0f6280d85dde780"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/15-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "63569864c5a873c5da575c4d77b66411664e2f4c73f755e2f1dc90339da73bd9"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/15-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "a0134d199b9c4ba102f82b3c5becc5d20e5afbe6a9e74b7fa41e88fd55e1ae6d"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/15-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "2815268c63be0d77d2c480ca3d31371342eaa731874907d140fcd5139cff8fd9"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/15-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "7c44585f35ea07111e059e6da7f5d3a355bf56488f3a8e92e2c3f8510cd131fc"
+  },
+  {
+    "scene": "0915_development_test:1669044076",
+    "scene_number": 15,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/15-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "68bbfe0fcc7399e8e7411bab8265e2b0bf33a8385ca3e646e4968a3c1cbd2848"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/16-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "926892120071f29150edfacad81aaa61d687edc04e27ee6bfbfd481ff27eb7cc"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/16-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "cccb751adc0e53e0f2f30922288983118534192ec61729e2d32ac669b21d5cec"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/16-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "8921f750189d0f1d4cb2481508dab6702cb9970db9785800006280d522743af4"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/16-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "298167c2525f6699e3d25b0e41cadc97d532dee807d4ee13aa5e328e5eff3f0d"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/16-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "6941793d5160c3373c2eda8d76bfcf8c9541a34de3173b1af1727ff70ff2ae01"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/16-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "35471b17fd873326e221d218e81a1025eacb587cbcbac3712be307ee66798979"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/16-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "bd09c13a21b22777ff7bbfd93d1609fdb11aaa4ec547bfbe46cbb633bfb18773"
+  },
+  {
+    "scene": "0915_development_test:1669044101",
+    "scene_number": 16,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/16-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "6105e1f3c00675bd9a92070a7342511eadde5a1702c45d34b8ef543b1ecfeb82"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/17-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "13ed928efd497a33aaecc3cb4cd211329ce46fe24b1894037e7bc6df2464dc9d"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/17-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "6da00afeccdff2cac3daceb6bbb605d60cb46ef8fe940ae8b8098fc5f6251a81"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/17-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "88fc43f0511b3e5596d418183c1664b3c387f35e4e6192f4f87626c098202af4"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/17-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "88dc2469954b0258ec61f169af6c64d1c39c807feac0f36caed47558b4424de4"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/17-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "fbf2d93ed2755b09171722155211923531d4fc6e7f1244c89ec1b6e6ba4cf4ff"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/17-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "5393f8575262d1b3870ea6cad4fbfba741e601ec03db287ef28cac4119d38b08"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/17-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "fd1e4a1d3f9765bc4fa0eed3e4ac80043bf47d810a528e7b4f92cc309e82854b"
+  },
+  {
+    "scene": "0915_development_test:1669044126",
+    "scene_number": 17,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/17-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "ac5af5d3c67f08f46cfc0896e17683ec7b5c9bf97c91a7fdda1f07d82f6ff158"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/18-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d5480d56c42db9a8f94e57badfc9219c2ec665381c2205c0d18329bb85f31813"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/18-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "f3ce04e552e788905a67d6c61031b06bf2bd34429a31b32e6fb0a9f8fd4d8025"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/18-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "22dca80344d0bd6391f221a9c4836fd8d543faa2dde797a6901996cedbbe947f"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/18-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "e6b00177c5bcb33c7bd4a59e7baddc6ed9cb846f0e505b5e6ec401ffad88bec4"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/18-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "b8ea92eb7e48aa00f113574c37e477befb7e40b765c72974411c7d24fd568cc5"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/18-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "0dc45e9c99974e8eea570b60aa33bc8017e09a4d4fbe7fa551958bea816ed4ec"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/18-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "4536c4e28e8a427969a2dba744082c2b1f7f5dd90775c762369c1fa999183678"
+  },
+  {
+    "scene": "0915_development_test:1669044151",
+    "scene_number": 18,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/18-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "4bf6b60142f7d40cd519a455f5bfca63cdd9168894ca13b4d085e6bd8a5f0920"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/19-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "64fb48e5284884f26f4745d65cfa29b59e7d361f435b6e38ea618a0ee781bfd4"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/19-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "767cff4c4e54d8f1e4231eb49127e7f062fd8bdb86746368fc8aea34c3140b06"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/19-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "a2d8ba40175b4ea1829b82a906cbca0e24b18e7622ab0a2a91e7ead712d78169"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/19-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "787f6958dc087d68c9b6b0721f4875f545a9d7675b17789399b522cf0bc57637"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/19-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d0a05051fa491d976214be73717f21859aae1b7430ca788c2d7737f53b647e7f"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/19-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "458738ab2a113083892f7a3db5c3ab8ac1d46bae1d97c41b19dbd5b5e23592db"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/19-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "a37a84f6b8e982cbf07b9442912f3727b1039b78a2bcbb9bcaa6f4e1a556db73"
+  },
+  {
+    "scene": "0915_development_test:1669044176",
+    "scene_number": 19,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/19-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "e8d186e6dc2aa7ab3b8fb2cb7e625bda92da07e77352fa91a7271d58cb6c862f"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/20-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "2bdbc69335040e2b17e211af658d80e36dad177dcb9c92b9b6602d6c1e85552f"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/20-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "36cf62c9b561ae816d25f14eb1b50abd290447f417c60d40e0898b24205e0d51"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/20-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "daa9f88c82121de32446a03a2c8dc9969ebf879b1295021eeed7450494b5b623"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/20-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "58bac0a5e97a02217f6eda6441574c37435dc3026f67c456623687214fcffd94"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/20-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "7cbddf350761ec74e37f34d7b4518bf5b8aef234cc6c5738cbb30332d67dcce8"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/20-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "507acdb413a03b430a9f1a435b6b8047d8b49144e8b1455168a39faaa5c7be46"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/20-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "16853aff66de69fbb667cd3a827c27650a89ed856adc4493239dc537bcfc982b"
+  },
+  {
+    "scene": "0915_development_test:1669044201",
+    "scene_number": 20,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/20-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "4c3a88e114c536352a83dca6f147575922d86fae90eaa60bd13fd1529160f00e"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/21-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d09ddfb1057c163338af799538453b597810fbb947bb9a70dc686bf22140858d"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/21-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "d4b412e0929d1459e5691bae5dd0c9faab13e612b7b4a120582c610aa7aa91a8"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/21-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "c16bcd5d9b63fd32e36cefa5c7f02c256f7fbbfb1b6ac195262522c92ccde70f"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/21-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "57517b5544058351b1b04dbc001ae547d75683403420bcf536a873262ba96bb8"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/21-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "a2836a97b3d5f29372b45a4e589b98527992d3c19b85b305257b86b238e83d35"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/21-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "77593cd4e8651bf0e13c4c55b0371c9d848762255657d145da0d92e639dbac22"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/21-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "df5d778b2be02054accc9ba6d5505f6128339e6c0a807903d6dc89ece48bea46"
+  },
+  {
+    "scene": "0915_development_test:1669044226",
+    "scene_number": 21,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/21-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "ee9ce744bdee6cf602abbae6b5722eccb1060f46f806a80756133a440b4ebefe"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "aggregate_persistence",
+    "regime": "dense",
+    "path": "rollouts/22-dense-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "8646781437fd61b5bcef5d108d5b18fc6aa91b5e5c85e5af5b11c6fb90a12f33"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "constant_velocity",
+    "regime": "dense",
+    "path": "rollouts/22-dense-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "1c1b14035ea2aee08373398273fcdcf915670604f3025a14de14ea2fecc1e255"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "full",
+    "regime": "dense",
+    "path": "rollouts/22-dense-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "6645a6d3839c79193e5736367943848eb48f9068959cddc3fca972e4983fe859"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "macro_only",
+    "regime": "dense",
+    "path": "rollouts/22-dense-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "3ee15c68ff5fee296ce310fd4f2735bb39265d6c83b3b2e5e93a7fe091e7e041"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "aggregate_persistence",
+    "regime": "outage",
+    "path": "rollouts/22-outage-aggregate_persistence.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "f11e05624fbecf624d6bf4375ebcb59fae790c33708ff0c8e2b19138ffe69210"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "constant_velocity",
+    "regime": "outage",
+    "path": "rollouts/22-outage-constant_velocity.npz",
+    "checkpoint_sha256": "KINEMATIC_BASELINE",
+    "sha256": "1668064588024a6a6084da0f0ffaa4ee85b0b05e9489967548d89cab5d4a2521"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "full",
+    "regime": "outage",
+    "path": "rollouts/22-outage-full.npz",
+    "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "sha256": "ae36ba2fa9c4add07903eb87ce0a50d37e5852f2c6c7b848aef999728db9139a"
+  },
+  {
+    "scene": "0915_development_test:1669044251",
+    "scene_number": 22,
+    "variant": "macro_only",
+    "regime": "outage",
+    "path": "rollouts/22-outage-macro_only.npz",
+    "checkpoint_sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "sha256": "c1bc2efc2dfcb673c3540609baff02f420f651c2ad59bf33b586c59a6a271f94"
+  }
+]

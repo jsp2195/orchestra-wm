@@ -1,0 +1,43 @@
+{
+  "split": "validation",
+  "scenes": 23,
+  "independent_recording_days": 1,
+  "primary_mean_difference": 0.0010870968240906929,
+  "paired_differences": [
+    0.022839513702954034,
+    0.025117868019591233,
+    0.0030496081010997766,
+    0.03665153435737967,
+    -0.04128453525268461,
+    -0.019473249129945303,
+    0.008086966327117362,
+    0.012438212938054222,
+    0.01206604889474916,
+    -0.02520492082109399,
+    0.0007512953149720614,
+    0.01276991057839455,
+    0.0028263285487460377,
+    -0.00980125604411397,
+    0.0022683110344698387,
+    -0.0011228587184526073,
+    0.0049656761452998854,
+    0.016337251376864537,
+    0.007257997093838689,
+    0.007229527271614772,
+    -0.021605123831527615,
+    -0.012108333265103105,
+    -0.01905254568813869
+  ],
+  "ci95": null,
+  "inference": "SINGLE_DAY_DEVELOPMENTAL_DESCRIPTIVE_ONLY",
+  "checkpoints": {
+    "full": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "macro_only": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f"
+  },
+  "updates": 300,
+  "seed": 101,
+  "evaluation_sha256": "367db0e2c429a54eaaa0cf51a89aba58e4cd300d88e39dd1f71f150222329d18",
+  "micro_scope": "Matched macro information control; does not establish trained microscopic fidelity",
+  "population": "Retained reconstructed population, not complete roadway census; fields and cohort have different populations",
+  "calibration": "Empirical 5th/95th ensemble quantiles from eight samples; finite-ensemble intervals are coarse"
+}

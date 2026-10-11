@@ -1,0 +1,57 @@
+{
+  "config": {
+    "seed": 101,
+    "updates": 30,
+    "variants": [
+      "full",
+      "independent",
+      "graph_off"
+    ],
+    "dim": 32,
+    "latent": 4,
+    "dt": 0.2,
+    "context_steps": 25,
+    "horizon_steps": 100,
+    "model_class": "JointWorldModel",
+    "total_field_head": "Positive lognormal speed/density; flow=3.6*speed*density; no cohort-total equality",
+    "lr": 0.001,
+    "threads": 2,
+    "workers": 0,
+    "train_samples": 2,
+    "validation_every": 10,
+    "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+    "initial_checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "initial_updates": 300,
+    "micro_scales": [
+      100.0,
+      3.6576,
+      30.0,
+      5.0
+    ],
+    "macro_scales": [
+      30,
+      100,
+      3000
+    ],
+    "loss_weights": [
+      0.5,
+      0.5
+    ],
+    "initialization": "Identical full macro-control weights; reset AdamW for the new joint objective; preserve both original optimizer states",
+    "objective": "Equal normalized proper micro and macro prior scores; no posterior or cross-population conservation loss",
+    "scope": "Jointly supervised historical-cohort motion and retained-population fields; no individual future arrivals generated"
+  },
+  "sources": {
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4b/training.py": "aeb0a9a94efa48b2e237ab7809a881cf5294006d448dad10a40bf762ce74177b",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4b/model.py": "b932ea4d85f879364985f94f8dcc6eebda86008e334e914832a9b5264bd95c31",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3",
+    "orchestra_wm/i24_continuous/model.py": "bc73d21b11aab69c2501cf53ccfac62dc69e7858c49993d98b1901b23f59953f",
+    "orchestra_wm/i24_continuous/data.py": "fde9ef44127d97a8ec9d96a7ac3a5b5a778557f7ac2bb93908303625171a1ca1",
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4c/training.py": "d06788ae5af20d0885656ebb5abb6f58b1044ad01af070d660cffdff4ec9339f",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4c/joint.py": "4b69fd0d89ff899c753b40906eb7e1752ca586505a23a6d129923f610a65f80e"
+  },
+  "fingerprint": "fd5eb24d54ad5672b641f8a3013525ed19bfc4c4b057f0d7e074be2123b81072",
+  "preservation_receipt_sha256": "f5cef7dcc748764ee981e604dcf455c2fc2a986b698002eb369ea35a52b3a01e"
+}

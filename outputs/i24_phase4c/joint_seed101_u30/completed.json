@@ -1,0 +1,29 @@
+[
+  {
+    "variant": "full",
+    "updates": 30,
+    "initial_updates": 300,
+    "checkpoint": "checkpoints/full-101.pt",
+    "sha256": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+    "parameters": 38298,
+    "training_wall_seconds": 416.0816851250056
+  },
+  {
+    "variant": "independent",
+    "updates": 30,
+    "initial_updates": 300,
+    "checkpoint": "checkpoints/independent-101.pt",
+    "sha256": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+    "parameters": 38298,
+    "training_wall_seconds": 175.61218996699608
+  },
+  {
+    "variant": "graph_off",
+    "updates": 30,
+    "initial_updates": 300,
+    "checkpoint": "checkpoints/graph_off-101.pt",
+    "sha256": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4",
+    "parameters": 38298,
+    "training_wall_seconds": 152.5530509799937
+  }
+]

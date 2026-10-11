@@ -1,0 +1,49 @@
+{
+  "command": "uv run pytest -q --import-mode=importlib",
+  "passed": 113,
+  "skipped": 8,
+  "failed": 0,
+  "seconds": 28.23,
+  "log_sha256": "34f88dfd1a6f4ffcced379b0ea913e88d34752da7f3092d5f886875052b23d17",
+  "browser": {
+    "gallery": {
+      "passed": true,
+      "exact_array_entries": 12,
+      "stochastic_samples_each": 8,
+      "scenarios": 3,
+      "regimes": 2,
+      "variants": 2,
+      "javascript_errors": [],
+      "private_html_sha256": "50d2eb7407de0027542a57cac867d351bd2cbd485b5b39070f46e5413fb0b6d3",
+      "controls": [
+        "scenario",
+        "variant",
+        "regime",
+        "sample",
+        "truth",
+        "time",
+        "play"
+      ]
+    },
+    "joint_gallery": {
+      "passed": true,
+      "exact_array_entries": 18,
+      "stochastic_samples_each": 8,
+      "scenarios": 3,
+      "regimes": 2,
+      "variants": 3,
+      "javascript_errors": [],
+      "private_html_sha256": "f9b4ebb8543b1839d3cd8f7ddf4ecd3a9668ed137e5adaa93a4f39895ca4096a",
+      "controls": [
+        "scenario",
+        "variant",
+        "regime",
+        "sample",
+        "truth",
+        "time",
+        "play"
+      ]
+    }
+  },
+  "new_reporting_and_recovery_scripts": "Python compile passed; both recovery packagers exercised on actual existing artifacts"
+}

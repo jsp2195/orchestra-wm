@@ -1,0 +1,11 @@
+{
+  "decision": "FIXED_FINAL_CHECKPOINTS_FROZEN",
+  "checkpoints": {
+    "full": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+    "independent": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+    "graph_off": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4"
+  },
+  "validation_summary_sha256": "42a1dca210bf15ec59c8131337e43415bff259563839953ac30e3c2fdd4b38e5",
+  "choice": "Use preregistered final update; no architecture, budget or checkpoint selected from developmental test",
+  "limitation": "Finite validation forecasts do not establish calibration, convergence or physical validity"
+}

@@ -1,0 +1,36 @@
+{
+  "checkpoint_sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+  "rollout_sha256": "b2251e6076bde162fb3abdaf2e4fe504b163a08fc4de5cf5f28607dac1b2291d",
+  "source_sha256": "293602397c567fedd91fd9e576d14d270373bf8ef42b3b24901219787ab0774a",
+  "gif_sha256": "3bfd374b76784a0eb9583ee7d6621a400ebdeb0717c5ab7e87367c51035986b6",
+  "fixed_viewport_s_m": [
+    374.872,
+    624.8720000000001
+  ],
+  "sample": 0,
+  "scene_number": 0,
+  "frames": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    99
+  ],
+  "qualification": "Distance-based potential messages; source identity/census and causal-interaction limits remain"
+}

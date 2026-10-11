@@ -100,3 +100,25 @@ hashes. Its common macro objective is an information control, not a joint-micro
 fidelity result. Equal allocated parameters do not resolve effective-capacity
 confounding. Preserve the original negative findings and disclose source boundary
 thinning, missing future cohort members, poor calibration and regime shift.
+
+### Phase 4C — executed training and isolated joint continuation
+
+The historical backup blocker is resolved by verified private readback receipts.
+Read docs/I24_PHASE4C_PROTOCOL.md and outputs/i24_phase4c/PHASE4C_REPORT.md. The
+existing Phase 4B trainer completed full/macro-only seed 101 at 300 updates, and
+the isolated Phase 4C joint trainer completed 30 additional updates per full,
+independent and graph-off model from the common full-300 warm start. Do not
+overwrite these models or reinterpret the one-day result as independent-date
+evidence. Effective-capacity matching and useful latent/interaction information
+remain unresolved. Population-aware target accounting does not generate arrivals.
+
+New work belongs in i24_phase4c and its own experiment namespaces. Completed
+evaluations verify source/config/data/checkpoint hashes and saved arrays; retain
+their code semantics. Historical files remain byte-identical, with append-only
+README/AGENTS/.gitignore notes. Full tests use --import-mode=importlib because
+earlier test directories have duplicate basenames. No raw data, canonical scenes,
+checkpoints, private payloads, signed URLs or backup receipt IDs go into Git.
+The connected Drive app can preserve compact artifacts privately; its authenticated
+readback receipts are under ignored work/phase4c. No new multi-day transfer,
+budget extension or seed campaign should launch without a bounded prospective
+configuration and adequate storage. Frozen recording-date assignments remain.

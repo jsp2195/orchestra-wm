@@ -1,0 +1,67 @@
+{
+  "evidence": "Authenticated connected-Drive folder metadata; no new recording content downloaded",
+  "recordings": [
+    {
+      "filename": "11-21-2022.zip",
+      "bytes": 6248968002,
+      "frozen_role": "train; examined development day",
+      "contents_verified_locally": true
+    },
+    {
+      "filename": "11-22-2022.zip",
+      "bytes": 6648411707,
+      "frozen_role": "train",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-23-2022.zip",
+      "bytes": 4087618089,
+      "frozen_role": "train",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-24-2022.zip",
+      "bytes": 1581370305,
+      "frozen_role": "unassigned; no outcomes examined",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-25-2022.zip",
+      "bytes": 7881032135,
+      "frozen_role": "validation",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-28-2022.zip",
+      "bytes": 5472955989,
+      "frozen_role": "independent test",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-29-2022.zip",
+      "bytes": 6248628989,
+      "frozen_role": "independent test",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "11-30-2022.zip",
+      "bytes": 6109009075,
+      "frozen_role": "unassigned; no outcomes examined",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "12-01-2022.zip",
+      "bytes": 6114334735,
+      "frozen_role": "unassigned; no outcomes examined",
+      "contents_verified_locally": false
+    },
+    {
+      "filename": "12-02-2022.zip",
+      "bytes": 5218663583,
+      "frozen_role": "unassigned; no outcomes examined",
+      "contents_verified_locally": false
+    }
+  ],
+  "existing_date_assignments_preserved": true,
+  "additional_dates_assigned": false
+}

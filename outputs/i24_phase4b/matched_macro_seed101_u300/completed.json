@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "full",
+    "updates": 300,
+    "checkpoint": "checkpoints/full-101.pt",
+    "sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "parameters": 38298,
+    "training_wall_seconds": 3137.245660706001
+  },
+  {
+    "variant": "macro_only",
+    "updates": 300,
+    "checkpoint": "checkpoints/macro_only-101.pt",
+    "sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+    "parameters": 38298,
+    "training_wall_seconds": 253.3729208720033
+  }
+]

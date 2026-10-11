@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "exact_array_entries": 18,
+  "stochastic_samples_each": 8,
+  "scenarios": 3,
+  "regimes": 2,
+  "variants": 3,
+  "javascript_errors": [],
+  "private_html_sha256": "f9b4ebb8543b1839d3cd8f7ddf4ecd3a9668ed137e5adaa93a4f39895ca4096a",
+  "controls": [
+    "scenario",
+    "variant",
+    "regime",
+    "sample",
+    "truth",
+    "time",
+    "play"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "training_fingerprint": "495d9ec061917f76469929341cf17dddbb44301fd4c614025aae3c126e3c7b3d",
+  "checkpoints": {
+    "full": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "macro_only": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f"
+  },
+  "split": "development_test",
+  "samples": 8,
+  "regimes": [
+    "dense",
+    "outage"
+  ],
+  "sources": {
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4c/evaluation.py": "ce7b3a984d2437698904c6664aab1d0cc1c685f49fe3acc6357f825c69fb47a2",
+    "orchestra_wm/i24_phase4b/metrics.py": "bf3b907a196c1288ac40e48a502cce80278f1634be01f7cc99a365886a5c437e",
+    "orchestra_wm/i24_continuous/evaluation.py": "e621e35c6edf6ecbcae87a66697d4589810583cf15a5837ccd4c76b8963d3df9"
+  },
+  "selection": "Final 300-update checkpoint; no developmental-test selection",
+  "primary": "10-second macro_only minus full joint energy; [30,100,3000]",
+  "uncertainty": "Single recording day; no independent-session confidence interval"
+}

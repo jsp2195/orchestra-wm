@@ -1,0 +1,21 @@
+{
+  "verified_at_utc": "2026-10-11T14:11:08.125715+00:00",
+  "historical_tracked_files": 603,
+  "historical_mismatches": [],
+  "historical_inventory_sha256": "5efa28f78154fa2d7d8471a590a63b0b9cb737970b7c835d8767f16e3f529440",
+  "original_checkpoint_hashes": {
+    "full": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+    "independent": "413613281e518952f6d00d835a7cea9aaca280becd510d4e53946dc030807191",
+    "deterministic": "56287804c1bd31657e3ae14035855f0ecdccf42772f3710330dfec4fda76d197",
+    "macro_only": "cca07278c4bb1cd9ba667698664a852e67eb9f1453ccf065a048f964e07aab2c",
+    "micro_only": "0cca0e4f14378a3558a8fc576a15e145a5e860f4e4b90afa1345d165da9441a6",
+    "no_crossscale": "a34b652c26ce9ddf55339b0251024356375afbd15f1642820a91a9eb5ee754ab"
+  },
+  "original_recovery_bundles": {
+    "original_pilot_recovery.tar.gz": "2087b14b8b92b2c0b22ba034b1ee8925597a2d55ede4897bca8ca6baf35d3e8d",
+    "expanded_prepared_recovery.tar.gz": "f5002c23bc752124adcb7432df1e081a301be920be947cae4c6644e0b07234dd"
+  },
+  "original_private_receipt_sha256": "f5cef7dcc748764ee981e604dcf455c2fc2a986b698002eb369ea35a52b3a01e",
+  "original_source_zip_bytes": 6248968002,
+  "persistence": "Local filesystem survived this execution; persistence in future cloud tasks is not guaranteed. Verified private Drive backups are the recovery route."
+}

@@ -49,6 +49,7 @@ def score_arrays(a, road, variant):
                        macro_diversity=sample_diversity(x / SCALES),
                        macro_coverage90=float(((y >= lo) & (y <= hi)).mean()),
                        macro_negative_fraction=float((x < 0).mean()),
+                       observed_macro_negative_fraction=float((y < 0).mean()),
                        flow_identity_mae_veh_h=float(abs(x[..., 2] - 3.6*x[..., 0]*x[..., 1]).mean()))
             if cohort_fields is not None:
                 denominator = float(y[:,1].sum())
@@ -60,6 +61,7 @@ def score_arrays(a, road, variant):
                 row[f'{name}_crps'] = float(marginal_crps(x, y).mean(0)[k])
                 row[f'{name}_coverage90'] = float(((y >= lo) & (y <= hi)).mean(0)[k])
                 row[f'{name}_width90'] = float((hi-lo).mean(0)[k])
+                row[f'{name}_negative_fraction'] = float((x[...,k] < 0).mean())
         if micro_applicable:
             mean = agents.mean(0)
             mask, last = valid[:step], valid[step-1]

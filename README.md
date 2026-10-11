@@ -264,3 +264,19 @@ uses exact historical checkpoint arrays, including all eight autonomous futures;
 it is not a newly trained Phase 4B result. The report contains exact gated resume
 commands. All source arrays, recovery bundles and checkpoints remain private and
 Git-ignored.
+
+### Phase 4C — completed corrected training
+
+The private preservation gate is resolved. The existing authentic 60-minute
+November 21 dataset now supports a completed seed-101, 300-update full/macro-only
+experiment and a separate 30-update joint continuation for full, independent and
+graph-disabled dynamics. Historical results remain unchanged. The single-day
+macro information comparison is preliminary; persistence beats both learned
+models on developmental test, and microscopic information value is not established.
+
+See the [Phase 4C scientific report](outputs/i24_phase4c/PHASE4C_REPORT.md),
+[prospective protocol](docs/I24_PHASE4C_PROTOCOL.md),
+[new macro experiment gallery](outputs/i24_phase4c/gallery/VISUAL_GALLERY.md), and
+[joint-model gallery](outputs/i24_phase4c/joint_gallery/VISUAL_GALLERY.md).
+Exact resume commands, calibration and physical limitations are in the report.
+Checkpoints, source data and exact browser trajectory payloads remain private.

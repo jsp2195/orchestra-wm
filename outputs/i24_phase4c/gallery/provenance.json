@@ -1,0 +1,29 @@
+{
+  "evaluation_sha256": "a7bdc9e5b1fe3ce1773c34963b13c46cb6afe2ac501e3d10e21bc1000038025f",
+  "checkpoints": {
+    "full": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+    "macro_only": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f"
+  },
+  "selected_scenes": "First three chronological development_test windows, not performance-selected",
+  "exact_array_entries": 12,
+  "samples_each": 8,
+  "private_html_sha256": "50d2eb7407de0027542a57cac867d351bd2cbd485b5b39070f46e5413fb0b6d3",
+  "source_sha256": "0a81f3ebf2996ba21d047b6b156970d4839fd0df4f5f60704849fb1d2efc5f08",
+  "artifacts": {
+    "learning_curves.png": "c30886f82988059ae3b24dcb0860d37b7cf4abd8880c3e90148a4e79f09d76a0",
+    "density_kymograph.png": "fbfe021d8edf7fbcc6bd597a98a9639253d0c899d2b71f416263110ecaa6de8b",
+    "04_partial_observability.gif": "f6a921d3830383490316bedf2f374439e54835ae1c809628ebed8eceb95179ee",
+    "missing_sensors.png": "0bdcb361ffcb0ea8e6d8b35cb38885098490057b3cf657c2b6ca6dff4012729f",
+    "information_flow.png": "46e03cf3053c3d2a77c449752a7777fc6ef09f81261d867287b5912ce7eae7c2",
+    "physical_consistency.png": "6d89596269a1b423e97bc40bb0e56bef3e7640aa8add398d3eb6b5866a4b519d",
+    "population_consistency.png": "5f5cccac6163dc51c33aa01569327a4113b1bd562fa722258c03c88f902fc981",
+    "02_eight_futures.gif": "6c7e5406a4d0352b75b0977ba5eb0d497275b3fb6c5242bf5d8f47eebab96b65",
+    "calibration_and_validity.png": "0cee5f33662c973c648a426eab5a78e1094137bc640cc576a34de882022c066d",
+    "speed_kymograph.png": "57440cd062ca85420d6fd50257706145e86f1ddbb1e0b0e6fd624be1537ef1c0",
+    "03_collective_evolution.gif": "551c5cdabbc6335a5f5f60f4edf851dd484df26885b5f567504fedfa98c180d0",
+    "01_real_highway.gif": "fd53bdca5371f7ff5248d794d42904a284e7bec68aaa39a07d3b7583f57a9b76",
+    "baseline_horizons.png": "0628f546fba315e295b593b01611bc0cdb2f4fae56afec938122a248f8e9471c",
+    "real_trajectories.png": "e88074fa34cf523848caf81d2c623c5116f252a044f4d69e711a5dbe41a2de4e",
+    "flow_kymograph.png": "005281d2f871594cccbed063f32336e24fa124f667c713b4cffed45c92e78ddd"
+  }
+}

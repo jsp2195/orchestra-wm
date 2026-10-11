@@ -1,0 +1,192 @@
+[
+  {
+    "variant": "full",
+    "modules": {
+      "agent_encoder": {
+        "allocated_parameters": 1440,
+        "gradient_connected_parameters": 1440,
+        "gradient_squared_norm": 5.118274225424102e-05,
+        "weight_change_squared_norm": 0.4475972163490951
+      },
+      "field_encoder": {
+        "allocated_parameters": 1280,
+        "gradient_connected_parameters": 1280,
+        "gradient_squared_norm": 0.14414780586957932,
+        "weight_change_squared_norm": 4.30390334315598
+      },
+      "agent_gru": {
+        "allocated_parameters": 6336,
+        "gradient_connected_parameters": 6336,
+        "gradient_squared_norm": 0.0003426634621064295,
+        "weight_change_squared_norm": 11.271025449037552
+      },
+      "field_gru": {
+        "allocated_parameters": 6336,
+        "gradient_connected_parameters": 6336,
+        "gradient_squared_norm": 0.04116812767460942,
+        "weight_change_squared_norm": 31.90329483151436
+      },
+      "edge": {
+        "allocated_parameters": 1280,
+        "gradient_connected_parameters": 1280,
+        "gradient_squared_norm": 1.6905803420286247e-05,
+        "weight_change_squared_norm": 0.29843808244913816
+      },
+      "agent_transition": {
+        "allocated_parameters": 9792,
+        "gradient_connected_parameters": 9792,
+        "gradient_squared_norm": 0.0011692411540025205,
+        "weight_change_squared_norm": 4.0261770356446505
+      },
+      "field_transition": {
+        "allocated_parameters": 9792,
+        "gradient_connected_parameters": 9792,
+        "gradient_squared_norm": 0.059793954133056104,
+        "weight_change_squared_norm": 14.609833255410194
+      },
+      "prior": {
+        "allocated_parameters": 264,
+        "gradient_connected_parameters": 264,
+        "gradient_squared_norm": 0.00564647390274331,
+        "weight_change_squared_norm": 0.2525864806957543
+      },
+      "posterior": {
+        "allocated_parameters": 1448,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "acceleration": {
+        "allocated_parameters": 132,
+        "gradient_connected_parameters": 132,
+        "gradient_squared_norm": 2.336782503609136e-10,
+        "weight_change_squared_norm": 0.034549023665022105
+      },
+      "field_decoder": {
+        "allocated_parameters": 198,
+        "gradient_connected_parameters": 198,
+        "gradient_squared_norm": 0.07834384217858315,
+        "weight_change_squared_norm": 1.55129324644804
+      }
+    },
+    "sensitivity": [
+      {
+        "scene": "0815_validation:1669040101",
+        "prior_mean_removal_scaled_rmse": 0.005995706643551509,
+        "prior_mean_removal_energy_change": -0.0022187413284228408,
+        "memory_reset_scaled_rmse": 0.0425950526558662,
+        "graph_removal_scaled_rmse": 0.00326927799432034,
+        "graph_removal_energy_change": -0.0003507378949572648
+      },
+      {
+        "scene": "0815_validation:1669040126",
+        "prior_mean_removal_scaled_rmse": 0.008862853674832777,
+        "prior_mean_removal_energy_change": -0.004631529386262295,
+        "memory_reset_scaled_rmse": 0.06465279292984326,
+        "graph_removal_scaled_rmse": 0.002748148485353147,
+        "graph_removal_energy_change": 0.00022882597292164797
+      },
+      {
+        "scene": "0815_validation:1669040151",
+        "prior_mean_removal_scaled_rmse": 0.009432971296115086,
+        "prior_mean_removal_energy_change": -0.0048750509750146165,
+        "memory_reset_scaled_rmse": 0.0633142515306208,
+        "graph_removal_scaled_rmse": 0.0031091600126352905,
+        "graph_removal_energy_change": -0.000505097114686659
+      }
+    ],
+    "qualification": "Three-step training gradient connectivity is a local diagnostic, not functional capacity equivalence. Ablations are distribution shifts, not causal interventions or retrained controls."
+  },
+  {
+    "variant": "macro_only",
+    "modules": {
+      "agent_encoder": {
+        "allocated_parameters": 1440,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "field_encoder": {
+        "allocated_parameters": 1280,
+        "gradient_connected_parameters": 1280,
+        "gradient_squared_norm": 0.1149497851729393,
+        "weight_change_squared_norm": 3.650786300189793
+      },
+      "agent_gru": {
+        "allocated_parameters": 6336,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "field_gru": {
+        "allocated_parameters": 6336,
+        "gradient_connected_parameters": 6336,
+        "gradient_squared_norm": 0.0336658307351172,
+        "weight_change_squared_norm": 27.919103056192398
+      },
+      "edge": {
+        "allocated_parameters": 1280,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "agent_transition": {
+        "allocated_parameters": 9792,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "field_transition": {
+        "allocated_parameters": 9792,
+        "gradient_connected_parameters": 9792,
+        "gradient_squared_norm": 0.049170908285304904,
+        "weight_change_squared_norm": 12.746076822280884
+      },
+      "prior": {
+        "allocated_parameters": 264,
+        "gradient_connected_parameters": 264,
+        "gradient_squared_norm": 0.0034285669098608196,
+        "weight_change_squared_norm": 0.23496598890051246
+      },
+      "posterior": {
+        "allocated_parameters": 1448,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "acceleration": {
+        "allocated_parameters": 132,
+        "gradient_connected_parameters": 0,
+        "gradient_squared_norm": 0.0,
+        "weight_change_squared_norm": 0.0
+      },
+      "field_decoder": {
+        "allocated_parameters": 198,
+        "gradient_connected_parameters": 198,
+        "gradient_squared_norm": 0.0766606698743999,
+        "weight_change_squared_norm": 1.6876465566456318
+      }
+    },
+    "sensitivity": [
+      {
+        "scene": "0815_validation:1669040101",
+        "prior_mean_removal_scaled_rmse": 0.02712356947726,
+        "prior_mean_removal_energy_change": -0.016458223490298768,
+        "memory_reset_scaled_rmse": 0.04247158939459149
+      },
+      {
+        "scene": "0815_validation:1669040126",
+        "prior_mean_removal_scaled_rmse": 0.026852155371494282,
+        "prior_mean_removal_energy_change": -0.017029414190787212,
+        "memory_reset_scaled_rmse": 0.05726769695397078
+      },
+      {
+        "scene": "0815_validation:1669040151",
+        "prior_mean_removal_scaled_rmse": 0.030315947048045466,
+        "prior_mean_removal_energy_change": -0.01790837310832566,
+        "memory_reset_scaled_rmse": 0.056775479641150775
+      }
+    ],
+    "qualification": "Three-step training gradient connectivity is a local diagnostic, not functional capacity equivalence. Ablations are distribution shifts, not causal interventions or retrained controls."
+  }
+]

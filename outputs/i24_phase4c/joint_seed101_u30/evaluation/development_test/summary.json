@@ -1,0 +1,22 @@
+{
+  "split": "development_test",
+  "scenes": 23,
+  "independent_recording_days": 1,
+  "primary_mean_difference": null,
+  "paired_differences": null,
+  "ci95": null,
+  "inference": "SINGLE_DAY_DEVELOPMENTAL_DESCRIPTIVE_ONLY",
+  "checkpoints": {
+    "full": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+    "independent": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+    "graph_off": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4"
+  },
+  "updates": 30,
+  "seed": 101,
+  "evaluation_sha256": "5b741e85564e2ed35f2400e93d89e9f1c2a8f8cdcb7f87a885033c5bbcadd1df",
+  "micro_scope": "Jointly supervised historical-cohort motion and retained-population fields; no individual future arrivals generated",
+  "population": "Retained reconstructed population, not complete roadway census; fields and cohort have different populations",
+  "calibration": "Empirical 5th/95th ensemble quantiles from eight samples; finite-ensemble intervals are coarse",
+  "exploratory_graph_off_minus_full_macro_energy": 0.0013507670011226808,
+  "exploratory_independent_minus_full_macro_energy": -0.03170640060103018
+}

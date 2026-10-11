@@ -1,0 +1,22 @@
+{
+  "training_fingerprint": "fd5eb24d54ad5672b641f8a3013525ed19bfc4c4b057f0d7e074be2123b81072",
+  "checkpoints": {
+    "full": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+    "independent": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+    "graph_off": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4"
+  },
+  "split": "validation",
+  "samples": 8,
+  "regimes": [
+    "dense",
+    "outage"
+  ],
+  "sources": {
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4c/evaluation.py": "ce7b3a984d2437698904c6664aab1d0cc1c685f49fe3acc6357f825c69fb47a2",
+    "orchestra_wm/i24_phase4b/metrics.py": "bf3b907a196c1288ac40e48a502cce80278f1634be01f7cc99a365886a5c437e",
+    "orchestra_wm/i24_continuous/evaluation.py": "e621e35c6edf6ecbcae87a66697d4589810583cf15a5837ccd4c76b8963d3df9"
+  },
+  "selection": "Final 30-update checkpoint; no developmental-test selection",
+  "primary": "Exploratory graph-off control; not a macro-information comparison",
+  "uncertainty": "Single recording day; no independent-session confidence interval"
+}

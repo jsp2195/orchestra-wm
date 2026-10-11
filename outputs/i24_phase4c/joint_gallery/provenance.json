@@ -1,0 +1,31 @@
+{
+  "evaluation_sha256": "5b741e85564e2ed35f2400e93d89e9f1c2a8f8cdcb7f87a885033c5bbcadd1df",
+  "checkpoints": {
+    "full": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+    "independent": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+    "graph_off": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4"
+  },
+  "selected_scenes": "First three chronological development_test windows, not performance-selected",
+  "exact_array_entries": 18,
+  "samples_each": 8,
+  "private_html_sha256": "f9b4ebb8543b1839d3cd8f7ddf4ecd3a9668ed137e5adaa93a4f39895ca4096a",
+  "source_sha256": "0a81f3ebf2996ba21d047b6b156970d4839fd0df4f5f60704849fb1d2efc5f08",
+  "artifacts": {
+    "learning_curves.png": "7461aaee5c65457d6845a110b2c9fdc76a860c17f299613866b167eab27c8743",
+    "joint_micro_learning_curves.png": "13a64b406d59fa4f89b3812fcd9f3b7e2baee8f48597d8a74ff3ca7678e83cbf",
+    "density_kymograph.png": "9d22183448ba93911355d8cf217d700fdb4a394b4bca15b49b76e0008cc881fb",
+    "04_partial_observability.gif": "39d8d9cfe81c348fbc592fe931bd90bff96ae869c95e2c2f5f8ab00c4c8dda92",
+    "missing_sensors.png": "0f8fdabd74b5133b57926adb0b60e667b953a2b68b680c3e11b890e470974ec8",
+    "information_flow.png": "20d300f46269e30276a31cd98abfc88ec5d15ac2b84b21b6b8a7837b075e1ddd",
+    "physical_consistency.png": "1b9ef5a7dffe1f2b6bfbe924cfd68dddaf827cfab1f64aad7e5ba8c7840ff5ab",
+    "population_consistency.png": "0873999fb943cf707fc0101d1d1b25388646732d85289346e24a2ec442abd7e8",
+    "02_eight_futures.gif": "9b58f4f74c14c9905d2f01d59ff88f1b0d641b07c73d421c103fd377be78e3a3",
+    "calibration_and_validity.png": "867f3d0d33335a5f68dfe905273d72677939201749439edd18c2df2a6a10736b",
+    "speed_kymograph.png": "015f03fa32ce8c61c7520ee9594730b52483814e7741309204cd8efe84bea24c",
+    "03_collective_evolution.gif": "aafe3dc57edfd9d1bcb316e25cd385c995f00dab04f160c66d520ca0293f9264",
+    "01_real_highway.gif": "fd53bdca5371f7ff5248d794d42904a284e7bec68aaa39a07d3b7583f57a9b76",
+    "baseline_horizons.png": "8ae5d5eb2a1cb56672e821b7e65a2769ddc0f752ee513190ea84633abfbf7dc0",
+    "real_trajectories.png": "e88074fa34cf523848caf81d2c623c5116f252a044f4d69e711a5dbe41a2de4e",
+    "flow_kymograph.png": "67e044fa65d3cd23f0b7fa42b5f071f224a810f32c535fc111a9a619afb90b18"
+  }
+}
