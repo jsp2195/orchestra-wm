@@ -39,6 +39,8 @@ def request(url, token, offset=None):
             if status in (429, 500, 502, 503, 504) and attempt < 2:
                 time.sleep(2 ** attempt)
                 continue
+            if status == 401:
+                raise TransferBlocked('Google Drive API HTTP 401; refresh GOOGLE_DRIVE_ACCESS_TOKEN in secure environment settings and publish. Existing bytes are preserved; rerun the same command to resume') from None
             raise TransferBlocked(f'Google Drive API HTTP {status}; verify scoped authorization, file permission or quota') from None
         except urllib.error.URLError:
             raise TransferBlocked('Google Drive API transport unavailable; check configured network access') from None
@@ -97,6 +99,20 @@ def inspect_zip(path):
     return members
 
 
+def verify_zip_crc(path):
+    """Decompress to a bounded buffer, checking every member without extraction."""
+    members = inspect_zip(path)
+    try:
+        with zipfile.ZipFile(path) as archive:
+            for member in members:
+                with archive.open(member['name']) as handle:
+                    while handle.read(1024 * 1024):
+                        pass
+    except (zipfile.BadZipFile, RuntimeError, EOFError, OSError):
+        raise TransferBlocked('ZIP member decompression/CRC failed; archive bytes preserved') from None
+    return members
+
+
 def transfer(expected, meta, root, token, min_free=10_000_000_000):
     file_id, name, size = expected
     dest, partial = root/name, root/(name+'.part')
@@ -118,10 +134,12 @@ def transfer(expected, meta, root, token, min_free=10_000_000_000):
         if shutil.disk_usage(root).free < size-offset+min_free:
             raise TransferBlocked('Transfer would violate the 10 GB free-disk reserve')
         if offset < size:
+            print(f'Transferring {name}: {offset:,}/{size:,} bytes; existing partial bytes preserved', flush=True)
             with request(API+file_id+'?alt=media&supportsAllDrives=true', token, offset) as response:
                 expected_status = 206 if offset else 200
                 if response.status != expected_status:
                     raise TransferBlocked('Server did not honor the requested transfer/range; partial bytes preserved')
+                print(f'{name}: HTTP {response.status}', flush=True)
                 if offset and response.headers.get('Content-Range') != f'bytes {offset}-{size-1}/{size}':
                     raise TransferBlocked('Resume Content-Range does not match the verified file size')
                 if 'text/html' in response.headers.get('Content-Type','').lower():
@@ -130,12 +148,16 @@ def transfer(expected, meta, root, token, min_free=10_000_000_000):
                 if length is not None and int(length) != size-offset:
                     raise TransferBlocked('HTTP transfer size mismatch')
                 with partial.open('ab') as f:
+                    last_report = time.monotonic()
                     while chunk := response.read(1024 * 1024):
                         if f.tell()+len(chunk) > size:
                             raise TransferBlocked('Response exceeds verified archive size')
                         if shutil.disk_usage(root).free-len(chunk) < min_free:
                             raise TransferBlocked('Disk reserve reached; partial bytes retained')
                         f.write(chunk)
+                        if time.monotonic() - last_report >= 30:
+                            print(f'{name}: {f.tell():,}/{size:,} bytes', flush=True)
+                            last_report = time.monotonic()
                     f.flush(); os.fsync(f.fileno())
         source = partial
     else:
@@ -145,11 +167,13 @@ def transfer(expected, meta, root, token, min_free=10_000_000_000):
     sha, md5 = hashes(source)
     if md5 != meta['md5Checksum']:
         raise TransferBlocked('Drive MD5 mismatch; bytes preserved and not accepted')
-    members = inspect_zip(source)
+    print(f'{name}: byte count and Drive MD5 verified; checking all ZIP member CRCs without extraction', flush=True)
+    members = verify_zip_crc(source)
     if source != dest:
         source.replace(dest)
     return {'id':file_id,'name':name,'bytes':size,'sha256':sha,'md5':md5,
             'members':members,'uncompressed_bytes':sum(m['bytes'] for m in members),
+            'zip_crc_verified': True,
             'status':'ARCHIVE_VERIFIED_NOT_YET_TRAJECTORY_VALIDATED'}
 
 

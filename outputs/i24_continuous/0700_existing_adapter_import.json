@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_SCHEMA_QC_PASSED_PROVENANCE_REVIEW_REQUIRED",
+  "source": "ORIGINAL_I24_MOTION",
+  "declared_session": "637b023440527bf2daa5932f__post1",
+  "declared_date": "2022-11-21",
+  "source_bytes": 121778906,
+  "files": [
+    {
+      "path": "westbound_selected.json",
+      "bytes": 121778906,
+      "sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768"
+    }
+  ],
+  "source_tracks": 6078,
+  "source_samples": 2180391,
+  "selected_seconds": 600.0,
+  "min_tracks_per_second": 125,
+  "median_native_dt_s": 0.039999961853027344,
+  "limitations": "Per-second support is not proof of frame continuity or authentic origin. Review source provenance, subsecond gaps, corridor coverage and source terms before G1 acceptance.",
+  "training": "BLOCKED_PENDING_REAL_SOURCE_REVIEW"
+}

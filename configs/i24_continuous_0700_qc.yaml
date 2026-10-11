@@ -1,0 +1,17 @@
+# Measured 121.78MB, 2,180,391-sample original regional source; no training here.
+source: ORIGINAL_I24_MOTION
+training_enabled: false
+access:
+  max_source_bytes: 3000000000
+  min_free_bytes: 10000000000
+  max_samples: 3000000
+  max_scratch_bytes: 6000000000
+protocol:
+  context_seconds: 5
+  sample_hz: 5
+  horizons_seconds: [5, 10, 20]
+  primary_seconds: 10
+  macro_scales: [30, 100, 3000]
+  bootstrap_draws: 2000
+  bootstrap_seed: 7103
+  minimum_independent_sessions: 5

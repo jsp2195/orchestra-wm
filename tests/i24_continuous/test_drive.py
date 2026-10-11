@@ -88,3 +88,16 @@ def test_zip_traversal(tmp_path):
 def test_redirect_never_forwards_auth():
     with pytest.raises(drive.TransferBlocked,match='not forwarded'):
         drive.NoRedirect().redirect_request(None,None,302,'',{},'https://another.example/')
+
+
+def test_zip_crc_rejects_corrupted_member(tmp_path):
+    payload = bytearray(archive())
+    index = payload.index(b'[]')
+    payload[index] = ord('x')
+    path = tmp_path/'corrupt.zip'
+    path.write_bytes(payload)
+    # A central-directory inventory alone does not validate member contents.
+    assert drive.inspect_zip(path)
+    with pytest.raises(drive.TransferBlocked, match='CRC'):
+        drive.verify_zip_crc(path)
+    assert path.read_bytes() == payload

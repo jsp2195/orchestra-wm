@@ -1,0 +1,112 @@
+{
+  "archives": [
+    {
+      "name": "11-21-2022.zip",
+      "sha256": "93b406759fc490abc9cd702e1141a0b7b2247daf8d868060d9d0bca782991d16",
+      "md5": "9796ce188045d5876579ee85e436f03a",
+      "bytes": 6248968002,
+      "zip_crc_verified": true,
+      "members": [
+        {
+          "name": "11-21-2022/README_(INCEPTION).txt",
+          "bytes": 2359,
+          "compressed_bytes": 2364,
+          "crc32": "7ec55d5c"
+        },
+        {
+          "name": "11-21-2022/637b023440527bf2daa5932f__post1.zip",
+          "bytes": 5958100914,
+          "compressed_bytes": 5959010019,
+          "crc32": "c48cadbb"
+        },
+        {
+          "name": "11-21-2022/11-21-2022_time-space_large_pos/637b023440527bf2daa5932f__post1_14391_wb_L003_speed.png",
+          "bytes": 37981556,
+          "compressed_bytes": 37987351,
+          "crc32": "ec5f4038"
+        },
+        {
+          "name": "11-21-2022/11-21-2022_time-space_large_traj/637b023440527bf2daa5932f__post1_14391_wb_L003_speed.png",
+          "bytes": 229439605,
+          "compressed_bytes": 229474615,
+          "crc32": "accb1908"
+        },
+        {
+          "name": "11-21-2022/11-21-2022_time-space_mid_pos/637b023440527bf2daa5932f__post1_14391_wb_L003_speed.png",
+          "bytes": 22488752,
+          "compressed_bytes": 22492177,
+          "crc32": "bd00af8d"
+        }
+      ]
+    },
+    {
+      "name": "auxiliary_information.zip",
+      "sha256": "64bd4ea5c72faa90634a0edcbc18d4a309940ab43455fa905fd181dbeed6ba43",
+      "md5": "2f309a7606b0875788d5f9148f36d310",
+      "bytes": 4917485,
+      "zip_crc_verified": true,
+      "members": [
+        {
+          "name": "auxiliary_information/README_auxiliary_data.txt",
+          "bytes": 1767,
+          "compressed_bytes": 1772,
+          "crc32": "e186845c"
+        },
+        {
+          "name": "auxiliary_information/landmarks_annotation.png",
+          "bytes": 571276,
+          "compressed_bytes": 571361,
+          "crc32": "088249a9"
+        },
+        {
+          "name": "auxiliary_information/I24MOTION_infrastructure.pdf",
+          "bytes": 4324650,
+          "compressed_bytes": 4325310,
+          "crc32": "f1795239"
+        },
+        {
+          "name": "auxiliary_information/grade_elevation.csv",
+          "bytes": 11600,
+          "compressed_bytes": 11605,
+          "crc32": "97886dc0"
+        },
+        {
+          "name": "auxiliary_information/ramp_and_landmark_layer.csv",
+          "bytes": 2265,
+          "compressed_bytes": 2270,
+          "crc32": "cdc245a7"
+        },
+        {
+          "name": "auxiliary_information/pole_layer.csv",
+          "bytes": 2280,
+          "compressed_bytes": 2285,
+          "crc32": "46e70a9e"
+        },
+        {
+          "name": "auxiliary_information/mile_marker_layer.csv",
+          "bytes": 1433,
+          "compressed_bytes": 1438,
+          "crc32": "6f114df8"
+        }
+      ]
+    }
+  ],
+  "nested": {
+    "name": "637b023440527bf2daa5932f__post1.zip",
+    "bytes": 5958100914,
+    "sha256": "dbabe7b3e665a7d48b27d89d9f55fa0190e2cbcd7f9953beae59a8663b6ec3b7",
+    "md5": "0eaa45931469ab0df8e0d766db3acf9d",
+    "outer_member_crc_verified": true,
+    "members": [
+      {
+        "name": "637b023440527bf2daa5932f__post1.json",
+        "bytes": 20130434353,
+        "compressed_bytes": 5958100540,
+        "crc32": "4a642c84"
+      }
+    ]
+  },
+  "nested_uncompressed_bytes": 20130434353,
+  "full_extraction": "FORBIDDEN_WITH_CURRENT_DISK_RESERVE; use streaming selection",
+  "persistence": "Present in this running workspace; ignored raw files are not in Git and persistence across fresh tasks is not guaranteed"
+}

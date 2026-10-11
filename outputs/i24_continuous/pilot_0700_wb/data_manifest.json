@@ -1,0 +1,258 @@
+{
+  "source": "REAL_I24",
+  "source_sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768",
+  "max_agents": 512,
+  "maximum_window_tracks": 406,
+  "split_intervals": {
+    "train": [
+      1669035600.0,
+      1669035935.0
+    ],
+    "validation": [
+      1669035985.0,
+      1669036055.0
+    ],
+    "test": [
+      1669036105.0,
+      1669036200.0
+    ]
+  },
+  "guard_seconds": 25.0,
+  "counts": {
+    "empty_or_short_in_interval": 44,
+    "train_tracks": 3271,
+    "train_samples": 1119136,
+    "crossing_or_guard_tracks_omitted": 1291,
+    "crossing_or_guard_samples_omitted": 655055,
+    "validation_tracks": 555,
+    "validation_samples": 130492,
+    "test_tracks": 917,
+    "test_samples": 261091
+  },
+  "scene_counts": {
+    "train": 13,
+    "validation": 2,
+    "test": 3
+  },
+  "scenes": [
+    {
+      "path": "canonical/train-00000.parquet",
+      "split": "train",
+      "start": 1669035601.0,
+      "end": 1669035626.0,
+      "tracks": 400
+    },
+    {
+      "path": "canonical/train-00001.parquet",
+      "split": "train",
+      "start": 1669035626.0,
+      "end": 1669035651.0,
+      "tracks": 387
+    },
+    {
+      "path": "canonical/train-00002.parquet",
+      "split": "train",
+      "start": 1669035651.0,
+      "end": 1669035676.0,
+      "tracks": 354
+    },
+    {
+      "path": "canonical/train-00003.parquet",
+      "split": "train",
+      "start": 1669035676.0,
+      "end": 1669035701.0,
+      "tracks": 376
+    },
+    {
+      "path": "canonical/train-00004.parquet",
+      "split": "train",
+      "start": 1669035701.0,
+      "end": 1669035726.0,
+      "tracks": 388
+    },
+    {
+      "path": "canonical/train-00005.parquet",
+      "split": "train",
+      "start": 1669035726.0,
+      "end": 1669035751.0,
+      "tracks": 406
+    },
+    {
+      "path": "canonical/train-00006.parquet",
+      "split": "train",
+      "start": 1669035751.0,
+      "end": 1669035776.0,
+      "tracks": 406
+    },
+    {
+      "path": "canonical/train-00007.parquet",
+      "split": "train",
+      "start": 1669035776.0,
+      "end": 1669035801.0,
+      "tracks": 405
+    },
+    {
+      "path": "canonical/train-00008.parquet",
+      "split": "train",
+      "start": 1669035801.0,
+      "end": 1669035826.0,
+      "tracks": 397
+    },
+    {
+      "path": "canonical/train-00009.parquet",
+      "split": "train",
+      "start": 1669035826.0,
+      "end": 1669035851.0,
+      "tracks": 369
+    },
+    {
+      "path": "canonical/train-00010.parquet",
+      "split": "train",
+      "start": 1669035851.0,
+      "end": 1669035876.0,
+      "tracks": 392
+    },
+    {
+      "path": "canonical/train-00011.parquet",
+      "split": "train",
+      "start": 1669035876.0,
+      "end": 1669035901.0,
+      "tracks": 374
+    },
+    {
+      "path": "canonical/train-00012.parquet",
+      "split": "train",
+      "start": 1669035901.0,
+      "end": 1669035926.0,
+      "tracks": 326
+    },
+    {
+      "path": "canonical/validation-00013.parquet",
+      "split": "validation",
+      "start": 1669035986.0,
+      "end": 1669036011.0,
+      "tracks": 256
+    },
+    {
+      "path": "canonical/validation-00014.parquet",
+      "split": "validation",
+      "start": 1669036011.0,
+      "end": 1669036036.0,
+      "tracks": 295
+    },
+    {
+      "path": "canonical/test-00015.parquet",
+      "split": "test",
+      "start": 1669036106.0,
+      "end": 1669036131.0,
+      "tracks": 245
+    },
+    {
+      "path": "canonical/test-00016.parquet",
+      "split": "test",
+      "start": 1669036131.0,
+      "end": 1669036156.0,
+      "tracks": 330
+    },
+    {
+      "path": "canonical/test-00017.parquet",
+      "split": "test",
+      "start": 1669036156.0,
+      "end": 1669036181.0,
+      "tracks": 392
+    }
+  ],
+  "rejected_windows": [],
+  "shared_source_track_ids": 0,
+  "independent_sessions": 1,
+  "artifacts": {
+    "canonical/train-00010.fields.npz": "f9dd21c16d07e570d5b1880263cd548c4483451fdf4243039537d6d4c0ed4de4",
+    "canonical/test-00017.fields.npz": "b9c063da7ce597e081d2968e3a93cd2168e3ffbeaf8fb539b9fa760d0ac02584",
+    "canonical/train-00005.fields.npz": "62dc263ede3bbdc7a1222cf45472f019c2ceb500dc72841d3861853301a81be8",
+    "canonical/validation-00014.json": "ded17a6c2abfd95ea19f57e3e83a3eabf1cb679718cc463539892ee225b9ccff",
+    "canonical/test-00017.parquet": "ff5d5320e525c165e81f559e166a7fb2bf7d75ec692469aac1ea5619ffa7b3b7",
+    "canonical/test-00015.fields.npz": "78f907d44d0e8812d3344d696319df7f7cc3719c42b238d617fd94e633249a32",
+    "canonical/train-00011.fields.npz": "71e3c500978892debcff7b4f8fd5c1367c5dae7536caf5dd0c6ba7ad7c7ec16e",
+    "canonical/train-00009.parquet": "de6a57e1b0fa813dd97dd833823591503ab359c019a8c3bffaf7fbbfc96321a1",
+    "canonical/train-00011.parquet": "f716de1df24ffa36274cc59cc1539e861426ab2e65979c680618271b6ba9361e",
+    "canonical/test-00015.json": "c3affce19e48d4c1612482556a36fabc96c89c298a1671e0dc0dfd1f4479079e",
+    "canonical/train-00009.json": "b8b64011680823a97ea04aab14a0528ef8abfc2d5ee2a46a12d187c8f0a7ca4a",
+    "canonical/train-00003.fields.npz": "60a294f8594f2c2d78eb528d83c5e6d1b4fec34e82f3b6012b1e209df4a4373b",
+    "canonical/train-00007.fields.npz": "6ae3e3707328322377905e2623009ca605f95399a8f786c1a31c3b5030b99abd",
+    "canonical/train-00002.parquet": "ceaae64efbd1d00cd8daa1163ba34a29835303dcbccb0cdab55061b7ada1a60e",
+    "canonical/train-00000.fields.npz": "b5be4656751f180f764563056a637355bdb45ff79ec934739b519d92dd0554a4",
+    "canonical/train-00004.fields.npz": "33c4f57c77dcc3fe6771164e1afbaf30e0e6d727552555b1698676bcf37fdc60",
+    "canonical/train-00012.json": "43dab2435aa16cafddca7bb58b53763cdd4d5699aa3682d18af467e3e34240a6",
+    "canonical/validation-00014.fields.npz": "e8038de146fcc3580beeae373c2150526bebeb9f390c02a586c7a23baec27735",
+    "canonical/train-00008.json": "e4eb34210389c960bd02fa35b505a074faefe20ab7b0f85b972f4e603f3150fa",
+    "canonical/train-00004.json": "cd682fb340ac5ad8a3cfbfe450c2e2bf48be18bdd75581dd2efb5841b70313c9",
+    "canonical/train-00005.json": "dd45c17b49dfd7e0256148fbe0db2ea2f5d2ef47506a9026c8c6202e994c1c57",
+    "canonical/train-00001.parquet": "854401cc55915f67156be6da8c7226a4b77ff11643a3a2324cb6b3d187a3934b",
+    "canonical/train-00001.fields.npz": "9356802eba3db463e328cfb87fdfdc44344b24d5b525667b16d14dc0eb1374c8",
+    "canonical/train-00012.parquet": "6b479ae87c8034f6f68fa2c143a7b7584509ba1f315909fcedb55dee360185af",
+    "canonical/train-00007.parquet": "31f3e61abe2627cd560a82c5b12944bff95748720baa9548660d12f33ef2c16d",
+    "canonical/train-00003.parquet": "7a13df6c04eacdcccef9cde9cabbb4a62582d75b745b31661c97479a5857b633",
+    "canonical/train-00011.json": "4d56f4580f1e18248d110c6d88a8271160682616f4fa2a932ab7b30e46dc0aa1",
+    "canonical/test-00016.fields.npz": "3e045b947deeb918ae3699211b4eb718e01ea5e3dafc443a2ef0bd040222f9cb",
+    "canonical/train-00012.fields.npz": "ea633eaf81206e910a4558cd734dac18bc1cb33d1fa08b3b617ffdadffaa7844",
+    "canonical/train-00008.fields.npz": "c666a84552ac28879da326dc7733dc8b6fc349be6bdd82706540892ecfc733f3",
+    "canonical/train-00005.parquet": "8fea8cecbc97dceda19802c477a23e621d94fad9f7d0a134068ba26adf7acadf",
+    "canonical/train-00007.json": "22c59d03a5d11b8cf11d60f9e0a5760307b17d78e118f6a13b738c7c46078462",
+    "canonical/train-00002.json": "691fe41705285e81ba48387011f5b2c1854e3fc6497a06b532aabde742ca3de2",
+    "canonical/validation-00013.fields.npz": "b8ad47f597693a7e5123148a3e4cdb4fac62e9aacc3ad0d020d5d6d7e5660131",
+    "canonical/train-00002.fields.npz": "57061c975b5941c857b9bef0fb6b1b278950119fb67c310e4d02d7fa87bd9996",
+    "canonical/train-00010.parquet": "3ac5839df25d23100d83c8859cb3ab86644962316d80603cb620e34976dd09bf",
+    "canonical/validation-00014.parquet": "6cc23728204587a5eadb1b5209f27826fa03b425cdc57bd3629f6c0bbd749e03",
+    "canonical/validation-00013.parquet": "b6f5ab08ba6e2f48f4abab7b4d18eb589865f92d0e7f8325a07fa0d0546bfc35",
+    "canonical/test-00015.parquet": "89372255d4cbdd5a1f1f1c7ad8ab338f9bf7b5ccabdfdbc89392638750d975c8",
+    "canonical/validation-00013.json": "b88893f13cf30769f98e4524fe61ae02258198f553d7636f6830250214dbf1de",
+    "canonical/train-00000.json": "d920b6e11d89c5ae9c61a316780332c28d9acb33f79785ba9853dac5ac25aa48",
+    "canonical/test-00016.json": "31a6df7693bb09be3056b1a77b516c80c0ec752e3236af2f3dc8343e1d10d0ab",
+    "canonical/train-00006.parquet": "41786a0f3a2a22228895c410b6f4c9f77a402ec7c23bc72aa1ba6c240db0bbad",
+    "canonical/train-00008.parquet": "afe3d3f92ce6ea4cc80d5a77172c8317119362c65d728f20d41694a4c74210a9",
+    "canonical/train-00009.fields.npz": "2e3cc9117e961d9082e9cf79eddf54a7cc78f11aeab56c06729a6e267c02f2db",
+    "canonical/test-00017.json": "63b0fea0297b223bb1de94d6cac8cb289d5a8fa3a934d5e0a16da4a74bceb979",
+    "canonical/test-00016.parquet": "a3118518bb1437429e76745e3433e235df00c2e202c818d3ede133390cbde007",
+    "canonical/train-00004.parquet": "391deb1a0cc0d33814d8edcef4b0e3a31c18d594d36ea1c0614fb34cd71b3cae",
+    "canonical/train-00010.json": "013d2f0931763ce09dc8e917fc29315e84f35dc4f7c8d010ba7dec9c6ed79a79",
+    "canonical/train-00006.fields.npz": "cacae942df81ecfd3db6d847dc620f0d6082176ad7b700de1aa0c3d7a1c7d033",
+    "canonical/train-00001.json": "62f3b5b5f360a9e6d2801f271cb48a3c34931b4ef7a44499c8c0af1776972169",
+    "canonical/train-00000.parquet": "25e9a3d30e781bcda4f25a7e2e4c8ce507c644c8214a24b63ebc3b6227c1be26",
+    "canonical/train-00003.json": "c406adc8a23f7070a467de696910fe9e4d0625f627e781817e5bb055bf4b1384",
+    "canonical/train-00006.json": "7e60abcc0418a80c385896a6430141b85f1ce1274f35953e8de1b1d0d05a8e80",
+    "native/test/part-00002.parquet": "88b598d75c290482e83d3482d7a4e94d4888cca73f8f65b1c16a9c49e9999cf9",
+    "native/test/part-00000.parquet": "35492eeebe37ba782f2f14fd5c9121d9e1be6e1a69f530854f80d7825eef8477",
+    "native/test/part-00005.parquet": "0b4f0535021e933848debc1af06c8eac1e4cf77a7decf35645a79c6e647a98e9",
+    "native/test/part-00004.parquet": "46c0a00a58811e15e0a6c9f44dabd346c60a03d3262e16e8baf978db8eb56cd3",
+    "native/test/part-00003.parquet": "c8290c8c74c6957ec4831f2c80c02e7c6fa9724422bf8e5e41b80fa1d944bfe2",
+    "native/test/part-00001.parquet": "4eb0f5d0e542f13c34a0c5e060baf162d2efd677a0d8f196908f750bd114a3b0",
+    "native/validation/part-00002.parquet": "39e8ae90687c8d526f2ff3c6d37306e04aad4889491ba55f139f471df884f2e8",
+    "native/validation/part-00000.parquet": "86af9b665737253ebe3a4833dc35e60d135ec66bb1ae82c153cee1b540d93a8b",
+    "native/validation/part-00001.parquet": "539a3af4c159eb4edd9c8c0145f1bf3483802755737c1930228ec42812274333",
+    "native/train/part-00016.parquet": "5a14d4e15b3a17baab0d1df2aef5087e70f76587a46a4d37c7bb304d71e01330",
+    "native/train/part-00007.parquet": "436ddac066661963aee22a466252d62ab9dc84996aed9c12a7b38bff9f69bd76",
+    "native/train/part-00002.parquet": "2f4d48d86f981e3e6c9635d9236cb2b225a5b75a8366cb9d02ac890d8e16b261",
+    "native/train/part-00017.parquet": "2265426fc5860a15b51c9aa0e989b854af38cd8a0535e8a40a1614123370f463",
+    "native/train/part-00006.parquet": "60c935adab8bc7b8aa68964d4fe94cdc577772247ddeca4fd895131e06a572f2",
+    "native/train/part-00020.parquet": "467f5c70fe379bc4dbb7b55e173fb846d5f428452e542565dddf873bb27a331c",
+    "native/train/part-00009.parquet": "5db05e8019827839f141b2b2b40a601d65e358d022425a7fd589017817b417f1",
+    "native/train/part-00012.parquet": "5d9428b333c7cbcdeed05f701c6187d694352d695e15a1439fb5cb7be6effdac",
+    "native/train/part-00018.parquet": "0ceab5272eb652ec8f4f07fbd1aab5b82c911937f38cbf0bda01f2bf61241bba",
+    "native/train/part-00015.parquet": "8941385ef6143d9305d5f82640a0cba9df169f69433204a6aae1b3d4f0bae081",
+    "native/train/part-00022.parquet": "93dc565a2a7061cea2a68670efa293fadbf8e47be48f371291d18e2d48b3a386",
+    "native/train/part-00000.parquet": "d2e18eadfa474c14b44241f9a9a04083cf9d01fc57fcb428bf22101ac6c91eff",
+    "native/train/part-00005.parquet": "921e98bcedf75b6a6f562a314a2877042551d48d9c56c79848669120030f1d87",
+    "native/train/part-00021.parquet": "99f4ebaf269603c8356320fa6eecfb03d98a6c829631de307df55572d8147b77",
+    "native/train/part-00010.parquet": "b95aa86e6c208f12a5f7585488b3dec09486f0f76b9a69a1f2b953f87326932b",
+    "native/train/part-00013.parquet": "b4a4da39d151f3a9910ab07910feac940f8b82ab8e06429cf03e33ef84efb74b",
+    "native/train/part-00019.parquet": "c77bf06f014f9c9b95fa9e17d72636233cbc1993d0219b7e89d747fb502419e5",
+    "native/train/part-00004.parquet": "eed569048f93676cf14c6125ae881e2fe158ba7d9c6e5cf97c18b9e5a84201f4",
+    "native/train/part-00003.parquet": "a01a11d1b26af512f58c35eba62d61503b097250874e1c8c20734e5242a38d5c",
+    "native/train/part-00011.parquet": "01d90124476b55cc4c70e0eb22fc27318ee1ac7d3d737380c81fbe36179b5a71",
+    "native/train/part-00001.parquet": "5bab1c1897b1df40bdea608310f8fc9b850238a329f6ee526e1a925eef3bc87a",
+    "native/train/part-00008.parquet": "99a4cd68c98542b84abe26166870140edddaca1f0fd1d6df7a342ec07cd95050",
+    "native/train/part-00014.parquet": "026a453502643c68af40136ceadc856bee7dc72e00b7c842d2ac9f2d126cdb7b"
+  },
+  "limitation": "Single-day regional retained-track preliminary pilot; omitted cross-boundary tracks mean fields are not a full traffic census",
+  "macro_definition": "Causal trailing 1s Riemann vehicle-time/distance exposure at 5Hz; observed-sample support only"
+}

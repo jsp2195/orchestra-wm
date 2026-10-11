@@ -32,3 +32,4 @@ data/i24_continuous/
 outputs/i24_continuous/**/canonical/
 outputs/i24_continuous/**/converted/
 outputs/i24_continuous/**/rollouts/
+outputs/i24_continuous/**/native/

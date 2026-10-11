@@ -1,0 +1,44 @@
+{
+  "config": {
+    "source_kind": "REAL_I24",
+    "updates": 100,
+    "variants": [
+      "full",
+      "independent",
+      "deterministic",
+      "macro_only",
+      "micro_only",
+      "no_crossscale"
+    ],
+    "seed": 101,
+    "model_dim": 32,
+    "latent_dim": 4,
+    "dt": 0.2,
+    "context_seconds": 5,
+    "train_horizon_seconds": 10,
+    "evaluation_horizons": [
+      5,
+      10,
+      20
+    ],
+    "learning_rate": 0.001,
+    "device": "cpu",
+    "threads": 2,
+    "workers": 0,
+    "checkpoint_every_updates": 10,
+    "macro_definition": "Causal trailing 1s Riemann vehicle-time/distance exposure at 5Hz; observed-sample support only",
+    "wall_seconds": 1800
+  },
+  "fingerprint": "bd3ee090e44f82bd0c028aa37464a89aa48f2f94bb01b0a55c0973fa8a6798a0",
+  "source_sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768",
+  "data_manifest_sha256": "0eb2051c369ea988e57ab4bfe4ca44dab4125ffcbda881aa9e6e76c4d80316db",
+  "implementation_sha256": {
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24/model.py": "92ed6238f6308ce7e317d21d27bd4c35bf5d836db39d25e8a7838a3550a8a3e3",
+    "orchestra_wm/i24/schema.py": "1c1cb6376c7935b75bddaf06f27645debd9277e165d7e1c724ba0dab6a5a3d7c",
+    "orchestra_wm/i24_continuous/data.py": "fde9ef44127d97a8ec9d96a7ac3a5b5a778557f7ac2bb93908303625171a1ca1",
+    "orchestra_wm/i24_continuous/model.py": "bc73d21b11aab69c2501cf53ccfac62dc69e7858c49993d98b1901b23f59953f",
+    "orchestra_wm/i24_continuous/training.py": "9397819aa75610fbfea1349482814a8cf64894a3214e8c9d2ef7ef92b50fb88c"
+  },
+  "scope": "Single-day regional preliminary optimization; no convergence/generalization claim"
+}

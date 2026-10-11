@@ -1,0 +1,21 @@
+{
+  "dataset": "I-24 MOTION",
+  "release": "I24MOTION_PUBLIC_v1.0",
+  "format": "json-array",
+  "direction": -1,
+  "terms_accepted": true,
+  "corrected_timestamps": true,
+  "source_url": "https://i24motion.org/access_data",
+  "x_origin_ft": 320080.0,
+  "session": "637b023440527bf2daa5932f__post1",
+  "recording_date": "2022-11-21",
+  "start_unix_s": 1669035600.0,
+  "end_unix_s": 1669036200.0,
+  "files": [
+    {
+      "path": "westbound_selected.json",
+      "bytes": 121778906,
+      "sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768"
+    }
+  ]
+}

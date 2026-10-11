@@ -1,0 +1,5 @@
+{
+  "observed_coverage_fraction_870_880m": 0.072,
+  "observed_coverage_fraction_880_890m": 0.06133333333333333,
+  "interpretation": "Strong observed spatial thinning around travel coordinates 870\u2013890 m: only 6\u20137% of 5Hz frames contain a reconstructed trajectory in these 10m bins. Coarse 125m macro bins can still have partial observations. This pilot predicts reconstructed retained-population fields, not full unbiased roadway occupancy; no calibrated camera outage is asserted."
+}

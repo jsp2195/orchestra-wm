@@ -1,0 +1,62 @@
+{
+  "acquisition": {
+    "dataset": "I-24 MOTION",
+    "release": "I24MOTION_PUBLIC_v1.0",
+    "format": "json-array",
+    "direction": -1,
+    "terms_accepted": true,
+    "corrected_timestamps": true,
+    "source_url": "https://i24motion.org/access_data",
+    "x_origin_ft": 320080.0,
+    "session": "637b023440527bf2daa5932f__post1",
+    "recording_date": "2022-11-21",
+    "start_unix_s": 1669035600.0,
+    "end_unix_s": 1669036200.0,
+    "files": [
+      {
+        "path": "westbound_selected.json",
+        "bytes": 121778906,
+        "sha256": "c807b5620975d9e85d314240d7529f91f5e6c9911546d9d8d10ef9e0c871f768"
+      }
+    ]
+  },
+  "archive_hashes": [
+    {
+      "name": "11-21-2022.zip",
+      "id": "1fbWITAB78jWrm0mQr_O4TX52aRxDMpLB",
+      "bytes": 6248968002,
+      "sha256": "93b406759fc490abc9cd702e1141a0b7b2247daf8d868060d9d0bca782991d16",
+      "md5": "9796ce188045d5876579ee85e436f03a"
+    },
+    {
+      "name": "auxiliary_information.zip",
+      "id": "16zYgDwdljmgyXrYsjPIkL-vw2_K9PsTn",
+      "bytes": 4917485,
+      "sha256": "64bd4ea5c72faa90634a0edcbc18d4a309940ab43455fa905fd181dbeed6ba43",
+      "md5": "2f309a7606b0875788d5f9148f36d310"
+    }
+  ],
+  "nested_zip_sha256": "dbabe7b3e665a7d48b27d89d9f55fa0190e2cbcd7f9953beae59a8663b6ec3b7",
+  "source_member": {
+    "name": "637b023440527bf2daa5932f__post1.json",
+    "bytes": 20130434353,
+    "compressed_bytes": 5958100540,
+    "crc32": "4a642c84"
+  },
+  "nested_member_crc_verified": true,
+  "bundled_readme_sha256": "6ac5421cfef4a843e4bf640102510e142f2669dc5477268cc51e628cf67518c1",
+  "documentation_url": "https://github.com/I24-MOTION/I24M_documentation",
+  "documentation_commit": "9f8a9158ba0bcbfdd525f4be771f8d45ad1bd4df",
+  "selection": {
+    "start": 1669035600.0,
+    "seconds": 600,
+    "x_min": 316800.0,
+    "x_max": 320080.0
+  },
+  "authorization_basis": "User expressly requested private Drive download and research use; bundled README and public documentation permit academic use under the cited data use agreement",
+  "release_basis": "Bundled INCEPTION session/date listing and public v1.x schema documentation; no publisher signature supplied",
+  "timestamp_basis": "Public v1.x documentation defines timestamp as synchronization-corrected Unix seconds",
+  "coordinate_basis": "v1.x curvilinear feet; x increases EB; WB s=-(x-x_origin)*0.3048+length_m/2; y retained in metres",
+  "citation": "Gloudemans et al. 2023, Transportation Research Part C 155, 104311.",
+  "scope": "Fixed 10-minute regional subset selected before model fitting; all source bytes preserved in ZIPs"
+}
