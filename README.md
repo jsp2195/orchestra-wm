@@ -280,3 +280,7 @@ See the [Phase 4C scientific report](outputs/i24_phase4c/PHASE4C_REPORT.md),
 [joint-model gallery](outputs/i24_phase4c/joint_gallery/VISUAL_GALLERY.md).
 Exact resume commands, calibration and physical limitations are in the report.
 Checkpoints, source data and exact browser trajectory payloads remain private.
+All five new checkpoints, 828 saved prediction arrays and both private HTML demos
+have authenticated remote SHA256 readback. See the
+[redacted preservation receipt](outputs/i24_phase4c/durable_preservation_receipt.json)
+and [recovery instructions](docs/I24_PHASE4C_RECOVERY.md).

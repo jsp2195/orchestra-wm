@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_VERIFIED_PRIVATE_PRESERVATION",
+  "verified_at_utc": "2026-10-11T14:29:32.783201+00:00",
+  "research_commit": "8a9fd6cdcc9c98c0bf711825cb4793677d7a5cb4",
+  "private_index_sha256": "f2f786ecbd6de75129a109cfab6998cdc8a375f04c67dac41f20d2362f24f9b7",
+  "private_index_readback_sha256": "f2f786ecbd6de75129a109cfab6998cdc8a375f04c67dac41f20d2362f24f9b7",
+  "private_index_bytes": 551110,
+  "private_receipt_sha256": "5462ad91648bccc893ce4fac98601b87bc237f1a772e6b8cefbd8c9583fe6282",
+  "remote_recovery": {
+    "matched": {
+      "bytes": 297777348,
+      "sha256": "14e8ce96bf8777975b52d7327b05c09f9e3631ac4cfea3c97ef7866d911bed48",
+      "authenticated_readback_sha256": "14e8ce96bf8777975b52d7327b05c09f9e3631ac4cfea3c97ef7866d911bed48",
+      "parts": 12,
+      "files": 780
+    },
+    "joint": {
+      "bytes": 682736269,
+      "sha256": "e229b780d0538031f0d9f3fdc92840dc458815555ddd7c458174252b0c2e5a1a",
+      "authenticated_readback_sha256": "e229b780d0538031f0d9f3fdc92840dc458815555ddd7c458174252b0c2e5a1a",
+      "parts": 28,
+      "files": 969
+    }
+  },
+  "new_checkpoint_count": 5,
+  "verified_saved_prediction_arrays": 828,
+  "original_pilot_checkpoints_preserved": 6,
+  "historical_tracked_files_preserved": 603,
+  "scope": "Original pilot and expanded canonical data via existing two backups; all five new model states, 828 prediction arrays and both private HTML demos via new verified backups. Original multi-GB source archives remain local and in their original source Drive, not duplicated here.",
+  "privacy": "Private Drive IDs, part links, raw data and embedded trajectory payloads excluded from this public receipt"
+}
