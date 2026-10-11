@@ -1,0 +1,4 @@
+# Additional streaming dependency; historical uv.lock remains unchanged.
+stream-unzip==0.0.99
+stream-inflate==0.0.43
+pycryptodome==3.24.0

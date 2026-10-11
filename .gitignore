@@ -49,3 +49,9 @@ outputs/i24_phase4c/**/payload.json.gz
 # Phase 4D private histories, labels and forecast arrays
 outputs/i24_phase4d/**/*.npz
 outputs/i24_phase4d/**/private/
+
+# Phase 4E private source/canonical/native features, predictions, and recovery.
+outputs/i24_phase4e/**/native/
+outputs/i24_phase4e/**/canonical/
+outputs/i24_phase4e/**/*.npz
+outputs/i24_phase4e/**/private/

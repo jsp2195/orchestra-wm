@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-11T18:51:58.394501+00:00",
+  "secret_variable_present": true,
+  "metadata_executed": true,
+  "range_executed": true,
+  "metadata_http_status": 200,
+  "name": "11-21-2022.zip",
+  "size": "6248968002",
+  "canDownload": true,
+  "range_http_status": 206,
+  "content_range": "bytes 0-1023/6248968002",
+  "content_length": "1024",
+  "read_bytes": 1024,
+  "zip_header": true,
+  "range_verified": true,
+  "free_bytes": 31648944128
+}
