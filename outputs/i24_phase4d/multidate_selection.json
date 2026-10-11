@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_SELECTION_NOT_INGESTED",
+  "roles": {
+    "train": [
+      "2022-11-21",
+      "2022-11-22",
+      "2022-11-23"
+    ],
+    "validation": [
+      "2022-11-25"
+    ],
+    "test": [
+      "2022-11-28",
+      "2022-11-29"
+    ]
+  },
+  "clock_slots_local": [
+    "06:15",
+    "07:15",
+    "08:15",
+    "09:15"
+  ],
+  "recording_timezone": "America/Chicago",
+  "seconds_per_slot": 600,
+  "region_x_feet": [
+    316800,
+    320080
+  ],
+  "direction": -1,
+  "minimum_simultaneous_tracks": 2,
+  "no_population_truncation": true,
+  "selection": "Fixed clocks before prediction outcomes; report unavailable slots and source-QC exclusions; no outcome-driven replacements",
+  "regime_labels_m_s": [
+    10,
+    20
+  ],
+  "free_bytes_at_check": 12597092352,
+  "existing_streaming_pipeline": "orchestra_wm/i24_phase4b/data.py; per-date acquisition/session metadata must be parameterized and source-QC verified before reuse; not executed on a new date",
+  "blocker": "Direct supported Drive bulk-source API rejected bound credential with HTTP401 authError. No retries. Connected-file materialization is capped at32MiB; no supported multi-GB stream executed. Preserve existing archives; current free space is below smallest new archive plus existing10GB reserve.",
+  "test_gate": "Freeze validation/model choices first; require validation competitiveness; two dates below five-group confirmation gate"
+}

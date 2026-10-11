@@ -1,0 +1,7 @@
+{
+  "secret_configured": true,
+  "http_status": 401,
+  "reasons": [
+    "authError"
+  ]
+}

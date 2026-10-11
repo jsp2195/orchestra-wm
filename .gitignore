@@ -45,3 +45,7 @@ outputs/i24_phase4b/gallery/payload.json.gz
 outputs/i24_phase4c/**/rollouts/
 outputs/i24_phase4c/**/private/
 outputs/i24_phase4c/**/payload.json.gz
+
+# Phase 4D private histories, labels and forecast arrays
+outputs/i24_phase4d/**/*.npz
+outputs/i24_phase4d/**/private/

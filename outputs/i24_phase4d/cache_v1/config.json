@@ -1,0 +1,15 @@
+{
+  "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+  "feature_source_sha256": "e13907a5c702c178f7dcd4b2aad907aaaab1b21be3822c9bc0e91c7ac30368de",
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "regimes": [
+    "dense",
+    "sparse50",
+    "outage"
+  ],
+  "observation_seed": "7301 + within-split chronological scene number",
+  "scope": "Examined November21 development; no test partition opened"
+}

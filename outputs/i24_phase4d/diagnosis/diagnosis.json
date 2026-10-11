@@ -1,0 +1,90 @@
+{
+  "scope": "Only frozen train and validation windows; no new developmental or independent test reads",
+  "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+  "source_sha256": "544ac7bce98fd9915668f13b2ceeac84c233b70e253dd68628e5db3077f88ca8",
+  "distribution": {
+    "train": {
+      "mean_speed": 6.069096453646396,
+      "p10_speed": 1.9509251054297103,
+      "p90_speed": 11.600383063580127,
+      "mean_density": 35.19002660791924,
+      "mean_flow": 622.7262427147399,
+      "support_fraction": 0.976264353259034,
+      "fraction_speed_over20": 0.003216997330534108,
+      "fraction_speed_under10": 0.833282603442654
+    },
+    "validation": {
+      "mean_speed": 14.113205038982889,
+      "p10_speed": 9.003774373427682,
+      "p90_speed": 18.782985604327656,
+      "mean_density": 22.1311557603919,
+      "mean_flow": 1040.538675059443,
+      "support_fraction": 0.9575892857142858,
+      "fraction_speed_over20": 0.07583782976899851,
+      "fraction_speed_under10": 0.19531408644582146
+    }
+  },
+  "normalization": "Inputs and scores use physical [30,100,3000]; absolute decoder softplus(raw)*0.25*scale has raw-zero speed 5.1986 m/s. This is an initialization reference, not a measured learned cap.",
+  "optimization": [
+    {
+      "experiment": "outputs/i24_phase4b/matched_macro_seed101_u300",
+      "variant": "full_learning_curve",
+      "updates": 300,
+      "nonfinite_gradients": 0,
+      "gradient_median": 0.07819212600588796,
+      "gradient_p95": 0.23115438967943194,
+      "fraction_clipped": 0.0,
+      "validation_best": 0.1328526139259338,
+      "validation_final": 0.1527181219147599,
+      "validation_best_step": 240
+    },
+    {
+      "experiment": "outputs/i24_phase4b/matched_macro_seed101_u300",
+      "variant": "macro_only_learning_curve",
+      "updates": 300,
+      "nonfinite_gradients": 0,
+      "gradient_median": 0.07908196374773975,
+      "gradient_p95": 0.21986080557107934,
+      "fraction_clipped": 0.0,
+      "validation_best": 0.1224360770505407,
+      "validation_final": 0.1532955807836159,
+      "validation_best_step": 240
+    },
+    {
+      "experiment": "outputs/i24_phase4c/joint_seed101_u30",
+      "variant": "full_learning_curve",
+      "updates": 30,
+      "nonfinite_gradients": 0,
+      "gradient_median": 12.747905731201172,
+      "gradient_p95": 17.3926381111145,
+      "fraction_clipped": 0.9666666666666667,
+      "validation_best": 0.1349627676865329,
+      "validation_final": 0.1349627676865329,
+      "validation_best_step": 30
+    },
+    {
+      "experiment": "outputs/i24_phase4c/joint_seed101_u30",
+      "variant": "independent_learning_curve",
+      "updates": 30,
+      "nonfinite_gradients": 0,
+      "gradient_median": 3.3289129734039307,
+      "gradient_p95": 11.73858423233032,
+      "fraction_clipped": 0.8333333333333334,
+      "validation_best": 0.1234470430923544,
+      "validation_final": 0.1296686536591986,
+      "validation_best_step": 20
+    },
+    {
+      "experiment": "outputs/i24_phase4c/joint_seed101_u30",
+      "variant": "graph_off_learning_curve",
+      "updates": 30,
+      "nonfinite_gradients": 0,
+      "gradient_median": 11.808058738708496,
+      "gradient_p95": 17.076533699035643,
+      "fraction_clipped": 1.0,
+      "validation_best": 0.1347798973969791,
+      "validation_final": 0.1347798973969791,
+      "validation_best_step": 30
+    }
+  ]
+}
