@@ -55,6 +55,20 @@ def test_nested_stream_matches_standard_zip_and_checks_crc():
     with pytest.raises(Exception):list(nested_records(io.BytesIO(corrupt),'session',{}))
 
 
+def test_zip64_data_descriptor_unknown_header_size():
+    class Nonseekable(io.BytesIO):
+        def seek(self,*args):raise io.UnsupportedOperation('stream')
+    raw=Nonseekable();records=[{'timestamp':[1,2,3],'_id':'v'}]
+    with zipfile.ZipFile(raw,'w',zipfile.ZIP_DEFLATED) as z:
+        with z.open('session.json','w',force_zip64=True) as f:f.write(json.dumps(records).encode())
+    payload=raw.getvalue();audit={}
+    assert list(nested_records(io.BytesIO(payload),'session',audit))==records
+    assert audit['nested_zip_bytes']==len(payload)
+    import hashlib
+    assert audit['nested_zip_sha256']==hashlib.sha256(payload).hexdigest()
+    assert audit['members'][0]['crc_verified']
+
+
 def test_date_roles_timezone_geometry_and_native_conversion(tmp_path,monkeypatch):
     import numpy as np
     from orchestra_wm.i24_phase4e import data

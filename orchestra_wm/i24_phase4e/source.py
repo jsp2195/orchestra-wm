@@ -52,7 +52,9 @@ def nested_records(handle, session, audit):
             if found!=1:raise SourceBlocked('Duplicate trajectory member')
             yield from ijson.items(reader,'item',use_float=True)
         while reader.read(1024*1024):pass
-        if member_bytes!=size:raise SourceBlocked('Nested member size mismatch')
+        # For data-descriptor ZIPs the header size is unknown (None). Exhausting
+        # parts already validates the descriptor's final size and CRC in stream-unzip.
+        if size is not None and member_bytes!=size:raise SourceBlocked('Nested member size mismatch')
         members.append(dict(name=name,bytes=member_bytes,sha256=member_digest.hexdigest(),crc_verified=True))
     # stream-unzip may buffer the central directory; drain remaining outer bytes.
     while b:=handle.read(1024*1024):digest.update(b);total+=len(b)

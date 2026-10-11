@@ -4,7 +4,7 @@ from pathlib import Path
 from orchestra_wm.i24_phase4e.preservation import request
 from orchestra_wm.i24_continuous.source import write_immutable
 from orchestra_wm.i24.data import sha
-p=argparse.ArgumentParser();p.add_argument('--listing',required=True);p.add_argument('--data',default='outputs/i24_phase4e/data_v1');p.add_argument('--dates',nargs='+',required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--listing',required=True);p.add_argument('--data',default='outputs/i24_phase4e/data_v2');p.add_argument('--dates',nargs='+',required=True);a=p.parse_args()
 listing=json.loads(Path(a.listing).read_text())['files']
 for date in a.dates:
     root=Path(a.data)/date;frozen=json.loads((root/'frozen_selection.json').read_text());source=json.loads((root/'native_manifest.json').read_text())
