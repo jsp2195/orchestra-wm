@@ -1,0 +1,26 @@
+{
+  "source": "REAL_I24",
+  "download_bytes": 6248968002,
+  "download_drive_md5_verified": true,
+  "outer_zip_crc_verified": true,
+  "nested_json_crc_verified": true,
+  "prior_tracked_files_preserved": 504,
+  "split_tracks_disjoint": true,
+  "split_counts": {
+    "train": 13,
+    "validation": 2,
+    "test": 3
+  },
+  "models": 6,
+  "updates_each": 100,
+  "seed": 101,
+  "finite_defined_evaluation_rows": 360,
+  "saved_forecasts": 120,
+  "demo_saved_array_entries_verified": 5,
+  "gif_frames": 50,
+  "browser_controls_passed": true,
+  "phase4_tests_passed": 32,
+  "free_bytes": 17823612928,
+  "raw_persistence_across_fresh_tasks": "NOT_ESTABLISHED",
+  "confirmation": "NOT_ACHIEVED_SINGLE_DAY_SHORT_PILOT"
+}

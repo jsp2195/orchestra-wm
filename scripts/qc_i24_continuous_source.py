@@ -6,7 +6,7 @@ from pathlib import Path
 import zipfile
 
 from orchestra_wm.i24_continuous.source import write_immutable
-from orchestra_wm.i24_continuous.qc import quality_control
+from orchestra_wm.i24_continuous.qc import quality_control,roadway_coverage
 
 
 def main():
@@ -41,6 +41,7 @@ def main():
         citation='Gloudemans et al. 2023, Transportation Research Part C 155, 104311.',
         scope='Fixed 10-minute regional subset selected before model fitting; all source bytes preserved in ZIPs'))
     result=quality_control(root)
+    roadway_coverage(root)
     print(json.dumps(result,indent=2))
     return 0 if result['status']=='REGIONAL_SUBSECOND_SUPPORT_PASSED' else 2
 

@@ -1,0 +1,35 @@
+{
+  "source": "REAL_I24",
+  "training_seed": 101,
+  "updates_each": 100,
+  "independent_recording_sessions": 1,
+  "test_windows": 3,
+  "primary": "10s macro-only minus full energy score",
+  "paired_differences": [
+    -0.006884096658692523,
+    -0.00540209822631621,
+    -0.0035839474079374795
+  ],
+  "mean_difference": -0.005290047430982071,
+  "ci95": null,
+  "inference": "PRELIMINARY_DESCRIPTIVE_ONLY; one contiguous held-out block cannot support session-bootstrap confirmation",
+  "physical_scales": [
+    30,
+    100,
+    3000
+  ],
+  "macro_scope": "Single-day regional retained-track preliminary pilot; omitted cross-boundary tracks mean fields are not a full traffic census",
+  "sensing": "EMULATED dense/sparse50/sparse20/blind/final-half-history outage",
+  "convergence": "Not established by this fixed 100-update pilot",
+  "wave_onset": "UNTESTED",
+  "cross_day_generalization": "UNTESTED",
+  "checkpoints": {
+    "full": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+    "independent": "413613281e518952f6d00d835a7cea9aaca280becd510d4e53946dc030807191",
+    "deterministic": "56287804c1bd31657e3ae14035855f0ecdccf42772f3710330dfec4fda76d197",
+    "macro_only": "cca07278c4bb1cd9ba667698664a852e67eb9f1453ccf065a048f964e07aab2c",
+    "micro_only": "0cca0e4f14378a3558a8fc576a15e145a5e860f4e4b90afa1345d165da9441a6",
+    "no_crossscale": "a34b652c26ce9ddf55339b0251024356375afbd15f1642820a91a9eb5ee754ab"
+  },
+  "evaluation_sha256": "4f108ec2f098565dbd08e1c13dd85a84552f67a1631b27e1e1fb6cae2a896dc8"
+}

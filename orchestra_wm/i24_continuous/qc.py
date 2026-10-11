@@ -89,3 +89,26 @@ def quality_control(root):
                     'Regional single-day pilot cannot establish independent-session generalization'])
     write_immutable(root/'authentic_qc.json',result)
     return result
+
+
+def roadway_coverage(root):
+    """Raw reconstructed support at 10m resolution; not camera calibration."""
+    root=Path(root);meta=json.loads((root/'acquisition.json').read_text())
+    selection=json.loads((root/'source_audit.json').read_text())['selection']
+    start=meta['start_unix_s'];length=(selection['x_max']-selection['x_min'])*.3048
+    counts=np.zeros((round((meta['end_unix_s']-start)*5),int(np.ceil(length/10))),np.int32)
+    for entry in meta['files']:
+        with (root/entry['path']).open('rb') as handle:
+            for r in ijson.items(handle,'item',use_float=True):
+                t=np.asarray(r['timestamp']);x=np.asarray(r['x_position']);y=np.asarray(r['y_position'])
+                s=(meta['x_origin_ft']-x)*.3048+float(r['length'])*.3048/2
+                frame=np.floor((t-start)*5).astype(int);cell=np.floor(s/10).astype(int)
+                use=(frame>=0)&(frame<len(counts))&(cell>=0)&(cell<counts.shape[1])&(y>=12)&(y<60)
+                pairs=np.unique(np.stack([frame[use],cell[use]],axis=1),axis=0)
+                if len(pairs):np.add.at(counts,(pairs[:,0],pairs[:,1]),1)
+    fraction=(counts>0).mean(0);low=np.flatnonzero(fraction<.05)
+    result=dict(spatial_bin_width_m=10,frame_seconds=.2,observed_frame_fraction_by_bin=fraction.tolist(),
+                persistent_low_support_intervals_m=[[int(i*10),int((i+1)*10)] for i in low],
+                interpretation='Observed reconstruction has persistent spatial gaps. This is not evidence of a complete traffic census or a calibrated camera outage. Keep unknown-bin masks; do not interpolate across missing coverage.')
+    write_immutable(root/'fine_roadway_coverage.json',result)
+    return result

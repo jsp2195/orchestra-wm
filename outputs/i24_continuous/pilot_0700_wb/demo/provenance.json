@@ -1,0 +1,33 @@
+{
+  "source": "REAL_I24",
+  "entries": [
+    {
+      "regime": "dense",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "2b49a40fc269a343c668dd35266bb1cf9f751ab52533b82b8449406c107ccc95"
+    },
+    {
+      "regime": "sparse50",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "81ae33585f29e26833ec33f838132bedb81f5ef9328b751726c8f79e67982143"
+    },
+    {
+      "regime": "sparse20",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "3170255c11047fc2aab45d89202f6c694e7421cbbd14fedec42d13035ff717f0"
+    },
+    {
+      "regime": "blind",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "4c712555a285d8477e60415d9b2a0eafb16a3032bb3a4b4c40d0f2edffbcff4e"
+    },
+    {
+      "regime": "outage",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "e00c52ff9bf8b687f8164e0b0d32192592e81c7661a245df74bc4a51644ab32a"
+    }
+  ],
+  "payload_sha256": "207df6da1c99b4513d9fe789e43f05a8969d108da3e79e7640e08ebc4ae33bf4",
+  "html_sha256": "bbcb9f367c6c1e6013e7288ac66b0d66a945997bd40145d29993f0e7bc06ed9d",
+  "display": "Exact ensemble means from saved evaluation arrays, not replay or fabricated predictions"
+}

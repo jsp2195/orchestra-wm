@@ -20,6 +20,7 @@ def source_figures(root,output):
     exposure=np.zeros((round(duration*5),32));distance=np.zeros_like(exposure);points=[]
     length=(audit['selection']['x_max']-audit['selection']['x_min'])*.3048/8
     for entry in meta['files']:
+        if sha(root/entry['path'])!=entry['sha256']:raise ValueError('Source figure input integrity mismatch')
         with (root/entry['path']).open('rb') as handle:
             for record in ijson.items(handle,'item',use_float=True):
                 frame,_=adapter.record(record,meta['session'],entry['sha256'])
@@ -89,7 +90,7 @@ function cars(a,col,mask){x.fillStyle=col;a.forEach((v,i)=>{if(mask[i]){let px=4
 if(document.getElementById('truth').checked)cars(e.truth[t],'#ffb454',e.valid[t]);cars(e.mean_agents[t],'#50b8ff',e.predicted_valid[t]);
 document.getElementById('label').textContent='Forecast +'+((t+1)*.2).toFixed(1)+' s';document.getElementById('hash').textContent='Checkpoint SHA256: '+e.checkpoint_sha256;
 const f=document.getElementById('fields'),q=f.getContext('2d');q.clearRect(0,0,f.width,f.height);const names=['Speed (m/s)','Density (veh/km/lane)','Flow (veh/h/lane)'],scales=[30,100,3000];
-for(let j=0;j<3;j++){q.fillStyle='#dce8f2';q.fillText(names[j],12,j*95+15);for(let k=0;k<32;k++){let xx=130+k*29,yy=j*95+80;if(e.field_support[t][k]){q.fillStyle='#ffb454';q.fillRect(xx,yy-e.target_fields[t][k][j]/scales[j]*55,9,e.target_fields[t][k][j]/scales[j]*55)}q.fillStyle='#50b8ff';q.fillRect(xx+10,yy-e.mean_fields[t][k][j]/scales[j]*55,9,e.mean_fields[t][k][j]/scales[j]*55)}}}
+for(let j=0;j<3;j++){q.fillStyle='#dce8f2';q.fillText(names[j],12,j*95+15);for(let k=0;k<32;k++){let xx=130+k*29,yy=j*95+80;if(document.getElementById('truth').checked&&e.field_support[t][k]){q.fillStyle='#ffb454';q.fillRect(xx,yy-e.target_fields[t][k][j]/scales[j]*55,9,e.target_fields[t][k][j]/scales[j]*55)}q.fillStyle='#50b8ff';q.fillRect(xx+10,yy-e.mean_fields[t][k][j]/scales[j]*55,9,e.mean_fields[t][k][j]/scales[j]*55)}}}
 r.onchange=draw;slider.oninput=draw;document.getElementById('truth').onchange=draw;let timer;document.getElementById('play').onclick=()=>{if(timer){clearInterval(timer);timer=null;return}timer=setInterval(()=>{slider.value=(+slider.value+1)%100;draw()},200)};draw();</script></html>'''
     (directory/'index.html').write_text(html.replace('__PAYLOAD__',payload))
     dense=next(e for e in selected if e['regime']=='dense');frames=[]

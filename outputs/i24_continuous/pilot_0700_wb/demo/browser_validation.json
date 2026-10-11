@@ -1,0 +1,15 @@
+{
+  "browser": "Chromium headless",
+  "javascript_errors": [],
+  "controls_exercised": [
+    "regime",
+    "time",
+    "truth",
+    "play"
+  ],
+  "regimes": 5,
+  "exact_saved_array_entries": 5,
+  "html_sha256": "bbcb9f367c6c1e6013e7288ac66b0d66a945997bd40145d29993f0e7bc06ed9d",
+  "payload_sha256": "207df6da1c99b4513d9fe789e43f05a8969d108da3e79e7640e08ebc4ae33bf4",
+  "pass": true
+}

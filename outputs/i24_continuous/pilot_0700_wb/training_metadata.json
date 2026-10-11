@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "full",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+    "final_validation_loss": 0.11319079250097275,
+    "parameters": 38298
+  },
+  {
+    "variant": "independent",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "413613281e518952f6d00d835a7cea9aaca280becd510d4e53946dc030807191",
+    "final_validation_loss": 0.09281479567289352,
+    "parameters": 38298
+  },
+  {
+    "variant": "deterministic",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "56287804c1bd31657e3ae14035855f0ecdccf42772f3710330dfec4fda76d197",
+    "final_validation_loss": 0.033519966527819633,
+    "parameters": 38298
+  },
+  {
+    "variant": "macro_only",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "cca07278c4bb1cd9ba667698664a852e67eb9f1453ccf065a048f964e07aab2c",
+    "final_validation_loss": 0.02090309839695692,
+    "parameters": 38298
+  },
+  {
+    "variant": "micro_only",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "0cca0e4f14378a3558a8fc576a15e145a5e860f4e4b90afa1345d165da9441a6",
+    "final_validation_loss": 0.09192466735839844,
+    "parameters": 38298
+  },
+  {
+    "variant": "no_crossscale",
+    "seed": 101,
+    "updates": 100,
+    "checkpoint_sha256": "a34b652c26ce9ddf55339b0251024356375afbd15f1642820a91a9eb5ee754ab",
+    "final_validation_loss": 0.09793446958065033,
+    "parameters": 38298
+  }
+]
