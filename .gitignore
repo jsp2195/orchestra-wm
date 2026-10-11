@@ -40,3 +40,8 @@ outputs/i24_phase4b/**/canonical/
 outputs/i24_phase4b/**/native/
 outputs/i24_phase4b/**/rollouts/
 outputs/i24_phase4b/gallery/payload.json.gz
+
+# Phase 4C private canonical arrays, evaluated trajectories and recovery payloads.
+outputs/i24_phase4c/**/rollouts/
+outputs/i24_phase4c/**/private/
+outputs/i24_phase4c/**/payload.json.gz

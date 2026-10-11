@@ -1,0 +1,11 @@
+{
+  "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+  "source_sha256": "2e83767b5c926eaafd3063d5faade54cb66b184d605662fedbad5496ceb58b42",
+  "scope": "Only preassigned training blocks; no developmental-test outcomes accessed",
+  "method": "Adjacent-bin Pearson peak across -30..30 s lags, 1 s spacing, after centered 60 s detrending; two or more supported lanes required",
+  "lag_convention": "Positive delay means upstream follows downstream; apparent speed is -124.968/delay m/s",
+  "inference": "Exploratory correlation with multiple-lag selection and temporal dependence; not an independently verified wave or onset detector",
+  "generated_wave_reproduction": "UNTESTED; 20-second forecasts do not establish reproduction of minute-scale propagation",
+  "csv_sha256": "c7ed9bf24d31c15730f258d9226759a5e3db60d6460ad7d1d9de89777eef537e",
+  "figure_sha256": "4ee006bc92e07f1cd284daff51d4697fbbf3fb59369a7cab3ae966d18a4de666"
+}
