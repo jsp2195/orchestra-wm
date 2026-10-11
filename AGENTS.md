@@ -122,3 +122,25 @@ The connected Drive app can preserve compact artifacts privately; its authentica
 readback receipts are under ignored work/phase4c. No new multi-day transfer,
 budget extension or seed campaign should launch without a bounded prospective
 configuration and adequate storage. Frozen recording-date assignments remain.
+
+# Phase 4D continuation
+
+Read docs/I24_PHASE4D_PROTOCOL.md and outputs/i24_phase4d/PHASE4D_REPORT.md.
+Phase 4D uses an isolated residual roadway-field forecaster and a separate
+historical-cohort kinematic residual trial. Primary full/aggregate models have
+identical 21,100 active parameters. Seeds101/202 completed600/800 updates per
+model and selected common checkpoints350/750 using validation only. Neither
+seed established a microscopic-information advantage. Do not conflate improved
+validation macro energy with speed point accuracy, calibration, independent-date
+generalization or an improved complete joint world model.
+
+Preserve all completed Phase4D namespaces, source/config fingerprints and prior
+history. New changes require new experiment namespaces. Keep examined Nov21
+developmental-test data closed for tuning. The bulk-source API returned401
+authError once; do not repeat credential troubleshooting without changed secure
+authorization. Frozen multi-date roles and five-independent-group gate remain.
+New-date ingestion requires parameterizing and testing per-date metadata before
+running it. No source archives, canonical/forecast arrays, weights, private
+receipts or Drive IDs go into Git. Use the existing verified private artifact
+workflow; preserve all local bytes. Do not replace historical demos with these
+field-only forecasts as if they were a validated joint traffic simulator.

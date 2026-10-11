@@ -1,0 +1,35 @@
+{
+  "config": {
+    "seed": 202,
+    "max_updates": 800,
+    "min_updates": 250,
+    "validation_every": 50,
+    "patience": 5,
+    "min_delta": 0.0001,
+    "lr": 0.001,
+    "dim": 32,
+    "batch_size": 4,
+    "samples": 4,
+    "variants": [
+      "full",
+      "aggregate"
+    ],
+    "dt": 0.2,
+    "history_steps": 25,
+    "forecast_steps": 100,
+    "cache_manifest_sha256": "db8ed1b398d7a59fef3f186e2da88cacefa56ea7d1ae4c7f7302ce2c71b12cf7",
+    "objective": "Mean per-time normalized joint macro energy, all 100 autonomous steps",
+    "selection": "One common checkpoint minimizing mean full/aggregate validation energy averaged over 5/10/20s; same update budget; no test",
+    "stopping": "At >=250 updates, five validation checks without shared improvement >=0.0001; max800; stopping alone does not prove convergence",
+    "active_capacity": "Identical layers and token count; full only adds past microscopic statistics to aggregate feature basis"
+  },
+  "sources": {
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4d/training.py": "4767efa939e8c34c79fd0bd205437c8e27f0bbc75f04adda99f5b7f8b38fd812",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4d/model.py": "853b80135124230238388361c6a75f023ef2ba5872780ec33b2ade8c79ac6365",
+    "/workspace/orchestra-wm/orchestra_wm/i24_phase4d/data.py": "e13907a5c702c178f7dcd4b2aad907aaaab1b21be3822c9bc0e91c7ac30368de",
+    "orchestra_wm/i24_continuous/data.py": "fde9ef44127d97a8ec9d96a7ac3a5b5a778557f7ac2bb93908303625171a1ca1",
+    "orchestra_wm/i24/data.py": "f78433810c4d3918dbc1fb2b116dfbee5d6e5a2311e02131d37dec5dd06b9bfb",
+    "orchestra_wm/i24_phase4b/training.py": "aeb0a9a94efa48b2e237ab7809a881cf5294006d448dad10a40bf762ce74177b"
+  },
+  "fingerprint": "48f51c9e980a77ebda3226abf132c43430b496330f1fb4713955d30919e5091b"
+}

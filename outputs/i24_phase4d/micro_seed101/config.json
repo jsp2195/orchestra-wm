@@ -1,0 +1,20 @@
+{
+  "seed": 101,
+  "max_updates": 500,
+  "min_updates": 150,
+  "validation_every": 25,
+  "patience": 4,
+  "min_delta": 0.0001,
+  "lr": 0.001,
+  "samples": 4,
+  "dim": 24,
+  "tau_seconds": 2,
+  "variants": [
+    "graph",
+    "independent"
+  ],
+  "source_sha256": "2e5ba8c073cbc4965539dc6abb2ce2e35e0d1420d12a7310794965f69c63b3df",
+  "model_sha256": "837ba1326991ade5b6b2d37a6adce1bee03eec1b5d01d9127349888a392d1b3b",
+  "data_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+  "selection": "Common minimum paired validation joint micro energy at5/10/20s; separate from macro experiment; no test access"
+}

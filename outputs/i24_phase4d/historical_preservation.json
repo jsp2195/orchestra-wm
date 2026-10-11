@@ -1,0 +1,62 @@
+{
+  "historical_tracked_files_verified": 719,
+  "historical_inventory_sha256": "1539086c9cda8f82bf65d7a04a29b92a71f5fded2626a952f9205efe5712f376",
+  "checkpoints": [
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/full-101.pt",
+      "sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/independent-101.pt",
+      "sha256": "413613281e518952f6d00d835a7cea9aaca280becd510d4e53946dc030807191",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/deterministic-101.pt",
+      "sha256": "56287804c1bd31657e3ae14035855f0ecdccf42772f3710330dfec4fda76d197",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/macro_only-101.pt",
+      "sha256": "cca07278c4bb1cd9ba667698664a852e67eb9f1453ccf065a048f964e07aab2c",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/micro_only-101.pt",
+      "sha256": "0cca0e4f14378a3558a8fc576a15e145a5e860f4e4b90afa1345d165da9441a6",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_continuous/pilot_0700_wb/checkpoints/no_crossscale-101.pt",
+      "sha256": "a34b652c26ce9ddf55339b0251024356375afbd15f1642820a91a9eb5ee754ab",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_phase4c/joint_seed101_u30/checkpoints/full-101.pt",
+      "sha256": "bbdb387eb23abb96a1d93dd53d2db53922b6e2d514a075859999e68adcad3702",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_phase4c/joint_seed101_u30/checkpoints/independent-101.pt",
+      "sha256": "17b42cad2f244de5fb94ed181c9453d1c813b20e39d0dce2471b73299cb04bce",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_phase4c/joint_seed101_u30/checkpoints/graph_off-101.pt",
+      "sha256": "6b6a1d909e28bda7b814799412bd892acc5f7656947c421c022c8daa043debd4",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_phase4b/matched_macro_seed101_u300/checkpoints/full-101.pt",
+      "sha256": "91cf07cc417ece2085f1c1e63f7c211d8492b686adb5cfa3527afef1a8fcb53b",
+      "verified": true
+    },
+    {
+      "path": "outputs/i24_phase4b/matched_macro_seed101_u300/checkpoints/macro_only-101.pt",
+      "sha256": "1e6239d15a8e5c69b290bd1e1e63cd95ee4538806887ab2a017349ec101a056f",
+      "verified": true
+    }
+  ],
+  "old_research_unchanged": true
+}

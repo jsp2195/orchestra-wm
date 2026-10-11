@@ -30,9 +30,14 @@ with torch.no_grad():
     for horizon in [5,10,20]:
      steps=5*horizon;use=valid[:steps];last=valid[steps-1];row=dict(variant=v,scene=scene.scene_id,regime=regime,horizon_seconds=horizon,valid_samples=int(use.sum()),valid_endpoint=int(last.sum()),ade_m=float(np.linalg.norm(mean[:steps,:,:2]-truth[:steps,:,:2],axis=-1)[use].mean()) if use.any() else None)
      row['fde_m']=float(np.linalg.norm(mean[steps-1,last,:2]-truth[steps-1,last,:2],axis=-1).mean()) if last.any() else None
+     if use.any():row['acceleration_above8_fraction']=float((np.linalg.norm(x[:,:steps,:,4:6],axis=-1)[:,use]>8).mean())
      if last.any():
       z=x[:,steps-1,last,:2];y=truth[steps-1,last,:2];lo,hi=np.quantile(z,[.05,.95],axis=0)
       row.update(xy_coverage90=float(((y>=lo)&(y<=hi)).mean()),position_crps_m=float(marginal_crps(z,y).mean()),micro_energy_scaled=energy_score(z/np.array([100,3.6576]),y/np.array([100,3.6576])),mean_sample_fde=float(np.linalg.norm(z-y,axis=-1).mean()))
+      dimensions=x[:,steps-1,last,6:8];pairs=np.triu_indices(int(last.sum()),1)
+      if len(pairs[0]):
+       overlap=(abs(z[:,:,None]-z[:,None,:])<(dimensions[:,:,None]+dimensions[:,None,:])/2).all(-1)
+       row['endpoint_overlap_pair_fraction']=float(overlap[:,pairs[0],pairs[1]].mean())
      row.update(boundary_rates(x[:,:steps],use,scene.road));rows.append(row)
     if number<3:
      f=private/f'{number}-{regime}-{v}.npz';np.savez_compressed(f,agents=x,truth=truth,support=valid);examples.append(dict(path=str(f.relative_to(out)),sha256=sha(f),checkpoint_sha256=sha(path) if v!='constant_velocity' else None))

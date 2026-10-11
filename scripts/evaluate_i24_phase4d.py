@@ -39,6 +39,7 @@ def score(x,b,meta):
  for seconds in [5,10,20]:
   t=seconds*5-1;use=support[t];z=x[:,t,use];y=target[t,use];scale=np.array([30,100,3000]);lo,hi=np.quantile(z,[.05,.95],axis=0)
   r=dict(**meta,horizon_seconds=seconds,bins=int(use.sum()),macro_energy=energy_score(z/scale,y/scale),macro_coverage90=float(((y>=lo)&(y<=hi)).mean()),macro_diversity=sample_diversity(z/scale),negative_fraction=float((z<0).mean()),flow_identity_mae=float(abs(z[...,2]-3.6*z[...,0]*z[...,1]).mean()))
+  r['speed_above55_fraction']=float((z[...,0]>55).mean());r['density_above200_fraction']=float((z[...,1]>200).mean())
   for k,name in enumerate(['speed','density','flow']):
    r[name+'_mae']=float(abs(z.mean(0)-y)[:,k].mean());r[name+'_bias']=float((z.mean(0)-y)[:,k].mean());r[name+'_crps']=float(marginal_crps(z,y)[:,k].mean());r[name+'_coverage90']=float(((y>=lo)&(y<=hi))[:,k].mean());r[name+'_width90']=float((hi-lo)[:,k].mean())
   rows.append(r)
@@ -51,7 +52,8 @@ with torch.no_grad():
    forecasts.append((name,seed,checkpoint,model(b,variant,a.samples,7103+e['number'],ablation=ablation).numpy()))
   for name,seed,checkpoint,x in forecasts:
    assert np.isfinite(x).all()
-   identity=dict(variant=name,seed=seed,scene=e['scene'],scene_number=e['number'],regime=e['regime'],history_speed=e['history_speed'],speed_regime='congested_<10' if e['history_speed']<10 else ('intermediate_10_20' if e['history_speed']<20 else 'free_>=20'))
+   known=ref[:,1]>0;hs=float(ref[known,0].mean()) if known.any() else 0.;hd=float(ref[known,1].mean()) if known.any() else 0.
+   identity=dict(variant=name,seed=seed,scene=e['scene'],scene_number=e['number'],regime=e['regime'],history_speed=hs,history_density=hd,history_known_bin_fraction=float(known.mean()),speed_regime='congested_<10' if hs<10 else ('intermediate_10_20' if hs<20 else 'free_>=20'),density_regime='low_<20' if hd<20 else ('moderate_20_40' if hd<40 else 'high_>=40'))
    score(x,b,identity)
    if not name.startswith('full_') or e['number']<3:
     path=directory/f"{e['number']}-{e['regime']}-{name}-{seed}.npz"
@@ -63,6 +65,7 @@ with torch.no_grad():
 frame=pd.DataFrame(rows);frame.to_csv(out/'evaluation.csv',index=False)
 frame.groupby(['variant','seed','regime','horizon_seconds']).mean(numeric_only=True).to_csv(out/'summary_table.csv')
 frame.groupby(['variant','seed','regime','horizon_seconds','speed_regime']).agg(windows=('macro_energy','size'),macro_energy=('macro_energy','mean'),speed_mae=('speed_mae','mean'),density_mae=('density_mae','mean'),flow_mae=('flow_mae','mean'),coverage90=('macro_coverage90','mean')).to_csv(out/'regime_table.csv')
+frame.groupby(['variant','seed','regime','horizon_seconds','density_regime']).agg(windows=('macro_energy','size'),macro_energy=('macro_energy','mean'),coverage90=('macro_coverage90','mean')).to_csv(out/'density_regime_table.csv')
 primary=[]
 for seed in sorted({s for n,s,v,m,ab,c in models}):
  d=frame.query("seed==@seed and regime=='dense' and horizon_seconds==10 and variant in ['residual_full','residual_aggregate']").pivot(index='scene',columns='variant',values='macro_energy')

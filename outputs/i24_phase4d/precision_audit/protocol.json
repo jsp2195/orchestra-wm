@@ -1,0 +1,6 @@
+{
+  "source_sha256": "bfa8e33fd2bdcd9be0a78b7cbd01f43c9d539833e68114672c0361eafc9982dd",
+  "checkpoint_sha256": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1",
+  "samples": 64,
+  "scope": "Post-selection descriptive validation sensitivity only; primary eight-particle scores unchanged; no test access"
+}

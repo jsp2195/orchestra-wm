@@ -1,0 +1,11 @@
+{
+  "seed": 101,
+  "updates": 500,
+  "learning_rate": 0.01,
+  "samples": 4,
+  "batch_size": 4,
+  "selection": "Fixed final 500, train-only; no validation fit",
+  "source_sha256": "00d542f3d2f62cf56b97ea1ef9086ddb8dc4c9435f15886bd5006af37548b602",
+  "model_sha256": "613c7d7e3c04b6915761c447dcb75b94da04d3a81ba0fc26039a4918f484770b",
+  "cache_sha256": "db8ed1b398d7a59fef3f186e2da88cacefa56ea7d1ae4c7f7302ce2c71b12cf7"
+}

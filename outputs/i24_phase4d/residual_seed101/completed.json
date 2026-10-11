@@ -1,0 +1,65 @@
+{
+  "seed": 101,
+  "updates_per_model": 600,
+  "selected_update": 350,
+  "stop": "VALIDATION_NO_IMPROVEMENT",
+  "validation_recent_range": 0.0025639357450215616,
+  "validation_stabilized_heuristic": false,
+  "best_shared_validation": 0.08887916625193928,
+  "wall_seconds": 565.4551786739976,
+  "peak_rss_kib": 597868,
+  "capacity": {
+    "full": {
+      "allocated": 21100,
+      "observed_nonzero_gradient_scalars": 21100,
+      "by_parameter": {
+        "encoder.weight": 480,
+        "encoder.bias": 32,
+        "message.weight": 1024,
+        "message.bias": 32,
+        "history.weight_ih": 6144,
+        "history.weight_hh": 3072,
+        "history.bias_ih": 96,
+        "history.bias_hh": 96,
+        "feedback.weight": 288,
+        "feedback.bias": 32,
+        "transition.weight_ih": 6144,
+        "transition.weight_hh": 3072,
+        "transition.bias_ih": 96,
+        "transition.bias_hh": 96,
+        "head.weight": 128,
+        "head.bias": 4,
+        "loading.weight": 256,
+        "loading.bias": 8
+      }
+    },
+    "aggregate": {
+      "allocated": 21100,
+      "observed_nonzero_gradient_scalars": 21100,
+      "by_parameter": {
+        "encoder.weight": 480,
+        "encoder.bias": 32,
+        "message.weight": 1024,
+        "message.bias": 32,
+        "history.weight_ih": 6144,
+        "history.weight_hh": 3072,
+        "history.bias_ih": 96,
+        "history.bias_hh": 96,
+        "feedback.weight": 288,
+        "feedback.bias": 32,
+        "transition.weight_ih": 6144,
+        "transition.weight_hh": 3072,
+        "transition.bias_ih": 96,
+        "transition.bias_hh": 96,
+        "head.weight": 128,
+        "head.bias": 4,
+        "loading.weight": 256,
+        "loading.bias": 8
+      }
+    }
+  },
+  "best_checkpoint_sha256": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1",
+  "last_checkpoint_sha256": "3953754158f9899d0bc709e501448bcf2f90b8aca9101637e606a754e9c3967f",
+  "fingerprint": "147c10496305ddc252984a5258299be4ca8d5ae32f4a6ce4e7641e11b8b2eef1",
+  "scope": "Training/validation November21 only; independent testing unopened"
+}

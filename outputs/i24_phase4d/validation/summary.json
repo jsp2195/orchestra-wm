@@ -1,0 +1,20 @@
+{
+  "primary": [
+    {
+      "seed": 101,
+      "aggregate_minus_full": -0.00019816270094404488,
+      "windows": 23,
+      "independent_days": 1,
+      "inference": "Validation-selected descriptive result only; not independent information-value evidence"
+    },
+    {
+      "seed": 202,
+      "aggregate_minus_full": -0.0006546588919709995,
+      "windows": 23,
+      "independent_days": 1,
+      "inference": "Validation-selected descriptive result only; not independent information-value evidence"
+    }
+  ],
+  "evaluation_sha256": "ff79b20f60e0aceffa600b9f5367c69e92b7db2c8d70b32378342881a6f2f4b4",
+  "independent_test_evaluated": false
+}

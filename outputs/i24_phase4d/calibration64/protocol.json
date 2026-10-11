@@ -1,0 +1,8 @@
+{
+  "samples": 64,
+  "seed": 101,
+  "checkpoint_sha256": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1",
+  "source_sha256": "841d4972f862906c9bff70beb797462c81d342e9b1ce624dccddd00431e88e7f",
+  "scope": "Validation dense only; diagnostic, does not replace eight-sample comparison",
+  "rank_method": "Randomized (number of samples below truth + uniform[0,1])/(S+1); histogram only, correlated observations, no iid p-values"
+}

@@ -1,0 +1,12 @@
+{
+  "updates_per_model": 250,
+  "selected_update": 150,
+  "stop": "VALIDATION_NO_IMPROVEMENT",
+  "best_validation": 0.34481449587189633,
+  "validation_recent_range": 0.00936126190683112,
+  "wall_seconds": 33.22530609999376,
+  "parameters_each": 5692,
+  "peak_rss_kib": 696536,
+  "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f",
+  "scope": "Single-day validation; historical-cohort kinematic baseline, no individual arrivals or total-population equality"
+}

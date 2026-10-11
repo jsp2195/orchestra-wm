@@ -1,0 +1,13 @@
+{
+  "split": "validation",
+  "samples": 8,
+  "checkpoints": {
+    "outputs/i24_phase4d/residual_seed101/checkpoints/best.pt": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1",
+    "outputs/i24_phase4d/residual_seed202/checkpoints/best.pt": "47d3a6ec9c8b78a0b6ed86908f83125b7ab4955ee8e4ba38e28f29632e1e3640",
+    "outputs/i24_phase4d/capacity16_seed101/checkpoints/best.pt": "5bf94f1fe3b61f913f343605d6dfe7d3986541ef3943222f72044160ee1a8f95",
+    "outputs/i24_phase4d/diffusion_baseline/checkpoints/last.pt": "effccad6c2322468d6f9b128993105f93b4aa5c44aaf48806777d9e466cc8a84"
+  },
+  "source_sha256": "9087a589d2ab73a3302338491d60fac1a87522198dee4e83e74429e89622078e",
+  "scope": "Developmental November21 validation only; no test outcomes accessed",
+  "selection": "Frozen common paired-validation checkpoint; same validation used for selection, not an unbiased test estimate"
+}

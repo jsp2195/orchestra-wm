@@ -1,0 +1,96 @@
+{
+  "evaluation_sha256": "54fabd16d71535750d3db45b4a2eb7d399da1e79acb2c10d8ed05ad6a694892b",
+  "examples": [
+    {
+      "path": "examples/0-dense-constant_velocity.npz",
+      "sha256": "0435710d199b19f3f81d749aad750fe7b8249afea81a141ed6b294e7e31ab7f6",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/0-dense-graph.npz",
+      "sha256": "3e69f629959b86e8c0b0b1a0279e30d1210f8dc61931f86ebc6c9d8d38411899",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/0-dense-independent.npz",
+      "sha256": "d41b65141ee69be6024c43f2c847d123eab7d1b709b5b4fe9713348d2e8f6886",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/0-outage-constant_velocity.npz",
+      "sha256": "5941b2cf8099e01f113b30ae5591755807fc4b6aa17e2a9e5cbe06203ecc4cc2",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/0-outage-graph.npz",
+      "sha256": "71d2e1e9d9a7f617f4710bd0b0d12b95e661c45e05d328d25a3add74b1f6978e",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/0-outage-independent.npz",
+      "sha256": "d6ab54fd6ed39e5acf5c5547dbded5707bcb6ac685cbdf07a168cf209003b247",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/1-dense-constant_velocity.npz",
+      "sha256": "4cad774c202853adf883740ea2622beb3df569b1e059a9b666a962c0001ff132",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/1-dense-graph.npz",
+      "sha256": "bd82ce135035f4f7d42c260238d25c1532c4aca58a875cb9934201915390f98b",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/1-dense-independent.npz",
+      "sha256": "3c46b0f6dfa06d306d8675fa715584cb0aed7d8bcb90e6657a72f96d33699167",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/1-outage-constant_velocity.npz",
+      "sha256": "03ae32c28c4fd39eb68bd9b04c8c6f8de47b928696d2a2aac2a37d741cad96fa",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/1-outage-graph.npz",
+      "sha256": "53a0d8bd205fe96b887dd1ae8bc0b865e7817c1d56ae118ace9066f5e4c45cf6",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/1-outage-independent.npz",
+      "sha256": "21297e3beff8b209b519014eb8ff388754b54bc3131b0b36b20b8f3997308295",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/2-dense-constant_velocity.npz",
+      "sha256": "ce793409ad5256dc2455a4ca101a7bc639a680b714149539e065486dfe6fee96",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/2-dense-graph.npz",
+      "sha256": "50fb7ca06e168a6424f7358c84c13ee3ea22300a07fc3e240ed6a7b7e28d2566",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/2-dense-independent.npz",
+      "sha256": "22cb2362c988065e5f1824104e00813e2d2e846c2d01e19e07c296e17345499f",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/2-outage-constant_velocity.npz",
+      "sha256": "005f282f79da81b697a1e369c991780e48b61f4208c085bdb1545d8298b690c3",
+      "checkpoint_sha256": null
+    },
+    {
+      "path": "examples/2-outage-graph.npz",
+      "sha256": "9afcc3aa522c9ae9a19e6ddfa622b850eeaf5452547a95978f1f4775e802b0d5",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    },
+    {
+      "path": "examples/2-outage-independent.npz",
+      "sha256": "296c3d4592825c323b6b7a050e991848719b00bb5708060ae299f17c1c41ec27",
+      "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f"
+    }
+  ],
+  "independent_test_evaluated": false
+}

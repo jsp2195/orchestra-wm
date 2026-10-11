@@ -1,0 +1,5 @@
+{
+  "point_precision_sha256": "29e2eaaf9f89f3cf66c29ac7cd48f7205a3e4e5437a3a20de432232d630ee352",
+  "bin_regime_errors_sha256": "15c0752363114c1ff290e10557a26a3118d0f45d85cc35e8496c44b87d2540f5",
+  "note": "Scene-equal means within nonempty historical-bin strata; bins and windows are correlated; descriptive only"
+}

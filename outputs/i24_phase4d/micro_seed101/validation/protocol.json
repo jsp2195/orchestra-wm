@@ -1,0 +1,7 @@
+{
+  "samples": 8,
+  "selected_update": 150,
+  "checkpoint_sha256": "839cb18cde48714d69fc8879d4f8377cc7e665c85ca9d0fafcb741d2cb389c1f",
+  "source_sha256": "2ab9844415dbd91dc257b19b77d63045152d045e3fdbb2c03a73f96a364fd9be",
+  "scope": "Same validation used for selection; not independent test"
+}

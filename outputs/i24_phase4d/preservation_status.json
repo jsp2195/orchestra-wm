@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED_PRIVATE_DURABLE_BACKUP",
+  "verified_at_utc": "2026-10-11T17:53:36.687576+00:00",
+  "archive_bytes": 178917690,
+  "archive_sha256": "7fe7b8261888be815ef6957aa8a81ede448ca5fa66735a2b743bead06119f66b",
+  "parts": 8,
+  "owner_only": true,
+  "manifest_sha256": "80099dd88b4876f4c9fa7b44fbbcd7ce8c198c15d3144a6e13b237606a9979e5",
+  "verification": "Authenticated remote materialization of every part; per-part byte count and SHA256; ordered remote-readback concatenation SHA256; owner-only permissions; uploaded private manifest authenticated readback identical",
+  "checkpoint_files": 9,
+  "private_npz_files": 936,
+  "local_files_deleted": false,
+  "private_receipt_location": "work/phase4d/private_preservation_receipt.json",
+  "private_manifest_location": "work/phase4d/private_recovery_manifest.json",
+  "canonical_data": "Existing Phase4B expanded prepared-data verified backup retained separately"
+}

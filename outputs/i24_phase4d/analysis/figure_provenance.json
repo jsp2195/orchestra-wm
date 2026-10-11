@@ -1,0 +1,20 @@
+{
+  "source_sha256": "e3912b115a0199fddbdcf4e1e998211e48c6c5adb29d7ca4e90b213ff04b2279",
+  "validation_csv_sha256": "ff79b20f60e0aceffa600b9f5367c69e92b7db2c8d70b32378342881a6f2f4b4",
+  "example": {
+    "variant": "residual_full",
+    "seed": 101,
+    "scene": "0815_validation:1669040101",
+    "scene_number": 0,
+    "regime": "dense",
+    "history_speed": 13.439038276672363,
+    "history_density": 12.585040092468262,
+    "history_known_bin_fraction": 0.6875,
+    "speed_regime": "intermediate_10_20",
+    "density_regime": "low_<20",
+    "path": "rollouts/0-dense-residual_full-101.npz",
+    "sha256": "0f46bd91ffc588e88628362f632c9de61c61ca33d5c35189e569392afb8cbe01",
+    "checkpoint_sha256": "f682321eb9438eb7e60398439d8d5667ccc583a0bdf45735fe39da3d763da3b1"
+  },
+  "scope": "Selected validation checkpoints; correlated scenes; no independent-date outcomes or public trajectory arrays"
+}

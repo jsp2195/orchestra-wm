@@ -284,3 +284,19 @@ All five new checkpoints, 828 saved prediction arrays and both private HTML demo
 have authenticated remote SHA256 readback. See the
 [redacted preservation receipt](outputs/i24_phase4c/durable_preservation_receipt.json)
 and [recovery instructions](docs/I24_PHASE4C_RECOVERY.md).
+
+# Phase 4D: residual forecasts and matched controls
+
+The [Phase 4D report](outputs/i24_phase4d/PHASE4D_REPORT.md) documents 4,400 new
+optimizer updates, two paired macro seeds, a capacity control and separate
+kinematic residual models. Ten-second validation macro energy improved to
+0.090313/0.090657 from persistence's 0.151269, but matched aggregate-only models
+slightly outperformed full in both seeds. Speed point error and calibration
+remain limitations. Independent-date ingestion/evaluation was blocked and was
+not claimed. All historical experiments and demonstrations remain preserved.
+
+See [learning curves](outputs/i24_phase4d/analysis/learning_curves.png),
+[baseline comparisons](outputs/i24_phase4d/analysis/baseline_comparisons.png),
+and the [prospective protocol](docs/I24_PHASE4D_PROTOCOL.md). New private
+checkpoints and arrays are covered by the separately verified preservation
+receipt; no raw trajectories or weights are published here.

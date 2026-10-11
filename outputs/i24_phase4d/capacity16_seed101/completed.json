@@ -1,0 +1,10 @@
+{
+  "seed": 101,
+  "updates_per_model": 600,
+  "selected_update": 350,
+  "best_checkpoint_sha256": "5bf94f1fe3b61f913f343605d6dfe7d3986541ef3943222f72044160ee1a8f95",
+  "parameters": 5692,
+  "wall_seconds": 294.43645090299833,
+  "peak_rss_kib": 530536,
+  "scope": "Capacity-only aggregate control; parent training/selection schedule replayed"
+}
