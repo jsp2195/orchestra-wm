@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_AUTHENTICATED_READBACK_RECONSTRUCTION_SHA256_VERIFIED",
+  "scope": "COMPLETED_NOV22",
+  "manifest_name": "ORCHESTRA_PHASE4E_COMPLETED_NOV22_RECOVERY_MANIFEST.json",
+  "manifest_sha256": "aebdcd943f82f76c9555b1cd35e0af52df9f8f89448224791538de2ea1ddba2e",
+  "archive_bytes": 298292970,
+  "archive_sha256": "3e2e6a81b405a2f9c1376653010f8b457c9f22e9c0731971d3a40b5a7ffe7e64",
+  "verified_parts": 12,
+  "verified_files": 369,
+  "owner_only": true,
+  "authenticated_readback_verified": true,
+  "restoration_drill": "PASS",
+  "source_qc": "PASS",
+  "windows": 92,
+  "source_token_after_ingestion": "HTTP401_ON_FIRST_BACKUP_UPLOAD_NO_RETRY",
+  "later_dates": "NOT_INGESTED"
+}

@@ -2,10 +2,11 @@
 import argparse,datetime,json,os,re,urllib.error,urllib.request
 from pathlib import Path
 from orchestra_wm.i24_phase4e.ranges import NoRedirect
+from orchestra_wm.i24_phase4e.auth import access_token
 from orchestra_wm.i24_continuous.source import write_immutable
 p=argparse.ArgumentParser();p.add_argument('--metadata',required=True);p.add_argument('--output',required=True);a=p.parse_args()
 if Path(a.output).exists():raise SystemExit('Existing access receipt preserved; select a new output')
-known=json.loads(Path(a.metadata).read_text());token=os.environ.get('GOOGLE_DRIVE_ACCESS_TOKEN')
+known=json.loads(Path(a.metadata).read_text());token=access_token()
 result=dict(checked_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),secret_variable_present=bool(token),metadata_executed=False,range_executed=False)
 opener=urllib.request.build_opener(NoRedirect());base='https://www.googleapis.com/drive/v3/files/'+known['id']
 try:

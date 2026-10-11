@@ -5,7 +5,7 @@ import pandas as pd
 from orchestra_wm.i24.data import sha
 from orchestra_wm.i24_continuous.source import write_immutable
 from orchestra_wm.i24_phase4e.cache import prepare,load_cache
-p=argparse.ArgumentParser();p.add_argument('--runs',nargs='+',required=True);p.add_argument('--validation',default='outputs/i24_phase4e/validation');p.add_argument('--output',default='outputs/i24_phase4e/independent_test_protocol.json');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--runs',nargs='+',required=True);p.add_argument('--validation',default='outputs/i24_phase4e/validation');p.add_argument('--data',default='outputs/i24_phase4e/data_v4');p.add_argument('--output',default='outputs/i24_phase4e/independent_test_protocol.json');a=p.parse_args()
 root=Path(a.validation);summary=json.loads((root/'summary.json').read_text())
 if sha(root/'evaluation.csv')!=summary['evaluation_sha256']:raise ValueError('Validation outcomes changed')
 protocol=json.loads((root/'protocol.json').read_text())
@@ -21,7 +21,7 @@ status=dict(status='VALIDATION_PASSED' if passed else 'VALIDATION_FAILED_TEST_UN
 write_immutable(Path(a.output).with_name('validation_gate.json'),status)
 if not passed:raise SystemExit('Promotion failed; independent forecast outcomes remain unopened')
 test_cache=Path('outputs/i24_phase4e/test_cache_v1')
-prepare('outputs/i24_phase4e/data_v3',test_cache,splits=('test',))
+prepare(a.data,test_cache,splits=('test',))
 load_cache(test_cache,allowed_splits=('test',))
 artifacts={str(root/f):sha(root/f) for f in ['evaluation.csv','summary.json','protocol.json']}
 for directory in a.runs:

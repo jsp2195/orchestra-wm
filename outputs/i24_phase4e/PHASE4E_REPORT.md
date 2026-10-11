@@ -299,3 +299,49 @@ No new macro energy, MAE, CRPS, calibration, physical-validity, robustness, or m
 Keep this checkout and the existing verified Nov21/Nov22 `data_v4` directories. Preserve the ignored local Nov22 archive and inventory until a private upload passes authenticated SHA256 readback. Refresh `GOOGLE_DRIVE_ACCESS_TOKEN` through secure environment configuration; probe with a new receipt filename. If the probe passes, rerun `scripts/preserve_i24_phase4e.py` for the **completed Nov22** directory and include its QC/metadata in a verified private backup. Do not reingest Nov21 or Nov22. Then run the documented per-date prepare, verify, QC and private-preserve steps for Nov23 and Nov25, stopping at the first authorization error. Only after combined QC, cache creation, and full dataset readback should the frozen training and validation protocol resume. The original Phase4D checkpoints and historical incomplete shards remain recoverable through their existing private manifests; they were not restored because they are not required for this data-stage continuation.
 
 Regression suite after restoration and Nov22 QC: **126 passed, 8 skipped** with `uv run --no-sync pytest -q --import-mode=importlib`. This report and the public source-only QC/probe receipts are the only new files intended for Git; canonical data and local preservation archives stay private.
+
+---
+
+# Continuation after 9fd6f20: restored Nov21; Nov22 preserved
+
+The completed Nov21 data bundle and audit supplement were downloaded through the
+connected private Drive app, SHA256-verified, restored with the repository's member
+inventory checker, and installed without replacing differing files. Nov21 ingestion
+was not repeated. The private listing and metadata were restored under ignored
+`work/phase4e/` paths.
+
+The attached checkout had advanced to `7eb4760`, which already recorded Nov22 source
+QC but lacked its private data. A fresh source probe returned matching metadata
+and exact HTTP206 for Nov21. Nov22 was streamed into `data_v4`, with **771,946**
+source records, **247,719,604** source samples, nested ZIP SHA256
+`3f81287f188f7781622a8d362f9d87f2e6d381a0034e6be1299e1416e7d99748`,
+and **92** accepted training windows, 23 per frozen slot. Source metadata and
+selected-stream integrity verification passed. Recomputed source-only QC passed;
+per-day and per-window CSVs are byte-identical to the earlier tracked Nov22 QC.
+The two audit JSON files differ only in data-manifest and source-verification hashes
+from separate, complete ingestion runs. These are data integrity results, not
+forecasting results.
+
+The short-lived token returned HTTP401 on the first Nov22 backup upload and was
+not retried. The local 285 MiB backup archive and inventory were preserved. The
+connected private Drive app uploaded all 12 parts, downloaded each for byte-for-byte
+readback, and confirmed owner-only permissions. The amended recovery manifest was
+also read back, owner-only checked, and passed a full local reconstruction/member
+restoration drill. Public hashes and counts are in `nov22_backup_status.json`;
+private Drive IDs and the complete manifest stay outside Git. No Nov22 ingestion
+needs repeating.
+
+The runtime exposes a working but expiring access token, with no configured refresh
+grant. `docs/I24_PHASE4E_AUTH.md` describes the one-time OAuth grant and environment
+bindings required for renewable direct Drive ranges and private backup uploads.
+Source and preservation code now mint tokens before expiry when the secure refresh
+bindings exist; incomplete configuration fails closed. No credential value was
+stored in the repository. A future worker must run a fresh immutable source probe
+after the environment is republished.
+
+**Nov23 and Nov25 ingestion remain blocked** until renewable authorization is
+configured. No Phase4E optimizer updates, Nov25 validation forecasts, promotion
+decision, or Nov28/29 independent forecasts ran. The independent test remains
+unopened. The preregistered roles, windows, metrics and promotion gate are unchanged.
+The freeze helper's test-cache data source was corrected to the verified `data_v4`
+namespace before any freeze or test forecast.

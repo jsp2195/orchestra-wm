@@ -1,0 +1,13 @@
+{
+  "status": "SOURCE_METADATA_STABLE_AND_SELECTED_STREAM_INTEGRITY_VERIFIED",
+  "checked_at_utc": "2026-10-11T22:06:21.507629+00:00",
+  "metadata": {
+    "name": "11-22-2022.zip",
+    "size": "6648411707",
+    "md5Checksum": "4b510b1295e49d77ff5ee41655ca1c2a",
+    "version": "1"
+  },
+  "native_manifest_sha256": "fe20fe60f8a0b7a8682db32b945a10e058a2f1df67ace8c6203aac5c2a45626f",
+  "nested_zip_sha256": "3f81287f188f7781622a8d362f9d87f2e6d381a0034e6be1299e1416e7d99748",
+  "whole_outer_md5_verified": false
+}

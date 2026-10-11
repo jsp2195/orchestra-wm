@@ -7,6 +7,7 @@ import io
 import os
 import urllib.error
 import urllib.request
+from .auth import access_token
 
 
 class SourceBlocked(RuntimeError):
@@ -50,7 +51,7 @@ class DriveRanges(io.RawIOBase):
             if not self.cache_start <= self.position < self.cache_start + len(self.cache):
                 first = self.position
                 last = min(self.size-1, first + self.block_bytes-1)
-                token = os.environ.get('GOOGLE_DRIVE_ACCESS_TOKEN')
+                token = access_token()
                 if not token: raise SourceBlocked('Missing secure source token binding')
                 req = urllib.request.Request(self.url, headers={
                     'Authorization': 'Bearer '+token, 'Accept-Encoding': 'identity',

@@ -4,10 +4,11 @@ from pathlib import Path
 from orchestra_wm.i24.data import sha
 from orchestra_wm.i24_continuous.source import write_immutable
 from .ranges import NoRedirect,SourceBlocked
+from .auth import access_token
 
 
 def request(path, data=None, content_type=None):
-    token=os.environ.get('GOOGLE_DRIVE_ACCESS_TOKEN')
+    token=access_token()
     if not token:raise SourceBlocked('Missing secure Drive token')
     headers={'Authorization':'Bearer '+token}
     if content_type:headers['Content-Type']=content_type
