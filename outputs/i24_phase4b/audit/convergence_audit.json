@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "deterministic",
+    "final_validation": 0.0335199665278196,
+    "validation_change_80_to_100": 0.0010756943374872,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  },
+  {
+    "variant": "full",
+    "final_validation": 0.1131907925009727,
+    "validation_change_80_to_100": -0.009715218096971498,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  },
+  {
+    "variant": "independent",
+    "final_validation": 0.0928147956728935,
+    "validation_change_80_to_100": -0.008596196770668002,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  },
+  {
+    "variant": "macro_only",
+    "final_validation": 0.0209030983969569,
+    "validation_change_80_to_100": -0.002921643666923001,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  },
+  {
+    "variant": "micro_only",
+    "final_validation": 0.0919246673583984,
+    "validation_change_80_to_100": -0.0193867981433868,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  },
+  {
+    "variant": "no_crossscale",
+    "final_validation": 0.0979344695806503,
+    "validation_change_80_to_100": -0.013442318886518492,
+    "interpretation": "Three late measurements cannot establish convergence; objectives differ across variants"
+  }
+]

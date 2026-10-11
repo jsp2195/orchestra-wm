@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "full",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.024610817243228666,
+    "macro_mse": 0.016296645030379295,
+    "weighted_consistency": 0.0009415256406646222,
+    "weighted_acceleration_nll": 0.051331781048793344,
+    "weighted_field_nll": 0.0010475750220939517,
+    "weighted_kl": 0.000895488773676334,
+    "pseudo_acceleration_vs_true_acceleration_mae": 4.463195928633213
+  },
+  {
+    "variant": "macro_only",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.012164276195690035,
+    "macro_mse": 0.011999674718827008,
+    "weighted_consistency": 0.0006878208590205759,
+    "weighted_acceleration_nll": 0.6442046510335058,
+    "weighted_field_nll": 0.0008900673768948763,
+    "weighted_kl": 2.551466376417011e-06,
+    "pseudo_acceleration_vs_true_acceleration_mae": 3.3690090760588647
+  },
+  {
+    "variant": "micro_only",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.023181311788503082,
+    "macro_mse": 0.01570536515675485,
+    "weighted_consistency": 0.0,
+    "weighted_acceleration_nll": 0.05462438075104728,
+    "weighted_field_nll": 0.0003796335373772308,
+    "weighted_kl": 0.0010705428358050995,
+    "pseudo_acceleration_vs_true_acceleration_mae": 4.345957169234753
+  },
+  {
+    "variant": "independent",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.024435651774983854,
+    "macro_mse": 0.016198179689235984,
+    "weighted_consistency": 0.0,
+    "weighted_acceleration_nll": 0.060132038579322394,
+    "weighted_field_nll": 0.0003817538550356403,
+    "weighted_kl": 6.28615356461637e-07,
+    "pseudo_acceleration_vs_true_acceleration_mae": 4.726755838692188
+  },
+  {
+    "variant": "no_crossscale",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.019427009482169525,
+    "macro_mse": 0.011485151071101428,
+    "weighted_consistency": 0.0007060159096727148,
+    "weighted_acceleration_nll": 0.04649112320737913,
+    "weighted_field_nll": 0.0008149050129577517,
+    "weighted_kl": 0.0012451638784477836,
+    "pseudo_acceleration_vs_true_acceleration_mae": 4.041648221313953
+  },
+  {
+    "variant": "deterministic",
+    "scene": "canonical/train-00000.parquet",
+    "scope": "Dense first training scene; no optimizer update; raw terms shown even where variant disables them",
+    "micro_mse": 0.01029798992909491,
+    "macro_mse": 0.015231462363153696,
+    "weighted_consistency": 0.0008631652093026788,
+    "weighted_acceleration_nll": 0.5378367825690656,
+    "weighted_field_nll": 0.0014609422581270336,
+    "weighted_kl": 0.0,
+    "pseudo_acceleration_vs_true_acceleration_mae": 3.334518856704235
+  }
+]

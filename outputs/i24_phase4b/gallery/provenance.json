@@ -1,0 +1,50 @@
+{
+  "source": "PRESERVED_PILOT_CHECKPOINTS",
+  "entries": [
+    {
+      "scene": 0,
+      "regime": "dense",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "2b49a40fc269a343c668dd35266bb1cf9f751ab52533b82b8449406c107ccc95",
+      "source_path": "rollouts/0-dense-full.npz"
+    },
+    {
+      "scene": 0,
+      "regime": "outage",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "e00c52ff9bf8b687f8164e0b0d32192592e81c7661a245df74bc4a51644ab32a",
+      "source_path": "rollouts/0-outage-full.npz"
+    },
+    {
+      "scene": 1,
+      "regime": "dense",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "9a71809a341ed1e3799659920dd5d3775fb7041ccbb96e7ad98afe8dd0ab24c9",
+      "source_path": "rollouts/1-dense-full.npz"
+    },
+    {
+      "scene": 1,
+      "regime": "outage",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "365da0af60fca683888ea6daf4010b360fc95a6367f90b85fe709fafdb1c918c",
+      "source_path": "rollouts/1-outage-full.npz"
+    },
+    {
+      "scene": 2,
+      "regime": "dense",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "c8af1f6d35bd9cafa6ba192eb2db05b0320c74ab0931ab6c49844e9a43b62d8d",
+      "source_path": "rollouts/2-dense-full.npz"
+    },
+    {
+      "scene": 2,
+      "regime": "outage",
+      "checkpoint_sha256": "cf39a104d8fa0ec581fba16427ad9245149574f758960d4af1472b9086846d4d",
+      "rollout_sha256": "631c3499a698bb35b1569573069a0b42ed959120103ff57c449529aff4b9dab5",
+      "source_path": "rollouts/2-outage-full.npz"
+    }
+  ],
+  "array_verification": "Exact all-eight sample positions and fields checked against saved evaluated NPZs before encoding; no model rerun",
+  "payload_sha256": "ef943da94cb9b87ccb53c3903609f6660a7913140cb1b6dcf4c2154982d8a70d",
+  "html_sha256": "a7552671157208123db2773fc25682038920e800f2a3e9a0e2984505df98829f"
+}

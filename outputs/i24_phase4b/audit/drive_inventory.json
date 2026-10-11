@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "diagnostic": "Google Drive API HTTP 401; refresh GOOGLE_DRIVE_ACCESS_TOKEN in secure environment settings and publish. Existing bytes are preserved; rerun the same command to resume",
+  "repeated": false
+}

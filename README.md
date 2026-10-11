@@ -246,3 +246,21 @@ Private Google Drive source archives are now identified by the user, but cloud a
 The private `11-21-2022.zip` (6,248,968,002 bytes) and auxiliary archive are downloaded and verified against Drive MD5, SHA256 and ZIP CRCs. A fixed 07:00–07:10 CST westbound regional subset of the actual 2022-11-21 INCEPTION recording passed source/schema/subsecond QC. Six real models completed 100 matched updates at seed 101, followed by 5/10/20 s evaluation with emulated sensing masks. The dense 10 s primary macro-only-minus-full difference is -0.005290: this preliminary pilot does not demonstrate an interaction advantage; calibration and convergence remain unestablished. One day is insufficient for research confirmation.
 
 [Measured report and exact resume commands](outputs/i24_continuous/pilot_0700_wb/ORIGINAL_PILOT_REPORT.md) · [Real checkpoint-backed interactive demo](outputs/i24_continuous/pilot_0700_wb/demo/index.html) · [Real forecast GIF](outputs/i24_continuous/pilot_0700_wb/demo/real_checkpoint_forecast.gif). The archives, canonical arrays and checkpoints are ignored and only present in this worker; no cross-task persistence is guaranteed. All prior tracked research remains preserved. The old import-only CLI retains its explicit exit-2 gate; authentic pilot entry points are separately named.
+
+### Phase 4B audit and authentic expansion
+
+The original continuous pilot remains unchanged. Phase 4B verified all six
+checkpoints, created local recovery bundles, audited the comparison and prepared
+one hour of November 21 data: 30,170 tracks, 10.37 million native samples and
+94/23/23 development windows. No new training updates or multi-date evaluation
+were run: durable private backup is not configured, and one source metadata
+request returned HTTP401. The original negative result remains negative.
+
+See [Phase 4B report](outputs/i24_phase4b/PHASE4B_REPORT.md),
+[scientific audit](docs/I24_PHASE4B_AUDIT.md),
+[secure preservation setup](docs/I24_PHASE4B_RECOVERY.md), and the
+[visual gallery](outputs/i24_phase4b/gallery/VISUAL_GALLERY.md). The new gallery
+uses exact historical checkpoint arrays, including all eight autonomous futures;
+it is not a newly trained Phase 4B result. The report contains exact gated resume
+commands. All source arrays, recovery bundles and checkpoints remain private and
+Git-ignored.

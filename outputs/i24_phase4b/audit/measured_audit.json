@@ -1,0 +1,16 @@
+{
+  "source": "POST_HOC_AUDIT_OF_PRESERVED_PILOT_NOT_NEW_TRAINING",
+  "original_evaluation_sha256": "4f108ec2f098565dbd08e1c13dd85a84552f67a1631b27e1e1fb6cae2a896dc8",
+  "supplementary_sha256": "709e061f10effe31a93a186d38270a27b0dda7f7cd636604546eb3b2b3321e5f",
+  "rows": 360,
+  "omitted_crossing_tracks": 1291,
+  "omitted_samples": 655055,
+  "omitted_sample_fraction": 0.30245768949114726,
+  "conclusions": [
+    "No re-scoring replaces historical primary result",
+    "Single examined day; no independent-day confidence interval",
+    "Micro ADE/FDE in original table score ensemble mean; expected sample ADE is separate here",
+    "Exit and lateral departure rates separated; original combined rate is not solely a physical violation",
+    "CRPS uses off-diagonal unbiased ensemble estimator; small ensembles give noisy estimates"
+  ]
+}

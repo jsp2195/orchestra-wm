@@ -81,3 +81,22 @@ Original continuous bytes are now present and validated in this worker: `data/i2
 The actual pilot is one congested ten-minute regional recording, track-disjoint 13/2/3 buffered windows, six 100-update seed-101 models. It is not a converged or confirmed multi-day result. Macro-only outperformed full on the descriptive primary comparison; do not reframe it as micro interaction superiority. Source spatial thinning and omitted cross-boundary tracks mean fields describe the reconstructed retained population, not an unbiased traffic census. Empty support is unknown; confidence is a binary usable-sample indicator, not calibrated sensor confidence. Actions remain disabled. No automatic larger/research run, no test-selected checkpoints/seeds, and no Harvard/synthetic substitution.
 
 Preserve verified raw/partial bytes, source/split fingerprints and checkpoints. Raw/canonical/checkpoint persistence across fresh cloud tasks is unverified; a Git checkout recovers implementation and reports only. Earlier Harvard archives/checkpoints were not mounted at this task's start; never claim they were deleted or recovered. Continue preserving all earlier tracked scientific files byte-for-byte, allowing only appended notes here and in README/.gitignore. Never publish full source archives, native caches, full checkpoints, credentials or signed URLs.
+
+### Phase 4B audit and expansion
+
+Read `docs/I24_PHASE4B_AUDIT.md` and `outputs/i24_phase4b/PHASE4B_REPORT.md` before
+continuing. Original pilot files and 782 inventoried files remain preserved.
+New isolated implementation lives in `orchestra_wm/i24_phase4b`; old continuous
+model/training/evaluation code must stay byte-identical. Prepared 94/23/23 windows
+from one examined day do not establish multi-date science. No corrected model
+has been trained. Four new GIFs/viewer use preserved historical checkpoint arrays.
+
+Do not allocate substantial new training until compact original and expanded
+artifacts have verified private durable backup. Current bundles are local only;
+the existing Drive token is read-only and source listing returned HTTP401 once.
+Use secure environment bindings, never credentials in chat or repository files.
+The prospective training CLI requires a real readback receipt and matching data
+hashes. Its common macro objective is an information control, not a joint-micro
+fidelity result. Equal allocated parameters do not resolve effective-capacity
+confounding. Preserve the original negative findings and disclose source boundary
+thinning, missing future cohort members, poor calibration and regime shift.

@@ -1,0 +1,1290 @@
+{
+  "status": "EXPANDED_AUTHENTIC_DEVELOPMENT_QC_PASSED",
+  "new_training_updates": 0,
+  "source_dates": [
+    "2022-11-21"
+  ],
+  "scene_counts": {
+    "train": 94,
+    "validation": 23,
+    "test": 23
+  },
+  "native_samples": 10368782,
+  "retained_tracks": 30170,
+  "shared_source_ids": 0,
+  "nonoverlapping_split_support": true,
+  "macro_labels_exactly_recomputed": true,
+  "scenes": [
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669032901.0,
+      "tracks": 234,
+      "usable_5hz_samples": 8175,
+      "median_speed_m_s": 12.559236526489258,
+      "support_fraction": 0.8234126984126984
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669032926.0,
+      "tracks": 330,
+      "usable_5hz_samples": 13812,
+      "median_speed_m_s": 9.454229354858398,
+      "support_fraction": 0.9737103174603174
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669032951.0,
+      "tracks": 370,
+      "usable_5hz_samples": 14722,
+      "median_speed_m_s": 7.280630588531494,
+      "support_fraction": 0.9670138888888888
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669032976.0,
+      "tracks": 367,
+      "usable_5hz_samples": 16069,
+      "median_speed_m_s": 5.733958721160889,
+      "support_fraction": 0.984375
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033001.0,
+      "tracks": 381,
+      "usable_5hz_samples": 17678,
+      "median_speed_m_s": 3.550910472869873,
+      "support_fraction": 0.9779265873015873
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033026.0,
+      "tracks": 411,
+      "usable_5hz_samples": 19153,
+      "median_speed_m_s": 2.707092046737671,
+      "support_fraction": 0.9791666666666666
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033051.0,
+      "tracks": 394,
+      "usable_5hz_samples": 18669,
+      "median_speed_m_s": 2.835136890411377,
+      "support_fraction": 0.9756944444444444
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033076.0,
+      "tracks": 387,
+      "usable_5hz_samples": 18416,
+      "median_speed_m_s": 3.6879827976226807,
+      "support_fraction": 0.9796626984126984
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033101.0,
+      "tracks": 426,
+      "usable_5hz_samples": 18144,
+      "median_speed_m_s": 4.078326225280762,
+      "support_fraction": 0.9838789682539683
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033126.0,
+      "tracks": 433,
+      "usable_5hz_samples": 18847,
+      "median_speed_m_s": 3.8342525959014893,
+      "support_fraction": 0.9957837301587301
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033151.0,
+      "tracks": 436,
+      "usable_5hz_samples": 19188,
+      "median_speed_m_s": 3.4426932334899902,
+      "support_fraction": 0.9935515873015873
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033176.0,
+      "tracks": 431,
+      "usable_5hz_samples": 18891,
+      "median_speed_m_s": 3.4062869548797607,
+      "support_fraction": 0.9796626984126984
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033201.0,
+      "tracks": 417,
+      "usable_5hz_samples": 19245,
+      "median_speed_m_s": 2.9699106216430664,
+      "support_fraction": 0.9796626984126984
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033226.0,
+      "tracks": 421,
+      "usable_5hz_samples": 19252,
+      "median_speed_m_s": 3.2498512268066406,
+      "support_fraction": 0.9905753968253969
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033251.0,
+      "tracks": 446,
+      "usable_5hz_samples": 18757,
+      "median_speed_m_s": 3.0461008548736572,
+      "support_fraction": 0.9915674603174603
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033276.0,
+      "tracks": 427,
+      "usable_5hz_samples": 18719,
+      "median_speed_m_s": 2.9316627979278564,
+      "support_fraction": 0.9920634920634921
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033301.0,
+      "tracks": 437,
+      "usable_5hz_samples": 18324,
+      "median_speed_m_s": 3.51491641998291,
+      "support_fraction": 0.9910714285714286
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033326.0,
+      "tracks": 401,
+      "usable_5hz_samples": 18057,
+      "median_speed_m_s": 3.9224050045013428,
+      "support_fraction": 0.9618055555555556
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033351.0,
+      "tracks": 388,
+      "usable_5hz_samples": 18332,
+      "median_speed_m_s": 4.151358604431152,
+      "support_fraction": 0.9771825396825397
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033376.0,
+      "tracks": 420,
+      "usable_5hz_samples": 17998,
+      "median_speed_m_s": 4.183931350708008,
+      "support_fraction": 0.9853670634920635
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033401.0,
+      "tracks": 413,
+      "usable_5hz_samples": 17924,
+      "median_speed_m_s": 4.013676643371582,
+      "support_fraction": 0.9508928571428571
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033426.0,
+      "tracks": 425,
+      "usable_5hz_samples": 17703,
+      "median_speed_m_s": 3.855483293533325,
+      "support_fraction": 0.9771825396825397
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033451.0,
+      "tracks": 438,
+      "usable_5hz_samples": 17426,
+      "median_speed_m_s": 3.5369832515716553,
+      "support_fraction": 0.9826388888888888
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033476.0,
+      "tracks": 383,
+      "usable_5hz_samples": 17745,
+      "median_speed_m_s": 3.2310261726379395,
+      "support_fraction": 0.9759424603174603
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033501.0,
+      "tracks": 401,
+      "usable_5hz_samples": 17140,
+      "median_speed_m_s": 4.241490364074707,
+      "support_fraction": 0.9761904761904762
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033526.0,
+      "tracks": 412,
+      "usable_5hz_samples": 17606,
+      "median_speed_m_s": 3.8045737743377686,
+      "support_fraction": 0.9702380952380952
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033551.0,
+      "tracks": 424,
+      "usable_5hz_samples": 17997,
+      "median_speed_m_s": 3.6458683013916016,
+      "support_fraction": 0.9821428571428571
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033576.0,
+      "tracks": 428,
+      "usable_5hz_samples": 17971,
+      "median_speed_m_s": 3.469371795654297,
+      "support_fraction": 0.9982638888888888
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033601.0,
+      "tracks": 428,
+      "usable_5hz_samples": 17702,
+      "median_speed_m_s": 3.705646514892578,
+      "support_fraction": 0.9935515873015873
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033626.0,
+      "tracks": 431,
+      "usable_5hz_samples": 17521,
+      "median_speed_m_s": 3.491419553756714,
+      "support_fraction": 0.9841269841269841
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033651.0,
+      "tracks": 419,
+      "usable_5hz_samples": 18150,
+      "median_speed_m_s": 3.142561435699463,
+      "support_fraction": 0.982390873015873
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033676.0,
+      "tracks": 420,
+      "usable_5hz_samples": 18182,
+      "median_speed_m_s": 3.4954442977905273,
+      "support_fraction": 0.9930555555555556
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033701.0,
+      "tracks": 405,
+      "usable_5hz_samples": 18099,
+      "median_speed_m_s": 3.2323241233825684,
+      "support_fraction": 0.9816468253968254
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033726.0,
+      "tracks": 430,
+      "usable_5hz_samples": 18636,
+      "median_speed_m_s": 3.353642702102661,
+      "support_fraction": 0.9920634920634921
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033751.0,
+      "tracks": 454,
+      "usable_5hz_samples": 18748,
+      "median_speed_m_s": 3.4259073734283447,
+      "support_fraction": 0.9935515873015873
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033776.0,
+      "tracks": 437,
+      "usable_5hz_samples": 18491,
+      "median_speed_m_s": 3.263749599456787,
+      "support_fraction": 0.996031746031746
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033801.0,
+      "tracks": 423,
+      "usable_5hz_samples": 17755,
+      "median_speed_m_s": 3.485079288482666,
+      "support_fraction": 0.9962797619047619
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033826.0,
+      "tracks": 412,
+      "usable_5hz_samples": 17492,
+      "median_speed_m_s": 3.4241652488708496,
+      "support_fraction": 0.9811507936507936
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033851.0,
+      "tracks": 414,
+      "usable_5hz_samples": 18164,
+      "median_speed_m_s": 3.33573579788208,
+      "support_fraction": 0.9821428571428571
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033876.0,
+      "tracks": 426,
+      "usable_5hz_samples": 18068,
+      "median_speed_m_s": 3.4690821170806885,
+      "support_fraction": 0.9652777777777778
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033901.0,
+      "tracks": 408,
+      "usable_5hz_samples": 18844,
+      "median_speed_m_s": 3.9978082180023193,
+      "support_fraction": 0.9789186507936508
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033926.0,
+      "tracks": 415,
+      "usable_5hz_samples": 18888,
+      "median_speed_m_s": 4.538300514221191,
+      "support_fraction": 0.9851190476190477
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033951.0,
+      "tracks": 464,
+      "usable_5hz_samples": 19256,
+      "median_speed_m_s": 4.682802200317383,
+      "support_fraction": 0.9918154761904762
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669033976.0,
+      "tracks": 427,
+      "usable_5hz_samples": 19349,
+      "median_speed_m_s": 4.24365234375,
+      "support_fraction": 0.9915674603174603
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669034001.0,
+      "tracks": 441,
+      "usable_5hz_samples": 19346,
+      "median_speed_m_s": 4.573617458343506,
+      "support_fraction": 0.9945436507936508
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669034026.0,
+      "tracks": 415,
+      "usable_5hz_samples": 17823,
+      "median_speed_m_s": 4.17743444442749,
+      "support_fraction": 0.9905753968253969
+    },
+    {
+      "block": "0615_train",
+      "split": "train",
+      "start": 1669034051.0,
+      "tracks": 353,
+      "usable_5hz_samples": 15108,
+      "median_speed_m_s": 3.443617820739746,
+      "support_fraction": 0.9268353174603174
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036501.0,
+      "tracks": 214,
+      "usable_5hz_samples": 8103,
+      "median_speed_m_s": 5.418891429901123,
+      "support_fraction": 0.8335813492063492
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036526.0,
+      "tracks": 339,
+      "usable_5hz_samples": 13787,
+      "median_speed_m_s": 4.6922407150268555,
+      "support_fraction": 0.9809027777777778
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036551.0,
+      "tracks": 383,
+      "usable_5hz_samples": 16545,
+      "median_speed_m_s": 4.556282997131348,
+      "support_fraction": 0.9915674603174603
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036576.0,
+      "tracks": 408,
+      "usable_5hz_samples": 18494,
+      "median_speed_m_s": 3.771580696105957,
+      "support_fraction": 0.9928075396825397
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036601.0,
+      "tracks": 421,
+      "usable_5hz_samples": 19079,
+      "median_speed_m_s": 3.6054701805114746,
+      "support_fraction": 0.9880952380952381
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036626.0,
+      "tracks": 417,
+      "usable_5hz_samples": 18543,
+      "median_speed_m_s": 3.783043146133423,
+      "support_fraction": 0.9719742063492064
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036651.0,
+      "tracks": 394,
+      "usable_5hz_samples": 18484,
+      "median_speed_m_s": 4.125960350036621,
+      "support_fraction": 0.966765873015873
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036676.0,
+      "tracks": 411,
+      "usable_5hz_samples": 18440,
+      "median_speed_m_s": 4.517569541931152,
+      "support_fraction": 0.9995039682539683
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036701.0,
+      "tracks": 405,
+      "usable_5hz_samples": 18219,
+      "median_speed_m_s": 4.2280731201171875,
+      "support_fraction": 0.9908234126984127
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036726.0,
+      "tracks": 384,
+      "usable_5hz_samples": 18177,
+      "median_speed_m_s": 4.044034004211426,
+      "support_fraction": 0.9828869047619048
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036751.0,
+      "tracks": 407,
+      "usable_5hz_samples": 17615,
+      "median_speed_m_s": 4.815022945404053,
+      "support_fraction": 0.9915674603174603
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036776.0,
+      "tracks": 399,
+      "usable_5hz_samples": 17281,
+      "median_speed_m_s": 4.69649076461792,
+      "support_fraction": 0.9940476190476191
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036801.0,
+      "tracks": 387,
+      "usable_5hz_samples": 17048,
+      "median_speed_m_s": 4.925168037414551,
+      "support_fraction": 0.9801587301587301
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036826.0,
+      "tracks": 396,
+      "usable_5hz_samples": 17007,
+      "median_speed_m_s": 4.195353984832764,
+      "support_fraction": 0.9697420634920635
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036851.0,
+      "tracks": 415,
+      "usable_5hz_samples": 17969,
+      "median_speed_m_s": 3.9969992637634277,
+      "support_fraction": 0.9734623015873016
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036876.0,
+      "tracks": 417,
+      "usable_5hz_samples": 18994,
+      "median_speed_m_s": 3.8040542602539062,
+      "support_fraction": 0.9962797619047619
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036901.0,
+      "tracks": 456,
+      "usable_5hz_samples": 18743,
+      "median_speed_m_s": 3.857724189758301,
+      "support_fraction": 0.9997519841269841
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036926.0,
+      "tracks": 432,
+      "usable_5hz_samples": 18339,
+      "median_speed_m_s": 3.301410436630249,
+      "support_fraction": 0.9831349206349206
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036951.0,
+      "tracks": 412,
+      "usable_5hz_samples": 18420,
+      "median_speed_m_s": 3.7017717361450195,
+      "support_fraction": 0.998015873015873
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669036976.0,
+      "tracks": 416,
+      "usable_5hz_samples": 18371,
+      "median_speed_m_s": 3.5587379932403564,
+      "support_fraction": 0.9915674603174603
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037001.0,
+      "tracks": 401,
+      "usable_5hz_samples": 18511,
+      "median_speed_m_s": 4.053500652313232,
+      "support_fraction": 0.9908234126984127
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037026.0,
+      "tracks": 403,
+      "usable_5hz_samples": 17988,
+      "median_speed_m_s": 4.0737738609313965,
+      "support_fraction": 0.9801587301587301
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037051.0,
+      "tracks": 389,
+      "usable_5hz_samples": 17800,
+      "median_speed_m_s": 4.107525825500488,
+      "support_fraction": 0.9704861111111112
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037076.0,
+      "tracks": 386,
+      "usable_5hz_samples": 18032,
+      "median_speed_m_s": 4.430051326751709,
+      "support_fraction": 0.9868551587301587
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037101.0,
+      "tracks": 435,
+      "usable_5hz_samples": 17993,
+      "median_speed_m_s": 4.119904041290283,
+      "support_fraction": 0.9923115079365079
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037126.0,
+      "tracks": 422,
+      "usable_5hz_samples": 18152,
+      "median_speed_m_s": 4.398571491241455,
+      "support_fraction": 1.0
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037151.0,
+      "tracks": 401,
+      "usable_5hz_samples": 17939,
+      "median_speed_m_s": 4.458461761474609,
+      "support_fraction": 0.9995039682539683
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037176.0,
+      "tracks": 398,
+      "usable_5hz_samples": 17680,
+      "median_speed_m_s": 4.917791843414307,
+      "support_fraction": 0.9947916666666666
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037201.0,
+      "tracks": 408,
+      "usable_5hz_samples": 17715,
+      "median_speed_m_s": 4.741572380065918,
+      "support_fraction": 0.9935515873015873
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037226.0,
+      "tracks": 372,
+      "usable_5hz_samples": 17372,
+      "median_speed_m_s": 4.420163154602051,
+      "support_fraction": 0.9774305555555556
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037251.0,
+      "tracks": 398,
+      "usable_5hz_samples": 17399,
+      "median_speed_m_s": 3.82081937789917,
+      "support_fraction": 0.9692460317460317
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037276.0,
+      "tracks": 395,
+      "usable_5hz_samples": 17231,
+      "median_speed_m_s": 3.5788686275482178,
+      "support_fraction": 0.9595734126984127
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037301.0,
+      "tracks": 359,
+      "usable_5hz_samples": 16820,
+      "median_speed_m_s": 4.400806427001953,
+      "support_fraction": 0.9593253968253969
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037326.0,
+      "tracks": 344,
+      "usable_5hz_samples": 15714,
+      "median_speed_m_s": 4.498679161071777,
+      "support_fraction": 0.9565972222222222
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037351.0,
+      "tracks": 349,
+      "usable_5hz_samples": 16111,
+      "median_speed_m_s": 4.878635883331299,
+      "support_fraction": 0.9503968253968254
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037376.0,
+      "tracks": 382,
+      "usable_5hz_samples": 16822,
+      "median_speed_m_s": 4.959184646606445,
+      "support_fraction": 0.9543650793650794
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037401.0,
+      "tracks": 355,
+      "usable_5hz_samples": 15872,
+      "median_speed_m_s": 4.738953590393066,
+      "support_fraction": 0.9526289682539683
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037426.0,
+      "tracks": 339,
+      "usable_5hz_samples": 15942,
+      "median_speed_m_s": 4.399827003479004,
+      "support_fraction": 0.9246031746031746
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037451.0,
+      "tracks": 353,
+      "usable_5hz_samples": 15581,
+      "median_speed_m_s": 4.989044666290283,
+      "support_fraction": 0.9300595238095238
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037476.0,
+      "tracks": 335,
+      "usable_5hz_samples": 15321,
+      "median_speed_m_s": 6.019180774688721,
+      "support_fraction": 0.9618055555555556
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037501.0,
+      "tracks": 359,
+      "usable_5hz_samples": 15180,
+      "median_speed_m_s": 6.159902572631836,
+      "support_fraction": 0.9831349206349206
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037526.0,
+      "tracks": 333,
+      "usable_5hz_samples": 15197,
+      "median_speed_m_s": 5.91176700592041,
+      "support_fraction": 0.984375
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037551.0,
+      "tracks": 358,
+      "usable_5hz_samples": 15273,
+      "median_speed_m_s": 5.899143218994141,
+      "support_fraction": 0.9781746031746031
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037576.0,
+      "tracks": 353,
+      "usable_5hz_samples": 15506,
+      "median_speed_m_s": 6.009625434875488,
+      "support_fraction": 0.9526289682539683
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037601.0,
+      "tracks": 335,
+      "usable_5hz_samples": 14201,
+      "median_speed_m_s": 6.306065559387207,
+      "support_fraction": 0.9766865079365079
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037626.0,
+      "tracks": 311,
+      "usable_5hz_samples": 14228,
+      "median_speed_m_s": 6.137721538543701,
+      "support_fraction": 0.9404761904761905
+    },
+    {
+      "block": "0715_train",
+      "split": "train",
+      "start": 1669037651.0,
+      "tracks": 325,
+      "usable_5hz_samples": 14020,
+      "median_speed_m_s": 6.509149551391602,
+      "support_fraction": 0.9749503968253969
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040101.0,
+      "tracks": 190,
+      "usable_5hz_samples": 7162,
+      "median_speed_m_s": 14.236032485961914,
+      "support_fraction": 0.7983630952380952
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040126.0,
+      "tracks": 262,
+      "usable_5hz_samples": 9684,
+      "median_speed_m_s": 14.618886947631836,
+      "support_fraction": 0.9618055555555556
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040151.0,
+      "tracks": 265,
+      "usable_5hz_samples": 10058,
+      "median_speed_m_s": 14.298126220703125,
+      "support_fraction": 0.9615575396825397
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040176.0,
+      "tracks": 258,
+      "usable_5hz_samples": 10575,
+      "median_speed_m_s": 14.58200454711914,
+      "support_fraction": 0.9742063492063492
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040201.0,
+      "tracks": 287,
+      "usable_5hz_samples": 10452,
+      "median_speed_m_s": 15.159231185913086,
+      "support_fraction": 0.9838789682539683
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040226.0,
+      "tracks": 280,
+      "usable_5hz_samples": 10708,
+      "median_speed_m_s": 15.411661148071289,
+      "support_fraction": 0.9682539682539683
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040251.0,
+      "tracks": 286,
+      "usable_5hz_samples": 10339,
+      "median_speed_m_s": 15.886856079101562,
+      "support_fraction": 0.9796626984126984
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040276.0,
+      "tracks": 298,
+      "usable_5hz_samples": 10326,
+      "median_speed_m_s": 16.482746124267578,
+      "support_fraction": 0.9608134920634921
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040301.0,
+      "tracks": 263,
+      "usable_5hz_samples": 10224,
+      "median_speed_m_s": 15.397432327270508,
+      "support_fraction": 0.9409722222222222
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040326.0,
+      "tracks": 251,
+      "usable_5hz_samples": 10227,
+      "median_speed_m_s": 14.532262802124023,
+      "support_fraction": 0.9608134920634921
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040351.0,
+      "tracks": 249,
+      "usable_5hz_samples": 9919,
+      "median_speed_m_s": 14.74779987335205,
+      "support_fraction": 0.9518849206349206
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040376.0,
+      "tracks": 264,
+      "usable_5hz_samples": 10114,
+      "median_speed_m_s": 13.410404205322266,
+      "support_fraction": 0.9625496031746031
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040401.0,
+      "tracks": 298,
+      "usable_5hz_samples": 11375,
+      "median_speed_m_s": 12.392084121704102,
+      "support_fraction": 0.9759424603174603
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040426.0,
+      "tracks": 293,
+      "usable_5hz_samples": 11391,
+      "median_speed_m_s": 10.990388870239258,
+      "support_fraction": 0.9712301587301587
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040451.0,
+      "tracks": 305,
+      "usable_5hz_samples": 11004,
+      "median_speed_m_s": 9.77757453918457,
+      "support_fraction": 0.9575892857142857
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040476.0,
+      "tracks": 283,
+      "usable_5hz_samples": 11167,
+      "median_speed_m_s": 9.696426391601562,
+      "support_fraction": 0.9603174603174603
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040501.0,
+      "tracks": 289,
+      "usable_5hz_samples": 11741,
+      "median_speed_m_s": 10.557510375976562,
+      "support_fraction": 0.9677579365079365
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040526.0,
+      "tracks": 275,
+      "usable_5hz_samples": 11763,
+      "median_speed_m_s": 11.7119779586792,
+      "support_fraction": 0.9776785714285714
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040551.0,
+      "tracks": 312,
+      "usable_5hz_samples": 11782,
+      "median_speed_m_s": 11.106378555297852,
+      "support_fraction": 0.9642857142857143
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040576.0,
+      "tracks": 288,
+      "usable_5hz_samples": 12022,
+      "median_speed_m_s": 11.042987823486328,
+      "support_fraction": 0.9598214285714286
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040601.0,
+      "tracks": 298,
+      "usable_5hz_samples": 12009,
+      "median_speed_m_s": 10.678130149841309,
+      "support_fraction": 0.9623015873015873
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040626.0,
+      "tracks": 278,
+      "usable_5hz_samples": 11350,
+      "median_speed_m_s": 12.643049240112305,
+      "support_fraction": 0.9712301587301587
+    },
+    {
+      "block": "0815_validation",
+      "split": "validation",
+      "start": 1669040651.0,
+      "tracks": 250,
+      "usable_5hz_samples": 10807,
+      "median_speed_m_s": 13.253055572509766,
+      "support_fraction": 0.9516369047619048
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043701.0,
+      "tracks": 73,
+      "usable_5hz_samples": 2775,
+      "median_speed_m_s": 32.393890380859375,
+      "support_fraction": 0.5473710317460317
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043726.0,
+      "tracks": 106,
+      "usable_5hz_samples": 4016,
+      "median_speed_m_s": 31.749492645263672,
+      "support_fraction": 0.7038690476190477
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043751.0,
+      "tracks": 117,
+      "usable_5hz_samples": 3911,
+      "median_speed_m_s": 31.49094009399414,
+      "support_fraction": 0.6897321428571429
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043776.0,
+      "tracks": 137,
+      "usable_5hz_samples": 5268,
+      "median_speed_m_s": 32.12177276611328,
+      "support_fraction": 0.8459821428571429
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043801.0,
+      "tracks": 136,
+      "usable_5hz_samples": 4928,
+      "median_speed_m_s": 32.32225036621094,
+      "support_fraction": 0.8546626984126984
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043826.0,
+      "tracks": 154,
+      "usable_5hz_samples": 5178,
+      "median_speed_m_s": 31.762868881225586,
+      "support_fraction": 0.7733134920634921
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043851.0,
+      "tracks": 141,
+      "usable_5hz_samples": 5462,
+      "median_speed_m_s": 30.861038208007812,
+      "support_fraction": 0.7914186507936508
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043876.0,
+      "tracks": 113,
+      "usable_5hz_samples": 4215,
+      "median_speed_m_s": 31.65152359008789,
+      "support_fraction": 0.8030753968253969
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043901.0,
+      "tracks": 136,
+      "usable_5hz_samples": 4866,
+      "median_speed_m_s": 30.433177947998047,
+      "support_fraction": 0.8239087301587301
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043926.0,
+      "tracks": 132,
+      "usable_5hz_samples": 5227,
+      "median_speed_m_s": 30.806917190551758,
+      "support_fraction": 0.8082837301587301
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043951.0,
+      "tracks": 130,
+      "usable_5hz_samples": 4449,
+      "median_speed_m_s": 31.64087677001953,
+      "support_fraction": 0.7137896825396826
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669043976.0,
+      "tracks": 122,
+      "usable_5hz_samples": 4690,
+      "median_speed_m_s": 30.710899353027344,
+      "support_fraction": 0.798859126984127
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044001.0,
+      "tracks": 110,
+      "usable_5hz_samples": 4048,
+      "median_speed_m_s": 31.233383178710938,
+      "support_fraction": 0.7534722222222222
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044026.0,
+      "tracks": 134,
+      "usable_5hz_samples": 4225,
+      "median_speed_m_s": 32.12843322753906,
+      "support_fraction": 0.7180059523809523
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044051.0,
+      "tracks": 169,
+      "usable_5hz_samples": 6701,
+      "median_speed_m_s": 30.149593353271484,
+      "support_fraction": 0.8933531746031746
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044076.0,
+      "tracks": 144,
+      "usable_5hz_samples": 5984,
+      "median_speed_m_s": 28.839448928833008,
+      "support_fraction": 0.8226686507936508
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044101.0,
+      "tracks": 110,
+      "usable_5hz_samples": 3577,
+      "median_speed_m_s": 31.802181243896484,
+      "support_fraction": 0.6150793650793651
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044126.0,
+      "tracks": 108,
+      "usable_5hz_samples": 3653,
+      "median_speed_m_s": 33.13654327392578,
+      "support_fraction": 0.6257440476190477
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044151.0,
+      "tracks": 112,
+      "usable_5hz_samples": 4626,
+      "median_speed_m_s": 32.8167724609375,
+      "support_fraction": 0.8050595238095238
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044176.0,
+      "tracks": 119,
+      "usable_5hz_samples": 4701,
+      "median_speed_m_s": 30.002792358398438,
+      "support_fraction": 0.7589285714285714
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044201.0,
+      "tracks": 120,
+      "usable_5hz_samples": 4438,
+      "median_speed_m_s": 30.021263122558594,
+      "support_fraction": 0.7621527777777778
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044226.0,
+      "tracks": 119,
+      "usable_5hz_samples": 4495,
+      "median_speed_m_s": 31.30235481262207,
+      "support_fraction": 0.7740575396825397
+    },
+    {
+      "block": "0915_development_test",
+      "split": "test",
+      "start": 1669044251.0,
+      "tracks": 153,
+      "usable_5hz_samples": 5916,
+      "median_speed_m_s": 31.584964752197266,
+      "support_fraction": 0.8368055555555556
+    }
+  ],
+  "boundary_omitted_samples": 327070,
+  "boundary_omission_fraction": 0.030579144139242016,
+  "free_bytes": 16667090944,
+  "local_recovery_bundle": {
+    "path": "work/phase4b/expanded_prepared_recovery.tar.gz",
+    "bytes": 106007156,
+    "sha256": "f5002c23bc752124adcb7432df1e081a301be920be947cae4c6644e0b07234dd",
+    "members_verified": true
+  },
+  "data_manifest_sha256": "a9ba486be5bdf5ca17aeebf804c16b409d6aa13ba29eec0439a4f7bfd4666480",
+  "remote_backup": "NOT_CONFIGURED"
+}

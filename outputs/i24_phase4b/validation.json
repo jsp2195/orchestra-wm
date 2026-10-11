@@ -1,0 +1,34 @@
+{
+  "starting_commit": "d9eb80aeb16cd15aef954ad7d53a986d5acb979b",
+  "historical_tracked_files_verified": 554,
+  "historical_inventory_files_verified": 782,
+  "checkpoint_hashes_verified": 6,
+  "append_only_paths": [
+    "README.md",
+    "AGENTS.md",
+    ".gitignore"
+  ],
+  "phase4b_implementation_sha256": {
+    "orchestra_wm/i24_phase4b/model.py": "b932ea4d85f879364985f94f8dcc6eebda86008e334e914832a9b5264bd95c31",
+    "orchestra_wm/i24_phase4b/training.py": "aeb0a9a94efa48b2e237ab7809a881cf5294006d448dad10a40bf762ce74177b",
+    "orchestra_wm/i24_phase4b/metrics.py": "bf3b907a196c1288ac40e48a502cce80278f1634be01f7cc99a365886a5c437e",
+    "orchestra_wm/i24_phase4b/__init__.py": "427e90bf7a71af8cde787391d595ac99b0179c4375fb231aac742ac81523a0e3",
+    "orchestra_wm/i24_phase4b/data.py": "1cc1eeae2723439b9a9cccad3139da8ed20860dbb912353c4bb27d3831b3c49b",
+    "scripts/prepare_i24_phase4b.py": "dfa333d278e5db59792611a9eefddf19783669a885a100e8d11eebd68a567466",
+    "scripts/report_i24_phase4b.py": "95df5ce6861ec3cf7c429136df8ed83211eb74d5b642d5b280b148a2b068c31d",
+    "scripts/train_i24_phase4b.py": "6dd2175dd05e7b29095d1b79e2224a8f61f9294597384b525732621c6cac6d2d",
+    "scripts/verify_i24_phase4b_data.py": "dcba6b69db5ee1f2d7809ac4fb23903a8e0ea6c5e41187ee8762761b29c9c248",
+    "scripts/diagnose_i24_phase4b_loss.py": "0088a661aecfb260141fea7f7959ebed5722fdfe1b26957e1cb8df2d8031ee65",
+    "scripts/preserve_i24_phase4b.py": "180fbbb3303b6c4d86d3de171b7c3508cd379a08ac0b70ec30c687d191772ef8",
+    "scripts/visualize_i24_phase4b.py": "53a7c03c96f5e15aacb88b7ad3f6d2f7f1d9bab0c848f8b1d982aa546d4cee11",
+    "scripts/audit_i24_phase4b.py": "d144710c37f67e3607d40e41f20cce42c15f6440dff01172e401c382b8100e96",
+    "scripts/verify_i24_phase4b_gallery.py": "4dfbb4f1f9f36d476ab9eca2828ccc6183390707297978ad6503668aef96c939"
+  },
+  "raw_data_and_checkpoints_published": false,
+  "tests": {
+    "command": "uv run pytest -q tests/i24_phase4b tests/i24_continuous tests/i24",
+    "passed": 56,
+    "skipped": 1
+  },
+  "browser_validation": "outputs/i24_phase4b/gallery/validation.json"
+}

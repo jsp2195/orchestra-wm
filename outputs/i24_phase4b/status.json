@@ -1,0 +1,20 @@
+{
+  "stages": {
+    "preservation": "LOCAL_VERIFIED_REMOTE_BLOCKED",
+    "audit": "COMPLETE_WITH_UNRESOLVED_LIMITATIONS",
+    "expanded_data": "SINGLE_DAY_QC_PASSED",
+    "new_training": "BLOCKED_PENDING_DURABLE_BACKUP",
+    "new_evaluation": "NOT_RUN",
+    "visual_gallery": "VERIFIED_HISTORICAL_CHECKPOINTS"
+  },
+  "new_updates": 0,
+  "source_dates": [
+    "2022-11-21"
+  ],
+  "scene_counts": {
+    "train": 94,
+    "validation": 23,
+    "test": 23
+  },
+  "original_primary_difference": -0.005290047430982071
+}

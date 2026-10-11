@@ -1,0 +1,24 @@
+{
+  "namespace": "phase4b_development_v1",
+  "source_date": "2022-11-21",
+  "status": "SINGLE_DAY_DEVELOPMENT_NOT_INDEPENDENT_DATE_TEST",
+  "archive": "data/i24_continuous/raw/637b023440527bf2daa5932f__post1.zip",
+  "archive_sha256": "dbabe7b3e665a7d48b27d89d9f55fa0190e2cbcd7f9953beae59a8663b6ec3b7",
+  "x_min_ft": 316800,
+  "x_max_ft": 320080,
+  "max_agents": 2048,
+  "min_free_bytes": 10000000000,
+  "blocks": [
+    {"name": "0615_train", "split": "train", "start": 1669032900, "seconds": 1200},
+    {"name": "0715_train", "split": "train", "start": 1669036500, "seconds": 1200},
+    {"name": "0815_validation", "split": "validation", "start": 1669040100, "seconds": 600},
+    {"name": "0915_development_test", "split": "test", "start": 1669043700, "seconds": 600}
+  ],
+  "selection_basis": "Fixed clock intervals before model evaluation; two morning training regimes, later validation and developmental test. No performance selection.",
+  "future_date_reservation": {
+    "train": ["2022-11-21", "2022-11-22", "2022-11-23"],
+    "validation": ["2022-11-25"],
+    "test": ["2022-11-28", "2022-11-29"],
+    "availability": "UNVERIFIED_HTTP_401; do not silently substitute dates; additional dates unassigned until metadata-only review"
+  }
+}
