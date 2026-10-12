@@ -55,3 +55,7 @@ outputs/i24_phase4e/**/native/
 outputs/i24_phase4e/**/canonical/
 outputs/i24_phase4e/**/*.npz
 outputs/i24_phase4e/**/private/
+
+# Colab execution lives in the user's private mounted Drive, never in Git.
+outputs/i24_phase4e_colab/
+notebooks/.ipynb_checkpoints/
